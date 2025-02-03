@@ -1,27 +1,27 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Publications = () => {
-  useEffect(() => {
-    // Create a new script element
-    const script = document.createElement('script');
-    script.src = 'https://bibbase.org/show?bib=https%3A%2F%2Fpaperpile.com%2Feb%2FzPzVarTdyN%2Fpaperpile.bib&commas=true&noBootstrap=1&jsonp=1';
-    script.async = true;
+import Main from '../layouts/Main';
 
-    // Append the script to the body or head of the document
-    document.body.appendChild(script);
+import Cell from '../components/Projects/Cell';
+import data from '../data/projects';
 
-    // Cleanup the script when the component is unmounted
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+const Projects = () => (
+  <Main title="Projects" description="Learn about Menglin Zhu's projects.">
+    <article className="post" id="projects">
+      <header>
+        <div className="title">
+          <h2>
+            <Link to="/projects">Projects</Link>
+          </h2>
+          <p>A selection of projects that I&apos;m not too ashamed of</p>
+        </div>
+      </header>
+      {data.map((project) => (
+        <Cell data={project} key={project.title} />
+      ))}
+    </article>
+  </Main>
+);
 
-  return (
-    <div>
-      <h2>Publications</h2>
-      <div id="bibbase"></div> {/* This will be populated by the script */}
-    </div>
-  );
-};
-
-export default Publications;
+export default Projects;
