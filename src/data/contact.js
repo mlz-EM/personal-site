@@ -3,13 +3,19 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons/faEnvelope';
 import { faGoogleScholar } from '@fortawesome/free-brands-svg-icons/faGoogleScholar';
 import { faOrcid } from '@fortawesome/free-brands-svg-icons/faOrcid';
+import { faFilePdf } from '@fortawesome/free-regular-svg-icons/faFilePdf';
 // See https://fontawesome.com/icons?d=gallery&s=brands,regular&m=free
 // to add other icons.
 
 const data = [
   {
+    link: 'mailto:mlz.eMicroscopy@gmail.com',
+    label: 'Full CV',
+    icon: faFilePdf,
+  },
+  {
     link: 'https://www.linkedin.com/in/mlzhu',
-    label: 'LinkedIn',
+    label: '\u00A0LinkedIn',
     icon: faLinkedinIn,
   },
   {

@@ -26,7 +26,7 @@ const SideBar = () => (
       </p>
       <ul className="actions">
         <li>
-          <a href="/assets/CV/CV.pdf" className="button" download>
+          <a href={`${process.env.PUBLIC_URL}/assets/CV/CV.pdf`} className="button" download>
             Download C.V.
           </a>
         </li>
@@ -37,6 +37,7 @@ const SideBar = () => (
     <section id="footer">
       <ContactIcons />
       <p className="copyright">
+        <br />
         &copy; Menglin Zhu <Link to="/">mlz-em.com</Link>.
       </p>
     </section>

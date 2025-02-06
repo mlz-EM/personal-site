@@ -1,52 +1,32 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-
+// pages/Publications.js
+import React from 'react';
 import Main from '../layouts/Main';
+import BibBaseLoader from '../components/Publications/BibBaseLoader';
 
-const Publications = () => {
-  useEffect(() => {
-    // Ensure the script is not added multiple times
-    const existingScript = document.querySelector('script[src*="bibbase.org"]');
-    if (!existingScript) {
-      const script = document.createElement('script');
-      script.src = 'https://bibbase.org/show?bib=https%3A%2F%2Fpaperpile.com%2Feb%2FcChVXXjwmu&commas=false&noBootstrap=1&jsonp=1&owner=zhu&showSearch=true';
-      script.async = true;
-
-      // Append script directly to the document body
-      document.body.appendChild(script);
-    }
-
-    // Cleanup function to remove the script if needed
-    return () => {
-      if (existingScript) {
-        existingScript.remove();
-      }
-    };
-  }, []);
-
-  return (
-    <Main title="Publications" description="List of publications.">
-      <article className="post" id="publications">
-        <header>
-          <div className="title">
-            <h2><Link to="/publications">Publications</Link></h2>
-          </div>
-        </header>
-
-        {/* Bibliography Section */}
-        <section>
-          {/* This iframe is a backup option in case script injection fails */}
-          <iframe
-            src="https://bibbase.org/show?bib=https%3A%2F%2Fpaperpile.com%2Feb%2FcChVXXjwmu&commas=false&noBootstrap=1&showSearch=true"
-            width="100%"
-            height="500px"
-            style={{ border: 'none' }}
-            title="BibBase Publications"
-          />
-        </section>
-      </article>
-    </Main>
-  );
-};
+const Publications = () => (
+  <Main title="Publications" description="Learn about Menglin Zhu's publications.">
+    <article className="post" id="publications">
+      <header>
+        <div className="title">
+          <h2>Publications</h2>
+          {/* Only "below" is clickable */}
+          <p>
+            Visit {' '}
+            <a
+              href="https://scholar.google.com/citations?user=tkEx8OQAAAAJ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google Scholar
+            </a>
+            {' '}page for a full list of my publications.
+          </p>
+        </div>
+      </header>
+      {/* Load the BibBase content dynamically */}
+      <BibBaseLoader bibUrl="https://bibbase.org/show?bib=https%3A%2F%2Fpaperpile.com%2Feb%2FcChVXXjwmu&commas=true&noBootstrap=1&jsonp=1" />
+    </article>
+  </Main>
+);
 
 export default Publications;
