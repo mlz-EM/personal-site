@@ -1,7 +1,7 @@
 // pages/Publications.js
 import React from 'react';
 import Main from '../layouts/Main';
-import BibBaseLoader from '../components/Publications/BibBaseLoader';
+// import BibBaseLoader from '../components/Publications/BibBaseLoader';
 
 const Publications = () => (
   <Main title="Publications" description="Learn about Menglin Zhu's publications.">
@@ -24,7 +24,7 @@ const Publications = () => (
         </div>
       </header>
       {/* Load the BibBase content dynamically */}
-      <BibBaseLoader bibUrl="https://bibbase.org/show?bib=https%3A%2F%2Fpaperpile.com%2Feb%2FcChVXXjwmu&commas=true&noBootstrap=1&jsonp=1" />
+      {/* <BibBaseLoader bibUrl="https://bibbase.org/show?bib=https%3A%2F%2Fpaperpile.com%2Feb%2FcChVXXjwmu&commas=true&noBootstrap=1&jsonp=1" /> */}
     </article>
   </Main>
 );
