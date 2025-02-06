@@ -1,28 +1,20 @@
 const routes = [
   {
     index: true,
-    label: "Michael D'Angelo",
+    label: 'Menglin Zhu',
     path: '/',
   },
   {
-    label: 'About',
-    path: '/about',
+    label: 'Skills',
+    path: '/skills',
   },
   {
-    label: 'Resume',
-    path: '/resume',
+    label: 'Publications',
+    path: '/publications',
   },
   {
     label: 'Projects',
     path: '/projects',
-  },
-  {
-    label: 'Stats',
-    path: '/stats',
-  },
-  {
-    label: 'Contact',
-    path: '/contact',
   },
 ];
 
