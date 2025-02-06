@@ -9,7 +9,7 @@ import { faFilePdf } from '@fortawesome/free-regular-svg-icons/faFilePdf';
 
 const data = [
   {
-    link: 'mailto:mlz.eMicroscopy@gmail.com',
+    link: `${process.env.PUBLIC_URL}/assets/CV/CV.pdf`,
     label: 'Full CV',
     icon: faFilePdf,
   },

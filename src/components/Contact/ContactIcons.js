@@ -18,6 +18,8 @@ const ContactIcons = () => (
         <a
           href={s.link}
           aria-label={s.label}
+          target="_blank"
+          rel="noopener noreferrer"
           style={{
             textDecoration: 'none',
             color: 'inherit',
