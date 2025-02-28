@@ -1,31 +1,43 @@
-import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons/faEnvelope';
-// import { faFileText } from '@fortawesome/free-regular-svg-icons/faFileText';
+import { faGoogleScholar } from '@fortawesome/free-brands-svg-icons/faGoogleScholar';
+import { faOrcid } from '@fortawesome/free-brands-svg-icons/faOrcid';
+import { faFilePdf } from '@fortawesome/free-regular-svg-icons/faFilePdf';
 // See https://fontawesome.com/icons?d=gallery&s=brands,regular&m=free
 // to add other icons.
 
-const contactInfo = [
+const data = [
   {
-    link: 'https://www.instagram.com/kmao.jpg/',
-    label: 'Instagram',
-    icon: faInstagram,
+    link: `${process.env.PUBLIC_URL}/CV.pdf`,
+    label: 'Full CV',
+    icon: faFilePdf,
   },
   {
-    link: 'https://www.linkedin.com/in/im-kevin-mao/',
-    label: 'LinkedIn',
+    link: 'https://www.linkedin.com/in/mlzhu',
+    label: '\u00A0LinkedIn',
     icon: faLinkedinIn,
   },
   {
-    link: 'mailto:imkevinmao@gmail.com',
+    link: 'https://scholar.google.com/citations?user=tkEx8OQAAAAJ',
+    label: 'Google Scholar',
+    icon: faGoogleScholar,
+  },
+  {
+    link: 'https://orcid.org/0000-0001-6830-2636',
+    label: 'ORCID',
+    icon: faOrcid,
+  },
+  {
+    link: 'https://github.com/mlz-EM',
+    label: 'Github',
+    icon: faGithub,
+  },
+  {
+    link: 'mailto:mlz.eMicroscopy@gmail.com',
     label: 'Email',
     icon: faEnvelope,
   },
-  // {
-  //   link: `${process.env.PUBLIC_URL}/kevin-mao.pdf`,
-  //   label: 'Resume',
-  //   icon: faFileText,
-  // },
 ];
 
-export default contactInfo;
+export default data;
