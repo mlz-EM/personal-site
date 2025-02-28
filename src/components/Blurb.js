@@ -18,7 +18,7 @@ const Blurb = () => (
           <div className="col-md-4" style={{ padding: '1em' }}>
             <header>
               <p>
-                <a href="mailto:imkevinmao@gmail.com">imkevinmao@gmail.com</a>
+                <a href="mailto:mlz.eMicroscopy@gmail.com">mlz.eMicroscopy@gmail.com</a>
               </p>
             </header>
             <section className="blurb">
