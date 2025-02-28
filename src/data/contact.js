@@ -7,9 +7,10 @@ import { faFilePdf } from '@fortawesome/free-regular-svg-icons/faFilePdf';
 // See https://fontawesome.com/icons?d=gallery&s=brands,regular&m=free
 // to add other icons.
 
-const data = [
+const contactInfo = [
   {
-    link: `${process.env.PUBLIC_URL}/CV.pdf`,
+    // link: `${process.env.PUBLIC_URL}/CV.pdf`,
+    link: 'https://mlz-em.github.io/personal-site//CV.pdf',
     label: 'Full CV',
     icon: faFilePdf,
   },
@@ -40,4 +41,4 @@ const data = [
   },
 ];
 
-export default data;
+export default contactInfo;
