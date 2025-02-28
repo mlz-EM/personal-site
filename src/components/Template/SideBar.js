@@ -26,12 +26,12 @@ const SideBar = () => (
         a Software Engineer II at Microsoft, where I work on Azure Event Grid,
         Microsoft&apos;s premier pub/sub messaging service.
       </p>
-      <ul className="actions">
+      {/* <ul className="actions">
         <li>
-          {/* <a href={`${process.env.PUBLIC_URL}/kevin-mao.pdf`} target="_blank" rel="noreferrer" className="button"> View Resume </a> */}
-
+          <a href={`${process.env.PUBLIC_URL}/kevin-mao.pdf`} target="_blank"
+          rel="noreferrer" className="button"> View Resume </a>
         </li>
-      </ul>
+      </ul> */}
     </section>
 
     <section id="footer">

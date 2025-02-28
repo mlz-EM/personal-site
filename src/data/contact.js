@@ -1,7 +1,7 @@
 import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons/faEnvelope';
-import { faFileText } from '@fortawesome/free-regular-svg-icons/faFileText';
+// import { faFileText } from '@fortawesome/free-regular-svg-icons/faFileText';
 // See https://fontawesome.com/icons?d=gallery&s=brands,regular&m=free
 // to add other icons.
 
@@ -21,11 +21,11 @@ const contactInfo = [
     label: 'Email',
     icon: faEnvelope,
   },
-  {
-    link: `${process.env.PUBLIC_URL}/kevin-mao.pdf`,
-    label: 'Resume',
-    icon: faFileText,
-  },
+  // {
+  //   link: `${process.env.PUBLIC_URL}/kevin-mao.pdf`,
+  //   label: 'Resume',
+  //   icon: faFileText,
+  // },
 ];
 
 export default contactInfo;
