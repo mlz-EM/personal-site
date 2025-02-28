@@ -1,0 +1,100 @@
+#landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  @include breakpoint(small) {
+    height: auto
+  }
+
+  .center {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin-right: -4px;
+    text-align: center;
+  }
+
+  h1 {
+    max-height: 50%;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .invisible {
+    visibility: hidden;
+  }
+
+  .fadeIn {
+    animation: fade-in 2s;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 100;
+    }
+  }
+}
+
+#blurb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: left;
+
+  @include breakpoint(small) {
+    text-align: center;
+  }
+
+  .center {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin-right: -4px;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+
+    @include breakpoint(small) {
+      display: inline;
+    }
+  }
+
+  h1 {
+    max-height: 50%;
+  }
+
+  .logo {
+    border-bottom: 0;
+    margin: 0 0 (_size(element-margin) * 0.5) 0;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 20em;
+      border-radius: 50%;
+      display: block;
+      margin: 1em;
+
+      @include breakpoint(small) {
+        display: inline;
+        width: 15em;
+      }
+    }
+  }
+}
