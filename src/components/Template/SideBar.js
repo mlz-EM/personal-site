@@ -28,7 +28,8 @@ const SideBar = () => (
       </p>
       <ul className="actions">
         <li>
-          <a href={`${process.env.PUBLIC_URL}/kevin-mao.pdf`} target="_blank" rel="noreferrer" className="button"> View Resume </a>
+          {/* <a href={`${process.env.PUBLIC_URL}/kevin-mao.pdf`} target="_blank" rel="noreferrer" className="button"> View Resume </a> */}
+
         </li>
       </ul>
     </section>
