@@ -8,38 +8,27 @@ const Blurb = () => (
   <>
     <section id="blurb">
       <div className="container">
-        <div className="row" style={{ maxWidth: '50em' }}>
+        <div className="row" style={{ maxWidth: '40em' }}>
           <div className="col-md-8 center">
             <Link to="/home" className="logo">
-              <img src={`${process.env.PUBLIC_URL}/images/me.jpg`} alt="" />
+              <img src={`${process.env.PUBLIC_URL}/images/me.jpg`} alt="" style={{ width: '200px', height: '200px' }} />
             </Link>
           </div>
 
           <div className="col-md-4" style={{ padding: '1em' }}>
-            <header>
-              <p>
-                <a href="mailto:mlz.eMicroscopy@gmail.com">mlz.eMicroscopy@gmail.com</a>
-              </p>
-            </header>
             <section className="blurb">
+              <p style={{ marginBottom: '1em', marginTop: '1em' }}>
+                I am an electron microscopist motivated by atomic-scale secrets.
+                After earning my Ph.D. from &nbsp;
+                <a href="https://mse.osu.edu/jinwoo-hwang-stem-group" target="_blank" rel="noopener noreferrer">Ohio State University</a>,
+                I now work at &nbsp;
+                <a href="https://lebeau.mit.edu/the-group/Massachusetts" target="_blank" rel="noopener noreferrer">Massachusetts Institute of Technology</a>&nbsp;
+                as a postdoctoral researcher.
+              </p>
+
               <p style={{ marginBottom: '1em' }}>
-                I am a Software Engineer II at Microsoft, a Columbia Engineering graduate,
-                and a Columbia Startup Lab alumnus. At Microsoft, I work on
-                Azure Event Grid, Microsoft&apos;s premier pub/sub messaging service.
+                Learn more about me and my research with the following links and my website!
               </p>
-              <p>
-                I have industry experience in backend and cloud engineering but I love
-                tinkering and building, so I&apos;ve accrued various experiences from
-                fullstack engineering to applied machine learning through various
-                projects and ventures!
-              </p>
-              <ul className="actions">
-                <li>
-                  <Link to="/projects" className="button">
-                    Learn More
-                  </Link>
-                </li>
-              </ul>
             </section>
 
             <section id="footer">

@@ -13,6 +13,9 @@ const Index = lazy(() => import('./pages/Index'));
 const Home = lazy(() => import('./pages/Home'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 const Projects = lazy(() => import('./pages/Projects'));
+const Publications = lazy(() => import('./pages/Publications'));
+const Resources = lazy(() => import('./pages/Resources'));
+const Miscellaneous = lazy(() => import('./pages/Miscellaneous'));
 
 const App = () => (
   <BrowserRouter basename={PUBLIC_URL}>
@@ -22,6 +25,9 @@ const App = () => (
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/publications" element={<Publications />} />
+        <Route path="/resources" element={<Resources />} />
+        <Route path="/miscellaneous" element={<Miscellaneous />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>

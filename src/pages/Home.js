@@ -12,7 +12,7 @@ const Home = () => (
   >
     <section id="landing">
       <div className="center">
-        <h2>Hi there. I&apos;m Menglin Zhu.</h2>
+        <h2>Welcome to Menglin Zhu&apos;s personal website.</h2>
         <Blurb />
       </div>
     </section>

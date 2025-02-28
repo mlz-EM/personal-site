@@ -9,35 +9,17 @@ const SideBar = () => (
   <section id="sidebar">
     <section id="intro">
       <Link to="/home" className="logo">
-        <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" />
+        <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" style={{ width: '200px', height: '200px' }} />
       </Link>
       <header>
         <h2>Menglin Zhu</h2>
-        <p>
-          <a href="mailto:mlz.eMicroscopy@gmail.com">mlz.eMicroscopy@gmail.com</a>
-        </p>
       </header>
-    </section>
-
-    <section className="blurb">
-      <h2>About</h2>
-      <p>
-        I am a Columbia Engineering graduate, Columbia Startup Lab alumnus, and
-        a Software Engineer II at Microsoft, where I work on Azure Event Grid,
-        Microsoft&apos;s premier pub/sub messaging service.
-      </p>
-      {/* <ul className="actions">
-        <li>
-          <a href={`${process.env.PUBLIC_URL}/kevin-mao.pdf`} target="_blank"
-          rel="noreferrer" className="button"> View Resume </a>
-        </li>
-      </ul> */}
     </section>
 
     <section id="footer">
       <ContactIcons />
       <p className="copyright">
-        &copy; Menglin Zhu.
+        &copy; Menglin Zhu@mlz-em.
       </p>
     </section>
   </section>

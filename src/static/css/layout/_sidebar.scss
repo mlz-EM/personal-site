@@ -7,9 +7,10 @@
 /* Sidebar */
 
 #sidebar {
-  margin-right: _size(section-spacing);
-  min-width: 22em;
-  width: 22em;
+  margin-left: _size(section-spacing)*0.1;
+  margin-right: _size(section-spacing)*2;
+  min-width: 15em;
+  width: 15em;
 
   > * {
     border-top: solid 1px _palette(border);
