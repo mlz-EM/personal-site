@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
 
@@ -12,7 +12,7 @@ const Projects = () => (
       <header>
         <div className="title">
           <h2>
-            <Link to="/projects">Projects</Link>
+            Projects
           </h2>
         </div>
       </header>

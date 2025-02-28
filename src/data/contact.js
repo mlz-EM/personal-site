@@ -10,7 +10,7 @@ import { faFilePdf } from '@fortawesome/free-regular-svg-icons/faFilePdf';
 const contactInfo = [
   {
     // link: `${process.env.PUBLIC_URL}/CV.pdf`,
-    link: 'https://mlz-em.github.io/personal-site//CV.pdf',
+    link: 'https://mlz-em.github.io/personal-site/CV.pdf',
     label: 'Full CV',
     icon: faFilePdf,
   },
