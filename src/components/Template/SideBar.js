@@ -9,7 +9,7 @@ const SideBar = () => (
   <section id="sidebar">
     <section id="intro">
       <Link to="/home" className="logo">
-        <img src={`${PUBLIC_URL}/images/favicon/apple-touch-icon.png`} alt="" style={{ width: '200px', height: '200px' }} />
+        <img src={`${PUBLIC_URL}/images/icon.png`} alt="" style={{ width: '200px', height: '200px' }} />
       </Link>
       <header>
         <h2>Menglin Zhu</h2>
