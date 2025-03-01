@@ -15,7 +15,7 @@
 
   > header {
     @include vendor("display", "flex");
-    border-bottom: solid 1px _palette(border);
+    border-bottom: solid 0.5px _palette(border);
     left: (_size(section-spacing) * -1);
     margin: (_size(section-spacing) * -1) 0 _size(section-spacing) 0;
     position: relative;

@@ -4,7 +4,7 @@ import dayjs from 'dayjs';
 
 const Cell = ({ data }) => (
   <div className="cell-container">
-    <article className="mini-post">
+    <article className="post">
       <header>
         <h3>
           <a href={data.link} target="_blank" rel="noopener noreferrer">{data.title}</a>
