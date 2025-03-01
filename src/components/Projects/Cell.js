@@ -4,20 +4,25 @@ import dayjs from 'dayjs';
 
 const Cell = ({ data }) => (
   <div className="cell-container">
-    <article className="post">
+    <article className="mini-post">
       <header>
         <h3>
-          <a href={data.link} target="_blank" rel="noopener noreferrer">{data.title}</a>
+          {data.title}
         </h3>
         <time className="published">
-          {dayjs(data.date).format('MMMM, YYYY')}
+          {dayjs(data.date).format('MMMM DD, YYYY')}
         </time>
       </header>
       <a href={data.link} className="image" target="_blank" rel="noopener noreferrer">
         <img src={`${process.env.PUBLIC_URL}${data.image}`} alt={data.title} />
       </a>
       <div className="description">
-        <p>{data.desc}</p>
+        <p>
+          {data.desc}{' '}
+          <a href={data.link} target="_blank" rel="noopener noreferrer">
+            <strong>(Click to Read More)</strong>
+          </a>
+        </p>
       </div>
     </article>
   </div>
@@ -26,7 +31,7 @@ const Cell = ({ data }) => (
 Cell.propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string.isRequired,
-    link: PropTypes.string,
+    link: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
     desc: PropTypes.string.isRequired,
