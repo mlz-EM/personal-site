@@ -1,26 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 // import { Link } from 'react-router-dom';
+import Markdown from 'markdown-to-jsx';
 
 import Main from '../layouts/Main';
 
-import Cell from '../components/Projects/Cell';
-import data from '../data/projects';
+const Resources = () => {
+  const [markdown, setMarkdown] = useState('');
 
-const Resources = () => (
-  <Main title="Resources" description="Useful Resources.">
-    <article className="post" id="resources">
-      <header>
-        <div className="title">
-          <h2>
-            Resources
-          </h2>
-        </div>
-      </header>
-      {data.map((project) => (
-        <Cell data={project} key={project.title} />
-      ))}
-    </article>
-  </Main>
-);
+  useEffect(() => {
+    import('../data/resources.md').then((res) => {
+      fetch(res.default)
+        .then((r) => r.text())
+        .then(setMarkdown);
+    });
+  });
+
+  // const count = markdown
+  //   .split(/\s+/)
+  //   .map((s) => s.replace(/\W/g, ''))
+  //   .filter((s) => s.length).length;
+
+  return (
+    <Main title="Resources" description="Useful Resources for Micrsocopy Beginners">
+      <article className="post markdown" id="about">
+        <header>
+          <div className="title">
+            <h2>
+              Resources
+            </h2>
+          </div>
+        </header>
+        <Markdown>{markdown}</Markdown>
+      </article>
+    </Main>
+  );
+};
 
 export default Resources;

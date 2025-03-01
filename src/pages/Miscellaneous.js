@@ -1,10 +1,8 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
-
 import Main from '../layouts/Main';
-
-import Cell from '../components/Projects/Cell';
-import data from '../data/projects';
+import MiniCell from '../components/Template/MiniCell';
+import data from '../data/miscellaneous';
 
 const Miscellaneous = () => (
   <Main title="Miscellaneous" description="Learn about Menglin Zhu's Miscellaneous.">
@@ -16,8 +14,11 @@ const Miscellaneous = () => (
           </h2>
         </div>
       </header>
-      {data.map((project) => (
-        <Cell data={project} key={project.title} />
+      {data.map((badge) => (
+        <MiniCell
+          data={badge}
+          key={badge.label}
+        />
       ))}
     </article>
   </Main>

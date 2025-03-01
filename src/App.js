@@ -15,8 +15,7 @@ const NotFound = lazy(() => import('./pages/NotFound'));
 const Projects = lazy(() => import('./pages/Projects'));
 const Publications = lazy(() => import('./pages/Publications'));
 const Resources = lazy(() => import('./pages/Resources'));
-// const Miscellaneous = lazy(() => import('./pages/Miscellaneous'));
-const Miscellaneous = lazy(() => import('./pages/Certifications'));
+const Miscellaneous = lazy(() => import('./pages/Miscellaneous'));
 
 const App = () => (
   <BrowserRouter basename={PUBLIC_URL}>

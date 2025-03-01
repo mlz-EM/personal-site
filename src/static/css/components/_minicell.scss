@@ -6,7 +6,7 @@
 
 /* Badge */
 
-.badge {
+.minicell {
 	@include vendor('display', 'flex');
 	@include vendor('flex-direction', 'row');
 	@include vendor('align-items', 'center');
@@ -21,7 +21,7 @@
 
   .image {
     overflow: hidden;
-    width: 15%;
+    width: 10%;
 
     img {
       @include vendor( 'transition', 'transform #{_duration(transition)} ease-out');
@@ -38,8 +38,8 @@
 	
   header {
     z-index: 2;
-    @include padding(1.25em, 1.25em, (0, 3em, 0, 0));
-    min-height: 4em;
+    @include padding(0em, 1.25em, (0, 3em, 0, 0));
+    height: 4em;
     position: relative;
     @include vendor( 'flex-grow', '1');
 		font-family: "Raleway", Helvetica, sans-serif;
