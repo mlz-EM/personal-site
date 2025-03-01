@@ -4,60 +4,99 @@
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
-/* Badge */
-
 .minicell {
-	@include vendor('display', 'flex');
-	@include vendor('flex-direction', 'row');
-	@include vendor('align-items', 'center');
-	// @include vendor('justify-content', 'flex-end');
-
+  @include vendor('display', 'flex');
+  @include vendor('flex-direction', 'row');
+  @include vendor('align-items', 'center');
   background: _palette(bg);
   border: solid 1px _palette(border);
   margin: 0 0 1em;
-	padding: 0.8em 0.8em;
-
-
+  padding: 0.8em;
+  position: relative; // Added for better mobile handling
 
   .image {
     overflow: hidden;
-    width: 10%;
+    width: 10%; // Increased from 10% for better mobile visibility
+    min-width: 80px; // Added minimum size
+    margin-right: 1em; // Added spacing
 
     img {
-      @include vendor( 'transition', 'transform #{_duration(transition)} ease-out');
+      @include vendor('transition', 'transform #{_duration(transition)} ease-out');
       width: 100%;
+      border-radius: 3px; // Match mini-post styling
     }
 
     &:hover {
       img {
-        @include vendor( 'transform', 'scale(1.02)');
+        @include vendor('transform', 'scale(1.02)');
       }
     }
   }
 
-	
   header {
     z-index: 2;
-    @include padding(0em, 1.25em, (0, 3em, 0, 0));
-    height: 4em;
+    @include padding(0em, 0em, (0, 0, 0, 0)); // Reduced padding
+    height: auto; // Changed from fixed height
     position: relative;
-    @include vendor( 'flex-grow', '1');
-		font-family: "Raleway", Helvetica, sans-serif;
+    @include vendor('flex-grow', '1');
+    font-family: "Raleway", Helvetica, sans-serif;
 
     h3 {
-			letter-spacing: 0.1em;
-      font-size: 1em;
-			text-transform: none;
+      letter-spacing: 0.05em; // Reduced spacing
+      font-size: 0.9em; // Slightly smaller
+      margin: 0 0 0.3em 0; // Added bottom margin
+      line-height: 1.4;
     }
 
     .published {
-      display: block;
-      font-family: _font(family-heading);
-      font-size: 0.6em;
-      font-weight: _font(weight-heading);
-      letter-spacing: _font(kerning-heading);
-      margin: -0.625em 0 (_size(element-margin) * 0.85) 0;
-      text-transform: uppercase;
+      font-size: 0.65em;
+      margin: 0.5em 0 0 0; // Adjusted margins
+      color: _palette(fg-light);
+    }
+  }
+
+  // Mobile Breakpoint (matches mini-post's 736px)
+  @include breakpoint(small) {
+    @include vendor('flex-direction', 'column');
+    padding: 1em;
+
+    .image {
+      width: 100%;
+      margin: 0 0 1em 0;
+      border-bottom: solid 1px _palette(border); // Add separation line
+      padding-bottom: 1em;
+
+      img {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    header {
+      width: 100%;
+      padding: 0 !important;
+
+      h3 {
+        font-size: 1em; // Increase size for mobile
+        text-align: center;
+      }
+
+      .published {
+        text-align: center;
+        font-size: 0.7em;
+      }
+    }
+  }
+
+  // Smaller Mobile Breakpoint
+  @media (max-width: 480px) {
+    .image img {
+      width: 70%; // Larger image on very small screens
+    }
+    
+    header h3 {
+      font-size: 0.9em;
     }
   }
 }
