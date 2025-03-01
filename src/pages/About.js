@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import { Link } from 'react-router-dom';
 import Markdown from 'markdown-to-jsx';
-
 import Main from '../layouts/Main';
 
 const About = () => {
@@ -13,12 +11,7 @@ const About = () => {
         .then((r) => r.text())
         .then(setMarkdown);
     });
-  });
-
-  // const count = markdown
-  //   .split(/\s+/)
-  //   .map((s) => s.replace(/\W/g, ''))
-  //   .filter((s) => s.length).length;
+  }, []); // Added empty dependency array
 
   return (
     <Main title="About" description="Learn about Menglin Zhu">
@@ -30,7 +23,38 @@ const About = () => {
             </h2>
           </div>
         </header>
+        {/* Markdown content for text */}
         <Markdown>{markdown}</Markdown>
+        {/* Directly added images */}
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          margin: '0rem  0rem 0', // Added more top margin (4rem) and bottom margin (3rem)
+          gap: '-1rem', // Added gap between images
+        }}
+        >
+          <img
+            src={`${process.env.PUBLIC_URL}/images/about/4D-STEM.gif`}
+            alt="4D-STEM Technique"
+            style={{
+              width: '37%',
+              height: 'auto',
+              objectFit: 'contain',
+              marginLeft: '3rem', // Additional top margin for first image
+              marginTop: '0.4rem', // Additional top margin for first image
+            }}
+          />
+          <img
+            src={`${process.env.PUBLIC_URL}/images/about/Ptycho.png`}
+            alt="Atomic Resolution Imaging"
+            style={{
+              width: '48%',
+              height: 'auto',
+              objectFit: 'contain',
+              marginRight: '3rem', // Additional bottom margin for second image
+            }}
+          />
+        </div>
       </article>
     </Main>
   );
