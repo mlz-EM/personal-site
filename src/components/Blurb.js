@@ -11,7 +11,7 @@ const Blurb = () => (
         <div className="row" style={{ maxWidth: '40em' }}>
           <div className="col-md-8 center">
             <Link to="/home" className="logo">
-              <img src={`${process.env.PUBLIC_URL}/images/me.jpg`} alt="" style={{ width: '200px', height: '200px' }} />
+              <img src={`${process.env.PUBLIC_URL}/images/favicon/favicon.svg`} alt="" style={{ width: '200px', height: '200px' }} />
             </Link>
           </div>
 

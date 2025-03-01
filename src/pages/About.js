@@ -26,7 +26,7 @@ const About = () => {
         <header>
           <div className="title">
             <h2>
-              About (<a href="https://mlz-em.github.io/personal-site//CV.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', borderBottom: '1px dashed' }}>Download CV</a>)
+              About (<a href="https://mlz-em.github.io/personal-site/CV.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', borderBottom: '1px dashed' }}>Download CV</a>)
             </h2>
           </div>
         </header>

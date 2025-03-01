@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import ContactIconsVertical from '../ContactIconsVertical';
+import ContactIcons from '../ContactIcons';
 
 const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
 
@@ -9,7 +9,7 @@ const SideBar = () => (
   <section id="sidebar">
     <section id="intro">
       <Link to="/home" className="logo">
-        <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" style={{ width: '200px', height: '200px' }} />
+        <img src={`${PUBLIC_URL}/images/favicon/apple-touch-icon.png`} alt="" style={{ width: '200px', height: '200px' }} />
       </Link>
       <header>
         <h2>Menglin Zhu</h2>
@@ -17,7 +17,7 @@ const SideBar = () => (
     </section>
 
     <section id="footer">
-      <ContactIconsVertical />
+      <ContactIcons />
       <p className="copyright">
         &copy; Menglin Zhu@mlz-em.
       </p>

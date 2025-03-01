@@ -5,17 +5,34 @@ const Publications = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
-  const bibbaseUrl = 'https://bibbase.org/show?bib=https%3A%2F%2Fpaperpile.com%2Feb%2FcChVXXjwmu&commas=true&noBootstrap=1';
+  const bibbaseUrl = 'https://bibbase.org/show?bib=https%3A%2F%2Fpaperpile.com%2Feb%2FcChVXXjwmu&commas=true&noBootstrap=1&nocache=1&hidemenu=0&noTitleLinks=true&showSearch=true&folding=1';
 
   return (
     <Main title="Publications" description="Menglin Zhu's publications.">
-      <article className="post" id="publications">
+      <article
+        className="post"
+        id="publications"
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          height: 'calc(100vh - 300px)',
+          overflow: 'hidden',
+        }}
+      >
         <header>
           <div className="title">
-            <h2>Publications</h2>
+            <h2 style={{ marginBottom: '15px' }}>
+              Publications (<a href="https://scholar.google.com/citations?user=tkEx8OQAAAAJ" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', borderBottom: '1px dashed' }}>Google Scholar</a>)
+            </h2>
           </div>
         </header>
-        <div style={{ minHeight: '100vh', position: 'relative' }}>
+
+        <div style={{
+          flex: 1,
+          position: 'relative',
+          marginTop: '-20px',
+        }}
+        >
           {loading && !error && (
             <div className="loading-state">
               <p>Loading publications...</p>
@@ -24,7 +41,7 @@ const Publications = () => {
 
           {error && (
             <div className="error-state">
-              <p>Failed to load publications. </p>
+              <p>Failed to load publications.</p>
               <a href={bibbaseUrl} target="_blank" rel="noreferrer">
                 View publications directly
               </a>
@@ -36,7 +53,7 @@ const Publications = () => {
             src={bibbaseUrl}
             style={{
               width: '100%',
-              height: '100vh',
+              height: '100%',
               border: 'none',
               visibility: loading ? 'hidden' : 'visible',
             }}
