@@ -29,7 +29,7 @@ const About = () => {
         <div style={{
           display: 'flex',
           justifyContent: 'space-between',
-          margin: '0rem  0rem 0', // Added more top margin (4rem) and bottom margin (3rem)
+          margin: '-1rem  0rem 2rem', // Added more top margin (4rem) and bottom margin (3rem)
           gap: '-1rem', // Added gap between images
         }}
         >
