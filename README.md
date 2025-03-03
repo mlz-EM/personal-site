@@ -1,6 +1,6 @@
 # Personal Website
 
-Welcome to my [personal website](https://https://mlz-em.github.io/personal-site)! 
+Welcome to Menglin Zhu's [personal website](https://https://mlz-em.github.io/personal-site)! 
 
 ## 🙌 Acknowledgements
 
