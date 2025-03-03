@@ -5,7 +5,7 @@ const Publications = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
-  const bibbaseUrl = 'https://bibbase.org/show?bib=https%3A%2F%2Fpaperpile.com%2Feb%2FcChVXXjwmu&commas=true&noBootstrap=1&nocache=1&hidemenu=0&noTitleLinks=true&showSearch=true&folding=1';
+  const bibbaseUrl = 'https://bibbase.org/show?bib=https%3A%2F%2Fpaperpile.com%2Feb%2FgRuXqKpYUR%2Fpaperpile.bib&commas=true&noBootstrap=1&nocache=1&hidemenu=0&noTitleLinks=true&showSearch=true&folding=1';
 
   return (
     <Main title="Publications" description="Menglin Zhu's publications.">
