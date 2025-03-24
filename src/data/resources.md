@@ -1,14 +1,14 @@
 <details open>
-  <summary><strong style="font-size:1.1em; padding-left: 20px;">My Visuals – Free to use with attribution.</strong></summary>
+  <summary><strong style="font-size:1.1em; padding-left: 20px;">My Visuals – Free to use with attribution</strong></summary>
   <ul style="font-size:1em; padding-left: 20px;">
   <details>
     <summary style="padding-left: 5px;">&nbsp;&nbsp;Boulder in the River (Relaxor Analogy)</summary>
     <div style="padding-left: 30px; margin-top: 0px; display: flex; gap: 20px; margin-bottom: 20px;">
-      <video width="350" controls autoplay loop muted>
+      <video style="width: 45%; max-width: 350px;" controls autoplay loop muted>
         <source src="images/resources/noBoulder.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <video width="350" controls autoplay loop muted>
+      <video style="width: 45%; max-width: 350px;" controls autoplay loop muted>
         <source src="images/resources/Boulder.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
@@ -16,9 +16,9 @@
   </details>
 
   <details>
-    <summary style="padding-left: 5px;">&nbsp;&nbsp;2D Monte-Carlo Simulation of FE vs. Relaxor P-E Loop considering 1st Neighbor Correlations </summary>
+    <summary style="padding-left: 5px;">&nbsp;&nbsp;2D Monte-Carlo Simulation of FE vs. Relaxor P-E Loop Considering 1st Neighbor Correlations </summary>
     <div style="padding-left: 0px; margin-top: -5px;margin-bottom: 10px;">
-      <img src="images/resources/FEvsRelaxor.gif" width="800">
+      <img src="images/resources/FEvsRelaxor.gif" style="width: 95%; max-width: 780px;">
     </div>
   </details>
 
