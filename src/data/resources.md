@@ -2,7 +2,7 @@
   <summary><strong style="font-size:1.1em; padding-left: 20px;">My Visuals – Free to use with attribution</strong></summary>
   <ul style="font-size:1em; padding-left: 20px;">
   <details>
-    <summary style="padding-left: 5px;">&nbsp;&nbsp;PE and FE Dipoles</summary>
+    <summary style="padding-left: 5px;">&nbsp;&nbsp;Dipoles</summary>
     <div style="padding-left: 30px; margin-top: 0px; display: flex; gap: 20px; margin-bottom: 20px;">
       <video style="width: 45%; max-width: 350px;" controls autoplay loop muted>
         <source src="images/resources/FEDipole.mp4" type="video/mp4">
