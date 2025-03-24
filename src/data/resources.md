@@ -2,6 +2,20 @@
   <summary><strong style="font-size:1.1em; padding-left: 20px;">My Visuals – Free to use with attribution</strong></summary>
   <ul style="font-size:1em; padding-left: 20px;">
   <details>
+    <summary style="padding-left: 5px;">&nbsp;&nbsp;PE and FE Dipoles</summary>
+    <div style="padding-left: 30px; margin-top: 0px; display: flex; gap: 20px; margin-bottom: 20px;">
+      <video style="width: 45%; max-width: 350px;" controls autoplay loop muted>
+        <source src="images/resources/FEDipole.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video style="width: 45%; max-width: 350px;" controls autoplay loop muted>
+        <source src="images/resources/PEDipole.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </details>
+
+  <details>
     <summary style="padding-left: 5px;">&nbsp;&nbsp;Boulder in the River (Relaxor Analogy)</summary>
     <div style="padding-left: 30px; margin-top: 0px; display: flex; gap: 20px; margin-bottom: 20px;">
       <video style="width: 45%; max-width: 350px;" controls autoplay loop muted>
