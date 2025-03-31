@@ -1,11 +1,4 @@
 <details open>
-  <summary><strong style="font-size:1.1em; padding-left: 20px;">Materials for Teaching Demo</strong></summary>
-  <ul style="font-size:1em; padding-left: 40px;">
-    <li><a href="https://hub.2i2c.mybinder.org/user/mlz-em-classdemo-gclp1dua/lab/workspaces/auto-0/tree/diffusionClassDemo.ipynb" target="_blank" rel="noopener noreferrer">Interactive Juypter Notebooks</a></li>
-  </ul>
-</details>
-
-<details open>
   <summary><strong style="font-size:1.1em; padding-left: 20px;">My Visuals – Free to use with attribution</strong></summary>
   <ul style="font-size:1em; padding-left: 20px;">
   <details>
@@ -45,6 +38,19 @@
 
   </ul>
 </details>
+
+
+<details open>
+  <summary><strong style="font-size:1.1em; padding-left: 20px;">Tutorials</strong></summary>
+  <ul style="font-size:1em; padding-left: 40px;">
+    <li><a href="https://www.youtube.com/watch?v=88bMVbx1dzM&ab_channel=Veritasium" target="_blank" rel="noopener noreferrer">Not really tutorial but fun intro video on S/TEM</a></li>
+    <li><a href="https://www.paradim.org/summer_schools_past" target="_blank" rel="noopener noreferrer">PARADIM summer schools for electron microscopy and more</a></li>
+    <li><a href="https://www.youtube.com/@NicholasRudawski" target="_blank" rel="noopener noreferrer">YouTube tutorials for operating TFS microscopes by Nicholas</a></li>
+    <li><a href="https://chiahao-blog.super.site/posts/theory-algorithm-and-code-structure-of-ptychoshelves" target="_blank" rel="noopener noreferrer">Algorithms and code structure of PtychoShelves by Dr. Chia-Hao Li</a></li>
+    <li><a href="    https://anl.app.box.com/s/f7lk410lf62rnia70fztd5l7n567btyv" target="_blank" rel="noopener noreferrer">Lectures from ptychogrpahy weekly study group</a></li>
+  </ul>
+</details>
+
 
 <details open>
   <summary><strong style="font-size:1.1em; padding-left: 20px;">Tutorials</strong></summary>
