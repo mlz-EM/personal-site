@@ -41,9 +41,9 @@
 
 
 <details open>
-  <summary><strong style="font-size:1.1em; padding-left: 20px;">Tutorials</strong></summary>
+  <summary><strong style="font-size:1.1em; padding-left: 20px;">Materials for Teaching Demo</strong></summary>
   <ul style="font-size:1em; padding-left: 40px;">
-    <li><a href="https://www.youtube.com/watch?v=88bMVbx1dzM&ab_channel=Veritasium" target="_blank" rel="noopener noreferrer">Not really tutorial but fun intro video on S/TEM</a></li>
+    <li><a href="https://mybinder.org/v2/gh/mlz-EM/classDemo/e90cecc09985cbc3ec66ff9e7b4691511d9ef74a?urlpath=lab%2Ftree%2FdiffusionClassDemo.ipynb" target="_blank" rel="noopener noreferrer">Interactive Jupyter Notebook</a></li>
     <li><a href="https://www.paradim.org/summer_schools_past" target="_blank" rel="noopener noreferrer">PARADIM summer schools for electron microscopy and more</a></li>
     <li><a href="https://www.youtube.com/@NicholasRudawski" target="_blank" rel="noopener noreferrer">YouTube tutorials for operating TFS microscopes by Nicholas</a></li>
     <li><a href="https://chiahao-blog.super.site/posts/theory-algorithm-and-code-structure-of-ptychoshelves" target="_blank" rel="noopener noreferrer">Algorithms and code structure of PtychoShelves by Dr. Chia-Hao Li</a></li>
