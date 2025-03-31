@@ -1,4 +1,11 @@
 <details open>
+  <summary><strong style="font-size:1.1em; padding-left: 20px;">Materials for Teaching Demo</strong></summary>
+  <ul style="font-size:1em; padding-left: 40px;">
+    <li><a href="https://hub.2i2c.mybinder.org/user/mlz-em-classdemo-gclp1dua/lab/workspaces/auto-0/tree/diffusionClassDemo.ipynb" target="_blank" rel="noopener noreferrer">Interactive Juypter Notebooks</a></li>
+  </ul>
+</details>
+
+<details open>
   <summary><strong style="font-size:1.1em; padding-left: 20px;">My Visuals – Free to use with attribution</strong></summary>
   <ul style="font-size:1em; padding-left: 20px;">
   <details>
