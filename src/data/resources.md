@@ -1,13 +1,4 @@
 <details open>
-  <summary><strong style="font-size:1.1em; padding-left: 20px;">Materials for Teaching Demo</strong></summary>
-  <ul style="font-size:1em; padding-left: 40px;">
-    <li><a href="https://mybinder.org/v2/gh/mlz-EM/classDemo/e90cecc09985cbc3ec66ff9e7b4691511d9ef74a?urlpath=lab%2Ftree%2FdiffusionClassDemo.ipynb" target="_blank" rel="noopener noreferrer">Interactive Jupyter Notebook</a></li>
-    <li><a href="https://mlz-em.github.io/personal-site/Slides.pptx" target="_blank" rel="noopener noreferrer">Slides</a></li>
-    <li><a href="https://mlz-em.github.io/personal-site/Handout.pdf" target="_blank" rel="noopener noreferrer">Handout</a></li>
-  </ul>
-</details>
-
-<details close>
   <summary><strong style="font-size:1.1em; padding-left: 20px;">My Visuals – Free to use with attribution</strong></summary>
   <ul style="font-size:1em; padding-left: 20px;">
   <details>
@@ -49,7 +40,7 @@
 </details>
 
 
-<details close>
+<details open>
   <summary><strong style="font-size:1.1em; padding-left: 20px;">Tutorials</strong></summary>
   <ul style="font-size:1em; padding-left: 40px;">
     <li><a href="https://www.youtube.com/watch?v=88bMVbx1dzM&ab_channel=Veritasium" target="_blank" rel="noopener noreferrer">Not really tutorial but fun intro video on S/TEM</a></li>
@@ -60,7 +51,7 @@
   </ul>
 </details>
 
-<details close>
+<details open>
   <summary><strong style="font-size:1.1em; padding-left: 20px;">Software</strong></summary>
   <ul style="font-size:1em; padding-left: 40px;">
     <li><a href="https://lebeau.mit.edu/software/" target="_blank" rel="noopener noreferrer">EMD file viewer for MacOS</a></li>
@@ -70,7 +61,7 @@
   </ul>
 </details>
 
-<details close>
+<details open>
   <summary><strong style="font-size:1.1em; padding-left: 20px;">Packages</strong></summary>
   <ul style="font-size:1em; padding-left: 40px;">
     <li><a href="https://github.com/yijiang1/fold_slice" target="_blank" rel="noopener noreferrer">Fold_slice for multislice electron ptychography</a></li>
@@ -82,7 +73,7 @@
 </details>
 
 
-<details close>
+<details open>
   <summary><strong style="font-size:1.1em; padding-left: 20px;">Database</strong></summary>
   <ul style="font-size:1em; padding-left: 40px;">
     <li><a href="https://www.crystallography.net/cod/search.html" target="_blank" rel="noopener noreferrer">Crystallography open database</a></li>
@@ -91,3 +82,13 @@
     <li><a href="http://abulafia.mt.ic.ac.uk/shannon/ptable.php" target="_blank" rel="noopener noreferrer">Ionic radii</a></li>
   </ul>
 </details>
+
+
+<!-- <details open>
+  <summary><strong style="font-size:1.1em; padding-left: 20px;">Materials for Teaching Demo</strong></summary>
+  <ul style="font-size:1em; padding-left: 40px;">
+    <li><a href="https://mybinder.org/v2/gh/mlz-EM/classDemo/e90cecc09985cbc3ec66ff9e7b4691511d9ef74a?urlpath=lab%2Ftree%2FdiffusionClassDemo.ipynb" target="_blank" rel="noopener noreferrer">Interactive Jupyter Notebook</a></li>
+    <li><a href="https://mlz-em.github.io/personal-site/Slides.pptx" target="_blank" rel="noopener noreferrer">Slides</a></li>
+    <li><a href="https://mlz-em.github.io/personal-site/Handout.pdf" target="_blank" rel="noopener noreferrer">Handout</a></li>
+  </ul>
+</details> -->
