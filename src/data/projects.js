@@ -1,5 +1,13 @@
 const data = [
   {
+    title: 'Preserving Device Geometry for Operando S/TEM Biasing',
+    image: '/images/projects/inSituPattern.gif',
+    link: 'https://TBD',
+    date: '2025-04-22',
+    desc:
+      'A lithography-based sample preparation strategy enables operando S/TEM biasing of thin-film devices while preserving as-grown architecture. Selective etching exposes the bottom electrode, and an insulating buffer barrier maintains electrical isolation. This approach retains original geometry, interfacial chemistry, and epitaxial strain states without relying on conductive substrates or artificially thick electrodes. Focused ion beam milling targets the buffer layer, minimizing damage and preserving device-relevant structure. The resulting configuration supports out-of-plane biasing under realistic conditions, allowing direct correlation between atomic-scale dynamics and bulk functionality.',
+  },
+  {
     title: 'Polar Slush of Relaxor Ferroelectrics in 3D',
     image: '/images/projects/PMN.png',
     link: 'https://arxiv.org/abs/2408.11685',
