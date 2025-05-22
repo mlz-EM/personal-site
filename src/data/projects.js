@@ -33,7 +33,7 @@ const data = [
   {
     title: 'Emergent Interfacial Magnetic States',
     image: '/images/projects/LFO.png',
-    link: 'https://arxiv.org/pdf/2405.12950',
+    link: 'https://advanced.onlinelibrary.wiley.com/doi/10.1002/admi.202500169',
     date: '2024-5-21',
     desc:
       'Atomic resolution imaging combined with monochromated EELS reveals interfacial-mediated ferromagnetism driven by spin disproportionation in LaFeO₃/SrTiO₃. Epitaxial strain induces a checkerboard arrangement of low- and high-spin Fe<sup>3+</sup> ions at the interface, leading to ferromagnetism via superexchange interactions, offering insights for designing spintronic materials.',

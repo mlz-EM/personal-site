@@ -1,5 +1,5 @@
-<details open>
-  <summary><strong style="font-size:1.1em; padding-left: 20px;">My Visuals – Free to use with attribution</strong></summary>
+<details close>
+  <summary><strong style="font-size:1.1em; padding-left: 20px;">My Visuals – Feel free to use with attribution</strong></summary>
   <ul style="font-size:1em; padding-left: 20px;">
   <details>
     <summary style="padding-left: 5px;">&nbsp;&nbsp;Dipoles</summary>
@@ -39,8 +39,7 @@
   </ul>
 </details>
 
-
-<details open>
+<details close>
   <summary><strong style="font-size:1.1em; padding-left: 20px;">Tutorials</strong></summary>
   <ul style="font-size:1em; padding-left: 40px;">
     <li><a href="https://www.youtube.com/watch?v=88bMVbx1dzM&ab_channel=Veritasium" target="_blank" rel="noopener noreferrer">Not really tutorial but fun intro video on S/TEM</a></li>
@@ -52,6 +51,20 @@
 </details>
 
 <details open>
+  <summary><strong style="font-size:1.1em; padding-left: 20px;">Packages</strong></summary>
+  <ul style="font-size:1em; padding-left: 40px;">
+    <li><a href="https://github.com/hexane360/phaser" target="_blank" rel="noopener noreferrer">phaser for MEP</a></li>
+    <li><a href="https://github.com/chiahao3/ptyrad" target="_blank" rel="noopener noreferrer">PtyRAD for MEP</a></li>
+    <li><a href="https://github.com/yijiang1/fold_slice" target="_blank" rel="noopener noreferrer">Fold_slice for MEP</a></li>
+    <li><a href="https://hyperspy.org/" target="_blank" rel="noopener noreferrer">Hyperspy</a></li>
+    <li><a href="https://atomap.org/start_atomap.html" target="_blank" rel="noopener noreferrer">Atomap</a></li>
+    <li><a href="https://abtem.readthedocs.io/en/latest/intro.html" target="_blank" rel="noopener noreferrer">AbTEM</a></li>
+    <li><a href="https://github.com/py4dstem/py4DSTEM" target="_blank" rel="noopener noreferrer">Py4DSTEM</a></li>
+  </ul>
+</details>
+
+
+<details open>
   <summary><strong style="font-size:1.1em; padding-left: 20px;">Software</strong></summary>
   <ul style="font-size:1em; padding-left: 40px;">
     <li><a href="https://lebeau.mit.edu/software/" target="_blank" rel="noopener noreferrer">EMD file viewer for MacOS</a></li>
@@ -61,19 +74,9 @@
   </ul>
 </details>
 
-<details open>
-  <summary><strong style="font-size:1.1em; padding-left: 20px;">Packages</strong></summary>
-  <ul style="font-size:1em; padding-left: 40px;">
-    <li><a href="https://github.com/yijiang1/fold_slice" target="_blank" rel="noopener noreferrer">Fold_slice for multislice electron ptychography</a></li>
-    <li><a href="https://hyperspy.org/" target="_blank" rel="noopener noreferrer">Hyperspy</a></li>
-    <li><a href="https://atomap.org/start_atomap.html" target="_blank" rel="noopener noreferrer">Atomap for gaussian peak fitting</a></li>
-    <li><a href="https://abtem.readthedocs.io/en/latest/intro.html" target="_blank" rel="noopener noreferrer">AbTEM</a></li>
-    <li><a href="https://github.com/py4dstem/py4DSTEM" target="_blank" rel="noopener noreferrer">Py4DSTEM</a></li>
-  </ul>
-</details>
 
 
-<details open>
+<details close>
   <summary><strong style="font-size:1.1em; padding-left: 20px;">Database</strong></summary>
   <ul style="font-size:1em; padding-left: 40px;">
     <li><a href="https://www.crystallography.net/cod/search.html" target="_blank" rel="noopener noreferrer">Crystallography open database</a></li>
