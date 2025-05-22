@@ -27,7 +27,7 @@
     "better-react-mathjax": "^2.3.0",
     "dayjs": "^1.11.13",
     "katex": "^0.16.22",
-    "markdown-to-jsx": "^7.7.1",
+    "markdown-to-jsx": "^7.7.6",
     "mathjax": "^3.2.2",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
