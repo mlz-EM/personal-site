@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Main from './layouts/Main'; // fallback for lazy pages
 import './static/css/main.scss'; // All of our styles
+import 'katex/dist/katex.min.css';
 
 const { PUBLIC_URL } = process.env;
 
@@ -16,6 +17,7 @@ const Projects = lazy(() => import('./pages/Projects'));
 const Publications = lazy(() => import('./pages/Publications'));
 const Resources = lazy(() => import('./pages/Resources'));
 const Miscellaneous = lazy(() => import('./pages/Miscellaneous'));
+const ArXiv = lazy(() => import('./pages/ArXiv'));
 
 const App = () => (
   <BrowserRouter basename={PUBLIC_URL}>
@@ -28,6 +30,7 @@ const App = () => (
         <Route path="/publications" element={<Publications />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/miscellaneous" element={<Miscellaneous />} />
+        <Route path="/arxiv" element={<ArXiv />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>

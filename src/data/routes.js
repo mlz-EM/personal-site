@@ -21,6 +21,10 @@ const routes = [
     path: '/resources',
   },
   {
+    label: 'arXiv.Daily',
+    path: '/arxiv',
+  },
+  {
     label: 'Misc.',
     path: '/miscellaneous',
   },
