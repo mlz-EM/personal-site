@@ -18,6 +18,7 @@ const Publications = lazy(() => import('./pages/Publications'));
 const Resources = lazy(() => import('./pages/Resources'));
 const Miscellaneous = lazy(() => import('./pages/Miscellaneous'));
 const ArXiv = lazy(() => import('./pages/ArXiv'));
+const Job = lazy(() => import('./pages/Job'));
 
 const App = () => (
   <BrowserRouter basename={PUBLIC_URL}>
@@ -31,6 +32,7 @@ const App = () => (
         <Route path="/resources" element={<Resources />} />
         <Route path="/miscellaneous" element={<Miscellaneous />} />
         <Route path="/arxiv" element={<ArXiv />} />
+        <Route path="/job" element={<Job />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>

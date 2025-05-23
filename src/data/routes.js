@@ -25,6 +25,10 @@ const routes = [
     path: '/arxiv',
   },
   {
+    label: 'TT Jobs',
+    path: '/job',
+  },
+  {
     label: 'Misc.',
     path: '/miscellaneous',
   },
