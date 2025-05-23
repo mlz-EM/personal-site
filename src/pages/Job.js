@@ -22,7 +22,7 @@ const Job = () => {
         <header>
           <div className="title">
             <h2>
-              arXiv Daily Feed
+              TTAP Daily Feed
             </h2>
           </div>
         </header>
