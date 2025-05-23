@@ -22,7 +22,7 @@ const ArXiv = () => {
         <header>
           <div className="title">
             <h2>
-              arXiv Daily Feed (<a href="https://github.com/dong-zehao/ArxivSummaryDaily" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', borderBottom: '1px dashed' }}>Forked From</a>)
+              arXiv Daily Feed
             </h2>
           </div>
         </header>
