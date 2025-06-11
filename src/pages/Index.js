@@ -31,7 +31,7 @@ const Index = () => {
     >
       <section id="landing">
         <div className="center">
-          <Typewriter text="Welcome to Menglin Zhu&apos;s personal website." delay={25} onTypingDone={() => { setTypingDone(true); setVisible('fadeIn'); }} />
+          <Typewriter text="Welcome to Menglin Zhu&apos;s personal website." delay={0} onTypingDone={() => { setTypingDone(true); setVisible('fadeIn'); }} />
           <div className={visible}>
             <Blurb />
           </div>
