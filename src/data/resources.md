@@ -46,7 +46,7 @@
     <li><a href="https://www.paradim.org/summer_schools_past" target="_blank" rel="noopener noreferrer">PARADIM summer schools for electron microscopy and more</a></li>
     <li><a href="https://www.youtube.com/@NicholasRudawski" target="_blank" rel="noopener noreferrer">YouTube tutorials for operating TFS microscopes by Nicholas</a></li>
     <li><a href="https://chiahao-blog.super.site/posts/theory-algorithm-and-code-structure-of-ptychoshelves" target="_blank" rel="noopener noreferrer">Algorithms and code structure of PtychoShelves by Dr. Chia-Hao Li</a></li>
-    <li><a href="https://anl.app.box.com/s/f7lk410lf62rnia70fztd5l7n567btyv" target="_blank" rel="noopener noreferrer">Lectures from ptychogrpahy weekly study group</a></li>
+    <li><a href="https://anl.app.box.com/s/3tatbnr1skvdvp4j0mwirg5k7yfteu6f" target="_blank" rel="noopener noreferrer">Lectures from ptychogrpahy weekly study group</a></li>
   </ul>
 </details>
 
@@ -60,6 +60,7 @@
     <li><a href="https://atomap.org/start_atomap.html" target="_blank" rel="noopener noreferrer">Atomap</a></li>
     <li><a href="https://abtem.readthedocs.io/en/latest/intro.html" target="_blank" rel="noopener noreferrer">AbTEM</a></li>
     <li><a href="https://github.com/py4dstem/py4DSTEM" target="_blank" rel="noopener noreferrer">Py4DSTEM</a></li>
+    <li><a href="https://emportal.swd.thermofisher.com/product-detail/Velox-Lite" target="_blank" rel="noopener noreferrer">Velox Lite</a></li>
   </ul>
 </details>
 
