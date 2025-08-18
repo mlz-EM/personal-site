@@ -21,7 +21,7 @@ const Resources = () => {
   //   .filter((s) => s.length).length;
 
   return (
-    <Main title="Resources" description="Useful Resources for Micrsocopy Beginners">
+    <Main title="Resources" description="Useful Resources">
       <article className="post markdown" id="about">
         <header>
           <div className="title">

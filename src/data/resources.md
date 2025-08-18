@@ -60,7 +60,6 @@
     <li><a href="https://atomap.org/start_atomap.html" target="_blank" rel="noopener noreferrer">Atomap</a></li>
     <li><a href="https://abtem.readthedocs.io/en/latest/intro.html" target="_blank" rel="noopener noreferrer">AbTEM</a></li>
     <li><a href="https://github.com/py4dstem/py4DSTEM" target="_blank" rel="noopener noreferrer">Py4DSTEM</a></li>
-    <li><a href="https://emportal.swd.thermofisher.com/product-detail/Velox-Lite" target="_blank" rel="noopener noreferrer">Velox Lite</a></li>
   </ul>
 </details>
 
@@ -72,6 +71,7 @@
     <li><a href="https://apps.apple.com/us/app/4d-stem-explorer/id1332413091?mt=12" target="_blank" rel="noopener noreferrer">EMPAD (.raw) file viewer for MacOS</a></li>
     <li><a href="https://imagej.net/software/fiji/" target="_blank" rel="noopener noreferrer">Fiji image viewer</a></li>
     <li><a href="https://tomviz.org" target="_blank" rel="noopener noreferrer">Tomviz 3D viewer</a></li>
+    <li><a href="https://emportal.swd.thermofisher.com/product-detail/Velox-Lite" target="_blank" rel="noopener noreferrer">Velox Lite</a></li>
   </ul>
 </details>
 
