@@ -1,5 +1,5 @@
 const data = [
-    {
+  {
     label: 'ArXiv: Operando S/TEM Biasing on Non-Conductive Substrates',
     link: 'https://arxiv.org/abs/2508.12503',
     image: '/images/misc/arxiv.jpg',
