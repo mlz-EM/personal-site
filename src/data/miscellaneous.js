@@ -1,4 +1,12 @@
 const data = [
+    {
+    label: 'ArXiv: Operando S/TEM Biasing on Non-Conductive Substrates',
+    link: 'https://arxiv.org/abs/2508.12503',
+    image: '/images/misc/arxiv.jpg',
+    date: '2025-08-17',
+    desc:
+    '',
+  },
   {
     label: 'Paper Published: Interfacial FM Induced by Spin State Transition',
     link: 'https://advanced.onlinelibrary.wiley.com/doi/10.1002/admi.202500169',
