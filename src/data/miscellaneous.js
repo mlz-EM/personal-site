@@ -1,5 +1,5 @@
 const data = [
-    {
+  {
     label: 'Paper Published: Phaser (one of the best ptychography software)',
     link: 'https://www.nature.com/articles/s41524-026-01956-8',
     image: '/images/misc/npj_comp.svg',
