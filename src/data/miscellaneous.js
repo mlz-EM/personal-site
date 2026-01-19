@@ -1,9 +1,17 @@
 const data = [
   {
-    label: 'Paper Published: Phaser (one of the best ptychography software)',
+    label: 'Paper Published: Phaser (one of the best ptychography softwares)',
     link: 'https://www.nature.com/articles/s41524-026-01956-8',
     image: '/images/misc/npj.png',
     date: '2026-01-18',
+    desc:
+    '',
+  },
+  {
+    label: 'ArXiv: Field-Driven Phase Transformation in PbZrO3 at Atomic Scale',
+    link: 'https://arxiv.org/abs/2509.07194',
+    image: '/images/misc/arxiv.jpg',
+    date: '2025-09-08',
     desc:
     '',
   },
