@@ -11,7 +11,7 @@ const data = [
     label: 'ArXiv: Field-Driven Phase Transformation in PbZrO3 at Atomic Scale',
     link: 'https://arxiv.org/abs/2509.07194',
     image: '/images/misc/arxiv.jpg',
-    date: '2025-09-08',
+    date: '2025-008',
     desc:
     '',
   },

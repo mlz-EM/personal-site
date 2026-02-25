@@ -1,6 +1,17 @@
 <details close>
   <summary><strong style="font-size:1.1em; padding-left: 20px;">My Visuals – Feel free to use with attribution</strong></summary>
   <ul style="font-size:1em; padding-left: 20px;">
+
+  <details>
+    <summary style="padding-left: 5px;">&nbsp;&nbsp;STEM Schematic </summary>
+    <div style="padding-left: 0px; margin-top: -5px;margin-bottom: 10px;">
+      <img src="images/about/4D-STEM.gif" style="width: 20%; max-width: 170px;">
+      <img src="images/resources/ADF+DPC.png" style="width: 20%; max-width: 170px;">
+      <img src="images/resources/ADF.png" style="width: 20%; max-width: 170px;">
+      <img src="images/resources/DPC.png" style="width: 20%; max-width: 170px;">
+    </div>
+  </details>
+
   <details>
     <summary style="padding-left: 5px;">&nbsp;&nbsp;Dipoles</summary>
     <div style="padding-left: 30px; margin-top: 0px; display: flex; gap: 20px; margin-bottom: 20px;">
@@ -50,7 +61,7 @@
   </ul>
 </details>
 
-<details open>
+<details close>
   <summary><strong style="font-size:1.1em; padding-left: 20px;">Packages</strong></summary>
   <ul style="font-size:1em; padding-left: 40px;">
     <li><a href="https://github.com/hexane360/phaser" target="_blank" rel="noopener noreferrer">phaser for MEP</a></li>
@@ -64,7 +75,7 @@
 </details>
 
 
-<details open>
+<details close>
   <summary><strong style="font-size:1.1em; padding-left: 20px;">Software</strong></summary>
   <ul style="font-size:1em; padding-left: 40px;">
     <li><a href="https://lebeau.mit.edu/software/" target="_blank" rel="noopener noreferrer">EMD file viewer for MacOS</a></li>

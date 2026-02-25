@@ -1,5 +1,21 @@
 const data = [
   {
+    title: 'Dynamic Antiferroelectric Transformations',
+    image: '/images/projects/PMW_Dynamics.png',
+    link: 'TBD',
+    date: '2026-02-25',
+    desc:
+      'Combing in situ TEM diffraction and MEP, we reveals a fluctuation-dominated transformation pathway in PMW. While ¼ 110 superlattice reflections confirm antiparallel dipole ordering at low temperature, room-temperature diffraction shows unexpected ½ 110 diffuse scattering and emergent ½ 100 reflections. Temperature-dependent analysis and Monte Carlo modeling indicate competing interactions and rapid polar domain switching near the critical point, producing dynamic disorder before a sharp transition into the AFE phase.',
+  },
+  {
+    title: 'Field-Driven Multistep AFE–FE Transition in PZO',
+    image: '/images/projects/PZO_Atomic.png',
+    link: 'https://arxiv.org/abs/2509.07194',
+    date: '2025-09-08',
+    desc:
+      'Operando STEM under device-relevant conditions leverages strain and clamping-induced heterogeneity to spatially resolve the ultrafast time-evolving AFE–FE transition in PZO. The observed atomic motifs align with NEB predictions, revealing a multi-step pathway: the AFE ground state transforms into a transient monoclinic FE phase, stabilizes as rhombohedral FE, and develops tetragonal distortions at higher fields. The phase energy hierarchy is confirmed, and the mechanism is traced to coupled phonon-mode modulation.',
+  },
+  {
     title: 'Preserving Device Geometry for Operando S/TEM Biasing',
     image: '/images/projects/inSituPattern.gif',
     link: 'https://arxiv.org/abs/2508.12503',
@@ -17,7 +33,7 @@ const data = [
   },
   {
     title: 'Operando Obervation of AFE-to-FE Transtion',
-    image: '/images/projects/PZO.gif',
+    image: '/images/projects/PZO_Clamp.gif',
     link: 'https://www.nature.com/articles/s41563-024-01907-y',
     date: '2024-05-23',
     desc: 'Operando electron microscopy reveals the field-induced antiferroelectric-to-ferroelectric phase transition in thin-film PbZrO₃, marked by oxygen octahedra detilting and lattice-volume expansion. This transition, influenced by substrate constraints, results in enhanced electromechanical strain (1.7%) in 100 nm thick films. The atomic-scale pathway, including an intermediate transient phase, is also revealed. First-principles calculations support the mechanism, offering insights into thickness scaling for high-performance micro-/nano-electromechanical systems.',
