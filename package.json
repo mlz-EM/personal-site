@@ -16,7 +16,9 @@
     "lint": "eslint \"**/*.js\"",
     "predeploy": "npm run build && react-snap",
     "start": "react-scripts start",
-    "test": "npx jest"
+    "test": "npx jest",
+    "validate:content": "node scripts/validate-content.js",
+    "ci:check": "npm run lint && npm run test -- --runInBand && npm run validate:content && npm run build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",

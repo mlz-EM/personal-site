@@ -1,35 +1,27 @@
-import React, { useState, useEffect } from 'react';
-// import { Link } from 'react-router-dom';
+import React from 'react';
 import Markdown from 'markdown-to-jsx';
-
 import Main from '../layouts/Main';
+import useMarkdown from '../hooks/useMarkdown';
+import PageHeader from '../components/Template/PageHeader';
+import PageTools from '../components/Template/PageTools';
+
+const importResourcesMarkdown = () => import('../data/resources.md');
+const RESOURCES_TOOLS = [
+  { label: 'Top', href: '#resources' },
+  { label: 'About', to: '/about' },
+  { label: 'Jobs', to: '/job' },
+];
 
 const Resources = () => {
-  const [markdown, setMarkdown] = useState('');
-
-  useEffect(() => {
-    import('../data/resources.md').then((res) => {
-      fetch(res.default)
-        .then((r) => r.text())
-        .then(setMarkdown);
-    });
-  });
-
-  // const count = markdown
-  //   .split(/\s+/)
-  //   .map((s) => s.replace(/\W/g, ''))
-  //   .filter((s) => s.length).length;
+  const { markdown, loading, error } = useMarkdown(importResourcesMarkdown);
 
   return (
     <Main title="Resources" description="Useful Resources">
-      <article className="post markdown" id="about">
-        <header>
-          <div className="title">
-            <h2>
-              Resources
-            </h2>
-          </div>
-        </header>
+      <article className="post markdown" id="resources">
+        <PageHeader title="Resources" />
+        <PageTools items={RESOURCES_TOOLS} ariaLabel="Resources page tools" />
+        {loading && <p>Loading resources...</p>}
+        {error && <p>Unable to load resources right now.</p>}
         <Markdown>{markdown}</Markdown>
       </article>
     </Main>

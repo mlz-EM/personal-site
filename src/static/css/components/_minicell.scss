@@ -10,20 +10,29 @@
   @include vendor('align-items', 'center');
   background: _palette(bg);
   border: solid 1px _palette(border);
-  margin: 0 0 1em;
-  padding: 0.8em;
+  margin: 0 0 var(--space-3);
+  padding: 0.2rem var(--space-2);
+  min-height: 4.9rem;
   position: relative; // Added for better mobile handling
 
   .image {
     overflow: hidden;
-    width: 10%; // Increased from 10% for better mobile visibility
-    min-width: 80px; // Added minimum size
-    margin-right: 1em; // Added spacing
+    width: 4.5rem;
+    min-width: 4.5rem;
+    height: 4.5rem;
+    flex: 0 0 4.5rem;
+    margin-right: var(--space-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.65);
 
     img {
       @include vendor('transition', 'transform #{_duration(transition)} ease-out');
       width: 100%;
-      border-radius: 3px; // Match mini-post styling
+      height: 100%;
+      border-radius: var(--radius-sm);
+      object-fit: contain;
     }
 
     &:hover {
@@ -36,38 +45,52 @@
   header {
     z-index: 2;
     @include padding(0em, 0em, (0, 0, 0, 0)); // Reduced padding
-    height: auto; // Changed from fixed height
+    min-height: 4.1rem;
     position: relative;
     @include vendor('flex-grow', '1');
+    @include vendor('display', 'flex');
+    @include vendor('flex-direction', 'column');
+    @include vendor('justify-content', 'center');
+    overflow: hidden;
     font-family: "Raleway", Helvetica, sans-serif;
 
     h3 {
       letter-spacing: 0.05em; // Reduced spacing
       font-size: 0.9em; // Slightly smaller
-      margin: 0 0 0.3em 0; // Added bottom margin
+      margin: 0 0 0.12rem 0;
       line-height: 1.4;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
     }
 
     .published {
       font-size: 0.65em;
-      margin: 0.5em 0 0 0; // Adjusted margins
-      color: _palette(fg-light);
+      margin: 0;
+      color: var(--meta-text-color);
     }
   }
 
   // Mobile Breakpoint (matches mini-post's 736px)
   @include breakpoint(small) {
     @include vendor('flex-direction', 'column');
-    padding: 1em;
+    padding: var(--space-3);
+    min-height: 0;
 
     .image {
       width: 60%;
-      margin: 0 0 1em 0;
+      min-width: 0;
+      height: auto;
+      flex: none;
+      margin: 0 0 var(--space-3) 0;
       border-bottom: solid 1px _palette(border); // Add separation line
-      padding-bottom: 1em;
+      padding-bottom: var(--space-3);
+      background: transparent;
 
       img {
         width: 50%;
+        height: auto;
         display: block;
         margin: 0 auto;
       }
@@ -76,10 +99,15 @@
     header {
       width: 100%;
       padding: 0 !important;
+      min-height: 0;
+      display: block;
+      overflow: visible;
 
       h3 {
         font-size: 1em; // Increase size for mobile
         text-align: center;
+        display: block;
+        overflow: visible;
       }
 
       .published {
@@ -100,4 +128,3 @@
     }
   }
 }
-

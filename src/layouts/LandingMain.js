@@ -7,7 +7,12 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Navigation from '../components/Template/Navigation';
 import ScrollToTop from '../components/Template/ScrollToTop';
 
-const LandingMain = (props) => (
+const LandingMain = ({
+  children = null,
+  title = null,
+  description = "Menglin Zhu's personal website.",
+  typingDone = false,
+}) => (
   <HelmetProvider>
     {/* <Analytics /> */}
     <ScrollToTop />
@@ -16,10 +21,10 @@ const LandingMain = (props) => (
       defaultTitle="Menglin Zhu"
       defer={false}
     >
-      {props.title && <title>{props.title}</title>}
-      <meta name="description" content={props.description} />
+      {title && <title>{title}</title>}
+      <meta name="description" content={description} />
     </Helmet>
-    {(props.typingDone) && <Navigation />}{props.children}
+    {typingDone && <Navigation />}{children}
   </HelmetProvider>
 );
 

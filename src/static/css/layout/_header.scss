@@ -7,7 +7,7 @@
 /* Header */
 
 body {
-  padding-top: 3.5em;
+  padding-top: calc(var(--top-nav-height) + var(--top-nav-gap));
 }
 
 #header {
@@ -15,9 +15,9 @@ body {
   @include vendor("justify-content", "space-between");
   background-color: _palette(bg);
   border-bottom: solid 1px _palette(border);
-  height: 3.5em;
+  height: var(--top-nav-height);
   left: 0;
-  line-height: 3.5em;
+  line-height: var(--top-nav-height);
   position: fixed;
   top: 0;
   width: 100%;
@@ -46,7 +46,27 @@ body {
     white-space: nowrap;
 
     a {
-      font-size: 0.7em;
+      font-size: var(--font-size-nav);
+      border-bottom: 0;
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0 0.55rem;
+      transition: color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+
+      &:hover {
+        color: _palette(fg-bold) !important;
+        box-shadow: inset 0 -2px 0 var(--nav-underline-color);
+      }
+
+      &:active {
+        transform: translateY(1px);
+      }
+
+      &:focus-visible {
+        outline: var(--focus-ring-width) solid var(--focus-ring-color);
+        outline-offset: var(--focus-ring-offset);
+      }
     }
   }
 
@@ -75,10 +95,36 @@ body {
         a {
           border-bottom: 0;
           font-family: _font(family-heading);
-          font-size: 0.7em;
+          font-size: var(--font-size-nav);
           font-weight: _font(weight-heading);
           letter-spacing: _font(kerning-heading);
           text-transform: uppercase;
+          display: inline-flex;
+          align-items: center;
+          min-height: 44px;
+          padding: 0 0.55rem;
+          transition: color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+
+          &:hover {
+            color: _palette(fg-bold) !important;
+            box-shadow: inset 0 -2px 0 var(--nav-underline-color);
+          }
+
+          &:active {
+            transform: translateY(1px);
+          }
+
+          &:focus-visible {
+            outline: var(--focus-ring-width) solid var(--focus-ring-color);
+            outline-offset: var(--focus-ring-offset);
+          }
+
+          &[aria-current="page"] {
+            color: _palette(fg-bold);
+            background-color: transparent;
+            box-shadow: inset 0 -3px 0 var(--nav-underline-color);
+            font-weight: _font(weight-heading-bold);
+          }
         }
       }
     }
@@ -145,8 +191,8 @@ body {
   }
 
   @include breakpoint(small) {
-    height: 2.75em;
-    line-height: 2.75em;
+    height: var(--top-nav-height-small);
+    line-height: var(--top-nav-height-small);
 
     h1 {
       padding: 0 0 0 1em;
@@ -202,6 +248,43 @@ body {
   cursor: pointer;
 }
 
+#header .main .menu-button {
+  border: 0;
+  background: transparent;
+  font-size: 1.02rem;
+  font-family: inherit;
+  font-weight: inherit;
+  letter-spacing: normal;
+  text-transform: none;
+  line-height: 1;
+  padding: 0;
+  color: inherit;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  box-shadow: none;
+  transition: color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+#header .main .menu-button:hover {
+  color: _palette(fg-bold);
+  box-shadow: inset 0 -2px 0 var(--nav-underline-color);
+}
+
+#header .main .menu-button:active {
+  transform: scale(0.96);
+}
+
+#header .main .menu-button:focus-visible {
+  outline: var(--focus-ring-width) solid var(--focus-ring-color);
+  outline-offset: 1px;
+}
+
 #header .main .close-menu {
   border: 0;
   z-index: 10000;
@@ -212,16 +295,24 @@ body {
 }
 
 .open-menu {
-  position: fixed;
-  right: 0;
+  position: static;
+  right: auto;
   border: none;
 }
 
 .close-menu {
-  position: fixed;
-  right: 0;
+  position: static;
+  right: auto;
   z-index: 3;
   border-left: 0;
+}
+
+#header .main ul li.menu {
+  border-left: 0;
+  height: auto;
+  line-height: 1;
+  display: flex;
+  align-items: center;
 }
 
 .hamburger-container {
@@ -231,5 +322,23 @@ body {
 @include breakpoint(medium) {
   .hamburger-container {
     display: initial;
+  }
+}
+
+@include breakpoint(small) {
+  body {
+    padding-top: calc(var(--top-nav-height-small) + var(--top-nav-gap));
+  }
+
+  #header {
+    height: var(--top-nav-height-small);
+    line-height: var(--top-nav-height-small);
+  }
+
+  #header .main .menu-button {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
   }
 }

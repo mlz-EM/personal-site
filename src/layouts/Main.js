@@ -7,8 +7,14 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Navigation from '../components/Template/Navigation';
 import SideBar from '../components/Template/SideBar';
 import ScrollToTop from '../components/Template/ScrollToTop';
+import BackToTopButton from '../components/Template/BackToTopButton';
 
-const Main = (props) => (
+const Main = ({
+  children = null,
+  fullPage = false,
+  title = null,
+  description = "Menglin Zhu's personal website.",
+}) => (
   <HelmetProvider>
     {/* <Analytics /> */}
     <ScrollToTop />
@@ -17,14 +23,15 @@ const Main = (props) => (
       defaultTitle="Menglin Zhu"
       defer={false}
     >
-      {props.title && <title>{props.title}</title>}
-      <meta name="description" content={props.description} />
+      {title && <title>{title}</title>}
+      <meta name="description" content={description} />
     </Helmet>
     <div id="wrapper">
       <Navigation />
-      <div id="main">{props.children}</div>
-      {props.fullPage ? null : <SideBar />}
+      <main id="main">{children}</main>
+      {fullPage ? null : <SideBar />}
     </div>
+    <BackToTopButton />
   </HelmetProvider>
 );
 

@@ -1,0 +1,68 @@
+const publications = [
+  {
+    title: 'Operando S/TEM Biasing on Non-Conductive Substrates',
+    authors: ['Menglin Zhu', 'et al.'],
+    venue: 'Microscopy and Microanalysis',
+    year: 2025,
+    url: 'https://doi.org/10.1093/mam/ozag007',
+    tags: ['Operando STEM', 'Thin Films'],
+  },
+  {
+    title: 'Field-Driven Multistep AFE-FE Transition in PZO',
+    authors: ['Menglin Zhu', 'et al.'],
+    venue: 'arXiv',
+    year: 2025,
+    url: 'https://arxiv.org/abs/2509.07194',
+    tags: ['Antiferroelectric', 'In Situ'],
+  },
+  {
+    title: '3D View of APBs and Spatially Correlated AFE Nanodomains',
+    authors: ['Menglin Zhu', 'et al.'],
+    venue: 'ACS Nano',
+    year: 2025,
+    url: 'https://pubs.acs.org/doi/abs/10.1021/acsnano.4c14833',
+    tags: ['Ptychography', '3D Imaging'],
+  },
+  {
+    title: 'Emergent Interfacial Magnetic States',
+    authors: ['Menglin Zhu', 'et al.'],
+    venue: 'Advanced Materials Interfaces',
+    year: 2025,
+    url: 'https://advanced.onlinelibrary.wiley.com/doi/10.1002/admi.202500169',
+    tags: ['Interface', 'Magnetism'],
+  },
+  {
+    title: 'Operando Observation of AFE-to-FE Transition',
+    authors: ['Menglin Zhu', 'et al.'],
+    venue: 'Nature Materials',
+    year: 2024,
+    url: 'https://www.nature.com/articles/s41563-024-01907-y',
+    tags: ['Antiferroelectric', 'Operando'],
+  },
+  {
+    title: 'Polar Slush of Relaxor Ferroelectrics in 3D',
+    authors: ['Menglin Zhu', 'et al.'],
+    venue: 'arXiv',
+    year: 2024,
+    url: 'https://arxiv.org/abs/2408.11685',
+    tags: ['Relaxor', 'Ptychography'],
+  },
+  {
+    title: 'Machine Learning Assisted Phase Mapping from 4D-STEM',
+    authors: ['Menglin Zhu', 'et al.'],
+    venue: 'Scientific Reports',
+    year: 2024,
+    url: 'https://www.nature.com/articles/s41598-024-54661-1',
+    tags: ['4D-STEM', 'Machine Learning'],
+  },
+  {
+    title: 'Atomic Scale Debye Waller Thermometry',
+    authors: ['Menglin Zhu', 'et al.'],
+    venue: 'Ultramicroscopy',
+    year: 2022,
+    url: 'https://www.sciencedirect.com/science/article/abs/pii/S0304399121001972',
+    tags: ['Thermometry', '4D-STEM'],
+  },
+];
+
+export default publications;

@@ -73,6 +73,7 @@
 
 @import "pages/notFound";
 @import "pages/landing";
+@import "pages/academic";
 
 // MapMyVisitors widget sizing to match the sidebar logo width.
 .mapmyvisitors-widget {
@@ -105,7 +106,7 @@
 }
 
 // Match job spacing in arXiv list (markdown uses horizontal rules).
-#about.markdown hr {
+#arxiv.markdown hr {
   margin: (_size(element-margin) * 0.5) 0;
 }
 

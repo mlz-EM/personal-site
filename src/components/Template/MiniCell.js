@@ -5,21 +5,30 @@ import dayjs from 'dayjs';
 const MiniCell = ({ data }) => (
   <div className="cell-container">
     <div className="minicell">
-      <a href={data.link} className="image">
-        <img src={`${process.env.PUBLIC_URL}${data.image}`} alt={data.label} />
-      </a>
+      {data.link ? (
+        <a href={data.link} className="image" target="_blank" rel="noopener noreferrer">
+          <img
+            src={`${process.env.PUBLIC_URL}${data.image}`}
+            alt={data.label}
+            loading="lazy"
+            decoding="async"
+          />
+        </a>
+      ) : (
+        <div className="image">
+          <img
+            src={`${process.env.PUBLIC_URL}${data.image}`}
+            alt={data.label}
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      )}
       <header>
-        <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <a href={data.link}>{data.label}</a>
-          <span style={{
-            fontSize: '1rem',
-            fontWeight: 400,
-            fontFamily: 'inherit',
-            opacity: 0.8,
-          }}
-          >
-            {data.desc}
-          </span>
+        <h3 className="minicell-title">
+          {data.link ? (
+            <a href={data.link} target="_blank" rel="noopener noreferrer">{data.label}</a>
+          ) : data.label}
         </h3>
         <time className="published">Published: {dayjs(data.date).format('MMMM DD, YYYY')}</time>
       </header>
@@ -30,10 +39,9 @@ const MiniCell = ({ data }) => (
 MiniCell.propTypes = {
   data: PropTypes.shape({
     label: PropTypes.string.isRequired,
-    link: PropTypes.string.isRequired,
+    link: PropTypes.string,
     image: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
-    desc: PropTypes.string.isRequired,
   }).isRequired,
 };
 

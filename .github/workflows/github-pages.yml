@@ -39,6 +39,8 @@ jobs:
           cache: "npm"
       - name: Install
         run: npm ci
+      - name: Validate content
+        run: npm run validate:content
       - name: Build and Render
         shell: bash
         run: |

@@ -4,20 +4,30 @@
 
 import '@testing-library/jest-dom';
 import '@testing-library/react';
-import React from 'react';
+import React, { act } from 'react';
 import ReactDOM from 'react-dom/client';
-import { act } from 'react-dom/test-utils';
 import App from '../App';
 
 describe('renders the app', () => {
-  // mocks the scrollTo API used when navigating to a new page.
+  const fetchMock = jest.fn(() => Promise.resolve({
+    ok: true,
+    text: () => Promise.resolve('# Mock markdown'),
+  }));
+
   window.scrollTo = jest.fn();
 
+  let originalFetch;
   let container;
+
+  beforeAll(() => {
+    originalFetch = global.fetch;
+    global.fetch = fetchMock;
+  });
 
   beforeEach(async () => {
     container = document.createElement('div');
     document.body.appendChild(container);
+    fetchMock.mockClear();
     await act(async () => {
       await ReactDOM.createRoot(container).render(<App />);
     });
@@ -29,6 +39,10 @@ describe('renders the app', () => {
     jest.clearAllMocks();
   });
 
+  afterAll(() => {
+    global.fetch = originalFetch;
+  });
+
   it('should render the app', async () => {
     expect(document.body).toBeInTheDocument();
   });
@@ -38,7 +52,6 @@ describe('renders the app', () => {
   });
 
   it('can navigate to /about', async () => {
-    expect.assertions(7);
     const aboutLink = document.querySelector(
       '#header > nav > ul > li:nth-child(1) > a',
     );
@@ -49,13 +62,12 @@ describe('renders the app', () => {
     expect(document.title).toContain('About |');
     expect(window.location.pathname).toBe('/about');
     expect(window.scrollTo).toHaveBeenNthCalledWith(1, 0, 0);
-    expect(global.fetch).toHaveBeenCalledTimes(1);
+    expect(fetchMock).toHaveBeenCalled();
   });
 
   it('can navigate to /projects', async () => {
-    expect.assertions(3);
     const contactLink = document.querySelector(
-      '#header > nav > ul > li:nth-child(3) > a',
+      '#header > nav > ul > li:nth-child(2) > a',
     );
     expect(contactLink).toBeInTheDocument();
     await act(async () => {

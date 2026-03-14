@@ -1,58 +1,63 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Markdown from 'markdown-to-jsx';
 import Main from '../layouts/Main';
+import useMarkdown from '../hooks/useMarkdown';
+import PageHeader from '../components/Template/PageHeader';
+import PageTools from '../components/Template/PageTools';
+
+const importAboutMarkdown = () => import('../data/about.md');
+const ABOUT_TOOLS = [
+  { label: 'Top', href: '#about' },
+  { label: 'Download CV', href: 'https://mlz-em.github.io/personal-site/CV.pdf', external: true },
+  { label: 'Publications', to: '/publications' },
+];
 
 const About = () => {
-  const [markdown, setMarkdown] = useState('');
-
-  useEffect(() => {
-    import('../data/about.md').then((res) => {
-      fetch(res.default)
-        .then((r) => r.text())
-        .then(setMarkdown);
-    });
-  }, []); // Added empty dependency array
+  const { markdown, loading, error } = useMarkdown(importAboutMarkdown);
 
   return (
     <Main title="About" description="Learn about Menglin Zhu">
       <article className="post markdown" id="about">
-        <header>
-          <div className="title">
-            <h2>
-              About (<a href="https://mlz-em.github.io/personal-site/CV.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', borderBottom: '1px dashed' }}>Download CV</a>)
-            </h2>
-          </div>
-        </header>
-        {/* Markdown content for text */}
+        <PageHeader
+          title={(
+            <>
+              About (
+              <a
+                href="https://mlz-em.github.io/personal-site/CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-link"
+              >
+                Download CV
+              </a>
+              )
+            </>
+          )}
+        />
+        <PageTools items={ABOUT_TOOLS} ariaLabel="About page tools" />
+
+        {loading && <p>Loading profile...</p>}
+        {error && (
+          <p>
+            Unable to load profile content. Please refresh this page.
+          </p>
+        )}
         <Markdown>{markdown}</Markdown>
-        {/* Directly added images */}
-        <div style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          margin: '-1rem  0rem 2rem', // Added more top margin (4rem) and bottom margin (3rem)
-          gap: '-1rem', // Added gap between images
-        }}
-        >
+
+        <div className="about-figure-grid">
           <img
             src={`${process.env.PUBLIC_URL}/images/about/4D-STEM.gif`}
             alt="4D-STEM Technique"
-            style={{
-              width: '37%',
-              height: 'auto',
-              objectFit: 'contain',
-              marginLeft: '3rem', // Additional top margin for first image
-              marginTop: '0.4rem', // Additional top margin for first image
-            }}
+            className="about-figure about-figure--left"
+            loading="lazy"
+            decoding="async"
           />
           <img
             src={`${process.env.PUBLIC_URL}/images/about/Ptycho.png`}
             alt="Atomic Resolution Imaging"
-            style={{
-              width: '48%',
-              height: 'auto',
-              objectFit: 'contain',
-              marginRight: '3rem', // Additional bottom margin for second image
-            }}
+            className="about-figure about-figure--right"
+            loading="lazy"
+            decoding="async"
           />
         </div>
       </article>

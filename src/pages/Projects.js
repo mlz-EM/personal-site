@@ -1,50 +1,28 @@
-// import React from 'react';
-// import dayjs from 'dayjs';
-
-// import Main from '../layouts/Main';
-// import Cell from '../components/Projects/Cell';
-// import data from '../data/projects';
-
-// const Projects = () => (
-//   <Main title="Projects" description="Learn about Menglin Zhu's projects.">
-//     <article className="post" id="projects">
-//       <header>
-//         <div className="title">
-//           <h2>Projects</h2>
-//         </div>
-//       </header>
-//       {/* Sort projects by date (newest first) */}
-//       {[...data]
-//         .sort((a, b) => dayjs(b.date).diff(dayjs(a.date)))
-//         .map((project) => (
-//           <Cell data={project} key={project.title} />
-//         ))}
-//     </article>
-//   </Main>
-// );
-
-// export default Projects;
-
 import React from 'react';
-// import { Link } from 'react-router-dom';
-
 import Main from '../layouts/Main';
+import AdaptiveCard from '../components/Template/AdaptiveCard';
+import PageHeader from '../components/Template/PageHeader';
+import PageTools from '../components/Template/PageTools';
+import { getProjects } from '../content/api';
 
-import Cell from '../components/Projects/Cell';
-import data from '../data/projects';
+const ENABLE_PER_CARD_EXPAND = true;
+const PROJECT_TOOLS = [
+  { label: 'Top', href: '#projects' },
+  { label: 'Publications', to: '/publications' },
+  { label: 'Misc', to: '/miscellaneous' },
+];
 
 const Projects = () => (
   <Main title="Projects" description="Learn about Menglin Zhu's projects.">
     <article className="post" id="projects">
-      <header>
-        <div className="title">
-          <h2>
-            Projects
-          </h2>
-        </div>
-      </header>
-      {data.map((project) => (
-        <Cell data={project} key={project.title} />
+      <PageHeader title="Projects" />
+      <PageTools items={PROJECT_TOOLS} ariaLabel="Projects page tools" />
+      {getProjects().map((project) => (
+        <AdaptiveCard
+          data={project}
+          key={project.title}
+          enableExpand={ENABLE_PER_CARD_EXPAND}
+        />
       ))}
     </article>
   </Main>

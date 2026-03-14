@@ -15,26 +15,43 @@
 .hamburger-ul {
   display: block;
 
-  li a h3 {
-    border: 0;
+  .hamburger-link {
+    border-bottom: 0;
     border-top: dotted 1px rgba(160, 160, 160, 0.3);
     margin: 1.5em 0 0 0;
     padding: 1.5em 0 0 0;
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: _font(kerning-heading);
+    transition: color 0.15s ease, background-color 0.15s ease, transform 0.15s ease;
   }
 
-  li a h3:hover {
+  .hamburger-link:hover {
+    color: _palette(accent);
+    background-color: transparentize(_palette(accent), 0.94);
+  }
+
+  .hamburger-link:active {
+    transform: translateY(1px);
+  }
+
+  .hamburger-link:focus-visible {
+    outline: 2px solid _palette(accent);
+    outline-offset: 2px;
+  }
+
+  .hamburger-link.index-li {
+    border-top: none;
+  }
+
+  .hamburger-link[aria-current="page"] {
     color: _palette(accent);
   }
 
   li {
     display: block !important;
-  }
-
-  h3 {
-    font-size: 0.7em;
-  }
-
-  .index-li {
-    border-top: none;
   }
 }

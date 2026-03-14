@@ -51,6 +51,14 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
       - run: npm ci
+      - name: Lint
+        run: npm run lint
+      - name: Test
+        run: npm run test -- --runInBand
+        env:
+          NODE_ENV: test
+      - name: Validate content schema
+        run: npm run validate:content
       - name: Build and Statically Render
         shell: bash
         run: |
