@@ -1,0 +1,144 @@
+#landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  @include breakpoint(small) {
+    height: auto
+  }
+
+  .center {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin-right: -4px;
+    text-align: center;
+  }
+
+  h1 {
+    max-height: 50%;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .invisible {
+    visibility: hidden;
+  }
+
+  .fadeIn {
+    animation: fade-in 2s;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 100;
+    }
+  }
+}
+
+.featured-section {
+  margin: 0.2rem 0 1.25rem;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid transparentize(_palette(border-alt), 0.4);
+  border-radius: var(--radius-sm);
+  background: transparentize(_palette(fg-bold), 0.98);
+  width: 100%;
+}
+
+.featured-title {
+  margin: 0 0 0.45rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--meta-text-color);
+}
+
+.featured-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.featured-item {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.featured-date {
+  display: inline-block;
+  margin-right: 0.8rem;
+  color: var(--meta-text-color);
+  font-weight: _font(weight-bold);
+}
+
+#blurb #footer .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0.15rem 0 0.15rem 0;
+}
+
+#blurb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: left;
+
+  @include breakpoint(small) {
+    text-align: center;
+  }
+
+  .center {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin-right: -4px;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+
+    @include breakpoint(small) {
+      display: inline;
+    }
+  }
+
+  h1 {
+    max-height: 50%;
+  }
+
+  .logo {
+    border-bottom: 0;
+    margin: 0 0 (_size(element-margin) * 0.5) 0;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 20em;
+      border-radius: 50%;
+      display: block;
+      margin: 1em;
+
+      @include breakpoint(small) {
+        display: inline;
+        width: 15em;
+      }
+    }
+  }
+}

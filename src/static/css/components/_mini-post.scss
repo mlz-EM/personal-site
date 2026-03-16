@@ -1,0 +1,109 @@
+/* Mini Post */
+.cell-container {
+  position: relative;
+
+  .description {
+    padding: 0;
+    border-top: solid 0px _palette(border);
+    border-left: solid 0px _palette(border); // Add left border for separation
+    width: 45%; // Set width for side-by-side layout
+    
+    p {
+      font-size: 0.8rem;
+      margin: 0;
+      padding: var(--space-4);
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #3c3b3b;
+      font-family: "Raleway", Helvetica, sans-serif;
+      transition: all 0.1s;
+      -webkit-transition: all 0.1s ease-in-out;
+    }
+
+    p:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+  }
+
+  @media (max-width: 450px) {
+    .description {
+      width: 100%;
+      border-left: none;
+    }
+  }
+}
+
+.mini-post {
+  @include vendor("display", "flex");
+  @include vendor("flex-wrap", "wrap"); // Enable wrapping
+  background: _palette(bg);
+  border: solid 1px _palette(border);
+  margin: 0 0 var(--space-3);
+
+  .image {
+    overflow: hidden;
+    width: 55%; // Set image width
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: solid 0px _palette(border); // Add separation line
+
+    img {
+      @include vendor("transition", "transform #{_duration(transition)} ease-out");
+      width: 95%; // Fill container width
+      padding: var(--space-3);
+      max-width: 500px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    &:hover {
+      img {
+        @include vendor("transform", "scale(1.05)");
+      }
+    }
+  }
+
+  header {
+    width: 100%; // Full width header
+    z-index: 2;
+    @include padding(1em, 1.5em, (0, 0, 0, 0));
+    min-height: 2.1em;
+    position: relative;
+    @include vendor("flex-grow", "1");
+
+    h3 {
+      font-size: 0.8em;
+      margin: 0 0 0.2rem 0;
+      line-height: 1.25;
+    }
+
+    .published {
+      display: block;
+      font-family: _font(family-heading);
+      font-size: 0.6em;
+      font-weight: _font(weight-heading);
+      letter-spacing: _font(kerning-heading);
+      margin: 0;
+      color: var(--meta-text-color);
+      text-transform: uppercase;
+    }
+  }
+
+  @media (max-width: 736px) {
+    .image {
+      width: 100%;
+      border-right: none;
+      border-bottom: solid 1px _palette(border);
+      
+      img {
+        width: 80%;
+        padding: var(--space-3) 0;
+      }
+    }
+    
+    .description {
+      width: 100%;
+      border-left: none;
+    }
+  }
+}

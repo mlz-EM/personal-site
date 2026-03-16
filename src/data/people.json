@@ -1,0 +1,33 @@
+{
+  "page": {
+    "title": "TBD",
+    "subtitle": "TBD",
+    "lastUpdated": "TBD"
+  },
+  "people": [
+    {
+      "currentPosition": "TBD",
+      "id": "TBD",
+      "name": "TBD",
+      "role": "TBD",
+      "status": "TBD",
+      "pronouns": "TBD",
+      "photo": "TBD",
+      "email": "TBD",
+      "website": "TBD",
+      "orcid": "TBD",
+      "googleScholar": "TBD",
+      "github": "TBD",
+      "linkedin": "TBD",
+      "researchInterests": ["TBD"],
+      "bio": "TBD",
+      "startDate": "TBD",
+      "endDate": "TBD",
+      "coadvisor": "TBD",
+      "isRecruiting": "TBD",
+      "displayOrder": "TBD",
+      "showOnPage": "TBD",
+      "thesis": "TBD"
+    }
+  ]
+}

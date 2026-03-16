@@ -1,0 +1,244 @@
+{
+  "sections": [
+    {
+      "title": "Tutorials",
+      "items": [
+        {
+          "label": "Not really tutorial but fun intro video on S/TEM",
+          "url": "https://www.youtube.com/watch?v=88bMVbx1dzM&ab_channel=Veritasium"
+        },
+        {
+          "label": "PARADIM summer schools for electron microscopy and more",
+          "url": "https://www.paradim.org/summer_schools_past"
+        },
+        {
+          "label": "YouTube tutorials for operating TFS microscopes by Nicholas",
+          "url": "https://www.youtube.com/@NicholasRudawski"
+        },
+        {
+          "label": "Algorithms and code structure of PtychoShelves by Dr. Chia-Hao Li",
+          "url": "https://chiahao-blog.super.site/posts/theory-algorithm-and-code-structure-of-ptychoshelves"
+        },
+        {
+          "label": "Lectures from ptychogrpahy weekly study group",
+          "url": "https://anl.app.box.com/s/3tatbnr1skvdvp4j0mwirg5k7yfteu6f"
+        }
+      ]
+    },
+    {
+      "title": "Packages",
+      "items": [
+        {
+          "label": "phaser for MEP",
+          "url": "https://github.com/hexane360/phaser"
+        },
+        {
+          "label": "PtyRAD for MEP",
+          "url": "https://github.com/chiahao3/ptyrad"
+        },
+        {
+          "label": "Fold_slice for MEP",
+          "url": "https://github.com/yijiang1/fold_slice"
+        },
+        {
+          "label": "Hyperspy",
+          "url": "https://hyperspy.org/"
+        },
+        {
+          "label": "Atomap",
+          "url": "https://atomap.org/start_atomap.html"
+        },
+        {
+          "label": "AbTEM",
+          "url": "https://abtem.readthedocs.io/en/latest/intro.html"
+        },
+        {
+          "label": "Py4DSTEM",
+          "url": "https://github.com/py4dstem/py4DSTEM"
+        }
+      ]
+    },
+    {
+      "title": "Software",
+      "items": [
+        {
+          "label": "EMD file viewer for MacOS",
+          "url": "https://lebeau.mit.edu/software/"
+        },
+        {
+          "label": "EMPAD (.raw) file viewer for MacOS",
+          "url": "https://apps.apple.com/us/app/4d-stem-explorer/id1332413091?mt=12"
+        },
+        {
+          "label": "Fiji image viewer",
+          "url": "https://imagej.net/software/fiji/"
+        },
+        {
+          "label": "Tomviz 3D viewer",
+          "url": "https://tomviz.org"
+        },
+        {
+          "label": "Velox Lite",
+          "url": "https://emportal.swd.thermofisher.com/product-detail/Velox-Lite"
+        }
+      ]
+    },
+    {
+      "title": "Database",
+      "items": [
+        {
+          "label": "Crystallography open database",
+          "url": "https://www.crystallography.net/cod/search.html"
+        },
+        {
+          "label": "Materials database",
+          "url": "https://next-gen.materialsproject.org/"
+        },
+        {
+          "label": "EELS database",
+          "url": "https://eelsdb.eu"
+        },
+        {
+          "label": "Ionic radii",
+          "url": "http://abulafia.mt.ic.ac.uk/shannon/ptable.php"
+        },
+        {
+          "label": "Pseudopotentials",
+          "children": [
+            {
+              "label": "Quantum ESPRESSO",
+              "url": "https://www.quantum-espresso.org/pseudopotentials/"
+            },
+            {
+              "label": "Quantum Simulation",
+              "url": "http://www.quantum-simulation.org/potentials/"
+            },
+            {
+              "label": "PseudoDojo",
+              "url": "https://www.pseudo-dojo.org/"
+            }
+          ]
+        },
+        {
+          "label": "Universal Potentials",
+          "children": [
+            {
+              "label": "CHGNet",
+              "url": "https://github.com/CederGroupHub/chgnet"
+            },
+            {
+              "label": "MACE",
+              "url": "https://github.com/ACEsuit/mace"
+            },
+            {
+              "label": "NequIP",
+              "url": "https://github.com/mir-group/nequip"
+            },
+            {
+              "label": "Allegro",
+              "url": "https://github.com/mir-group/allegro"
+            }
+          ]
+        },
+        {
+          "label": "Integrated DFT Database",
+          "children": [
+            {
+              "label": "JARVIS_QE_TB (ColabFit)",
+              "url": "https://colabfit.org/id/DS_e471qdt7c6db_0"
+            },
+            {
+              "label": "Alexandria",
+              "url": "https://alexandria.icams.rub.de/"
+            },
+            {
+              "label": "Materials Project Trajectory (MPtrj) Dataset",
+              "url": "https://figshare.com/articles/dataset/Materials_Project_Trjectory_MPtrj_Dataset/23713842"
+            },
+            {
+              "label": "Materials Project Data Products",
+              "url": "https://docs.materialsproject.org/materials-project-data-lakehouse/supported-data-products"
+            },
+            {
+              "label": "NOMAD Repository",
+              "url": "https://nomad-lab.eu/"
+            },
+            {
+              "label": "OQMD",
+              "url": "https://www.oqmd.org/"
+            },
+            {
+              "label": "AFLOW",
+              "url": "https://aflowlib.org/"
+            },
+            {
+              "label": "Materials Cloud Discover",
+              "url": "https://www.materialscloud.org/discover"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "visuals": {
+    "title": "My Visuals - Feel free to use with attribution",
+    "items": [
+      {
+        "title": "STEM Schematic",
+        "type": "imageRow",
+        "media": [
+          {
+            "src": "images/about/4D-STEM.gif",
+            "alt": "4D STEM schematic"
+          },
+          {
+            "src": "images/resources/ADF+DPC.png",
+            "alt": "ADF plus DPC schematic"
+          },
+          {
+            "src": "images/resources/ADF.png",
+            "alt": "ADF schematic"
+          },
+          {
+            "src": "images/resources/DPC.png",
+            "alt": "DPC schematic"
+          }
+        ]
+      },
+      {
+        "title": "Dipoles",
+        "type": "videoRow",
+        "media": [
+          {
+            "src": "images/resources/FEDipole.mp4"
+          },
+          {
+            "src": "images/resources/PEDipole.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Boulder in the River (Relaxor Analogy)",
+        "type": "videoRow",
+        "media": [
+          {
+            "src": "images/resources/noBoulder.mp4"
+          },
+          {
+            "src": "images/resources/Boulder.mp4"
+          }
+        ]
+      },
+      {
+        "title": "2D Monte-Carlo Simulation of FE vs. Relaxor P-E Loop Considering 1st Neighbor Correlations",
+        "type": "imageWide",
+        "media": [
+          {
+            "src": "images/resources/FEvsRelaxor.gif",
+            "alt": "FE versus relaxor simulation"
+          }
+        ]
+      }
+    ]
+  }
+}

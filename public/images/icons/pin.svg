@@ -1,0 +1,14 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pin icon">
+  <defs>
+    <clipPath id="pinHeadClip">
+      <circle cx="254" cy="159" r="144" />
+    </clipPath>
+  </defs>
+  <circle cx="254" cy="159" r="144" fill="#FF3B3B" />
+  <g clip-path="url(#pinHeadClip)">
+    <ellipse cx="318" cy="170" rx="72" ry="136" fill="#CC3047" />
+  </g>
+  <rect x="218" y="302" width="72" height="174" fill="#879EA9" />
+  <rect x="218" y="302" width="72" height="22" fill="#76909B" />
+  <path d="M218 476 L290 476 L254 510 Z" fill="#879EA9" />
+</svg>
