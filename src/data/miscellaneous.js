@@ -3,6 +3,16 @@
 // - set `pinned: true` to pin item to top + home featured section
 const data = [
   {
+    label: 'MSA Albert Crewe Award 🎉 🙏',
+    link: 'https://microscopy.org/msa-society-awards-recipients#albert:~:text=2026-,Menglin%20Zhu,-401%20Edgewater%20Place',
+    image: '/images/misc/MSA.png',
+    date: '2026-03-24',
+    expandable: false,
+    pinned: true,
+    desc:
+    '',
+  },
+  {
     label: 'Paper Published: Operando Biasing on Non-Conductive Substrates',
     link: 'https://academic.oup.com/mam/article/32/2/ozag007/8504233',
     image: '/images/misc/mm.svg',

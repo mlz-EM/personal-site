@@ -12,6 +12,7 @@ import Resources from './pages/Resources';
 import Miscellaneous from './pages/Miscellaneous';
 import ArXiv from './pages/ArXiv';
 import Job from './pages/Job';
+import People from './pages/People';
 
 const { PUBLIC_URL } = process.env;
 
@@ -26,6 +27,7 @@ const App = () => (
       <Route path="/about" element={<About />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/publications" element={<Publications />} />
+      <Route path="/people" element={<People />} />
       <Route path="/resources" element={<Resources />} />
       <Route path="/miscellaneous" element={<Miscellaneous />} />
       <Route path="/arxiv" element={<ArXiv />} />
