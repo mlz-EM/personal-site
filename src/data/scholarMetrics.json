@@ -9,7 +9,7 @@
   "i10IndexAll": 29,
   "i10IndexSince2019": 29,
   "status": "stale",
-  "lastAttemptAt": "2026-04-20T08:30:59Z",
+  "lastAttemptAt": "2026-04-27T08:43:11Z",
   "lastSuccessAt": "2026-04-03T02:16:56Z",
-  "lastError": "direct: Could not parse metrics table from Google Scholar response.; fallback: Could not parse metrics from fallback response."
+  "lastError": "direct: HTTP Error 403: Forbidden; fallback: Could not parse metrics from fallback response."
 }
