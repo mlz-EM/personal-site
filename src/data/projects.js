@@ -35,7 +35,7 @@ const data = [
   {
     title: 'Polar Slush of Relaxor Ferroelectrics in 3D',
     image: '/images/projects/PMN.png',
-    link: 'https://arxiv.org/abs/2408.11685',
+    link: 'https://www.science.org/doi/10.1126/science.ads6023',
     date: '2024-08-21',
     expandable: true,
     pinned: true,

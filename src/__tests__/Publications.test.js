@@ -46,7 +46,6 @@ describe('Publications page metrics', () => {
     render(<Publications />);
 
     expect(screen.getByText(/GS Stat\./)).toBeInTheDocument();
-    expect(screen.getByText(/Papers: 74/)).toBeInTheDocument();
     expect(screen.getByText(/Citations: 1,465/)).toBeInTheDocument();
     expect(screen.getByText(/h-index: 16/)).toBeInTheDocument();
     expect(screen.getByText(/updated 03\/2023/)).toBeInTheDocument();
@@ -64,7 +63,6 @@ describe('Publications page metrics', () => {
     render(<Publications />);
 
     expect(screen.getByText(/GS Stat\./)).toBeInTheDocument();
-    expect(screen.getByText(/Papers: --/)).toBeInTheDocument();
     expect(screen.getByText(/Citations: --/)).toBeInTheDocument();
     expect(screen.getByText(/h-index: --/)).toBeInTheDocument();
     expect(screen.getByText(/updating daily/)).toBeInTheDocument();

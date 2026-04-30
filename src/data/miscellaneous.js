@@ -3,6 +3,26 @@
 // - set `pinned: true` to pin item to top + home featured section
 const data = [
   {
+    label: 'Paper Published: Relaxor Seen in 3D by MEP',
+    link: 'https://www.science.org/doi/10.1126/science.ads6023',
+    image: '/images/misc/science.png',
+    date: '2026-04-29',
+    expandable: false,
+    pinned: true,
+    desc:
+    '',
+  },
+  {
+    label: 'MIT Press on Our Relaxor Paper',
+    link: 'https://news.mit.edu/2026/hidden-structure-behind-widely-used-class-materials-0430',
+    image: '/images/misc/MIT.svg',
+    date: '2026-04-29',
+    expandable: false,
+    pinned: true,
+    desc:
+    '',
+  },
+  {
     label: 'MSA Albert Crewe Award 🎉 🙏',
     link: 'https://microscopy.org/msa-society-awards-recipients#albert:~:text=2026-,Menglin%20Zhu,-401%20Edgewater%20Place',
     image: '/images/misc/MSA.png',

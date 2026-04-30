@@ -18,12 +18,10 @@ const Publications = () => {
 
   const hasCoreMetrics = Number.isInteger(scholarMetrics.citationsAll)
     && Number.isInteger(scholarMetrics.hIndexAll);
-  const hasPapers = Number.isInteger(scholarMetrics.papersAll);
   const updatedLabel = formatMonthYear(scholarMetrics.updatedAt);
   const isStale = scholarMetrics.status === 'stale';
 
   const gsDetails = [
-    hasPapers ? `Papers: ${scholarMetrics.papersAll.toLocaleString('en-US')}` : 'Papers: --',
     hasCoreMetrics ? `Citations: ${scholarMetrics.citationsAll.toLocaleString('en-US')}` : 'Citations: --',
     hasCoreMetrics ? `h-index: ${scholarMetrics.hIndexAll}` : 'h-index: --',
     hasCoreMetrics ? `${isStale ? 'stale' : 'updated'} ${updatedLabel}` : 'updating daily',
