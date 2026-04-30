@@ -38,7 +38,7 @@ const data = [
     link: 'https://www.science.org/doi/10.1126/science.ads6023',
     date: '2024-08-21',
     expandable: true,
-    pinned: true,
+    pinned: false,
     desc:
       'Disruption of long-range order through heterogeneity can drastically alter material behavior, as seen in lead-based relaxor ferroelectrics. Decades of research have linked local chemical and structural inhomogeneities to unique macroscopic properties like high electromechanical coupling and broad dielectric response. While it is generally accepted that these inhomogeneities promote the relaxor response, various interpretations have emerged, ranging from the early model of polar nanoregions to the more recent polar nanodomain slush model. Here, we directly oberve the ploar slush in 3D using mutlislice electron ptychograpy.',
   },
