@@ -18,7 +18,7 @@ const data = [
     image: '/images/misc/MIT.svg',
     date: '2026-04-29',
     expandable: false,
-    pinned: true,
+    pinned: false,
     desc:
     '',
   },
