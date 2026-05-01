@@ -13,6 +13,16 @@ const data = [
     '',
   },
   {
+    label: 'DMSE News on Our Relaxor Paper',
+    link: 'https://dmse.mit.edu/news/the-hidden-structure-behind-a-widely-used-class-of-materials/',
+    image: '/images/misc/DMSE.png',
+    date: '2026-04-29',
+    expandable: false,
+    pinned: false,
+    desc:
+    '',
+  },
+  {
     label: 'MIT Press on Our Relaxor Paper',
     link: 'https://news.mit.edu/2026/hidden-structure-behind-widely-used-class-materials-0430',
     image: '/images/misc/MIT.svg',
