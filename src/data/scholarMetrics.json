@@ -9,7 +9,7 @@
   "i10IndexAll": 29,
   "i10IndexSince2019": 29,
   "status": "stale",
-  "lastAttemptAt": "2026-05-25T10:52:21Z",
+  "lastAttemptAt": "2026-06-01T12:12:13Z",
   "lastSuccessAt": "2026-05-18T10:42:50Z",
   "lastError": "direct: HTTP Error 403: Forbidden; fallback: Could not parse metrics from fallback response."
 }
