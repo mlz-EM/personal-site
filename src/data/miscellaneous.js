@@ -6,7 +6,7 @@ const data = [
     label: 'Invited Talk: International Cryo-EM (ICE) Workshop',
     link: 'https://www.bnl.gov/iceworkshop/files/pdf/agenda.pdf',
     image: '/images/misc/BNL.png',
-    date: '2026-04-29',
+    date: '2026-06-06',
     expandable: false,
     pinned: true,
     desc:
