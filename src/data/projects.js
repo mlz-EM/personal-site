@@ -20,7 +20,7 @@ const data = [
     pinned: false,
     expandable: true,
     desc:
-      'Operando STEM under device-relevant conditions leverages strain and clamping-induced heterogeneity to spatially resolve the ultrafast time-evolving AFE–FE transition in PZO. The observed atomic motifs align with NEB predictions, revealing a multi-step pathway: the AFE ground state transforms into a transient monoclinic FE phase, stabilizes as rhombohedral FE, and develops tetragonal distortions at higher fields. The phase energy hierarchy is confirmed, and the mechanism is traced to coupled phonon-mode modulation.',
+      'Operando STEM under device-relevant conditions leverages strain and clamping-induced heterogeneity to spatially resolve the ultrafast time-evolving AFE–FE transition in PZO. The observed atomic motifs align with NEB predictions, revealing (1) a step-wsie polar alignment transition, and (2) a post switching FE manifold where the two degenerate R3c states interconvert via a monoclinic bridge.',
   },
   {
     title: 'Operando S/TEM Biasing on Non-Conductive Substrates',

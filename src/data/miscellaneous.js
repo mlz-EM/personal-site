@@ -3,6 +3,16 @@
 // - set `pinned: true` to pin item to top + home featured section
 const data = [
   {
+    label: 'Invited Talk: International Cryo-EM (ICE) Workshop',
+    link: 'https://www.bnl.gov/iceworkshop/files/pdf/agenda.pdf',
+    image: '/images/misc/BNL.png',
+    date: '2026-04-29',
+    expandable: false,
+    pinned: true,
+    desc:
+    '',
+  },
+  {
     label: 'Paper Published: Relaxor Seen in 3D by MEP',
     link: 'https://www.science.org/doi/10.1126/science.ads6023',
     image: '/images/misc/science.png',
@@ -93,7 +103,7 @@ const data = [
     image: '/images/misc/personal-page-deployed.png',
     date: '2025-02-28',
     expandable: false,
-    pinned: true,
+    pinned: false,
     desc:
     '',
   },
