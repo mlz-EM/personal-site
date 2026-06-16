@@ -33,8 +33,8 @@ const routes = [
     path: '/job',
   },
   {
-    label: 'Misc.',
-    path: '/miscellaneous',
+    label: 'News',
+    path: '/news',
   },
 ];
 

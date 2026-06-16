@@ -9,6 +9,7 @@ const AdaptiveCard = ({
   bulkCommand,
   cardId,
   onExpandedChange,
+  className,
 }) => {
   const [expanded, setExpanded] = useState(false);
   const {
@@ -18,6 +19,7 @@ const AdaptiveCard = ({
     image,
     link: rawLink,
     summary: rawSummary,
+    category,
     expandable,
     pinned,
   } = data;
@@ -39,6 +41,7 @@ const AdaptiveCard = ({
     expanded ? 'is-expanded' : 'is-compact',
     canExpand ? 'is-expandable' : 'is-fixed',
     pinned ? 'is-pinned' : '',
+    className,
   ].join(' ');
 
   useEffect(() => {
@@ -85,6 +88,7 @@ const AdaptiveCard = ({
               date: normalizedDate,
               image,
               link,
+              category,
             }}
           />
         )}
@@ -114,6 +118,7 @@ AdaptiveCard.propTypes = {
     image: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
     summary: PropTypes.string,
+    category: PropTypes.string,
     expandable: PropTypes.bool,
     pinned: PropTypes.bool,
   }).isRequired,
@@ -124,6 +129,7 @@ AdaptiveCard.propTypes = {
   }),
   cardId: PropTypes.string,
   onExpandedChange: PropTypes.func,
+  className: PropTypes.string,
 };
 
 AdaptiveCard.defaultProps = {
@@ -131,6 +137,7 @@ AdaptiveCard.defaultProps = {
   bulkCommand: null,
   cardId: '',
   onExpandedChange: null,
+  className: '',
 };
 
 export default AdaptiveCard;

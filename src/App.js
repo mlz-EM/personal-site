@@ -9,7 +9,7 @@ import NotFound from './pages/NotFound';
 import Projects from './pages/Projects';
 import Publications from './pages/Publications';
 import Resources from './pages/Resources';
-import Miscellaneous from './pages/Miscellaneous';
+import News from './pages/News';
 import ArXiv from './pages/ArXiv';
 import Job from './pages/Job';
 import People from './pages/People';
@@ -29,7 +29,7 @@ const App = () => (
       <Route path="/publications" element={<Publications />} />
       <Route path="/people" element={<People />} />
       <Route path="/resources" element={<Resources />} />
-      <Route path="/miscellaneous" element={<Miscellaneous />} />
+      <Route path="/news" element={<News />} />
       <Route path="/arxiv" element={<ArXiv />} />
       <Route path="/job" element={<Job />} />
       <Route path="*" element={<NotFound />} />

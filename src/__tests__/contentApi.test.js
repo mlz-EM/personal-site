@@ -2,7 +2,7 @@ import {
   getArxivFeed,
   getFeaturedPinnedItems,
   getJobsFeed,
-  getMiscItems,
+  getNewsItems,
   getProjects,
   getPublications,
 } from '../content/api';
@@ -19,11 +19,11 @@ describe('content API', () => {
     }
   });
 
-  it('returns validated misc and publication collections', () => {
-    const misc = getMiscItems();
+  it('returns validated news and publication collections', () => {
+    const news = getNewsItems();
     const publications = getPublications();
 
-    expect(misc.every((item) => /^https?:\/\//.test(item.link))).toBe(true);
+    expect(news.every((item) => /^https?:\/\//.test(item.link))).toBe(true);
     expect(publications.every((item) => Number.isInteger(item.year))).toBe(true);
     expect(publications.every((item) => item.authors.length > 0)).toBe(true);
   });
@@ -42,7 +42,7 @@ describe('content API', () => {
     expect(arxiv.items.some((item) => item.metadata.isNew)).toBe(true);
   });
 
-  it('returns featured feed from pinned project and misc items', () => {
+  it('returns featured feed from pinned project and news items', () => {
     const featured = getFeaturedPinnedItems();
     expect(featured.length).toBeGreaterThan(0);
     expect(featured.every((item) => /^https?:\/\//.test(item.url))).toBe(true);

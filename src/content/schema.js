@@ -29,6 +29,7 @@ const URL_PATTERN = /^(https?:\/\/|mailto:)/i;
  * @property {string} date
  * @property {string} image
  * @property {string} link
+ * @property {string} category
  * @property {boolean} expandable
  * @property {boolean} pinned
  */
@@ -116,6 +117,7 @@ export const toPublicationRecord = (record) => {
 
 export const toMiscRecord = (record) => {
   const date = normalizeDate(record?.date);
+  const category = isNonEmptyString(record?.category) ? record.category.trim().toLowerCase() : 'misc';
   if (
     !isNonEmptyString(record?.label)
     || !date
@@ -130,6 +132,7 @@ export const toMiscRecord = (record) => {
     date,
     image: record.image.trim(),
     link: record.link.trim(),
+    category,
     expandable: record?.expandable === true,
     pinned: record?.pinned === true,
   };

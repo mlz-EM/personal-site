@@ -1,5 +1,5 @@
 import projectsData from '../data/projects';
-import miscData from '../data/miscellaneous';
+import newsData from '../data/news';
 import publicationsData from '../data/publications';
 import jobsDailyData from '../data/jobsDaily.json';
 import arXivDailyData from '../data/arXivDaily.json';
@@ -21,8 +21,8 @@ export const getProjects = () => (
     })
 );
 
-export const getMiscItems = () => (
-  miscData
+export const getNewsItems = () => (
+  newsData
     .map(toMiscRecord)
     .filter(Boolean)
     .sort((a, b) => {
@@ -32,7 +32,7 @@ export const getMiscItems = () => (
 );
 
 export const getFeaturedPinnedItems = () => (
-  [...getProjects(), ...getMiscItems()]
+  [...getProjects(), ...getNewsItems()]
     .filter((item) => item.pinned && item.link)
     .sort((a, b) => compareIsoDateDesc(a.date, b.date))
     .map((item) => ({

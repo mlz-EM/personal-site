@@ -72,9 +72,9 @@ const validateFeedJson = (file, options = {}) => {
 };
 
 validateDateLiterals('src/data/projects.js');
-validateDateLiterals('src/data/miscellaneous.js');
+validateDateLiterals('src/data/news.js');
 validateUrlLiterals('src/data/projects.js');
-validateUrlLiterals('src/data/miscellaneous.js');
+validateUrlLiterals('src/data/news.js');
 validateUrlLiterals('src/data/publications.js', 'url', true);
 validateFeedJson('src/data/jobsDaily.json', {
   requireIsNew: true,

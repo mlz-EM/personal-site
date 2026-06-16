@@ -9,7 +9,7 @@ const ENABLE_PER_CARD_EXPAND = true;
 const PROJECT_TOOLS = [
   { label: 'Top', href: '#projects' },
   { label: 'Publications', to: '/publications' },
-  { label: 'Misc', to: '/miscellaneous' },
+  { label: 'News', to: '/news' },
 ];
 
 const Projects = () => {

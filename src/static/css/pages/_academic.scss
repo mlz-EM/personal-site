@@ -300,6 +300,32 @@ button.page-title-action-btn:focus-visible {
   padding-top: 0;
 }
 
+.adaptive-card.news-card .minicell {
+  margin-bottom: 0;
+  padding: 0.15rem 1rem;
+  min-height: 4.15rem;
+}
+
+.adaptive-card.news-card .minicell .image {
+  width: 3.75rem;
+  min-width: 3.75rem;
+  height: 3.75rem;
+  flex-basis: 3.75rem;
+}
+
+.adaptive-card.news-card .minicell header {
+  min-height: 3.4rem;
+}
+
+.adaptive-card.news-card .minicell header h3 {
+  margin-bottom: 0.06rem;
+  line-height: 1.28;
+}
+
+.news-card-list {
+  margin-top: 2.6rem;
+}
+
 .adaptive-card-corner-toggle {
   position: absolute;
   right: var(--space-1);
@@ -758,6 +784,10 @@ button.page-title-action-btn:focus-visible {
 
 .job-filter-select {
   width: 45px;
+}
+
+.news-filter-select {
+  width: 100px;
 }
 
 .job-filter-clear {
