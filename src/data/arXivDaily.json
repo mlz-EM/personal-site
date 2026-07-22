@@ -1,0 +1,2672 @@
+{
+  "header": {
+    "title": "Basic Info",
+    "model": "gemini-3-flash-preview",
+    "generatedAt": "2026-07-22T04:22:23Z",
+    "source": "TTAP Daily Feed",
+    "notes": [
+      "This report includes the most recent 250 arXiv papers related to the keyword \"(all:\"ptychography\" OR all:\"electron microscopy\")\".",
+      "This page is powered by [ArxivSummaryDaily](https://github.com/dong-zehao/ArxivSummaryDaily)."
+    ]
+  },
+  "items": [
+    {
+      "id": "arxiv-2607.17796v1",
+      "title": "Real-time THz ptychography using an optically modulated aperture",
+      "url": "https://arxiv.org/abs/2607.17796v1",
+      "date": "2026-07-20",
+      "summary": "This study introduces optically modulated aperture ptychography using a silicon photomodulator to achieve real-time terahertz imaging without moving parts. The researchers demonstrate that a multiplexed probe strategy improves signal-to-noise ratios and increases information content, enabling the capture of fluid dynamics at 16 fps. This approach facilitates high-throughput imaging for non-destructive evaluation and biomedical applications.",
+      "tags": [
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2607.17594v1",
+      "title": "CuCrZr heat-sink irradiation performance reveals new challenges for thermonuclear fusion reactors",
+      "url": "https://arxiv.org/abs/2607.17594v1",
+      "date": "2026-07-20",
+      "summary": "This research investigates the irradiation performance of CuCrZr heat-sink alloys for fusion reactors using ion irradiation and thermodynamic modeling. It finds that hardening precipitates dissolve under ballistic and thermal regimes, while transmutation irreversibly shifts alloy chemistry. These findings reveal that current precipitation-hardening strategies may fail under prolonged neutron exposure, highlighting the need for new radiation-resistant copper-based alloys.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-plasm-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2607.16570v1",
+      "title": "Mapping Order in Semicrystalline Polymers using Machine Learning of Nanobeam Electron Diffraction",
+      "url": "https://arxiv.org/abs/2607.16570v1",
+      "date": "2026-07-18",
+      "summary": "The authors developed a machine learning model to analyze complex 4DSTEM nanobeam electron diffraction data from semicrystalline polymers. The model, trained on synthetic data, significantly outperforms conventional correlative peak detection algorithms in both speed and accuracy. This advancement enables near-live visualization of polymer structures, helping to elucidate the relationship between microstructure and charge carrier mobility in organic electronic materials.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cs-lg"
+      ]
+    },
+    {
+      "id": "arxiv-2607.16567v1",
+      "title": "Determination of the roles of strain and tearing in single photon emission from nanoindented WSe$_2$",
+      "url": "https://arxiv.org/abs/2607.16567v1",
+      "date": "2026-07-18",
+      "summary": "This study investigates the effects of nanoindentation-induced strain and structural tearing on single-photon emission in single-layer WSe2. The researchers found that single-photon-emitting states form even in torn regions, specifically at tear extremities. In intact indents, increased strain reduces the spatial density of emitters, indicating that an optimal strain level is necessary for deterministic quantum light source engineering.",
+      "tags": [
+        "physics-app-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2607.15046v1",
+      "title": "Analysis of the Topology of a Plasmonic Target-Skyrmion Texture",
+      "url": "https://arxiv.org/abs/2607.15046v1",
+      "date": "2026-07-16",
+      "summary": "This study investigates the topology of a plasmonic nano-focus exhibiting alternating skyrmion and antiskyrmion textures using photoemission electron microscopy and vector polarimetry. The experiments confirm oscillatory skyrmion numbers and demonstrate that a global skyrmion number cannot be assigned to such non-compact optical fields, highlighting the limitations of topological descriptions in extended manifolds.",
+      "tags": [
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2607.14567v1",
+      "title": "Phase coherence control of a programmable high-Tc superconductor created by light",
+      "url": "https://arxiv.org/abs/2607.14567v1",
+      "date": "2026-07-16",
+      "summary": "Researchers created and controlled a light-programmable superconducting (LiPS) state at an aluminum-silicon heterojunction using femtosecond laser pulses. The study demonstrates a zero-resistance state with tunable critical temperatures between 1.8 and 8.5 K. The effect is attributed to light-pulse control of the Moiré-like superlattice of misfit dislocations at the interface, enabling metastable long-range phase coherence.",
+      "tags": [
+        "cond-mat-supr-con",
+        "cond-mat-mes-hall",
+        "cond-mat-str-el",
+        "physics-optics",
+        "quant-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2607.15332v1",
+      "title": "Spontaneous Nanopatterning and Strain Relaxation in SiGe Layers Grown by Oxidative Solid Phase Epitaxy",
+      "url": "https://arxiv.org/abs/2607.15332v1",
+      "date": "2026-07-16",
+      "summary": "This study explores oxidative solid phase epitaxy of Ge+ implanted Si(111) to create thin strain-relieving SiGe buffer layers for III-V integration. It reveals spontaneous Ge nanopatterning caused by a hexagonal network of Shockley partial dislocations. SEM analysis of this pattern spacing provides a non-destructive method for determining the local strain state of the SiGe layers.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2607.13896v1",
+      "title": "Chemical short-range order controls deformation pathways in a complex concentrated alloy",
+      "url": "https://arxiv.org/abs/2607.13896v1",
+      "date": "2026-07-15",
+      "summary": "This study investigates how chemical short-range order (CSRO) influences deformation mechanisms in a Co30Cr40Ni30 alloy. Experimental and computational results reveal that CSRO acts as a thermodynamic state variable that increases stacking-fault energies. This suppresses deformation-induced fcc-hcp martensitic transformation, establishing CSRO as a key degree of freedom for tuning stacking-fault energetics and controlling deformation pathways in complex concentrated alloys.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2607.13364v1",
+      "title": "Direct Imaging of Temperature Evolution of Polar Nanoregions and Chemically Ordered Regions in PMN Relaxor: Evidence for Polar Phase Percolation",
+      "url": "https://arxiv.org/abs/2607.13364v1",
+      "date": "2026-07-15",
+      "summary": "This research uses 4D-STEM and convergent-beam electron diffraction to map the temperature evolution of polar nanoregions (PNRs) and chemically ordered regions (CORs) in Pb(Mg1/3Nb2/3)O3. It finds that static CORs suppress PNR growth, while PNRs undergo a percolation transition at low temperatures, evolving into interconnected structures. These findings provide direct real-space evidence supporting the random-field model in relaxor ferroelectrics.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2607.11550v1",
+      "title": "Synthesis of Ti2B2Clx MBenes in molten salts from theoretical and experimental perspectives",
+      "url": "https://arxiv.org/abs/2607.11550v1",
+      "date": "2026-07-13",
+      "summary": "This study synthesizes Ti2B2Clx MBenes by selectively etching Ti2InB2 in molten ZnCl2. Characterization and DFT calculations confirm a direct transformation to multilayer MBenes with chlorine terminations. The material demonstrates stable Li-ion battery performance, providing a general framework for expanding the 2D material family.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-comp-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2607.10440v1",
+      "title": "Connecting Diffuse Scattering to Atomic-Site-Resolved Occupancy and Displacement Fields through Fourier Filtering",
+      "url": "https://arxiv.org/abs/2607.10440v1",
+      "date": "2026-07-11",
+      "summary": "This paper introduces MOSAIC, a computational framework to identify atomic motifs responsible for specific diffuse scattering features. By applying Fourier filtering to phase-bearing scattering amplitudes, the method generates maps of atomic displacements and site occupancies. It effectively interrogates interatomic correlations in large-scale structural models derived from experimental data or simulations.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2607.10388v1",
+      "title": "The evolution of AI from image interpretation toward scientific inference in nanoparticle electron microscopy",
+      "url": "https://arxiv.org/abs/2607.10388v1",
+      "date": "2026-07-11",
+      "summary": "This review examines the evolution of AI in nanoparticle electron microscopy from image interpretation to scientific inference. It evaluates methodologies like deep learning and foundation models for structural characterization. The study highlights how integrating AI with autonomous experimentation and simulations accelerates materials discovery by linking nanoparticle structure and synthesis to functional properties.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cs-ai"
+      ]
+    },
+    {
+      "id": "arxiv-2607.09466v1",
+      "title": "Unraveling atomic-resolution valence electron energy-loss spectroscopic imaging in a single-crystal CaNb2O6",
+      "url": "https://arxiv.org/abs/2607.09466v1",
+      "date": "2026-07-10",
+      "summary": "Uses aberration-corrected STEM-EELS to achieve atomic-resolution imaging of valence electron excitations in CaNb2O6. The study identifies volume plasmons and plexcitons, observing contrast reversal relative to HAADF images. Key findings reveal that [NbO6] octahedra contribute to interband transition maps, demonstrating the technique's ability to visualize electronic properties and bonding at individual atomic sites in complex crystalline nanostructures.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2607.09901v1",
+      "title": "Bragg Interferometry of Moiré Superlattices: From Geometric Phase Principles to Atomic Reconstruction",
+      "url": "https://arxiv.org/abs/2607.09901v1",
+      "date": "2026-07-10",
+      "summary": "This review explores methodologies for mapping sub-angstrom atomic reconstruction in moiré superlattices, focusing on Bragg interferometry. It compares techniques like dark-field interferometry and ptychography for measuring interlayer displacement and strain. The authors demonstrate these methods on graphene and transition metal dichalcogenide systems, highlighting their effectiveness in probing buried interfaces and encapsulated heterostructures.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2607.08683v1",
+      "title": "Complex polar superstructure controlled thermal conductivity in ferroelectric PbTiO3/SrTiO3 superlattices",
+      "url": "https://arxiv.org/abs/2607.08683v1",
+      "date": "2026-07-09",
+      "summary": "This study investigates the impact of 3D polar superstructures on thermal conductivity in PbTiO3/SrTiO3 superlattices. It finds that the 3D arrangement of polar vortices suppresses thermal conductivity more effectively than standard interfacial scattering. Additionally, an unexpected reduction in thermal conductivity with increased thickness suggests phonon-wave Anderson localization, highlighting these superstructures as active elements for heat transport modulation.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2607.07186v1",
+      "title": "Enhanced sampling and cryo-EM data resolve magnesium binding to RNA",
+      "url": "https://arxiv.org/abs/2607.07186v1",
+      "date": "2026-07-08",
+      "summary": "This study introduces an enhanced-sampling strategy using barrier-flattening and Hamiltonian replica exchange to accelerate Mg2+ inner-shell binding to RNA. Validated with cryo-EM data, the findings reveal that insufficient sampling of inner-shell binding is the primary factor limiting agreement with experimental density. This highlights sampling as a more critical challenge than force field differences in modeling divalent ion binding.",
+      "tags": [
+        "q-bio-bm",
+        "physics-bio-ph",
+        "physics-comp-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2607.07965v1",
+      "title": "NSF Future Manufacturing Data Challenge: A Multimodal DED Dataset for Probabilistic Local Geometry Prediction in Laser Tracks",
+      "url": "https://arxiv.org/abs/2607.07965v1",
+      "date": "2026-07-08",
+      "summary": "This paper introduces a multimodal directed energy deposition (DED) dataset to predict probabilistic local geometric variations in laser tracks. The dataset integrates in-situ thermal images, SEM images, and 3D height maps from stainless-steel 316L scans. It provides a unified coordinate system and starter tools to facilitate research in the NSF Future Manufacturing Data Challenge.",
+      "tags": [
+        "physics-app-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2607.06304v1",
+      "title": "Decoupling Josephson Coupling and Supercurrent Nonreciprocity in Twisted NbSe2/NbSe2 van der Waals Junctions",
+      "url": "https://arxiv.org/abs/2607.06304v1",
+      "date": "2026-07-07",
+      "summary": "This study investigates supercurrent nonreciprocity in twisted NbSe2/NbSe2 Josephson junctions. It finds that while Josephson coupling strength depends on the twist angle, the supercurrent diode efficiency is negligible in clean junctions. Instead, nonreciprocity is primarily driven by interface disorder rather than twist-angle-controlled momentum matching, establishing a clear decoupling between Josephson coupling and the diode effect.",
+      "tags": [
+        "cond-mat-supr-con"
+      ]
+    },
+    {
+      "id": "arxiv-2607.05881v1",
+      "title": "Chiral-Structured Superconductors TrX4 (Tr = Rh, Ir; X = Ge, Si): A Platform for Mixed-Parity Pairing and Topological States",
+      "url": "https://arxiv.org/abs/2607.05881v1",
+      "date": "2026-07-07",
+      "summary": "This research identifies three new chiral-structured superconductors—RhGe4, IrGe4, and IrSi4—synthesized under high pressure. Using atomic-resolution STEM, the authors confirm their chiral structures. These materials exhibit type-II superconductivity with mixed-parity pairing and symmetry-protected Weyl points. The findings establish these compounds as a platform for studying the interplay between structural chirality, spin-orbit coupling, and topological quantum phenomena.",
+      "tags": [
+        "cond-mat-supr-con"
+      ]
+    },
+    {
+      "id": "arxiv-2607.03465v1",
+      "title": "From Stacking Disorder to Cubic Order: Ice Crystallization from Deeply Supercooled Water",
+      "url": "https://arxiv.org/abs/2607.03465v1",
+      "date": "2026-07-03",
+      "summary": "This study uses in situ cryogenic TEM to visualize the freezing of deeply supercooled water at molecular resolution. It finds that homogeneous nucleation produces stacking-disordered ice where the thickening of cubic layers governs crystallization. This process generates eight-branched dendrites with global cubic symmetry, which is remarkably retained even after the ice transitions to the thermodynamically favored hexagonal phase.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2607.03268v1",
+      "title": "Enhanced hydrogen response of copper-doped TiO$_2$ synthesised by helium-assisted magnetron sputtering",
+      "url": "https://arxiv.org/abs/2607.03268v1",
+      "date": "2026-07-03",
+      "summary": "Researchers investigated the impact of helium-assisted magnetron sputtering on the microstructure and hydrogen sensing performance of Cu-doped TiO2 thin films. They found that helium promotes nanostructuring and increased porosity, significantly enhancing the reactive surface area. This structural modification improved the hydrogen sensing response of normal-angle deposition films from 1.4 to 6.0 at 300°C, offering a physical route for tailoring gas-sensing oxides.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-app-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2607.03137v1",
+      "title": "Self-Driven Atomic Dispersion in Graphitic Layers",
+      "url": "https://arxiv.org/abs/2607.03137v1",
+      "date": "2026-07-03",
+      "summary": "This study investigates how metal nanoparticles transform into single-atom catalysts within carbon matrices during hydrocarbon oxidation. Using operando microscopy, the authors discovered a self-driven dispersion process where graphitic carbon growth and CO accumulation facilitate atom release and migration. These liberated atoms are trapped by defective carbon layers, resulting in catalysts with electrocatalytic hydrogen production activity that exceeds standard commercial benchmarks.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-chem-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2607.02256v1",
+      "title": "From Bloch to Néel: Anisotropy-dependent Domain-Wall Character in FePd Thin Films",
+      "url": "https://arxiv.org/abs/2607.02256v1",
+      "date": "2026-07-02",
+      "summary": "This study investigates depth-dependent domain wall formation in L10-FePd thin films using circular dichroism X-ray resonant magnetic scattering. It finds that high magnetocrystalline anisotropy induces a transition from hybrid Bloch-Néel to purely Néel-type structures at the lower interface. Conversely, films with lower anisotropy exhibit purely Néel-type walls, demonstrating that long-range structural order significantly influences magnetic spin textures.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-str-el"
+      ]
+    },
+    {
+      "id": "arxiv-2607.00903v1",
+      "title": "Characterization of Hydroxyls in Surface Oxide of Superconducting Tantalum and Their Mitigation in Quantum Circuits",
+      "url": "https://arxiv.org/abs/2607.00903v1",
+      "date": "2026-07-01",
+      "summary": "This study characterizes hydroxyl accumulation in the surface oxide of superconducting tantalum to identify sources of microwave loss. Researchers found that hydroxyls concentrate in the suboxide region and can be mitigated through chemical mechanical planarization or plasma nitridization. These findings suggest hydroxyls are a molecular origin of TLS defects and offer surface engineering methods to improve quantum circuit coherence.",
+      "tags": [
+        "cond-mat-supr-con"
+      ]
+    },
+    {
+      "id": "arxiv-2606.31934v1",
+      "title": "Untangling 3D atomic reconstruction in twisted bilayer 2D crystals via dark field transmission electron microscopy",
+      "url": "https://arxiv.org/abs/2606.31934v1",
+      "date": "2026-06-30",
+      "summary": "Expands dark field transmission electron microscopy to provide a full 3D description of reconstructed atomic systems in twisted 2D materials. It establishes quantitative relations between local stacking and image intensity, enabling the extraction of local 3D atomic displacements and interlayer distances from a single image.",
+      "tags": [
+        "cond-mat-mes-hall",
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2606.31669v1",
+      "title": "Optimizing Ti substitution for the enhanced densification, ionic conductivity, and microstructure of garnet-type Li$_7$La$_3$Zr$_2$O$_{12}$ solid electrolytes",
+      "url": "https://arxiv.org/abs/2606.31669v1",
+      "date": "2026-06-30",
+      "summary": "Investigates titanium doping in garnet-type Li7La3Zr2O12 to improve ionic conductivity and structural stability for solid-state batteries. Findings show that the Li7La3Zr1.9Ti0.1O12 composition achieves a one-order-of-magnitude increase in room temperature ionic conductivity (8.08 x 10^-5 Scm^-1) and the lowest activation energy (0.37 eV).",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2606.29935v1",
+      "title": "Consistent transition model for Bi0.5Na0.5TiO3 from temperature-dependent structural and electrical properties",
+      "url": "https://arxiv.org/abs/2606.29935v1",
+      "date": "2026-06-29",
+      "summary": "This study combines multi-modal characterization to establish a unified structural and dielectric model for Bi0.5Na0.5TiO3 (BNT). The researchers propose a consistent transition model that reconciles previously conflicting interpretations of BNT's phase evolution and symmetry. These findings provide a theoretical basis for developing high-performance, lead-free energy storage materials and dielectric capacitors.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2606.30859v1",
+      "title": "Atomic-Scale Characterization of Oxide Interfaces and Superlattices Using Scanning Transmission Electron Microscopy",
+      "url": "https://arxiv.org/abs/2606.30859v1",
+      "date": "2026-06-29",
+      "summary": "Reviews the use of scanning transmission electron microscopy (STEM) and spectroscopy to characterize oxide interfaces and superlattices at the atomic scale. It highlights how integrating STEM with AI-guided approaches and theoretical calculations provides insights into interfacial conductivity and charge screening, enabling more predictive modeling of functional oxide behavior.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2606.29592v1",
+      "title": "STEMGym: Benchmarking Sequential Decision-Making under Dose Budgets in Autonomous Electron Microscopy",
+      "url": "https://arxiv.org/abs/2606.29592v1",
+      "date": "2026-06-28",
+      "summary": "This paper introduces STEMGym to benchmark autonomous electron microscopy under dose budgets. The study finds that the perception pipeline, rather than navigation strategy, is the primary driver of dose efficiency. Specifically, pairing a CNN analyst with simple raster scanning significantly outperforms advanced navigation methods, which offer no statistically significant gains, reframing priorities for machine learning efforts in the field.",
+      "tags": [
+        "cs-lg",
+        "cond-mat-mtrl-sci",
+        "physics-atom-ph",
+        "physics-optics",
+        "quant-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2606.29551v1",
+      "title": "Nanometric voids as optical antennas for rewritable momentum-engineered photonics in silicon",
+      "url": "https://arxiv.org/abs/2606.29551v1",
+      "date": "2026-06-28",
+      "summary": "This research explores nanometric voids in crystalline silicon as optical antennas for extreme electromagnetic field localization. The study demonstrates that these voids enable momentum-assisted optical transitions, resulting in intense, rewritable broadband luminescence. The findings establish that dielectric discontinuity, rather than material composition, governs the observed optical response, allowing photonic functionality to be reconfigured directly within bulk silicon.",
+      "tags": [
+        "physics-optics",
+        "quant-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2606.28983v1",
+      "title": "Structural properties of one-dimensional $\\mathrm{Cs}_2\\mathrm{CoCl}_4$ confined within single-walled carbon nanotubes",
+      "url": "https://arxiv.org/abs/2606.28983v1",
+      "date": "2026-06-27",
+      "summary": "This study investigates the structural properties of Cs2CoCl4 confined within single-walled carbon nanotubes. Using electron microscopy and simulations, researchers identified two unconventional one-dimensional polymorphs that emerge under radial compression. Despite these structural changes, magnetic measurements indicate that the confined material topologically preserves its core magnetic properties, highlighting one-dimensional confinement as a unique tool for manipulating crystal structures.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2606.28056v1",
+      "title": "Determining Electron Beam Lateral Coherence in a Scanning Electron Microscope Using Electron Diffraction",
+      "url": "https://arxiv.org/abs/2606.28056v1",
+      "date": "2026-06-26",
+      "summary": "This study develops STEM capabilities within an SEM to measure electron beam lateral coherence. By analyzing interference patterns from Au flakes and graphene at 30 keV, the authors extract a lateral coherence lower limit of approximately 60% over 5% of the beam diameter. These findings confirm the system's potential for quantum-coherent electron-light-matter interaction experiments.",
+      "tags": [
+        "cond-mat-mes-hall",
+        "physics-atm-clus"
+      ]
+    },
+    {
+      "id": "arxiv-2606.27891v1",
+      "title": "Vibrational high-harmonics and period-doubling bifurcation probed by time-resolved electron diffraction",
+      "url": "https://arxiv.org/abs/2606.27891v1",
+      "date": "2026-06-26",
+      "summary": "This research introduces event-based convergent beam electron diffraction to map the spatio-temporal dynamics of nanoscale mechanical resonators. Probing an optically driven silicon membrane, the authors successfully capture nonlinear phenomena including Duffing behavior and period-doubling bifurcations. The approach achieves 5 ns temporal resolution and nanometer spatial resolution, offering a route toward probing nonlinear nanomechanics at the atomic scale.",
+      "tags": [
+        "physics-optics",
+        "physics-ins-det"
+      ]
+    },
+    {
+      "id": "arxiv-2606.27040v1",
+      "title": "High temperature transitions in Ruddlesden-Popper nickelates La$_{n+1}$Ni$_{n}$O$_{3n+1}$",
+      "url": "https://arxiv.org/abs/2606.27040v1",
+      "date": "2026-06-25",
+      "summary": "Investigates the complete series of bulk-stable Ruddlesden-Popper nickelates La$_{n+1}$Ni$_n$O$_{3n+1}$ using a comprehensive suite of experimental techniques from 2 to 1000 K. The study identifies a previously underappreciated high-temperature phase transition distinct from the known transition to a tetragonal phase, clarifying the structural properties of these superconducting-related materials.",
+      "tags": [
+        "cond-mat-supr-con",
+        "cond-mat-str-el"
+      ]
+    },
+    {
+      "id": "arxiv-2606.27587v1",
+      "title": "PtyRANNOSAUR: Ptychography with Robust Artificial Neural Networks Optimized for Sub-Angstrom Accuracy and Ultrafast Reconstruction",
+      "url": "https://arxiv.org/abs/2606.27587v1",
+      "date": "2026-06-25",
+      "summary": "The authors present PtyRANNOSAUR, a neural network framework for ultrafast reconstruction of atomic-resolution electron ptychography data. By mapping 4D-STEM data to 2D phase images, the system achieves sub-0.5 Å resolution 10-100x faster than standard iterative methods. The model robustly handles spatial coherence and multiple scattering, enabling near-live, state-of-the-art imaging across diverse material systems.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2606.25911v1",
+      "title": "Orientation Mapping via Dictionary Indexing of AC-STEM Kikuchi patterns using Open-source Software",
+      "url": "https://arxiv.org/abs/2606.25911v1",
+      "date": "2026-06-24",
+      "summary": "This study develops an open-source template-matching approach for orientation mapping using aberration-corrected STEM transmission Kikuchi diffraction. By employing dynamical simulations and geometric indexing, the authors demonstrate the method on fuel-cell and battery materials. The results show that simulated patterns align closely with experimental data, providing high orientation sensitivity and spatial resolution for nanoscale characterization of polycrystalline materials.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-ins-det"
+      ]
+    },
+    {
+      "id": "arxiv-2606.25617v1",
+      "title": "Valence-change-driven reduction of antiphase boundaries in spinel ferrite epitaxial films",
+      "url": "https://arxiv.org/abs/2606.25617v1",
+      "date": "2026-06-24",
+      "summary": "This research investigates the effect of post-oxidation annealing on antiphase boundaries (APBs) in spinel ferrite epitaxial films. The study finds that post-oxidation significantly reduces APB density through a topotactic solid-state reaction where Fe ions are oxidized. This process increases antiphase domain size and enhances magnetic properties, such as saturation magnetization, while preserving the film's crystal structure and epitaxial strain.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2606.25397v1",
+      "title": "Quantum tomography of free electrons",
+      "url": "https://arxiv.org/abs/2606.25397v1",
+      "date": "2026-06-24",
+      "summary": "The authors present a universal approach for quantum-state tomography of free electrons in continuous variables. By using interfering quantum paths from spectrally shifted laser waves, the method reveals the density matrix and essential properties of electron wavepackets. The study demonstrates how many-body Coulomb interactions modify a single electron's state, providing a tool for optimizing quantum states in free-electron optics and microscopy.",
+      "tags": [
+        "quant-ph",
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2606.24524v1",
+      "title": "Hydrofluoric acid-free titanium etching for rare-event searches",
+      "url": "https://arxiv.org/abs/2606.24524v1",
+      "date": "2026-06-23",
+      "summary": "This study investigates sulphuric acid as a safer, hydrofluoric acid-free alternative for etching titanium in rare-event search experiments. Results show that 40% sulphuric acid at 40°C effectively removes surface material (up to 3.5 mg/cm²), providing a viable method for reducing radiopurity-limiting surface contamination in sensitive underground laboratory environments.",
+      "tags": [
+        "physics-ins-det",
+        "hep-ex"
+      ]
+    },
+    {
+      "id": "arxiv-2606.24239v1",
+      "title": "One-dimensional self-organization of water molecules in proton conducting Andersson-Wadsley titanates",
+      "url": "https://arxiv.org/abs/2606.24239v1",
+      "date": "2026-06-23",
+      "summary": "This research explores the hydration and proton conductivity of Andersson-Wadsley titanates. It finds that water molecules self-organize into one-dimensional double chains along the b-axis, facilitating highly anisotropic superionic conductivity of 3 mS/cm at room temperature. This suggests that these ordered water chains enable fast proton transport through a Grotthuss-like mechanism.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2606.25175v1",
+      "title": "Operando spectro-ptychography reveals dynamical charge-storage and degradation pathways in redox-active electrodes",
+      "url": "https://arxiv.org/abs/2606.25175v1",
+      "date": "2026-06-23",
+      "summary": "This work develops an operando soft X-ray spectro-ptychography platform to track chemical and morphological changes in redox-active electrodes. Applied to an alkaline Fe anode, the study identifies that reversible charge storage via rapid hydroxide insertion competes with a slower dissolution-redeposition process that causes degradation. This approach enables the separation of fast charge-storage and slow degradation pathways at the nanoscale.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2606.23490v1",
+      "title": "Anomalous charge density wave in a two-dimensional superatomic superconductor",
+      "url": "https://arxiv.org/abs/2606.23490v1",
+      "date": "2026-06-22",
+      "summary": "This study investigates charge density wave (CDW) behaviors in the 2D superatomic superconductor Au6Te12Se8. The authors identify an anomalous CDW governed by transverse phonons with a massive 4 Å displacement. Findings reveal that the CDW transition temperature increases significantly as the material approaches the superatomic limit, where it competes with superconductivity, offering new insights into electron-phonon interactions.",
+      "tags": [
+        "cond-mat-supr-con"
+      ]
+    },
+    {
+      "id": "arxiv-2606.22112v1",
+      "title": "Accurate identification and measurement of the precipitate area by two-stage deep neural networks in novel chromium-based alloys",
+      "url": "https://arxiv.org/abs/2606.22112v1",
+      "date": "2026-06-20",
+      "summary": "This paper introduces DT-SegNet, a two-stage deep learning framework combining YOLOv5 and SegFormer, to automate precipitate measurement in chromium-based superalloys. The objective is to improve upon manual microstructural analysis. Results show that DT-SegNet significantly outperforms existing tools like Weka and ilastik in segmentation accuracy, providing a robust solution for high-throughput alloy development and microstructural characterization.",
+      "tags": [
+        "cs-cv",
+        "cond-mat-mtrl-sci",
+        "cs-lg",
+        "physics-chem-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2606.21149v1",
+      "title": "Room-Temperature Noncolinear Ferroelectricity in van der Waals WO$_2$Cl$_2$ with a Wide Bandgap",
+      "url": "https://arxiv.org/abs/2606.21149v1",
+      "date": "2026-06-19",
+      "summary": "This study demonstrates room-temperature ferroelectricity in the van der Waals material WO2Cl2. Researchers found that the material possesses a wide 2.80 eV bandgap and a large dipole. Crucially, they directly observed an exotic noncollinear dipole order at the atomic level, proving that WO2Cl2 overcomes common weaknesses in low-dimensional ferroelectrics, such as small bandgaps or weak polarization.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2606.20941v1",
+      "title": "Persistent structural distortions and absent superconductivity in trilayer nickelate thin films",
+      "url": "https://arxiv.org/abs/2606.20941v1",
+      "date": "2026-06-18",
+      "summary": "This research investigates the absence of strain-induced superconductivity in trilayer (n=3) La4Ni3O10 nickelate thin films. While compressive strain suppresses density waves, superconductivity remains absent. The authors identify persistent, layer-inequivalent octahedral rotations around the c-axis as a unique structural distortion that likely inhibits superconductivity, suggesting that epitaxial strain alone is insufficient for inducing superconductivity in this specific system.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-supr-con"
+      ]
+    },
+    {
+      "id": "arxiv-2606.19142v1",
+      "title": "Controllable Growth and Characterization of α- and β-phase MnSe by Chemical Vapor Deposition",
+      "url": "https://arxiv.org/abs/2606.19142v1",
+      "date": "2026-06-17",
+      "summary": "This study demonstrates the controllable growth of phase-pure α- and β-phase MnSe on sapphire using chemical vapor deposition. Key findings show that precursor vapor pressure controls flake size and β-phase films exhibit antiferromagnetism with a Néel temperature of 53 K. These results establish MnSe as a tunable platform for 2D spintronic and optoelectronic applications.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-app-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2606.19653v1",
+      "title": "Coordination-Sensitive Nanoscale Analysis of Defect-Driven Phase Transformation in Si-Doped (AlXGa1-X)2O3",
+      "url": "https://arxiv.org/abs/2606.19653v1",
+      "date": "2026-06-17",
+      "summary": "This study introduces a coordination-sensitive atom probe tomography framework to quantify local cation coordination and link it to defect-driven phase transformations in Si-doped (AlxGa1-x)2O3. It reveals that gamma-phase inclusions emerge under high Al content and heavy Si doping, characterized by significant coordination loss. DFT results confirm that Al incorporation and donor-induced vacancies facilitate this coordination collapse and phase instability.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2606.18477v1",
+      "title": "Hydration-controlled twist forms a moiré glass in charge-frustrated layered silicates",
+      "url": "https://arxiv.org/abs/2606.18477v1",
+      "date": "2026-06-16",
+      "summary": "This research investigates the natural formation of moiré superlattices in montmorillonite clay. The authors discovered that hydration-controlled processes create a 'moiré glass' state with preferred low-angle twists stabilized by lattice-charge disorder. The study establishes dynamic hydration as a macroscopic handle for programming twist in layered materials, where dehydration arrests specific configurations in discrete steps.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-soft"
+      ]
+    },
+    {
+      "id": "arxiv-2606.16958v1",
+      "title": "Transverse Modulation of Continuous Electron Beams by a Structured Optical Cavity",
+      "url": "https://arxiv.org/abs/2606.16958v1",
+      "date": "2026-06-15",
+      "summary": "This study proposes a phase plate for continuous electron beams using ponderomotive interaction within a Fabry-Pérot resonator to achieve compact aberration correction. The researchers demonstrate that a Laguerre-Gaussian mode can fully compensate for third-order spherical aberration in a 5 keV beam, reducing the focal probe width to 1.4 Å.",
+      "tags": [
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2606.17302v1",
+      "title": "Dislocation-templated antiferromagnetic domains in epitaxial NiO",
+      "url": "https://arxiv.org/abs/2606.17302v1",
+      "date": "2026-06-15",
+      "summary": "This study investigates the control of antiferromagnetic domains in epitaxial NiO/MgO(001) using electron channeling contrast imaging. It finds that interface dislocation networks deterministically pin twin-domain walls, creating a robust structural memory effect during thermal cycling. The results demonstrate that antiferromagnetic textures can be engineered by manipulating the density and spatial configuration of one-dimensional misfit dislocations.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2606.13130v1",
+      "title": "Sub-8-nm resolution AKB-mirror-based hard X-ray ptychography via generalized Wirtinger projections",
+      "url": "https://arxiv.org/abs/2606.13130v1",
+      "date": "2026-06-11",
+      "summary": "This study aims to achieve high-resolution hard X-ray ptychography using achromatic AKB mirror optics. By developing the Generalized Wirtinger Projections (GWP) algorithm, the researchers achieved sub-8-nm resolution. GWP improves spatial resolution and partial-coherence reconstruction while enhancing GPU memory efficiency, facilitating advanced 3D spectroscopic imaging at the nanoscale.",
+      "tags": [
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2606.12150v1",
+      "title": "Tracking atomic-scale interdiffusion in immiscible bimetallic nanoparticles via four-dimensional electron tomography",
+      "url": "https://arxiv.org/abs/2606.12150v1",
+      "date": "2026-06-10",
+      "summary": "This study uses 4D atomic resolution electron tomography and in situ STEM to track interdiffusion in immiscible PdIr nanoparticles. It reveals a temperature-driven miscible transition pathway involving surface reconstruction at 200°C, Ir interfacial diffusion at 400°C, and collective inward diffusion at 900°C. These findings provide quantitative atomic-scale insights into how metastable nanostructures evolve into thermodynamically stable configurations at the nanoscale.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2606.12727v1",
+      "title": "Extending the La Solubility Limit in Sr$_3$Ir$_2$O$_7$ through High-Pressure High-Temperature Synthesis",
+      "url": "https://arxiv.org/abs/2606.12727v1",
+      "date": "2026-06-10",
+      "summary": "This research aims to extend the La solubility limit in bilayer iridates using high-pressure high-temperature synthesis. The authors successfully increased La incorporation up to x=0.23, observing a transition from a localized magnetic insulating state to metal-like electronic behavior. These findings demonstrate that high-pressure synthesis reveals electronic and magnetic states inaccessible through conventional ambient-pressure methods.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-str-el"
+      ]
+    },
+    {
+      "id": "arxiv-2606.10893v1",
+      "title": "Low-Dose 3D Bonding Mapping Through \"Soft\" Core-Loss EELS Tomography and Unsupervised Deep Learning",
+      "url": "https://arxiv.org/abs/2606.10893v1",
+      "date": "2026-06-09",
+      "summary": "This study aims to achieve dose-efficient 3D bonding mapping of beam-sensitive nanomaterials using STEM-EELS. By combining shallow Fe-M2,3 edges with an unsupervised deep learning method (DIPm-TV), the researchers achieved 1 nm isotropic resolution and 50x higher dose efficiency, successfully resolving the core-shell structure and internal voids of FeO/Fe3O4 nanocubes.",
+      "tags": [
+        "eess-iv",
+        "cond-mat-mtrl-sci",
+        "physics-ins-det"
+      ]
+    },
+    {
+      "id": "arxiv-2606.10570v1",
+      "title": "Extending Field Limits in Nanoscale Magnetic Imaging with Metamaterial-inspired Magnetic Flux Concentrators",
+      "url": "https://arxiv.org/abs/2606.10570v1",
+      "date": "2026-06-09",
+      "summary": "The paper aims to extend magnetic field limits in nanoscale imaging using sample-integrated magnetic flux concentrators (MFCs). Experiments demonstrate that MFCs locally amplify magnetic fields by a factor of five, enabling the observation of magnetization reversal and domain evolution in magnetite nanoparticles and magnetofossils that were previously inaccessible due to instrumental constraints.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2606.10547v1",
+      "title": "Unsupervised Deep Learning for Limited-Angle STEM-EDX Tomography -- Application to 3D Chemical Analysis of Phase-Change Memory Devices",
+      "url": "https://arxiv.org/abs/2606.10547v1",
+      "date": "2026-06-09",
+      "summary": "This research develops an unsupervised deep learning framework, DIPm-TV, to improve 3D chemical mapping in limited-angle STEM-EDX tomography. The method successfully compensates for severe missing-wedge artifacts, enabling near-isotropic 3D elemental reconstruction of Ge-Sb-Te memory devices without requiring external structural priors, even under low-dose conditions.",
+      "tags": [
+        "eess-iv",
+        "cond-mat-mtrl-sci",
+        "cs-lg",
+        "physics-ins-det"
+      ]
+    },
+    {
+      "id": "arxiv-2606.10397v1",
+      "title": "Improved selector behavior in ultrathin chromium-doped V$_2$O$_3$ films",
+      "url": "https://arxiv.org/abs/2606.10397v1",
+      "date": "2026-06-09",
+      "summary": "This study investigates the electrical and structural properties of ultrathin chromium-doped V2O3 films for use as selector elements. Findings show that switching effects persist down to 5 nm thickness with improved leakage and transition abruptness. TEM analysis attributes these improvements to a thin amorphous interface layer and titanium diffusion from the electrodes.",
+      "tags": [
+        "cond-mat-str-el",
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2606.09423v1",
+      "title": "Design and electron optics performance of a MEMS electrostatic electron monochromator",
+      "url": "https://arxiv.org/abs/2606.09423v1",
+      "date": "2026-06-08",
+      "summary": "The authors design a compact, MEMS-fabricated electrostatic electron monochromator to improve energy resolution in electron microscopy. Simulations show the design achieves 19 meV resolution while maintaining a 128 pA beam current. This fringe-field-based approach offers a cost-effective alternative to complex state-of-the-art monochromators, potentially bringing high-resolution energy filtering to standard scanning electron microscopes.",
+      "tags": [
+        "physics-ins-det"
+      ]
+    },
+    {
+      "id": "arxiv-2606.09419v1",
+      "title": "Context-Aware Deep Learning for Defect Classification in Atomic-Resolution STEM",
+      "url": "https://arxiv.org/abs/2606.09419v1",
+      "date": "2026-06-08",
+      "summary": "This work introduces a context-aware deep learning framework to improve defect classification in atomic-resolution STEM. By integrating image contrast with experimental metadata like composition and beam energy, the model achieves over 98% accuracy on simulations. This approach transforms ambiguous image-only tasks into physically grounded problems, significantly reducing classification entropy and matching human-level performance on experimental data.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cs-ai"
+      ]
+    },
+    {
+      "id": "arxiv-2606.09281v1",
+      "title": "Unconventional incommensurate epitaxy of superconducting FeSe films on SrTiO$_3$",
+      "url": "https://arxiv.org/abs/2606.09281v1",
+      "date": "2026-06-08",
+      "summary": "This study examines the epitaxial relationship between superconducting FeSe films and SrTiO3 substrates using XRD and STEM. The researchers discovered an unconventional growth regime where FeSe maintains directional alignment with the substrate but lacks atomic registry, retaining its own lattice spacing without forming misfit dislocations. This suggests that crystallographic orientation can be preserved without atomic matching at the interface.",
+      "tags": [
+        "cond-mat-mes-hall",
+        "cond-mat-mtrl-sci",
+        "cond-mat-supr-con"
+      ]
+    },
+    {
+      "id": "arxiv-2606.08298v1",
+      "title": "High-resolution TEM imaging on 3D nanocrystals with tilt illuminations",
+      "url": "https://arxiv.org/abs/2606.08298v1",
+      "date": "2026-06-06",
+      "summary": "This paper proposes a method to obtain high-resolution projected images of 3D nanocrystals by mitigating contrast transfer function (CTF) mixing in TEM. By employing tilted illumination and a ring slit filter, the technique produces images comparable to STEM. This approach is particularly useful for imaging complex structures like MOFs and perovskites where small molecules or ions are critical.",
+      "tags": [
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2606.07204v1",
+      "title": "Ptychographic Algorithms for Phase Recovery in 4D Scanning Transmission Electron Microscopy",
+      "url": "https://arxiv.org/abs/2606.07204v1",
+      "date": "2026-06-05",
+      "summary": "This thesis examines ptychographic algorithms for phase recovery in 4D STEM, specifically ePIE, WDD, and SSB. It successfully implements an SSB reconstruction script on simulated MoS2 data and records experimental 4D STEM data. The results provide a mathematical framework for these methods and demonstrate the practical application of SSB for specimen imaging.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-ins-det"
+      ]
+    },
+    {
+      "id": "arxiv-2606.07042v1",
+      "title": "Unravelling the Role of Stacking Disorder on the Optoelectronic Properties of Zn3P2",
+      "url": "https://arxiv.org/abs/2606.07042v1",
+      "date": "2026-06-05",
+      "summary": "This study uses electron microscopy and DFT to investigate planar defects in Zn3P2 thin films. It identifies defects arising from Zn sublattice vacancy ordering with very low formation energy. While these defects do not introduce mid-gap states and are electronically benign, they likely degrade performance by acting as preferential segregation sites for optically active point defects.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2606.07862v1",
+      "title": "Crystallizing Substrates Drag Supported Nanoparticles",
+      "url": "https://arxiv.org/abs/2606.07862v1",
+      "date": "2026-06-05",
+      "summary": "This research investigates how substrate crystallization influences the migration of supported nanoparticles using in situ TEM and 4D-STEM. The study finds that advancing amorphous-to-crystalline fronts in AlOx films actively drag Pt nanoparticles over long distances. Phase-field simulations confirm that this deterministic transport is driven by asymmetric interfacial energy contrast across the moving boundary.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2606.06289v1",
+      "title": "Optical Signature of Moiré Superlattices Formed by Twisted SrTiO$_3$ Membranes",
+      "url": "https://arxiv.org/abs/2606.06289v1",
+      "date": "2026-06-04",
+      "summary": "This study investigates the structural and optical properties of millimeter-scale moiré superlattices formed by twisted SrTiO3 membranes at a 36-degree angle. The researchers discovered new low-frequency Raman-active vibrational modes and strong second harmonic generation at the interface, indicating an asymmetric, twisted interface. These findings demonstrate enhanced interlayer coupling and provide a method for tuning phononic and nonlinear optical properties in twisted oxides.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2606.03625v1",
+      "title": "X-ray Fractional Orbital Angular Momentum from Coherent Magnetic Scattering",
+      "url": "https://arxiv.org/abs/2606.03625v1",
+      "date": "2026-06-02",
+      "summary": "Investigates if odd-charge topological defects in artificial spin ice generate fractional orbital angular momentum in X-ray beams. The study confirms antiferromagnetic ground states with superdomain walls and observes integer OAM at structural peaks alongside fractional OAM at magnetic peaks. In thermally active samples, the fractional OAM beam exhibits dynamic rotation due to phase discontinuity fluctuations.",
+      "tags": [
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2606.03563v1",
+      "title": "Reversible Superdense Ordering of Tetragonal Lithium in a Layered Material",
+      "url": "https://arxiv.org/abs/2606.03563v1",
+      "date": "2026-06-02",
+      "summary": "Employs multimodal scanning transmission electron microscopy to map lithium intercalation and dynamics in layered LaTe3. The study identifies three ordered phases and discovers a reversible, superdense three-layer lithium phase with tetragonal symmetry occupying the van der Waals gap at high concentrations. This approach provides a complete tracking of lithium ordering, which is crucial for advancing next-generation energy storage applications.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2606.02466v1",
+      "title": "Hydrothermally-Assisted Sintering of Calcium Hydroxide Sputtering Targets: A Route to Quantum-Grade CaO Thin Films",
+      "url": "https://arxiv.org/abs/2606.02466v1",
+      "date": "2026-06-01",
+      "summary": "Demonstrates the production of high-purity calcium hydroxide sputtering targets using hydrothermally-assisted sintering at low temperatures. The resulting targets achieve 98% theoretical density while preserving the brucite phase. These targets were successfully used to deposit (002) oriented epitaxial calcium oxide thin films on sapphire substrates, providing a scalable route to quantum-grade materials for thin-film applications.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2606.00742v1",
+      "title": "Impact of Cu-Mn ratio on Structure and Defects in Layered Multiferroic Cu1-xMn1+ySiTe3",
+      "url": "https://arxiv.org/abs/2606.00742v1",
+      "date": "2026-05-30",
+      "summary": "Investigates the influence of Cu-to-Mn ratios and nanoscale defects on the properties of multiferroic Cu1-xMn1+ySiTe3. Scanning transmission electron microscopy reveals that Cu-deficient crystals exhibit extensive stacking faults and chemical inhomogeneity, whereas Cu-rich crystals show fewer stacking faults but contain needle-shaped precipitates. Calculations confirm the Cu-rich structure is more polar, offering guidance for designing multiferroic materials with tailored performance.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.31358v1",
+      "title": "Sharp periodic Ge concentration modulations beyond the conduction band valley wavevector $k_0$ in nuclear spin-free Si quantum wells",
+      "url": "https://arxiv.org/abs/2605.31358v1",
+      "date": "2026-05-29",
+      "summary": "Aims to enhance conduction-band valley splitting in Si quantum wells through periodic Ge modulations. Using molecular beam epitaxy, the study demonstrates laterally homogeneous modulations with periods down to 0.49 nm. Simulations suggest that steep trapezoidal 2k0/3 heterostructures significantly enhance valley splitting, whereas k0-type modulations show a much weaker effect, providing a route for scalable spin-qubit development.",
+      "tags": [
+        "physics-app-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2605.31252v1",
+      "title": "Magnetic domains reconfiguration on the Fe3O4(110) surface across the Verwey transition by Spin-Polarized Low-Energy Electron Microscopy",
+      "url": "https://arxiv.org/abs/2605.31252v1",
+      "date": "2026-05-29",
+      "summary": "Uses spin-polarized low-energy electron microscopy to map the vector magnetization of the Fe3O4(110) surface across the Verwey transition. At room temperature, magnetic domains align with bulk <111> easy axes. Below the transition, magnetization reconfigures toward in-plane [100] and [001] directions, reflecting monoclinic symmetry changes. The findings confirm that magnetization remains within the surface plane throughout the transition.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.29798v1",
+      "title": "Low-Magnification SEM May Suffice: Interpretable Deep Learning for Multi-Scale Fracture-Cause Classification in Zirconia-Toughened Alumina",
+      "url": "https://arxiv.org/abs/2605.29798v1",
+      "date": "2026-05-28",
+      "summary": "Develops an interpretable vision-transformer workflow to automate the classification of fracture causes in alumina matrix composite implants. The model achieves high accuracy by identifying diagnostic signals like mirror geometry and hackle lines. Crucially, performance at low magnification (50x) is comparable to high-magnification inspection, suggesting that macro-scale features provide sufficient data for reliable quality assurance and pre-screening.",
+      "tags": [
+        "cs-cv",
+        "cond-mat-mtrl-sci",
+        "eess-iv"
+      ]
+    },
+    {
+      "id": "arxiv-2605.29433v1",
+      "title": "Spatiotemporal Electron Microscopy of Phonon Polaritons in MoO3",
+      "url": "https://arxiv.org/abs/2605.29433v1",
+      "date": "2026-05-28",
+      "summary": "Investigates the spatiotemporal dynamics of phonon polaritons in anisotropic α-MoO3 by extending the bandwidth of photon-induced near-field electron microscopy deeper into the infrared. The study visualizes the spatial distribution and wavelength-dependent lifetimes of polaritons within cavity-like flakes. These advancements demonstrate the potential of PINEM for probing the complex polaritonic properties of van der Waals materials in hard-to-access spectral ranges.",
+      "tags": [
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2605.29040v1",
+      "title": "Self-Assembly of Lipid-Biopolymer Periodic Nanostructures on Photonic Length Scales",
+      "url": "https://arxiv.org/abs/2605.29040v1",
+      "date": "2026-05-27",
+      "summary": "Investigates how lipids and biopolymers co-assemble to produce structural color in insects. By using lipid vesicles as templates for biopolymers, the study demonstrates the self-assembly of periodic nanostructures with periodicities up to 1.2 micrometers. These results provide a methodology for recreating the physicochemical mechanisms underlying biophotonic structural colour and overcoming periodicity limits in synthetic lipid-based systems.",
+      "tags": [
+        "cond-mat-soft",
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2605.28799v1",
+      "title": "Synthesis and properties of bulk Mg$_3$WN$_4$ in a wurtzite-derived structure",
+      "url": "https://arxiv.org/abs/2605.28799v1",
+      "date": "2026-05-27",
+      "summary": "Reports the first bulk synthesis of Mg3WN4 in a wurtzite-derived crystal structure via solid-state metathesis. In situ X-ray diffraction tracked the reaction progress, while second harmonic generation measurements confirmed the material's polar symmetry. The study reveals that bulk wurtzite Mg3WN4 is prone to defect formation and demonstrates that carefully controlling the thermal budget allows for the selective synthesis of phase-pure ternary nitrides.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.28790v1",
+      "title": "Multiscale Vectorial Determination of Magnetic Order Parameters using Electron Magnetic Linear Dichroism",
+      "url": "https://arxiv.org/abs/2605.28790v1",
+      "date": "2026-05-27",
+      "summary": "Demonstrates electron magnetic linear dichroism as a quantitative tool for mapping vectorial magnetic order parameters with nanometer resolution. By combining EELS with dynamical diffraction simulations, the study reconstructs the magnetic spin axis in antiferromagnetic and ferromagnetic FeRh. The method is robust at the atomic scale and effectively separates magnetic signals from nonmagnetic anisotropy, providing a new pathway for imaging altermagnets and antiferromagnets.",
+      "tags": [
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2605.28564v1",
+      "title": "Electron-beam induced methane decomposition for in-situ carbon doping of hexagonal boron nitride",
+      "url": "https://arxiv.org/abs/2605.28564v1",
+      "date": "2026-05-27",
+      "summary": "Presents a method for nanoscale carbon doping of hexagonal boron nitride using electron-beam irradiation in a methane atmosphere. The beam simultaneously generates vacancies and decomposes methane, leading to progressive carbon incorporation into the lattice. EELS mapping shows that carbon forms hexagonal patches approximately 1 nm in size, primarily confined to the irradiated area, which modifies the local electronic environment for defect engineering.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.27830v1",
+      "title": "Magneto-Optical Detection of Anisotropic Spin Currents in Altermagnetic RuO2",
+      "url": "https://arxiv.org/abs/2605.27830v1",
+      "date": "2026-05-27",
+      "summary": "Investigates charge-to-spin conversion in 12-nm-thick altermagnetic RuO2 films using optical probes. The study detects directionally anisotropic spin polarization that aligns with altermagnetic symmetry and is strongly suppressed along specific crystallographic directions. Scanning transmission electron microscopy reveals persistent strain in the films, which may support the observed magnetic behavior, establishing RuO2 as an efficient spin source for field-free spintronic devices.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-mes-hall",
+        "physics-app-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2605.26464v1",
+      "title": "Mid-infrared Fourier ptychographic upconversion imaging",
+      "url": "https://arxiv.org/abs/2605.26464v1",
+      "date": "2026-05-26",
+      "summary": "This study implements a high-resolution mid-infrared upconversion imaging system using elliptical pumping and Fourier ptychography to overcome aperture restrictions. By combining synthetic aperture and phase retrieval, it achieves a 39 μm resolution and a space-bandwidth product tenfold larger than previous benchmarks. The system demonstrates single-photon sensitivity, enabling high-throughput infrared imaging for industrial and biomedical applications.",
+      "tags": [
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2605.27543v2",
+      "title": "Atomic-Scale Observation of Symmetry Breaking in Altermagnetic MnTe",
+      "url": "https://arxiv.org/abs/2605.27543v2",
+      "date": "2026-05-26",
+      "summary": "Provides direct atomic-scale evidence of coexisting polar distortions and altermagnetic order in MnTe using STEM and electron magnetic chiral dichroism. The study reveals that MnTe is not a uniform g-wave altermagnet but hosts inversion-symmetry-breaking distortions. These distortions lower the symmetry to admit d-wave and s-wave spin splitting, suggesting that local lattice symmetry can be used to control altermagnetic properties.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.25722v1",
+      "title": "kikuchipy: an open-source toolbox for analysis of EBSD patterns",
+      "url": "https://arxiv.org/abs/2605.25722v1",
+      "date": "2026-05-25",
+      "summary": "Introduces kikuchipy, an open-source Python toolbox for analyzing electron backscatter diffraction patterns. The software supports Hough and dictionary indexing, orientation refinement, and result validation. It demonstrates effective phase differentiation and orientation analysis in various alloys, providing a flexible, community-driven resource for advanced electron microscopy workflows and improving indexing results through fast iteration.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.25433v1",
+      "title": "Local Structural Signatures of Shear Bands in Metallic Glasses via Electron Nanodiffraction",
+      "url": "https://arxiv.org/abs/2605.25433v1",
+      "date": "2026-05-25",
+      "summary": "Investigates structural changes in metallic glass shear bands using electron nanodiffraction and cryogenic ion polishing. The study identifies nanoscale, stripe-like regions oriented at 45 degrees to applied strain. These regions exhibit reduced centrosymmetry and increased shear and normal strain, demonstrating that plastic deformation in metallic glasses is driven by coordinated nanoscale structural transformations.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.25410v1",
+      "title": "Three-Dimensional Atomic-Scale Structural Transformation in a SrTiO3 Grain Boundary",
+      "url": "https://arxiv.org/abs/2605.25410v1",
+      "date": "2026-05-25",
+      "summary": "Employs multislice electron ptychography to resolve the three-dimensional atomic structure of a SrTiO3 grain boundary. The study reveals a transition from symmetric to asymmetric configurations hidden in 2D projections. Findings link these 3D structures to distinct local chemical environments, vacancy distributions, and oxygen octahedral rotations, highlighting the importance of depth-resolved characterization for engineering complex oxide functionalities.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.26311v1",
+      "title": "Resilience of the physicochemical properties of graphene-based materials for applications in harsh radiation environments",
+      "url": "https://arxiv.org/abs/2605.26311v1",
+      "date": "2026-05-25",
+      "summary": "This research investigates the effects of 60 MeV 35Cl ion irradiation on graphite (HOPG) and multilayer reduced graphene oxide (ML-rGO) for use in harsh environments. Findings reveal that while HOPG suffers from reduced crystallinity and electrical performance, ML-rGO undergoes partial structural reorganization and forms more ordered sp2 domains. This suggests that initial material order significantly influences radiation tolerance in carbon-based devices.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "nucl-ex"
+      ]
+    },
+    {
+      "id": "arxiv-2605.25000v1",
+      "title": "Processing-Controlled Structural Uniformity and Oxide-Ion Conduction in Na0.52Bi0.47TiO3 Ceramics Probed by Eu3+ Photoluminescence",
+      "url": "https://arxiv.org/abs/2605.25000v1",
+      "date": "2026-05-24",
+      "summary": "Evaluates how precursor mixing methods influence the structural uniformity and oxide-ion conduction of Na0.52Bi0.47TiO3 ceramics using Eu3+ photoluminescence. The study finds a processing-driven trade-off between bulk defect generation and grain-boundary blocking. Dry-ground samples exhibit higher bulk conductivity, while wet-ground samples show lower grain-boundary resistance, with Ca-doping further improving conductivity to 18.98 mS cm-1 at 600 °C.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2605.24800v1",
+      "title": "Photoluminescence Identification of Multiple Local Eu3+ Environments in BaTiO3 Ceramics",
+      "url": "https://arxiv.org/abs/2605.24800v1",
+      "date": "2026-05-24",
+      "summary": "Utilizes Eu3+ photoluminescence as a sensitive probe to identify multiple local environments in BaTiO3 ceramics sintered at various temperatures. While conventional diffraction shows a standard tetragonal phase, photoluminescence spectra and decay analysis reveal two distinct Eu-related local configurations. The results demonstrate that optical probing can track local structural heterogeneity and processing-dependent changes inaccessible to average lattice techniques.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2605.23357v1",
+      "title": "Cathodoluminescence Analysis of Defects and Grain Boundaries in Zn3P2 Thin Films Grown on Graphene by MOVPE and MBE",
+      "url": "https://arxiv.org/abs/2605.23357v1",
+      "date": "2026-05-22",
+      "summary": "This study investigates defects and grain boundaries in Zn3P2 thin films grown on graphene using MOVPE and MBE. The researchers linked antiphase boundaries to optical emission modulation and found that grain boundaries act as non-radiative sinks for charge carriers. MOVPE-grown films showed larger grains and improved material quality compared to MBE, highlighting grain-size control as essential for optimizing photovoltaic absorbers.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.22943v1",
+      "title": "A new method to probe conducting filaments in MoS$_2$-based memristors",
+      "url": "https://arxiv.org/abs/2605.22943v1",
+      "date": "2026-05-21",
+      "summary": "The authors develop a novel mechanical exfoliation technique to investigate conducting filaments in MoS2-based memristors. By selectively removing the top electrode, they used KPFM and Raman mapping to reveal that filament formation occurs through metallic atom migration into the MoS2 layer. The study demonstrates that the choice of metallic electrode significantly influences switching behavior due to differences in adsorption and diffusion energies.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.22626v1",
+      "title": "A Local Probe Mass Spectrometer for Localized and Sensitive Product Detection in Environmental Electron Microscopy",
+      "url": "https://arxiv.org/abs/2605.22626v1",
+      "date": "2026-05-21",
+      "summary": "This research develops a Local Probe Mass Spectrometer (LPMS) integrated with environmental transmission electron microscopy to correlate atomic-scale structural changes with reaction products. By sampling gas locally via a micro-capillary, the system overcomes dilution issues in open-cell setups. Validation using Co3O4 nanoplates demonstrates simultaneous detection of reaction products and atomic-scale dynamics, establishing a framework for quantitative structure-reactivity correlation in catalysis.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.22152v1",
+      "title": "Electron modulation and ultrafast near-field imaging with vectorial laser fields",
+      "url": "https://arxiv.org/abs/2605.22152v1",
+      "date": "2026-05-21",
+      "summary": "This study explores the direct coupling of laser light with electron beams using vectorial laser fields. The researchers demonstrate that longitudinally polarized light can modulate electron beams coherently and linearly without nanostructured materials. Furthermore, vectorial polarizations were used to image three-dimensional nanophotonic near-fields in metallic mesocrystals, enabling the tilt-free generation of attosecond electron pulses and novel imaging modes for metamaterial tomography.",
+      "tags": [
+        "physics-optics",
+        "quant-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2605.21233v1",
+      "title": "Stacking-order-dependent electronic properties of MoTe2/WSe2 moiré bilayers",
+      "url": "https://arxiv.org/abs/2605.21233v1",
+      "date": "2026-05-20",
+      "summary": "This study calibrates optical second harmonic generation for MoTe2/WSe2 moiré bilayers using scanning transmission electron microscopy to evaluate stacking-order-dependent properties. By comparing transport and magnetic data across distinct stacking orders, the authors clarify the nature of the Chern insulator and the mechanisms of electric-field-tuned metal-insulator transitions, establishing a consistent relationship between stacking order and the electronic phase diagram.",
+      "tags": [
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2605.21176v1",
+      "title": "Oxygen-Pressure-Limited Recovery of the Hematite α-Fe$_2$O$_3$(0001) Surface from a Reduced Fe$_3$O$_4$(111)-Like Layer",
+      "url": "https://arxiv.org/abs/2605.21176v1",
+      "date": "2026-05-20",
+      "summary": "Using real-time microscopy, this study investigates the oxidation kinetics of hematite surfaces from a reduced magnetite-like layer. It finds that complete surface recovery is linked to the nucleation and lateral growth of a two-dimensional honeycomb phase. Crucially, the oxidation rate is limited by oxygen availability, with growth slowing significantly below a specific oxygen partial pressure threshold, highlighting the role of oxygen supply.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.20986v1",
+      "title": "Multiferroic Properties of Electrospun CFO-BCTSn Nanocomposites for Magnetoelectric and Magnetic Field Sensing Applications",
+      "url": "https://arxiv.org/abs/2605.20986v1",
+      "date": "2026-05-20",
+      "summary": "This research synthesizes lead-free CFO-BCTSn multiferroic composite nanofibers using sol-gel electrospinning to evaluate their potential for magnetoelectric sensing. Characterization confirms the coexistence of spinel and perovskite phases. The nanofibers exhibit both magnetic and piezoelectric properties, with magnetoelectric coupling evidenced by differences in magnetic hysteresis loops between electrically poled and unpoled samples, supporting their application in nanoscale magnetoelectric devices.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.20582v1",
+      "title": "Gold Bipyramids as a Promising Alternative to Gold Nanorods for Analytical and Biomedical Applications",
+      "url": "https://arxiv.org/abs/2605.20582v1",
+      "date": "2026-05-20",
+      "summary": "This study compares gold bipyramids and gold nanorods for analytical and biomedical applications. Findings show that bipyramids offer significantly higher spectral quality factors, a threefold increase in SERS enhancement, and greater sensitivity to refractive index changes compared to nanorods. Furthermore, bipyramids demonstrate high efficiency as thermosensitizers for photothermal therapy, as evidenced by the effective photothermal killing of E. coli under laser irradiation.",
+      "tags": [
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2605.21697v1",
+      "title": "Enhancement in Magnetic and Magnetocaloric Properties of CoFe2O4 Nanofibers at Lower Temperatures",
+      "url": "https://arxiv.org/abs/2605.21697v1",
+      "date": "2026-05-20",
+      "summary": "This paper investigates the magnetic and magnetocaloric properties of CoFe2O4 nanofibers synthesized via sol-gel electrospinning. The nanofibers exhibited a pure cubic spinel structure and ferromagnetic behavior, with a saturation magnetization of 75.87 emu/g. Significant magnetocaloric effects were observed at low temperatures, including a maximum magnetic entropy change of 1.71 J/K at 32 K, indicating potential for low-temperature electronic applications.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.21612v1",
+      "title": "Quantifying the coupling between strain and cation valence in high entropy oxide thin films using electron microscopy",
+      "url": "https://arxiv.org/abs/2605.21612v1",
+      "date": "2026-05-20",
+      "summary": "This study employs advanced S/TEM techniques to quantify the relationship between nanoscale strain and cobalt valence in high entropy oxide thin films. The researchers found that substrate temperature significantly influences local structural modulations and defect states, even in films with identical nominal compositions. These findings establish a framework for tailoring the functional properties of high entropy oxides through precise control of synthesis conditions.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.19590v1",
+      "title": "Photolithography-Only Fabrication of Transmons Using Double-Oblique Evaporation",
+      "url": "https://arxiv.org/abs/2605.19590v1",
+      "date": "2026-05-19",
+      "summary": "This study investigates a photolithography-only fabrication process for transmon Josephson junctions using double-oblique evaporation. The researchers successfully fabricated functional transmon devices with a T1 of approximately 9 microseconds. These results demonstrate the feasibility of realizing functional superconducting qubits without electron-beam lithography, simplifying the production of transmon junctions while maintaining relevant performance metrics.",
+      "tags": [
+        "quant-ph",
+        "physics-app-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2605.19496v1",
+      "title": "Nanoscale Thermal Imaging of Dislocation-Mediated Heat Transport",
+      "url": "https://arxiv.org/abs/2605.19496v1",
+      "date": "2026-05-19",
+      "summary": "This research maps nanoscale temperature distributions across individual dislocations in SrTiO3 using in situ electron microscopy. The study reveals a 47 K temperature drop across a dislocation array, identifying core-dominated and inter-core heat transport effects. These findings quantitatively resolve the spatial heterogeneity of dislocation-mediated thermal resistance, providing a microscopic basis for defect engineering in functional materials.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.19387v1",
+      "title": "Prebiotic magnetite enables chirality-magnetic surface feedback",
+      "url": "https://arxiv.org/abs/2605.19387v1",
+      "date": "2026-05-19",
+      "summary": "This study explores the magnetic properties of magnetite synthesized under prebiotic conditions to understand its role in biomolecular homochirality. Researchers found that prebiotic magnetite particles exhibit single-vortex and multi-vortex states. Simulations demonstrate that these grains undergo irreversible re-magnetization when interacting with homochiral compounds, suggesting a robust mechanism for storing and reinforcing chiral bias on the early Earth.",
+      "tags": [
+        "physics-chem-ph",
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2605.19160v1",
+      "title": "An evaluation framework for sparse 4D (3D + time) imaging reconstruction via bootstrapped cross-validation",
+      "url": "https://arxiv.org/abs/2605.19160v1",
+      "date": "2026-05-18",
+      "summary": "This paper presents a bootstrapped cross-validation framework to evaluate the performance of sparse 4D imaging reconstructions in the absence of a ground truth reference. By quantifying correlations between reconstructions from independently sampled data subsets, the method enables qualitative and quantitative assessment. Validated on simulated X-ray datasets, this approach provides a reference-free strategy for optimizing ultrafast imaging experiments.",
+      "tags": [
+        "eess-iv",
+        "physics-comp-ph",
+        "physics-data-an",
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2605.17576v1",
+      "title": "Microstructure evolution during rapid solidification of hypoeutectic Al-Ag alloys near absolute stability",
+      "url": "https://arxiv.org/abs/2605.17576v1",
+      "date": "2026-05-17",
+      "summary": "Microsegregation-free microstructures can form by solidifying at velocities beyond the absolute stability limit ($V_{\\text{abs}}$), where solute partitioning is suppressed by a stable, planar solid-liquid interface. Producing such microstru",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.16583v1",
+      "title": "Crystal growth and characterization of the ultra-high temperature substrate $\\mathrm{Ta_{1-x}Hf_{x}C_{0.5}}$",
+      "url": "https://arxiv.org/abs/2605.16583v1",
+      "date": "2026-05-15",
+      "summary": "Incorporation of $\\mathrm{Al_{y}Ga_{1-y}N}$ (AGN) semiconductors into high power electronics offers efficiency improvements in power transmission, generation, and use, if approaches to eliminate the defects arising from film-lattice mismatc",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.14673v1",
+      "title": "Compositional and Magnetic Characterisation of Oblique Co and Fe Nanowire Structures Fabricated Using Focused Electron Beam Induced Deposition",
+      "url": "https://arxiv.org/abs/2605.14673v1",
+      "date": "2026-05-14",
+      "summary": "This study investigates the elemental composition and magnetic induction of 3D Co and Fe nanowires fabricated via FEBID at varying growth angles. It finds that metal content decreases as the oblique growth angle increases. Optimizing electron beam parameters—specifically using lower voltage and higher current—mitigates this reduction, maintaining uniform metal content for growth angles up to 60°.",
+      "tags": [
+        "cond-mat-mes-hall",
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.13611v1",
+      "title": "Magnetocaloric Effect in Nanostructured $La_{0.6}Sr_{0.4}Fe_{1-x}Co_{x}O_3$",
+      "url": "https://arxiv.org/abs/2605.13611v1",
+      "date": "2026-05-13",
+      "summary": "This research examines the magnetocaloric effect in nanostructured La0.6Sr0.4Fe1-xCoxO3 perovskites. It finds that substituting iron with cobalt enhances ferromagnetic coupling, increasing saturation magnetization and the Curie temperature. The cobalt-rich sample achieved the highest entropy change, demonstrating that combining cobalt doping with controlled nanostructuring effectively optimizes the material's magnetocaloric response.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.13528v1",
+      "title": "High-temperature behavior of amorphous alumina coatings: Insights from in-situ nanoindentation and X-ray diffraction studies",
+      "url": "https://arxiv.org/abs/2605.13528v1",
+      "date": "2026-05-13",
+      "summary": "This study evaluates the high-temperature mechanical properties and structural stability of amorphous Al2O3 coatings. Findings show that hardness decreases with temperature while the Young's modulus remains constant, reflecting increased plasticity. In-situ X-ray diffraction revealed crystallization begins at 700°C, with the material transitioning to a stable alpha-Al2O3 phase above 950°C, defining the coating's thermal application limits.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.12889v1",
+      "title": "Topological and morphological signatures of disorder in a self-assembled, soft matter sponge network",
+      "url": "https://arxiv.org/abs/2605.12889v1",
+      "date": "2026-05-13",
+      "summary": "This paper analyzes topological and morphological differences between ordered double-gyroid and disordered sponge networks in block copolymers. It reveals the sponge network is primarily trivalent but lacks the intercatenated loops of the double-gyroid. This suggests the sponge is a disordered single-gyroid variant, offering a topological method to distinguish and map the boundary between ordered and disordered phases.",
+      "tags": [
+        "cond-mat-soft",
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.09398v1",
+      "title": "Characterizing Dislocation Substructures in Creep-Deformed Olivine Using Electron Channeling Contrast Imaging",
+      "url": "https://arxiv.org/abs/2605.09398v1",
+      "date": "2026-05-10",
+      "summary": "This study applies electron channeling contrast imaging (ECCI) to characterize dislocation substructures in creep-deformed olivine. It finds that ECCI reliably reveals complex subgrain boundaries and dislocation loops, providing essential constraints for modeling dislocation creep in Earth's mantle minerals.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.11018v1",
+      "title": "Correction of STEM Distortions",
+      "url": "https://arxiv.org/abs/2605.11018v1",
+      "date": "2026-05-10",
+      "summary": "This paper derives mathematical transformations to correct scanning distortions in Scanning Transmission Electron Microscopy (STEM) images. These transformations provide a technical foundation for correction algorithms implemented in the CEOS Panta Rhei and TEMDM software packages, enabling more accurate image reconstruction.",
+      "tags": [
+        "physics-ins-det",
+        "physics-data-an"
+      ]
+    },
+    {
+      "id": "arxiv-2605.08264v1",
+      "title": "Indirect Detection of Lactate Through Voltammetry Using Glassy Carbon Microelectrodes",
+      "url": "https://arxiv.org/abs/2605.08264v1",
+      "date": "2026-05-08",
+      "summary": "The study aims to achieve indirect voltammetric detection of non-electroactive lactate using glassy carbon microelectrodes. By immobilizing lactate oxidase in a chitosan matrix, the researchers successfully detected lactate at concentrations as low as 10 nM through enzymatic hydrogen peroxide generation, demonstrating a robust sensing platform.",
+      "tags": [
+        "physics-bio-ph",
+        "cond-mat-mtrl-sci",
+        "physics-med-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2605.06603v1",
+      "title": "Moire based strain analysis in wurtzite GaAs -- rock-salt (Pb,Sn)Te core-shell nanowires grown by molecular beam epitaxy",
+      "url": "https://arxiv.org/abs/2605.06603v1",
+      "date": "2026-05-07",
+      "summary": "This study investigates core/shell GaAs/(Pb,Sn)Te nanowires grown by molecular beam epitaxy to estimate strain in the topological crystalline insulator shells. Using high-resolution TEM and geometric phase analysis, the authors identify misfit dislocations and moiré fringes, demonstrating that moiré pattern analysis serves as an effective alternative for quantifying strain in core-shell nanowire structures.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.06545v1",
+      "title": "Emergence of a correlated insulating state in bulk 1T-NbSe$_2$ via metal intercalation",
+      "url": "https://arxiv.org/abs/2605.06545v1",
+      "date": "2026-05-07",
+      "summary": "Researchers synthesized bulk 1T-NbSe2 using electrochemical Sn intercalation, a phase previously limited to monolayers. While DFT predicts metallic behavior, the intercalated samples exhibit an insulating state driven by electronic correlations. This work establishes electrochemical intercalation as a viable method to stabilize inaccessible bulk polytypes and provides a new platform for studying correlated electronic states.",
+      "tags": [
+        "cond-mat-str-el",
+        "cond-mat-supr-con"
+      ]
+    },
+    {
+      "id": "arxiv-2605.05956v1",
+      "title": "Local droplet etching-assisted quantum dot epitaxy for telecom C-band quantum light emitters",
+      "url": "https://arxiv.org/abs/2605.05956v1",
+      "date": "2026-05-07",
+      "summary": "The study proposes local droplet etching (LDE) to fabricate symmetric, low-density InGaAs quantum dots for telecom C-band applications. Key findings include narrow photoluminescence emission lines and confirmed single-photon emission with low g(2)(0) values. The results demonstrate that LDE is a versatile and scalable approach for creating high-quality quantum light sources with tailored emission properties.",
+      "tags": [
+        "physics-optics",
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2605.06603v2",
+      "title": "Moire based strain analysis in wurtzite GaAs -- rock-salt (Pb,Sn)Te core-shell nanowires grown by molecular beam epitaxy",
+      "url": "https://arxiv.org/abs/2605.06603v2",
+      "date": "2026-05-07",
+      "summary": "This research investigates strain in GaAs/(Pb,Sn)Te core-shell nanowires using transmission electron microscopy. The study finds that moiré patterns and misfit dislocations at the interface serve as an effective alternative for estimating strain in crystalline topological insulator shells, facilitating the characterization of lattice mismatch.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.04953v1",
+      "title": "Characterization of Photopolymerized Microscopic Chiral Structures Using Photonic Orbital Angular Momentum",
+      "url": "https://arxiv.org/abs/2605.04953v1",
+      "date": "2026-05-06",
+      "summary": "Demonstrates a low-cost platform for fabricating microscale chiral structures using maskless photolithography and characterizing them via helical dichroism with orbital angular momentum (OAM) vortex beams. The study achieved helical dichroism signals of ~30%, establishing OAM as a robust, spatially selective chiral probe that eliminates the need for expensive femtosecond sources or specialized plasmonic substrates.",
+      "tags": [
+        "physics-optics",
+        "cond-mat-soft"
+      ]
+    },
+    {
+      "id": "arxiv-2605.04871v1",
+      "title": "A Two-Step Chemical Vapor Deposition Process for the Synthesis of an Ir(111)/Borophene/2D-Hexagonal Boron Nitride Heterostructure by Intrinsic Segregation",
+      "url": "https://arxiv.org/abs/2605.04871v1",
+      "date": "2026-05-06",
+      "summary": "Reports a two-step chemical vapor deposition process to synthesize a vertical Ir(111)/borophene/hexagonal boron nitride heterostructure. By exploiting boron's finite solubility in iridium and intrinsic segregation during cooling, the researchers formed a borophene monolayer beneath a boron nitride overlayer. This approach offers a scalable route for producing high-quality, large-area vertical heterostructures of two-dimensional materials.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-app-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2605.04854v1",
+      "title": "Emergence of Localized Surface Plasmons in Unpatterned Hyperdoped Polycrystalline Silicon",
+      "url": "https://arxiv.org/abs/2605.04854v1",
+      "date": "2026-05-06",
+      "summary": "Demonstrates that localized surface plasmon resonances can emerge in unpatterned hyperdoped polycrystalline silicon films without external nanostructuring. The study finds that mid-infrared plasmonic responses originate from metal-dielectric interfaces at grain boundaries. This universal phenomenon allows for cost-effective, microelectronics-compatible plasmonic devices by utilizing the natural grain structure of doped semiconductors to tune light-matter interactions.",
+      "tags": [
+        "physics-optics",
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.02788v1",
+      "title": "Structural evolution of Ti/Cu multilayers as a function of period thickness",
+      "url": "https://arxiv.org/abs/2605.02788v1",
+      "date": "2026-05-04",
+      "summary": "This study examines how period thickness affects the morphology and crystallization of Ti/Cu multilayers. It finds that period thickness dictates the balance between interfacial intermixing and crystallization. Smaller periods exhibit reduced periodicity and intermixing, while larger periods show more regular structures with progressive crystallization and texture development, particularly in fcc Cu(111) and Ti layers.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.00801v1",
+      "title": "Oxygen Vacancies at Dislocation Core Modulate Plasticity in Strontium Titanate",
+      "url": "https://arxiv.org/abs/2605.00801v1",
+      "date": "2026-05-01",
+      "summary": "Investigates the correlation between dislocation core structure, oxygen vacancy density, and mobility in SrTiO3. Using STEM and MD simulations, the study finds that oxygen vacancy evolution at the core depends on gliding distance and is intrinsically coupled with plasticity, suggesting a mechanism where vacancies modulate dislocation mobility in oxides.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.00703v1",
+      "title": "TrueEBSD in MTEX: automatic image matching for correlative microscopy applications",
+      "url": "https://arxiv.org/abs/2605.00703v1",
+      "date": "2026-05-01",
+      "summary": "Introduces TrueEBSD, an open-source MTEX add-on for automatic image alignment and spatial distortion correction in correlative microscopy. By augmenting EBSD maps with SEM data, the tool enables quantitative crystallographic measurements, such as phase fraction and grain boundary susceptibility, which are unattainable when analyzing datasets separately.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.00464v1",
+      "title": "An Advanced Epitaxial Strategy Enabling Vertical GaN Devices on Silicon Wafers",
+      "url": "https://arxiv.org/abs/2605.00464v1",
+      "date": "2026-05-01",
+      "summary": "Presents a sputtering-based strategy to grow high-quality GaN epitaxial films on silicon with low vertical resistance. By forming a sub-nanometer silicide-based template, the researchers created an amorphous-like interlayer that relaxes strain and accommodates lattice mismatch, enabling device-grade vertical performance and ohmic behavior for cost-effective power electronics and micro-LEDs.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-app-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2605.01125v1",
+      "title": "Fast reduction of electron-beam-activated graphene oxide by an infrared laser pulse",
+      "url": "https://arxiv.org/abs/2605.01125v1",
+      "date": "2026-05-01",
+      "summary": "This research investigates the rapid reduction of graphene oxide using a synergistic electron-beam-assisted near-infrared laser pulse. The study finds that electron beam irradiation creates defects that enhance NIR absorption and oxygen diffusion, enabling a 90% reduction of a 46-nm film within 960 ns. This process locally restores sp2 bonding while introducing turbostatic disorder.",
+      "tags": [
+        "physics-app-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2604.28120v1",
+      "title": "Polar Topologies in a Ferroelastic Metal Membrane",
+      "url": "https://arxiv.org/abs/2604.28120v1",
+      "date": "2026-04-30",
+      "summary": "This study investigates polar textures in freestanding SrRuO3 membranes. By releasing epitaxial films from substrates, researchers observed ferroelastic domain refinement that generates emergent polar topologies. Key findings reveal electric polarization selectively at translation-inequivalent antiphase boundaries through Neel-like tilt interpolation and within 90-degree ferroelastic walls due to strain mismatch and rotostriction, demonstrating that metal oxide membranes can host nanoscale polar textures.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2605.02934v1",
+      "title": "Statistical analysis of virion-cell interactions mediated by peptide nanofibrils and peptide amphiphiles using STEM tomography",
+      "url": "https://arxiv.org/abs/2605.02934v1",
+      "date": "2026-04-30",
+      "summary": "The paper introduces a STEM tomography framework to statistically analyze how peptide nanofibrils and amphiphiles govern virion-cell interactions. It reveals that while all tested peptides efficiently capture virions, they employ distinct spatial organization strategies that likely determine their viral transduction-enhancing efficacy.",
+      "tags": [
+        "physics-bio-ph",
+        "cond-mat-mtrl-sci",
+        "q-bio-sc",
+        "stat-ap"
+      ]
+    },
+    {
+      "id": "arxiv-2604.26718v1",
+      "title": "Tracking visible pulsed laser annealing of Hf0.5Zr0.5O2 heterostructures with in situ transmission electron microscopy",
+      "url": "https://arxiv.org/abs/2604.26718v1",
+      "date": "2026-04-29",
+      "summary": "This study uses in situ transmission electron microscopy to monitor HZO heterostructure crystallization under visible nanosecond laser pulses. It identifies a sharp energy threshold, finding that a single 177 mJ/cm2 pulse yields 86% of the ferroelectric orthorhombic phase. Simulations show substrate melting limits temperatures to 1900 °C, supporting a kinetic crystallization pathway via the tetragonal phase.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-app-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2604.26680v1",
+      "title": "Beyond conventional skyrmions in synthetic antiferromagnets",
+      "url": "https://arxiv.org/abs/2604.26680v1",
+      "date": "2026-04-29",
+      "summary": "Researchers investigate skyrmion formation in synthetic antiferromagnets using asymmetric CoB and CoFeB sublattices. They identify two distinct skyrmion families—conventional and inverse polarity—governed by the competition between external magnetic fields and interlayer RKKY exchange. Findings demonstrate that these textures reside exclusively in the CoFeB layers, providing a method for engineering programmable 3D spin textures for skyrmion-based computing.",
+      "tags": [
+        "cond-mat-mes-hall",
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2604.26664v1",
+      "title": "Circular Phase Representation and Geometry-Aware Optimization for Ptychographic Image Reconstruction",
+      "url": "https://arxiv.org/abs/2604.26664v1",
+      "date": "2026-04-29",
+      "summary": "This paper presents a deep learning framework for ptychographic reconstruction that models phase on a unit circle using cosine and sine components. By employing a differentiable geodesic loss, the method avoids branch-cut discontinuities and wrapping artifacts. Results demonstrate superior reconstruction, better preservation of high-frequency content, and significant speed improvements over traditional iterative solvers while maintaining physical consistency.",
+      "tags": [
+        "eess-iv",
+        "cs-cv",
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2604.26718v2",
+      "title": "Tracking visible pulsed laser annealing of Hf$_{0.5}$Zr$_{0.5}$O$_2$ heterostructures with in situ transmission electron microscopy",
+      "url": "https://arxiv.org/abs/2604.26718v2",
+      "date": "2026-04-29",
+      "summary": "This study tracks the visible pulsed laser annealing of Hf0.5Zr0.5O2 (HZO) heterostructures using in situ transmission electron microscopy. The researchers identified a sharp laser energy threshold for crystallization, finding that a single 177 mJ/cm² pulse produces an 86% ferroelectric orthorhombic phase.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-app-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2604.24941v1",
+      "title": "Visualizing Crystallization Dynamics and Transformation Pathways of Disordered Rocksalt Oxides During Thermally Activated Sol-Gel Synthesis",
+      "url": "https://arxiv.org/abs/2604.24941v1",
+      "date": "2026-04-27",
+      "summary": "This study investigates the crystallization dynamics of disordered rocksalt Li1.2Mn0.4Ti0.4O2 during sol-gel synthesis. Using multiscale characterization, it identifies two pathways: a multi-step transition via stable intermediates and a kinetic shortcut where intermediates dissolve into an amorphous matrix to directly precipitate the target structure. Macroscopically, transformation primarily proceeds through spinel and lithium titanite intermediates.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2604.23569v1",
+      "title": "Quantum echo-enabled high harmonic generation using ultrafast electrons",
+      "url": "https://arxiv.org/abs/2604.23569v1",
+      "date": "2026-04-26",
+      "summary": "The study introduces a quantum echo-enabled high-harmonic generation (QEEHG) scheme to produce tunable, coherent radiation by manipulating electron wavepacket phases. By combining multiphoton PINEM scattering with dispersive chirps, the approach induces quantum interference to selectively enhance high-harmonic orders while suppressing unwanted radiation. This method establishes a new paradigm for compact coherent light sources and quantum wavefunction shaping in ultrafast electron microscopy.",
+      "tags": [
+        "physics-optics",
+        "physics-acc-ph",
+        "quant-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2604.22726v1",
+      "title": "Mechanical Scaling Laws and Deformation Behavior of Nanoporous Tantalum Microparticles",
+      "url": "https://arxiv.org/abs/2604.22726v1",
+      "date": "2026-04-24",
+      "summary": "This study investigates the mechanical scaling laws of nanoporous tantalum produced via liquid metal dealloying. It finds that stiffness and hardness scale with solid volume fraction according to Gibson-Ashby predictions, unlike nanoporous gold. This behavior is attributed to enhanced ligament connectivity enabled by solvent chemistry, with molecular dynamics simulations confirming dislocation-dominated plasticity during indentation.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2604.22561v1",
+      "title": "Influence of Ni Doping on the Structural, Morphological, Optical, and Electrical Properties of Nanocrystalline Cd1-xMnxS Thin Films",
+      "url": "https://arxiv.org/abs/2604.22561v1",
+      "date": "2026-04-24",
+      "summary": "Researchers investigated the effects of Ni doping on Cd1-xMnxS thin films for optoelectronic applications. They found that increasing Ni concentration improves crystallinity, increases grain size, and reduces the optical band gap from 2.72 to 2.62 eV. The doped films exhibit high optical transmittance and enhanced photoconductivity, demonstrating their potential as efficient window layers for thin-film solar cells.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2604.22398v1",
+      "title": "Accurate Nanoscale Mapping of Electric Fields across Random Grain Boundaries in Polycrystalline Oxides Using Precession-Assisted 4D-STEM",
+      "url": "https://arxiv.org/abs/2604.22398v1",
+      "date": "2026-04-24",
+      "summary": "This study develops a precession-assisted 4D-STEM method to accurately map electric fields across grain boundaries in polycrystalline oxides. By combining electron beam precession with advanced post-processing, the researchers achieved unbiased diffraction shift measurements. This approach successfully extracts local electric fields and charge distributions in BaTiO3 and SrTiO3, overcoming the limitations of conventional center-of-mass analysis and dynamical scattering.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2604.22346v1",
+      "title": "Electric-Field Control of Quantum Tunneling Regimes in Focused He-Ion-Beam-Irradiated Oxide Interfaces",
+      "url": "https://arxiv.org/abs/2604.22346v1",
+      "date": "2026-04-24",
+      "summary": "This research explores using helium focused ion beam irradiation to create gate-tunable potential barriers at oxide interfaces. The study finds that irradiation-induced lattice deformation enables the fabrication of tunnel field-effect transistors. Electrostatic backgating allows continuous tuning of the barrier profile, enabling controlled access to thermionic emission, direct tunneling, and Fowler-Nordheim tunneling regimes within a single device architecture.",
+      "tags": [
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2604.21550v1",
+      "title": "Modulation of Spin Angular Momentum of Emission in Symmetric 1D Plasmonic Crystals by Cathodoluminescence",
+      "url": "https://arxiv.org/abs/2604.21550v1",
+      "date": "2026-04-23",
+      "summary": "This study investigates circularly polarized light (CPL) generation in symmetric 1D plasmonic crystals using electron beam excitation. It demonstrates that coherent interference between transition radiation and plasmonic modes produces energy- and momentum-resolved CPL. The findings reveal that CPL efficiency can be modulated by the excitation position, offering a platform for nanoscale spin angular momentum control without structural chirality.",
+      "tags": [
+        "physics-optics",
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2604.20558v1",
+      "title": "Predictive drift compensation of multi-frame STEM via live scan modification",
+      "url": "https://arxiv.org/abs/2604.20558v1",
+      "date": "2026-04-22",
+      "summary": "This paper presents a method to mitigate sample drift in STEM by analyzing past frames to predict and adjust future sampling-grid points. By offsetting the scan-grid framewise and pixelwise, the technique removes long-range drift and minimizes intra-image warping. The framework is effective for atomic-resolution and in-situ video across various scan patterns.",
+      "tags": [
+        "physics-ins-det",
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2604.20463v1",
+      "title": "Imaging the transverse component of optical near-fields in resonant photonic structures",
+      "url": "https://arxiv.org/abs/2604.20463v1",
+      "date": "2026-04-22",
+      "summary": "This study uses ultrafast 4D scanning transmission electron microscopy to image optical near-fields in resonant photonic structures. By visualizing the transverse Lorentz force in silicon nanostructures, the authors demonstrate that these structures enable efficient transverse electron streaking at optical frequencies. The measured spatial profiles match numerical simulations, validating the use of U4DSTEM for high-resolution near-field mapping.",
+      "tags": [
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2604.19384v1",
+      "title": "Drift Correction of Scan Images by Snapshot Referencing",
+      "url": "https://arxiv.org/abs/2604.19384v1",
+      "date": "2026-04-21",
+      "summary": "Introduces snapshot-referencing (SSR) drift correction to eliminate spatial distortions in scanning electron microscopy. By using a fast-scan snapshot as a reference and modeling drift with Bezier and piece-wise linear functions, the method restores spatial integrity in hyperspectral data cubes. This software-based solution is applicable to various probe-based analytical techniques without requiring specialized hardware.",
+      "tags": [
+        "physics-ins-det",
+        "cond-mat-mtrl-sci",
+        "physics-comp-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2604.18935v1",
+      "title": "Proximity Magnetism in Mn(Bi,Sb)2Te4-(Bi,Sb)2Te3/MnTe Natural Heterostructures",
+      "url": "https://arxiv.org/abs/2604.18935v1",
+      "date": "2026-04-21",
+      "summary": "Investigates magnetic and topological orders in self-organized Mn(Bi,Sb)2Te4-(Bi,Sb)2Te3/MnTe natural heterostructures. The study finds that Mn(Bi,Sb)2Te4 mediates exchange fields, resulting in an anomalous Hall effect with an enhanced interfacial Neel temperature exceeding 200 K. This architecture enables robust, field-free spin-orbit torque switching at low current densities, demonstrating significant potential for practical spintronic applications.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-str-el"
+      ]
+    },
+    {
+      "id": "arxiv-2604.19847v1",
+      "title": "Organosilane-functionalized hydrothermal-derived coatings on titanium alloys for hydrophobization and corrosion protection",
+      "url": "https://arxiv.org/abs/2604.19847v1",
+      "date": "2026-04-21",
+      "summary": "This research examines the impact of NaOH hydrothermal treatment and hexadecyltrimethoxysilane (HDTMS) coating on Ti-6Al-4V alloy properties. While alkaline treatment initially reduces corrosion resistance, subsequent HDTMS functionalization achieves significant hydrophobicity (147° contact angle) and improves corrosion protection in NaCl solutions. The results suggest this dual treatment is ideal for enhancing titanium alloy durability in moisture-exposed applications.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-app-ph",
+        "physics-chem-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2604.17561v1",
+      "title": "Crystallographic Challenges in Microscopy of Multidomain Spinel Materials",
+      "url": "https://arxiv.org/abs/2604.17561v1",
+      "date": "2026-04-19",
+      "summary": "Evaluates STEM-HAADF imaging and Fourier filtering for characterizing delta-DRX spinel domains. Simulations show that interfaces between eight variants produce four Fourier filtered profiles, one of which is undetectable along the [110] axis. The results suggest that apparent disorder may be slanted domain boundaries, highlighting the need for careful interpretation of atomic-resolution micrographs in multi-domain materials.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2604.15981v1",
+      "title": "Laser induced surface nitriding of niobium: phase evolution and superconducting behaviour",
+      "url": "https://arxiv.org/abs/2604.15981v1",
+      "date": "2026-04-17",
+      "summary": "This study investigates laser-induced nitriding of niobium to evaluate phase evolution and superconducting properties. It establishes a processing map for beta and gamma phases, finding that gamma-phase formation increases the critical temperature to approximately 15 K. Additionally, a uniform beta-layer quadruples surface microhardness, providing a method to engineer mechanically robust and superconducting Nb-N layers.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-supr-con"
+      ]
+    },
+    {
+      "id": "arxiv-2604.15812v1",
+      "title": "Direct Orientation Contrast Imaging of Anti-Phase Domains on III-V Materials Using Scanning Electron Microscopy",
+      "url": "https://arxiv.org/abs/2604.15812v1",
+      "date": "2026-04-17",
+      "summary": "This research examines direct orientation contrast imaging of zinc-blende III-V materials using scanning electron microscopy. By analyzing GaP on GaAs, the study quantifies anti-phase domain contrast relative to electron beam energy and tilt angles. Findings show that image processing reveals in-plane preferential anti-phase boundaries for GaP on Si, facilitating the characterization of III-V materials grown on non-polar substrates.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-app-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2604.13768v1",
+      "title": "Anion Ordering and Phase Stability Govern Optical Band Gaps in BaZr(S,Se)3",
+      "url": "https://arxiv.org/abs/2604.13768v1",
+      "date": "2026-04-15",
+      "summary": "This study investigates mixing thermodynamics and phase stability in the BaZr(S,Se)3 system using simulations and electron microscopy. It identifies a layered anion-ordered structure at 33% sulfur and maps the temperature-composition phase diagram. Findings reveal that composition, structure, and anion ordering control the optical band gap, with selenium alloying and ordering enabling tuning between 1.6 and 1.9 eV.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2604.24769v1",
+      "title": "SPARSE -- Efficient High-Resolution SEM Imaging of Rare Microstructural Features Across Large Areas by Selective Rescanning",
+      "url": "https://arxiv.org/abs/2604.24769v1",
+      "date": "2026-04-15",
+      "summary": "The authors developed SPARSE, an open-source Python framework for efficient high-resolution SEM imaging of rare microstructural features. By using a two-stage selective rescanning approach, the framework achieved a 95% detection rate in dual-phase steel while reducing acquisition time to just 19% of conventional methods.",
+      "tags": [
+        "physics-app-ph",
+        "cond-mat-mtrl-sci",
+        "physics-ins-det"
+      ]
+    },
+    {
+      "id": "arxiv-2604.12612v1",
+      "title": "Damage dose dependence of deuterium retention in high-temperature self-ion irradiated tungsten",
+      "url": "https://arxiv.org/abs/2604.12612v1",
+      "date": "2026-04-14",
+      "summary": "This study investigates deuterium (D) retention in tungsten irradiated by self-ions at 1350 K. It finds that D concentration increases with damage dose without saturation, reaching 1.7 at.% at 2.3 dpa. High-temperature irradiation induces nm-sized voids where D is trapped as both gas and surface atoms, a mechanism distinct from lower-temperature irradiation behaviors.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2604.12571v1",
+      "title": "Tuning Structure and Magnetism in Large-Scale 2D Ferromagnet Fe$_3$GeTe$_2$ through Ni Doping",
+      "url": "https://arxiv.org/abs/2604.12571v1",
+      "date": "2026-04-14",
+      "summary": "This research uses molecular beam epitaxy to control Ni-doping in 2D ferromagnetic Fe3GeTe2 films. Findings show that Ni substitution and intercalation shrink lattice parameters, suppress perpendicular magnetic anisotropy, and drastically reduce the Curie temperature to 50 K. Theoretical calculations confirm these effects are due to altered magnetic exchange interactions and magnetocrystalline anisotropy energies.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2604.12522v1",
+      "title": "Depth-Resolved Thermal Conductivity of HFCVD Diamond Films via Square-Pulsed Thermometry",
+      "url": "https://arxiv.org/abs/2604.12522v1",
+      "date": "2026-04-14",
+      "summary": "This study measures the depth-resolved thermal conductivity of HFCVD diamond films on SiC using square-pulsed source thermometry. It finds that thermal conductivity increases from 60 W/m·K at the nucleation interface to 200 W/m·K at the surface. This gradient directly reflects microstructural grain coarsening, offering a physically grounded model for heat transport in diamond-based thermal management layers.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-app-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2604.12571v2",
+      "title": "Tuning Structure and Magnetism in Large-Scale 2D Ferromagnet Fe$_3$GeTe$_2$ through Ni Doping",
+      "url": "https://arxiv.org/abs/2604.12571v2",
+      "date": "2026-04-14",
+      "summary": "This research investigates the effects of Ni doping on the structural and magnetic properties of epitaxial Fe3GeTe2 films grown via molecular beam epitaxy. The study finds that Ni substitution and intercalation lead to lattice shrinkage, a suppression of perpendicular magnetic anisotropy, and a drastic reduction in the Curie temperature.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2604.09329v1",
+      "title": "On the origin of superlattice stacking faults nucleation via climb of Frank partial in CoNi-based superalloys",
+      "url": "https://arxiv.org/abs/2604.09329v1",
+      "date": "2026-04-10",
+      "summary": "Investigates superlattice stacking fault (SF) nucleation in CoNi-based superalloys at 850°C, demonstrating that non-conservative climb of Frank partials is a viable pathway for forming both intrinsic and extrinsic SFs. Key findings include the first experimental confirmation of negative climb-assisted extrinsic fault nucleation and the role of solute segregation in reducing fault energy to enable sustained climb.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2604.09223v1",
+      "title": "Favorable half-Heusler structure of synthesized TiCoSb alloy: a theoretical and experimental study",
+      "url": "https://arxiv.org/abs/2604.09223v1",
+      "date": "2026-04-10",
+      "summary": "Identifies the most favorable crystal structure of synthesized TiCoSb half-Heusler alloy for thermoelectric applications using Rietveld refinement, electron microscopy, and first-principles calculations. The study determines the most stable structure among four candidates by corroborating theoretical energy estimations with experimental data, establishing the crystallized lattice structure and providing a foundation for evaluating its thermoelectric properties.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2604.09807v1",
+      "title": "Decoding Superconductivity in La$_3$Ni$_2$O$_{7-δ}$ Thin Films via Ozone-Driven Structure and Oxidation Tuning",
+      "url": "https://arxiv.org/abs/2604.09807v1",
+      "date": "2026-04-10",
+      "summary": "This study investigates structural and electronic prerequisites for superconductivity in epitaxial La3Ni2O7-δ thin films. Using STEM and EELS to correlate stacking polymorphs with transport behavior, the researchers find that homogeneity in oxygen stoichiometry, epitaxial strain, and structural motifs are critical for stabilizing the superconducting phase. These findings offer a framework for designing ambient-pressure superconducting nickelates.",
+      "tags": [
+        "cond-mat-supr-con",
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2604.09794v1",
+      "title": "Ferromagnetic interlayer exchange coupling in a few layers of CrSBr on a gold thin film",
+      "url": "https://arxiv.org/abs/2604.09794v1",
+      "date": "2026-04-10",
+      "summary": "This research uses spin-polarized low energy electron microscopy to image the magnetic texture of thin CrSBr on gold. It discovers a ferromagnetic ground state for thicknesses under 11 nm, stabilized by electron transfer from the gold substrate. This demonstrates that substrate engineering can effectively tune the magnetic properties and electronic band structure of two-dimensional magnets for spintronic applications.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2604.09732v1",
+      "title": "Toward Neutrino and Dark Matter Detection with Ancient Minerals: TEM Study of Heavy-Ion Tracks in Olivine",
+      "url": "https://arxiv.org/abs/2604.09732v1",
+      "date": "2026-04-09",
+      "summary": "This study evaluates olivine as a 'paleo-detector' for neutrinos and dark matter by analyzing heavy-ion tracks using STEM. The researchers found that ion irradiation produces robust, measurable tracks at the MeV scale, with continuity changes reflecting the transition between electronic and nuclear stopping powers.",
+      "tags": [
+        "physics-ins-det",
+        "astro-ph-im",
+        "hep-ex",
+        "hep-ph",
+        "nucl-ex"
+      ]
+    },
+    {
+      "id": "arxiv-2604.07271v1",
+      "title": "Physics-Informed 3D Atomic Reconstruction and Dynamics of Free-Standing Graphene from Single Low-Dose TEM Images",
+      "url": "https://arxiv.org/abs/2604.07271v1",
+      "date": "2026-04-08",
+      "summary": "This framework reconstructs 3D atomic coordinates of free-standing graphene from single low-dose TEM images with sub-angstrom accuracy. It identifies a critical dose threshold for structural recovery and demonstrates that millisecond-scale electronic modulations are driven by sub-angstrom structural fluctuations. The findings link local geometry and strain to electron localization, providing insights for beam-sensitive 2D materials.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2604.07203v1",
+      "title": "Photo-Assisted Pd-Nb2O5/Carbon Nanocomposites for Enhanced Ethanol Electro-Oxidation Kinetics and CO Tolerance in Alkaline Media",
+      "url": "https://arxiv.org/abs/2604.07203v1",
+      "date": "2026-04-08",
+      "summary": "Researchers developed Pd-Nb2O5/C nanocomposites to improve ethanol electro-oxidation and CO tolerance in alkaline media. The optimized catalyst reduced onset potential by 160 mV and increased poisoning tolerance fivefold. Light irradiation further doubled current density and enhanced stability, showing that synergistic oxide-metal interactions and photoactivation significantly improve catalytic performance for fuel cells.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2604.05989v1",
+      "title": "The 2D approximation quickly breaks down in reflection ptychography",
+      "url": "https://arxiv.org/abs/2604.05989v1",
+      "date": "2026-04-07",
+      "summary": "Develops a 3D weak-scattering description to test the 2D approximation in reflection ptychography. It finds that reflection geometries impose much stricter thickness limits than transmission due to Ewald sphere rotation. The study shows that depth-dependent propagation in the forward model resolves reconstruction artifacts and enables sample thickness recovery.",
+      "tags": [
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2604.05725v1",
+      "title": "The effect of Nb and O on the martensitic transformation in the Ti-Nb-O alloys",
+      "url": "https://arxiv.org/abs/2604.05725v1",
+      "date": "2026-04-07",
+      "summary": "Analyzes the effects of niobium and oxygen on phase stability and martensitic transformation in Ti-Nb-O alloys. It finds that niobium stabilizes the beta phase and governs martensite evolution. Oxygen modifies transformation pathways, suppressing omega phase at low niobium levels and inhibiting long-range transformation at higher levels due to interstitial-induced lattice distortions.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2604.05608v1",
+      "title": "Indication of Stochastic Photothermal Dynamics around a Topological Defect in a Chiral Magnet",
+      "url": "https://arxiv.org/abs/2604.05608v1",
+      "date": "2026-04-07",
+      "summary": "Uses pump-probe Lorentz transmission electron microscopy to study photothermally induced phase transitions in the chiral magnet Co9Zn9Mn2. It finds that magnetic order recovery is delayed and blurred near edge dislocations. This indicates that topological defects enhance stochasticity in the recovery dynamics, causing the system to follow multiple stochastic relaxation paths.",
+      "tags": [
+        "cond-mat-mes-hall",
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2604.06517v1",
+      "title": "Quantitative 3D Analysis of Porosity and Fractal Geometry in Electrochemically Etched Macroporous Silicon",
+      "url": "https://arxiv.org/abs/2604.06517v1",
+      "date": "2026-04-07",
+      "summary": "This study uses FIB-SEM tomography for quantitative 3D analysis of porosity in electrochemically etched macroporous silicon. Findings reveal that 2D surface-based estimates systematically underestimate true volumetric porosity due to pore anisotropy and branching. The results highlight the importance of direct 3D characterization for reliable morphological quantification and provide a framework for interpreting structural trends.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2604.06359v1",
+      "title": "Grafted Low-Leakage Si/AlN p-n Diodes Enabled by Fluorinated AlN Interface",
+      "url": "https://arxiv.org/abs/2604.06359v1",
+      "date": "2026-04-07",
+      "summary": "This work introduces an interface engineering approach using fluorination-induced AlFx formation and SiNx passivation to suppress leakage in p-Si/n-AlN heterojunction diodes. The engineered interface reduces reverse leakage current by several orders of magnitude while maintaining forward conduction. These results establish AlFx/SiNx passivation as an effective strategy for stabilizing AlN interfaces in low-leakage power electronics.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2604.16455v1",
+      "title": "Drug-delivery Ca-Mg silicate scaffolds encapsulated in PLGA",
+      "url": "https://arxiv.org/abs/2604.16455v1",
+      "date": "2026-04-07",
+      "summary": "The objective was to develop dual-functional bredigite scaffolds for bone regeneration and vancomycin delivery. The study found that while bare scaffolds showed burst release and low biocompatibility, encapsulating them in PLGA coatings modified the drug release kinetics and significantly improved cell viability.",
+      "tags": [
+        "physics-bio-ph",
+        "cond-mat-mtrl-sci",
+        "physics-app-ph",
+        "physics-chem-ph",
+        "physics-med-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2604.16454v1",
+      "title": "Competition of carrier bioresorption and drug release kinetics of vancomycin-loaded silicate macroporous microspheres to determine cell biocompatibility",
+      "url": "https://arxiv.org/abs/2604.16454v1",
+      "date": "2026-04-07",
+      "summary": "This research examines the cytocompatibility of vancomycin-loaded bredigite, akermanite, and diopside macroporous microspheres. The findings indicate that diopside exhibited the highest cell viability, leading to the conclusion that carrier bioresorption kinetics play a more dominant role than drug delivery kinetics in determining biocompatibility.",
+      "tags": [
+        "physics-bio-ph",
+        "cond-mat-mtrl-sci",
+        "physics-app-ph",
+        "physics-chem-ph",
+        "physics-med-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2604.04508v1",
+      "title": "Epitaxial MgSnN2 on 4H-SiC (0001): An Earth-Abundant Nitride for Green Optoelectronics and Photovoltaics",
+      "url": "https://arxiv.org/abs/2604.04508v1",
+      "date": "2026-04-06",
+      "summary": "This study demonstrates the epitaxial growth of MgSnN2 on 4H-SiC(0001) using magnetron sputtering for green optoelectronics. Findings reveal a wurtzite structure with high absorption coefficients and photoluminescence at ~2.4 eV. These results establish MgSnN2 as a viable, earth-abundant, and environmentally friendly alternative to III-nitrides for sustainable photovoltaic applications.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2604.04446v1",
+      "title": "Atomic Structure of Grain Boundaries, Dislocations and Associated Strain in Templated Co-evaporated Photoactive Halide Perovskites",
+      "url": "https://arxiv.org/abs/2604.04446v1",
+      "date": "2026-04-06",
+      "summary": "Researchers used low-dose electron microscopy to investigate atomic-level defects in templated FA0.9Cs0.1PbI3-xClx perovskite films. The study identifies a preferred <001> grain orientation and characterizes the atomic structure of grain boundaries and edge dislocations. These findings reveal how specific structural defects and associated strain fields likely act as recombination centers, influencing solar cell performance.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2604.05132v1",
+      "title": "Controlled topological dilution drives cooperative glassy dynamics in artificial spin ice",
+      "url": "https://arxiv.org/abs/2604.05132v1",
+      "date": "2026-04-06",
+      "summary": "Investigates how random decimation affects magnetic dynamics in artificial square spin ice. It finds that increasing topological disorder drives the system from long-range order to a glassy state. This state exhibits cooperative dynamics, aging, and a transition from thermally activated behavior to Vogel-Fulcher-type freezing, establishing the system as a tunable platform for studying glassiness.",
+      "tags": [
+        "cond-mat-mes-hall",
+        "cond-mat-stat-mech"
+      ]
+    },
+    {
+      "id": "arxiv-2604.05106v1",
+      "title": "Temperature Dependent Characteristics of Quasi-vertical AlN Schottky Diodes on Bulk AlN Substrate",
+      "url": "https://arxiv.org/abs/2604.05106v1",
+      "date": "2026-04-06",
+      "summary": "Characterizes temperature-dependent performance of quasi-vertical AlN Schottky barrier diodes on bulk AlN substrates. The devices show stable operation up to 300°C with high on/off ratios. Findings reveal that Poole-Frenkel emission dominates leakage, and an interfacial AlNxOy layer influences transport, providing critical insights for developing high-performance AlN power electronics.",
+      "tags": [
+        "physics-app-ph",
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2604.01784v1",
+      "title": "Understanding ultrafast x-ray 'echoes' diffracted from single crystals",
+      "url": "https://arxiv.org/abs/2604.01784v1",
+      "date": "2026-04-02",
+      "summary": "This study uses tele-ptychography to image ultrafast x-ray diffraction echoes in perfect crystals. Researchers observed ten echo maxima with a total temporal delay under 108 fs, suggesting applications for ultrafast beam splitters and monitoring rapid structural changes in single crystals.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2604.01691v1",
+      "title": "Bond-density-wave orders induced by geometric frustration in the kagome metal CeRu3Si2",
+      "url": "https://arxiv.org/abs/2604.01691v1",
+      "date": "2026-04-02",
+      "summary": "Researchers investigated geometric frustration in the kagome metal CeRu3Si2. They discovered bond-density-wave orders above room temperature, where interlayer bonds modulate to satisfy a zero-sum constraint. This finding establishes chemical bonding as a distinct pathway for frustration physics in quantum materials, expanding beyond traditional spin and charge systems.",
+      "tags": [
+        "cond-mat-str-el"
+      ]
+    },
+    {
+      "id": "arxiv-2604.00793v1",
+      "title": "Laser-generated CuPdAgPtAu High-Entropy Alloy Nanoparticles -- Thermal Segregation Threshold and Elemental Segregation",
+      "url": "https://arxiv.org/abs/2604.00793v1",
+      "date": "2026-04-01",
+      "summary": "This study investigates the elemental segregation and thermal stability of laser-generated CuPdAgPtAu high-entropy alloy nanoparticles. Findings show that rapid quenching suppresses thermodynamic segregation, while post-synthesis heating triggers Cu-Ag phase segregation, demonstrating that these nanoparticles can be stabilized under kinetic control for high-temperature catalytic applications.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2604.00483v1",
+      "title": "Revealing buried ferroelectric topologies by depth-resolved electron diffraction imaging",
+      "url": "https://arxiv.org/abs/2604.00483v1",
+      "date": "2026-04-01",
+      "summary": "The authors developed Depth-Resolved Electron Diffraction Imaging (DREDI) to map buried ferroelectric topologies in BiFeO3 films. DREDI revealed that surface stripes evolve into subsurface flux-closure vortices and vertices, enabling volumetric studies of buried configurations driven by strain heterogeneity and ferroelastic twinning.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2604.00359v1",
+      "title": "AI-assisted Human-in-the-Loop Web Platform for Structural Characterization in Hard drive design",
+      "url": "https://arxiv.org/abs/2604.00359v1",
+      "date": "2026-04-01",
+      "summary": "This paper presents a human-AI-assisted web platform for automated structural characterization in hard drive design. The workflow integrates peak detection with interactive correction to enable precise, scalable quantification of layer thickness and interface roughness in STEM images, bridging human insight and machine precision for semiconductor metrology.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cs-cv"
+      ]
+    },
+    {
+      "id": "arxiv-2604.00288v1",
+      "title": "Spatially modulated morphotropic phase boundaries in a compressively strained multiferroic thin film",
+      "url": "https://arxiv.org/abs/2604.00288v1",
+      "date": "2026-03-31",
+      "summary": "This study explores self-organizing structures of morphotropic phase boundaries in compressively strained BiFeO3 thin films. Researchers identified flat and zig-zag interphase boundaries with atomic-scale polarization rotation, suggesting these modulated structures can be engineered for enhanced piezoelectric and magnetic properties in potential device applications.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2603.29934v1",
+      "title": "Molecular beam epitaxy of wafer-scale O-band InAs/InGaAs quantum dots on GaAs for quantum photonics",
+      "url": "https://arxiv.org/abs/2603.29934v1",
+      "date": "2026-03-31",
+      "summary": "This research develops a scalable molecular beam epitaxy strategy to produce low-density O-band InAs/InGaAs quantum dots on GaAs. By utilizing gradient deposition, the team achieved controlled dot density and demonstrated electrically tunable single-photon emission with high purity, confirming the method's potential for large-scale quantum photonic applications.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-mes-hall",
+        "physics-app-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2603.28354v1",
+      "title": "Work-Function-Resolved Imaging of Relaxation Oscillations and Chemical Spillover in CO Oxidation over Platinum Surfaces",
+      "url": "https://arxiv.org/abs/2603.28354v1",
+      "date": "2026-03-30",
+      "summary": "This study investigates local electronic mechanisms in CO oxidation on platinum using operando SEM and FM-KPFM. It provides the first work-function-resolved imaging of reaction fronts, enabling physical assignment of CO- and oxygen-covered states. Findings reveal pronounced temporal asymmetry and spatial heterogeneity in chemical wave propagation, with rapid oxygen onset followed by gradual relaxation to the CO-covered state.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2603.28187v1",
+      "title": "Grain boundary defects induced Tc increment in MnSi",
+      "url": "https://arxiv.org/abs/2603.28187v1",
+      "date": "2026-03-30",
+      "summary": "This work investigates the microstructure and magnetic properties of MnSi thin films synthesized using magnetron sputtering and laser annealing. The study demonstrates that the Curie temperature can be increased fourfold, from 30 K to 120 K, by precisely controlling the crystal size to approximately 20 nm. This highlights laser annealing as a versatile method for fabricating miniaturized magnetic devices.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.28136v1",
+      "title": "Quantification of magnetic interactions in van der Waals heterostructures using Lorentz transmission electron microscopy and electron holography",
+      "url": "https://arxiv.org/abs/2603.28136v1",
+      "date": "2026-03-30",
+      "summary": "The study quantifies magnetic interactions in Fe3GeTe2/graphite/Fe3GeTe2 heterostructures using cross-sectional Lorentz transmission electron microscopy and electron holography. It identifies a dipolar coupling length scale of 34 nm, where domain misalignment emerges and the interlayer field reduces by 50%. Results also reveal magnetic moment canting near surfaces and narrow domain walls, providing guidance for designing controllable van der Waals magnetic devices.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.27272v1",
+      "title": "Designing dislocation-driven polar vortex networks in twisted perovskites",
+      "url": "https://arxiv.org/abs/2603.27272v1",
+      "date": "2026-03-28",
+      "summary": "This research explores the coupling between interfacial dislocation networks and topological vortices in twisted freestanding SrTiO3 layers. Using 4D-STEM and phase-field modeling, the authors demonstrate that interfacial reconstruction into screw dislocation networks, rather than geometric moire patterns, stabilizes long-range ordered polar vortex-antivortex arrays. This establishes twist-controlled dislocations as a method for designing local polar and electronic structures in oxides.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.27082v1",
+      "title": "Channeling-in channeling-out revisited: selected area electron channeling and electron backscatter diffraction",
+      "url": "https://arxiv.org/abs/2603.27082v1",
+      "date": "2026-03-28",
+      "summary": "This paper investigates the coupling between channeling-in and channeling-out effects in SEM by combining selected-area electron channeling patterns with EBSD. The study finds that EBSD quality metrics and signal-to-noise ratios are strongly modulated by the underlying channeling pattern. These results indicate that channeling-in significantly biases EBSD data interpretation, impacting methods like strain mapping and machine-learning-based diffraction analysis.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.26960v1",
+      "title": "Heterointerface-Engineered Electrochemically Exfoliated MoS2/WS2 2D-Layered Nanocomposite for Efficient Visible-Light Photocatalytic Degradation of Sorafenib",
+      "url": "https://arxiv.org/abs/2603.26960v1",
+      "date": "2026-03-27",
+      "summary": "This study aims to develop a MoS2/WS2 2D nanocomposite via electrochemical exfoliation for the visible-light-driven photocatalytic degradation of the anticancer drug sorafenib. The resulting heterostructure achieved 92% degradation within two hours. This enhanced performance is attributed to a Type-II band alignment that facilitates effective charge separation and directional transfer, providing a viable platform for removing persistent pharmaceutical pollutants.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.24565v1",
+      "title": "Chiral Epitaxy: Enantioselective Growth of Chiral Nanowires on Low-Symmetry Two-Dimensional Materials",
+      "url": "https://arxiv.org/abs/2603.24565v1",
+      "date": "2026-03-25",
+      "summary": "This study demonstrates the enantioselective growth of chiral tellurium nanowires on the low-symmetry 2D material ReSe2 via vapor-phase synthesis. The researchers found that handedness is determined at nucleation by interface energy differences between Te enantiomers and the chiral substrate. This chiral epitaxy provides a solvent-free, vapor-solid route to homochiral crystals compatible with semiconductor and quantum manufacturing processes.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.24416v1",
+      "title": "Substrate-dependent pore formation in molybdenum disulfide monolayers under ion irradiation",
+      "url": "https://arxiv.org/abs/2603.24416v1",
+      "date": "2026-03-25",
+      "summary": "The study investigates nanopore formation in monolayer MoS2 on various substrates under highly charged and swift heavy ion irradiation. Findings reveal that pore size and formation efficiency are highly substrate-dependent, with SiO2 enhancing pore formation and gold significantly quenching it. This indicates that substrate and interface-dependent electronic dissipation pathways play a central role in the nanostructuring of ultrathin materials.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.24320v1",
+      "title": "Automatic LbL-LPE Spin-Coating Strategy for the Fabrication of Highly Oriented Mixed-Linker MOF Thin Films for Orientation-Dependent Applications",
+      "url": "https://arxiv.org/abs/2603.24320v1",
+      "date": "2026-03-25",
+      "summary": "This work establishes an automated spin-assisted layer-by-layer liquid-phase epitaxy protocol for the high-throughput fabrication of oriented MOF thin films. Using Zn2BDC2DABCO, the study demonstrates that the automated workflow ensures reproducible crystal alignment and film homogeneity. This approach accelerates the production of materials for orientation-dependent applications while providing key quality metrics like the Hermans orientation parameter for assessing alignment.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-app-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2603.24264v1",
+      "title": "Exploring the Structure and Chemistry of 1D and 2D Lepidocrocite TiO2 at Atomic Resolution",
+      "url": "https://arxiv.org/abs/2603.24264v1",
+      "date": "2026-03-25",
+      "summary": "Researchers investigate the structural and chemical properties of 1D and 2D lepidocrocite-type titania using advanced electron microscopy and theoretical calculations. The study finds that the 1D material's unique anisotropic growth is driven by the incorporation of light element impurities, such as carbon, during synthesis. These results offer fundamental insights into the growth and chemistry of unexplored low-dimensional titania materials.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.23958v1",
+      "title": "Fundamentals and applications of aberration corrected high resolution transmission electron microscopy in materials science",
+      "url": "https://arxiv.org/abs/2603.23958v1",
+      "date": "2026-03-25",
+      "summary": "This review explores the fundamentals and applications of aberration-corrected phase contrast transmission electron microscopy for atomic-scale material characterization. It covers techniques like negative Cs phase contrast and electron ptychography, providing quantitative imaging examples. The authors highlight how these advanced tools and reconstruction methods solve challenging structural and electronic problems in materials science, offering a perspective on future developments.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.24776v1",
+      "title": "Visualizing Millisecond Atomic Dynamics of Nanocrystals in Liquid",
+      "url": "https://arxiv.org/abs/2603.24776v1",
+      "date": "2026-03-25",
+      "summary": "This study aims to visualize atomic-scale dynamics of gold nanocrystals in reactive liquid environments using millisecond-speed liquid cell electron microscopy and deep-learning denoising. It reveals reversible fluctuations in local crystallinity driven by nanocrystal-liquid interface interactions. These transient fluctuations are found to critically influence dissolution kinetics and grain boundary relaxation, providing insights into nanomaterial stability and reactivity.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.23110v1",
+      "title": "Formation of Ag and Au Plasmonic Nanoparticles by Ion Implantation in Ga$_2$O$_3$ thin films",
+      "url": "https://arxiv.org/abs/2603.23110v1",
+      "date": "2026-03-24",
+      "summary": "This study demonstrates the formation of plasmonic silver and gold nanoparticles in Ga2O3 thin films via ion implantation and thermal annealing. Key findings include the confirmation of metallic nanoparticles through TEM and RBS, with Ag showing LSPR bands as-implanted and Au requiring annealing above 500 °C. Observed LSPR shifts were primarily linked to matrix changes rather than nanoparticle size variations.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2603.21226v1",
+      "title": "Effects of fuel and soot characteristics on the inception and development of contrails",
+      "url": "https://arxiv.org/abs/2603.21226v1",
+      "date": "2026-03-22",
+      "summary": "This study develops a laboratory-scale facility and numerical models to investigate contrail inception and growth under aircraft-relevant conditions. It finds that contrail scattering propensity is more sensitive to exhaust water vapor content than soot concentrations. Additionally, higher equivalence ratios increase scattering cross-sections, and depolarization measurements reveal asphericity in ice crystal habits.",
+      "tags": [
+        "physics-flu-dyn",
+        "physics-ao-ph",
+        "physics-app-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2603.20952v1",
+      "title": "Structured Ytterbium and Erbium -doped Silica Fiber for Dual Wavelength Laser Operation",
+      "url": "https://arxiv.org/abs/2603.20952v1",
+      "date": "2026-03-21",
+      "summary": "Researchers developed a novel dual-wavelength fiber laser using a structured-core silica fiber with spatially separated ytterbium and erbium-doped regions. The study demonstrates simultaneous laser emission at 1042 nm and 1550 nm. A key finding is that the output power ratio between the two wavelengths can be effectively controlled by adjusting the length of the active fiber.",
+      "tags": [
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2603.20858v1",
+      "title": "From Photons to Electrons: Accelerated Materials Discovery via Random Libraries and Automated Scanning Transmission Electron Microscopy",
+      "url": "https://arxiv.org/abs/2603.20858v1",
+      "date": "2026-03-21",
+      "summary": "This paper proposes accelerating materials discovery by transitioning from photon-based to electron-based characterization using random chemical libraries and automated STEM. Simulations show this approach samples high-dimensional composition spaces orders-of-magnitude more effectively than conventional methods. The authors demonstrate autonomous discovery on a laboratory STEM platform using machine learning for iterative region selection and characterization without human intervention.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.20744v1",
+      "title": "Temperature-dependent vibrational EELS simulations with nuclear quantum effects",
+      "url": "https://arxiv.org/abs/2603.20744v1",
+      "date": "2026-03-21",
+      "summary": "The authors incorporate thermostatted ring polymer molecular dynamics into the TACAW framework to model low-temperature vibrational electron energy loss spectroscopy (EELS) while accounting for nuclear quantum effects. The method correctly predicts nearly temperature-independent optical phonon peak intensities in silicon. This provides a robust theoretical tool for analyzing cryogenic scanning transmission electron microscopy experiments where classical molecular dynamics predictions fail.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.20689v1",
+      "title": "Emerging hierarchical dislocation structures: Insights from scanning electron microscopy-electron backscatter diffraction in situ tensile testing and multifractal analysis",
+      "url": "https://arxiv.org/abs/2603.20689v1",
+      "date": "2026-03-21",
+      "summary": "This study employs in situ SEM-EBSD tensile testing and multifractal analysis to investigate dislocation structure evolution in 304L stainless steel. It finds that both nonirradiated and neutron-irradiated specimens form hierarchical dislocation arrangements with similar scaling behavior. The analysis reveals that irradiation accelerates the emergence and evolution of these structures while modifying correlation-driven organization, demonstrating multifractal analysis as a powerful mesoscale tool.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.20635v1",
+      "title": "Substrate-Mediated Evaporation and Stochastic Evolution of Supported Au Nanoparticles",
+      "url": "https://arxiv.org/abs/2603.20635v1",
+      "date": "2026-03-21",
+      "summary": "Using in situ TEM and automated tracking, this study investigates the high-temperature evolution of supported gold nanoparticles. It finds that average mass loss is governed by size-independent substrate-mediated evaporation. However, individual nanoparticles exhibit significant stochastic fluctuations, following random-walk trajectories. The authors develop a theory coupling evaporation with collective mass exchange and Langevin-type fluctuations to explain both ensemble-mean behavior and particle-resolved variability.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-soft",
+        "cond-mat-stat-mech"
+      ]
+    },
+    {
+      "id": "arxiv-2603.19943v1",
+      "title": "Physics-informed Bayesian Optimization for Quantitative High-Resolution Transmission Electron Microscopy",
+      "url": "https://arxiv.org/abs/2603.19943v1",
+      "date": "2026-03-20",
+      "summary": "This study implements a physics-informed Bayesian optimization framework to automate and accelerate HRTEM image quantification. By leveraging a stepwise probabilistic approach, the method determines 3D crystal structures from single images. Testing on BaTiO3 demonstrates a three to four order-of-magnitude improvement in time efficiency compared to conventional iterative approaches, enabling rapid, large-field-of-view analysis and full automation.",
+      "tags": [
+        "physics-comp-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2603.19942v1",
+      "title": "Physics-aware neural networks enable robust and full atomic structure determination via low-dose atomic electron tomography",
+      "url": "https://arxiv.org/abs/2603.19942v1",
+      "date": "2026-03-20",
+      "summary": "Researchers developed a physics-aware neural network (PANN) to enhance atomic electron tomography (AET) under low-dose conditions. PANN utilizes a 3D ResUNet for reconstruction refinement and a graph attention Transformer for elemental classification. The framework significantly reduces atomic coordinate errors and improves recovery rates, demonstrating robust generalization across diverse nanoparticles while mitigating beam damage in dose-sensitive materials.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.16607v1",
+      "title": "Efficient methods for wave propagation in electron microscopy",
+      "url": "https://arxiv.org/abs/2603.16607v1",
+      "date": "2026-03-17",
+      "summary": "This paper introduces the Scaling Angular Spectrum Method (SASM) and No-Lensing Angular Spectrum Method (NLASM) to optimize wave-optical simulations in electron microscopy. These methods significantly reduce sampling requirements and computational costs by scaling optical systems or suppressing lensing effects. Benchmarking confirms they enable efficient, high-fidelity modeling of complex electron-optical systems that were previously computationally intractable.",
+      "tags": [
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2603.15582v1",
+      "title": "Benchmarking Machine Learning Approaches for Polarization Mapping in Ferroelectrics Using 4D-STEM",
+      "url": "https://arxiv.org/abs/2603.15582v1",
+      "date": "2026-03-16",
+      "summary": "This study benchmarks machine learning models, including ResNet and PCA-informed kNN, to automate polarization direction detection from 4D-STEM data in ferroelectric materials. While simulation-to-experiment domain gaps pose challenges, prototype representation training and PCA-based methods improve transferability. Findings also reveal that model prediction irregularities can effectively identify structural defects, guiding the development of robust tools for electron microscopy analysis.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cs-cv"
+      ]
+    },
+    {
+      "id": "arxiv-2603.15420v1",
+      "title": "Microstructural characteristics, atomic-scale features, and growth mechanisms of deuterides (hydrides) in hafnium",
+      "url": "https://arxiv.org/abs/2603.15420v1",
+      "date": "2026-03-16",
+      "summary": "This study investigates deuteride-matrix interfaces in hafnium alloys using advanced microscopy and atom probe tomography to understand their multiscale structure and chemistry. The researchers characterized crystallographic orientation relationships, misfit-induced dislocations, and oxygen segregation during growth. These findings clarify the mechanisms of interface evolution, providing insights for the design and performance of hydride-metal composites in nuclear reactor applications.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.15406v1",
+      "title": "Epitaxial growth of topological insulator $β$-Ag2Te thin films",
+      "url": "https://arxiv.org/abs/2603.15406v1",
+      "date": "2026-03-16",
+      "summary": "Researchers report the epitaxial growth of beta-Ag2Te thin films on InP substrates using molecular beam epitaxy. Structural analyses confirmed a (002) crystal orientation and epitaxial atomic arrangement. Electrical measurements revealed that the films exhibit two-dimensional metallic conduction while the bulk remains insulating. This provides a viable platform for investigating surface Dirac states and designing topological insulator-based heterojunction devices.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.13937v1",
+      "title": "Countershading coloration in blue shark skin emerges from hierarchically organized and spatially tuned photonic architectures inside skin denticles",
+      "url": "https://arxiv.org/abs/2603.13937v1",
+      "date": "2026-03-14",
+      "summary": "This study investigates the physical basis of countershading in blue shark skin using correlative microscopy and spectroscopy. It reveals that coloration originates from hierarchical photonic architectures within dermal denticle pulp cavities rather than dermal chromatophores. Specifically, ordered purine-crystal stacks generate blue reflection, while disordered assemblies produce white scattering. These findings identify denticles as optical pixels that provide mechanically protected coloration.",
+      "tags": [
+        "physics-optics",
+        "q-bio-qm"
+      ]
+    },
+    {
+      "id": "arxiv-2603.12822v1",
+      "title": "Optimized growth of large-size, high quality $\\text{ZrTe}_5$ single crystals enabling clear quantum oscillations in electrical transport",
+      "url": "https://arxiv.org/abs/2603.12822v1",
+      "date": "2026-03-13",
+      "summary": "This study optimizes a Te-flux synthesis method to grow large, high-quality ZrTe5 single crystals while minimizing defects. The resulting centimeter-scale crystals exhibit high purity and excellent crystallinity. Magnetotransport measurements reveal high carrier mobility and low carrier density, demonstrated by a low Shubnikov-de Haas oscillation onset field of 0.38 T and reaching the quantum limit at 1.3 T.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.11643v1",
+      "title": "Unlocking nanoscale microstructural detail in aluminium alloys through differential phase contrast segmentation in STEM",
+      "url": "https://arxiv.org/abs/2603.11643v1",
+      "date": "2026-03-12",
+      "summary": "Demonstrates STEM-DPC as a rapid micro- and nanoscale image-segmentation tool for advanced aluminium alloys. The method enables simultaneous identification and quantification of nanoclusters, GP zones, and strain fields across multiple alloy systems, establishing DPC as a rapid complement to 4D-STEM for correlative microstructural analysis.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-ins-det"
+      ]
+    },
+    {
+      "id": "arxiv-2603.11584v1",
+      "title": "Quantitative 3D imaging of highly distorted micro-crystals using Bragg ptychography",
+      "url": "https://arxiv.org/abs/2603.11584v1",
+      "date": "2026-03-12",
+      "summary": "Compares 3D Bragg ptychography (3DBP) and Bragg coherent diffraction imaging for characterizing distorted micro-crystals. Finding that 3DBP tolerates lattice distortions over six times larger than BCDI while providing smoother amplitude and phase fields, expanding the scope of X-ray microscopy to strongly deformed systems.",
+      "tags": [
+        "physics-optics",
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.10892v1",
+      "title": "Helium-Cooled Cryogenic STEM Imaging and Ptychography for Atomic-Scale Study of Low-Temperature Phases",
+      "url": "https://arxiv.org/abs/2603.10892v1",
+      "date": "2026-03-11",
+      "summary": "Establishes a pathway for atomic-resolution STEM and electron ptychography at temperatures as low as 20 K using a helium-cooled holder. Key findings include the necessity of rapid scans and multi-stage registration to mitigate cryogenic instability, enabling direct visualization of structural ground states in quantum materials.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.09871v1",
+      "title": "Direct Laser Writing of Ferromagnetic Nickel Utilizing the Principle of Sensitized Triplet-Triplet Annihilation Upconversion",
+      "url": "https://arxiv.org/abs/2603.09871v1",
+      "date": "2026-03-10",
+      "summary": "Presents a novel photoresist for direct laser writing of ferromagnetic nickel microstructures under ambient conditions. By utilizing sensitized triplet-triplet annihilation upconversion and in-situ deoxygenation, the process enables spatially confined deposition of metallic nickel, confirmed to be ferromagnetic through NV magnetometry.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2603.08355v1",
+      "title": "Unveiling the Thermal and Aqueous Stability of 1D Lepidocrocite Titania",
+      "url": "https://arxiv.org/abs/2603.08355v1",
+      "date": "2026-03-09",
+      "summary": "Investigates the thermal and aqueous stability of 1D lepidocrocite titania filaments using in situ TEM and Raman spectroscopy. The filaments remain stable up to 300°C before undergoing localized sintering and transformation into anatase, while refrigerated storage is required to prevent aqueous transformation into anatase nanoparticles.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.08299v1",
+      "title": "Atomic-resolution imaging of gold species at organic liquid-solid interfaces",
+      "url": "https://arxiv.org/abs/2603.08299v1",
+      "date": "2026-03-09",
+      "summary": "Combines graphene liquid cells with AI-enabled electron microscopy to track gold adatoms at organic liquid-solid interfaces. The study reveals dynamic, correlated behavior of gold monomers and clusters influenced by solvent properties and the substrate lattice, providing insights for the rational design of heterogeneous catalysts.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.06500v1",
+      "title": "Epitaxial stabilization of magnetic GdAuSb/LaAuSb superlattices",
+      "url": "https://arxiv.org/abs/2603.06500v1",
+      "date": "2026-03-06",
+      "summary": "Reports the epitaxial stabilization of GdAuSb films and GdAuSb/LaAuSb superlattices on sapphire substrates using molecular beam epitaxy. The study finds that these superlattices possess atomically precise interfaces and exhibit tunable magnetic and topological order, offering a new platform for controlling exchange interactions in reduced dimensions.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.06499v1",
+      "title": "Methods for characterization of atomic-scale field emission point-electron-source",
+      "url": "https://arxiv.org/abs/2603.06499v1",
+      "date": "2026-03-06",
+      "summary": "Proposes a method using field ion and field electron microscopy to extract the apparent emission area of atomic-scale electron sources. The study finds that Murphy-Good theory provides significantly more accurate data analysis than the simplified Fowler-Nordheim approach, offering better predictions for source energy spread and brightness.",
+      "tags": [
+        "quant-ph",
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2603.06372v1",
+      "title": "Epitaxy of strained, nuclear-spin free $^{76}$Ge quantum wells from solid source materials",
+      "url": "https://arxiv.org/abs/2603.06372v1",
+      "date": "2026-03-06",
+      "summary": "Fabricates strained, nuclear-spin-free 76Ge quantum wells using solid-source molecular beam epitaxy for quantum information applications. The study achieves a record-level interface width of 0.3 nm and identifies residual carbon as the dominant scattering mechanism limiting electron mobility in these high-purity heterostructures.",
+      "tags": [
+        "physics-app-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2603.05383v1",
+      "title": "Temperature-Dependent Dielectric Function of Tantalum Nitride Formed by Atomic Layer Deposition for Tunnel Barriers in Josephson Junctions",
+      "url": "https://arxiv.org/abs/2603.05383v1",
+      "date": "2026-03-05",
+      "summary": "Characterizes the temperature-dependent dielectric functions of insulating ALD TaN films for use as tunnel barriers in Josephson junctions. The study finds that TaN maintains insulating behavior and mid-infrared transparency from 80 to 600 K, offering a thermally stable alternative to AlOx with better thickness control for superconducting qubits.",
+      "tags": [
+        "cond-mat-supr-con",
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.05176v1",
+      "title": "Thin amorphous molybdenum silicide superconducting shells around individual nanowires deposited via magnetron co-sputtering",
+      "url": "https://arxiv.org/abs/2603.05176v1",
+      "date": "2026-03-05",
+      "summary": "Demonstrates the deposition of amorphous superconducting MoSi thin films on Ga2O3 nanowires via magnetron co-sputtering. By optimizing the molybdenum-to-silicon ratio, the study achieves a critical temperature of 7.25 K, providing a simplified fabrication route for scalable nanoscale quantum electronic and photonic devices.",
+      "tags": [
+        "cond-mat-supr-con",
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.00998v2",
+      "title": "Nanoscale imaging reveals critical plating and stripping mechanisms in anode-free lithium and sodium solid-state batteries",
+      "url": "https://arxiv.org/abs/2603.00998v2",
+      "date": "2026-03-01",
+      "summary": "Visualizes alkali-metal plating and stripping in anode-free solid-state batteries using virtual-electrode low-energy electron microscopy. The study uncovers a universal dynamic scaling regime for anode growth but finds that stripping is intrinsically asymmetric, proceeding through grain-boundary unzipping and leaving persistent interfacial residuals.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-app-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2603.00440v1",
+      "title": "Kinetics of Stacking Order Evolution During Heterogeneous Ice Formation",
+      "url": "https://arxiv.org/abs/2603.00440v1",
+      "date": "2026-02-28",
+      "summary": "Uses in situ cryogenic TEM to uncover the atomistic mechanisms of heterogeneous ice growth during vapor deposition. The study finds that ice nucleation involves a coherent epitaxial transition from cubic-ice cores to hexagonal-ice dendrites, mediated by dynamic stacking-disordered layers to minimize free energy.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2603.00271v1",
+      "title": "Interfacial properties of MoS2 thin films grown on functional substrates",
+      "url": "https://arxiv.org/abs/2603.00271v1",
+      "date": "2026-02-27",
+      "summary": "Investigates how different single-crystal substrates (SrTiO3, Al2O3, and SiC) influence defect formation and electronic properties in MoS2 thin films. The study finds that substrate-induced defects, such as Ti interdiffusion or sulfur vacancies, dominate the resulting metallic or semiconducting transport behavior, highlighting the need for interface engineering.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2602.24114v1",
+      "title": "Synthesis and Structural Analysis of an Emissive Colloidal Argyrodite Nanocrystal: Canfieldite Ag8SnS6",
+      "url": "https://arxiv.org/abs/2602.24114v1",
+      "date": "2026-02-27",
+      "summary": "Synthesizes and analyzes canfieldite Ag8SnS6 nanocrystals to resolve phase identification controversies in argyrodite materials. Using synchrotron X-ray pair distribution function analysis, the study identifies a pseudo-orthorhombic structural distortion responsible for red emission and demonstrates that Zn2+ incorporation boosts this emissive property.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2602.23476v1",
+      "title": "Ultrahigh continuous-wave intensities in high-NA optical cavities through suppression of the parametric oscillatory instability",
+      "url": "https://arxiv.org/abs/2602.23476v1",
+      "date": "2026-02-26",
+      "summary": "Aims to achieve ultrahigh continuous-wave intensities in high-NA optical cavities by suppressing parametric oscillatory instability. By identifying MHz-frequency bulk acoustic modes in mirrors as the cause of instability and utilizing low-Q mirrors, the study achieves intensities exceeding 500 GW/cm^2 in a free-space cavity.",
+      "tags": [
+        "physics-optics",
+        "physics-atom-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2602.23246v1",
+      "title": "Enhanced Interband Optical Nonlinearities from Coupled Quantum Wells",
+      "url": "https://arxiv.org/abs/2602.23246v1",
+      "date": "2026-02-26",
+      "summary": "Realizes a new class of nonlinear materials using AlGaAs/GaAs coupled quantum wells to provide strong second-order susceptibility. The study achieves chi(2) values up to 2750 pm/V, over seven times that of bulk GaAs, by using electron microscopy to guide growth improvements for ideal interfacial abruptness.",
+      "tags": [
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2602.22531v1",
+      "title": "Interpretable self-driving sputter epitaxy: from black-box optimization to human-usable growth rules",
+      "url": "https://arxiv.org/abs/2602.22531v1",
+      "date": "2026-02-26",
+      "summary": "Develops an interpretable self-driving laboratory framework for RF magnetron sputtering of beta-Ga2O3. The system optimized growth conditions to achieve a record-low Urbach energy of 182 meV and distilled the autonomous dataset into human-usable growth rules, identifying substrate temperature as the primary control parameter.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2602.21603v1",
+      "title": "Thickness-Driven Control of Room Temperature Ferrimagnetic Skyrmions and their Topological Hall signature in GdFe Single Layers",
+      "url": "https://arxiv.org/abs/2602.21603v1",
+      "date": "2026-02-25",
+      "summary": "Explores the control of room-temperature ferrimagnetic skyrmions in GdFe single layers by tuning film thickness. The study finds that increasing thickness from 60 to 80 nm decreases skyrmion size while increasing density and topological Hall resistivity, enabling the stabilization of sub-60nm skyrmions for high-density data storage.",
+      "tags": [
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2602.21361v1",
+      "title": "Towards single-shot coherent imaging via overlap-free ptychography",
+      "url": "https://arxiv.org/abs/2602.21361v1",
+      "date": "2026-02-24",
+      "summary": "Extends the PtychoPINN framework to enable overlap-free, single-shot reconstructions in Fresnel coherent diffraction imaging. The study demonstrates accurate reconstructions at low photon counts with 40x higher throughput than conventional methods, unifying single-exposure imaging and overlapped ptychography for dose-efficient, high-throughput applications.",
+      "tags": [
+        "physics-optics",
+        "cs-ai",
+        "cs-cv",
+        "cs-lg",
+        "physics-comp-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2602.21093v1",
+      "title": "Rapid Primary Radiation Damage Resistance Assessment of Precipitation-Hardened Cu Alloys",
+      "url": "https://arxiv.org/abs/2602.21093v1",
+      "date": "2026-02-24",
+      "summary": "Establishes a correlation between in situ irradiation-induced property changes and microstructural damage in Cu-Cr-Ta alloys. By monitoring surface acoustic wave frequency via transient grating spectroscopy, the study enables the prediction of relative radiation damage resistance within minutes, significantly accelerating the screening of materials for extreme environments.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2602.20784v1",
+      "title": "Epitaxial Films as Model Platform for Understanding Compositionally Complex Electrocatalysts",
+      "url": "https://arxiv.org/abs/2602.20784v1",
+      "date": "2026-02-24",
+      "summary": "Presents epitaxial Ir-Pd-Pt-Rh-Ru films as a model platform for studying compositionally complex electrocatalysts. The study demonstrates that these crystallographically defined surfaces allow for direct nanoscale structure-activity mapping through correlative microscopy, providing a route for the rational design of high-performance catalysts.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2602.19730v1",
+      "title": "Designing electrostatic MEMS-based electron optics: the case of the spiral phase plate",
+      "url": "https://arxiv.org/abs/2602.19730v1",
+      "date": "2026-02-23",
+      "summary": "Establishes a methodological foundation for designing MEMS-based electron optics, specifically a tunable spiral phase plate. The study utilizes analytical modeling of thin electrodes and fringing fields to fabricate and characterize a spiral phase plate that successfully generates high-quality electron vortex beams.",
+      "tags": [
+        "physics-ins-det",
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2602.18430v1",
+      "title": "Phase-field simulations of nucleation, growth, and coarsening of $β_1$ precipitates in Mg-Nd alloys",
+      "url": "https://arxiv.org/abs/2602.18430v1",
+      "date": "2026-02-20",
+      "summary": "Develops a workflow to parameterize a phase-field model for simulating the nucleation and growth of beta-1 precipitates in Mg-Nd alloys. By integrating atom probe tomography and TEM data, the study enables quantitative predictions of precipitate evolution, providing a tool to optimize aging times for target number densities.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2602.17455v2",
+      "title": "Multi-Method Li Plating Characterization of a Commercial 26 Ah Li-Ion Pouch-Cell",
+      "url": "https://arxiv.org/abs/2602.17455v2",
+      "date": "2026-02-19",
+      "summary": "Classifies multiple methods for detecting Li plating in commercial high-energy pouch cells. The study finds that optical methods are effective for rapid screening of anode surfaces, while spectroscopic and electron microscopy techniques provide detailed confirmation of metallic Li deposits and subsurface morphology.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2602.17249v1",
+      "title": "Near-single-domain superconducting aluminum films on GaAs(111)A with exceptional crystalline quality for scalable quantum circuits",
+      "url": "https://arxiv.org/abs/2602.17249v1",
+      "date": "2026-02-19",
+      "summary": "Reports the growth of near-single-domain superconducting aluminum films on GaAs(111)A using molecular beam epitaxy. The study achieves record-low twin-domain ratios and atomically smooth interfaces, establishing a high-quality materials platform suitable for scalable, high-coherence superconducting qubits.",
+      "tags": [
+        "quant-ph",
+        "cond-mat-mtrl-sci",
+        "cond-mat-supr-con"
+      ]
+    },
+    {
+      "id": "arxiv-2602.17135v1",
+      "title": "Graphene FET Process and Analysis Optimization in 200 mm Pilot Line Environment",
+      "url": "https://arxiv.org/abs/2602.17135v1",
+      "date": "2026-02-19",
+      "summary": "Optimizes the fabrication and analysis of CMOS-compatible graphene field-effect transistors in a 200 mm pilot line environment. The study achieves a 98% device yield with high mobility and low hysteresis, while demonstrating that the choice of test structures and extraction methods significantly impacts reported performance parameters.",
+      "tags": [
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2602.16158v1",
+      "title": "Dislocation-ledge coupling drives non-conservative migration of semicoherent precipitate interfaces",
+      "url": "https://arxiv.org/abs/2602.16158v1",
+      "date": "2026-02-18",
+      "summary": "Investigates the migration mechanism of semicoherent precipitate interfaces using phase-field-crystal simulations and in situ TEM. The study reveals that interface motion is driven by the coupling of interfacial dislocations to the nucleation and lateral propagation of nanoscale growth ledges, explaining the strongly anisotropic kinetics of lath growth.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2602.14932v1",
+      "title": "Anisotropy-driven interfacial magnetism in Ru-deficient SrRuO$_3$ thin films",
+      "url": "https://arxiv.org/abs/2602.14932v1",
+      "date": "2026-02-16",
+      "summary": "Investigates the effects of Ru deficiency on the transport and magnetic properties of SrRuO3 thin films. The study finds that deficiency at interfaces suppresses electronic transport and enhances perpendicular magnetic anisotropy, constraining magnetization to the out-of-plane direction and creating a ferromagnetic insulator-like state.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-str-el"
+      ]
+    },
+    {
+      "id": "arxiv-2602.14920v2",
+      "title": "Sub-1-Angstrom-Resolution Imaging Reveals Phase Contrast Transition in Ice Ih Caused by Basal Stacking Faults",
+      "url": "https://arxiv.org/abs/2602.14920v2",
+      "date": "2026-02-16",
+      "summary": "Reveals that the honeycomb-like phase contrast in hexagonal ice (Ih) TEM images often results from basal stacking faults rather than individual oxygen columns. By achieving a record 89-picometer resolution, the study clarifies structural relationships between ice phases and highlights the defect tolerance of ice's molecular packing.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-chem-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2602.14693v1",
+      "title": "Free-electron decoherence: Theory and applications",
+      "url": "https://arxiv.org/abs/2602.14693v1",
+      "date": "2026-02-16",
+      "summary": "Theoretically investigates free-electron decoherence caused by electromagnetic interactions with bulk materials and surfaces. The study identifies bulk plasmons and electronic excitations as primary decoherence channels and predicts that energy-filtered holography can be used for nanoscale thermometry by measuring fringe visibility changes.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2602.14546v1",
+      "title": "Quantifying Strain and its Effect on Charge Transport in Ge/Si Core/Shell Nanowires",
+      "url": "https://arxiv.org/abs/2602.14546v1",
+      "date": "2026-02-16",
+      "summary": "Explores the relationship between geometry, strain, and charge transport in Ge/Si core/shell nanowires for spin qubit applications. The study achieves a record hole mobility of 25,500 cm2/Vs and provides design guidelines for optimizing strain distribution to enhance the performance of scalable quantum devices.",
+      "tags": [
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2602.13438v1",
+      "title": "Quantum Algorithm Framework for Phase-Contrast Transmission Electron Microscopy Image Simulation",
+      "url": "https://arxiv.org/abs/2602.13438v1",
+      "date": "2026-02-13",
+      "summary": "Presents a quantum algorithmic framework for simulating phase-contrast TEM image formation using a gate-based quantum circuit model. The study validates the framework against classical simulations and identifies potential quantum advantages for tasks involving Fourier-space queries and phase-coherent observables.",
+      "tags": [
+        "quant-ph",
+        "cond-mat-mtrl-sci",
+        "physics-comp-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2602.12862v1",
+      "title": "The Refractive Index of Gallium Antimonide",
+      "url": "https://arxiv.org/abs/2602.12862v1",
+      "date": "2026-02-13",
+      "summary": "Provides high-accuracy measurements of the complex refractive index of GaSb in the near- to mid-infrared range. Using photometric transmission and cross-sectional SEM, the study achieves a relative uncertainty of <7.8e-5 for the real part, offering reliable data essential for designing state-of-the-art infrared photonic devices.",
+      "tags": [
+        "physics-optics"
+      ]
+    },
+    {
+      "id": "arxiv-2602.12420v1",
+      "title": "A Transformer-based Model for Rapid Microstructure Inference from Four-Dimensional Scanning Transmission Electron Microscopy Data",
+      "url": "https://arxiv.org/abs/2602.12420v1",
+      "date": "2026-02-12",
+      "summary": "Combines a transformer-based machine learning architecture with 4D-STEM to enable rapid inference of crystalline microstructure. The framework predicts crystallographic orientations and phases up to two orders of magnitude faster than conventional template-matching, facilitating high-throughput characterization and the establishment of structure-property relationships.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-ins-det"
+      ]
+    },
+    {
+      "id": "arxiv-2602.11645v1",
+      "title": "Epitaxial Growth and Anomalous Hall Effect in High-Quality Altermagnetic $α$-MnTe Thin Films",
+      "url": "https://arxiv.org/abs/2602.11645v1",
+      "date": "2026-02-12",
+      "summary": "Reports the epitaxial growth of high-quality altermagnetic alpha-MnTe thin films on InP(111) using molecular beam epitaxy. The study finds that these films exhibit a pronounced anomalous Hall effect despite near-zero net magnetization, establishing a wafer-scale platform for altermagnet-based spintronics.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2602.11504v2",
+      "title": "Visualizing Nanoscopic Acoustic Mode Competition in van der Waals Ferroelectric",
+      "url": "https://arxiv.org/abs/2602.11504v2",
+      "date": "2026-02-12",
+      "summary": "Spatiotemporally resolves lattice motion in the van der Waals ferroelectric NbOI2 using ultrafast electron microscopy. The study identifies three acoustic phonons and reveals that regions dominated by a single shear mode have longer lifetimes, suggesting that phonon-phonon scattering in multimode regions is a major source of decoherence.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2602.11469v1",
+      "title": "Structural control of two-level defect density revealed by high-throughput correlative measurements of Josephson junctions",
+      "url": "https://arxiv.org/abs/2602.11469v1",
+      "date": "2026-02-12",
+      "summary": "Uses high-throughput correlative measurements to trace the microstructural origins of two-level system (TLS) defects in Josephson junctions. By analyzing 6,000 junctions and 600 TEM images, the study links Al grain size to TLS density and demonstrates a two-thirds reduction in defects through optimized fabrication parameters.",
+      "tags": [
+        "quant-ph",
+        "cond-mat-mes-hall",
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2602.10534v1",
+      "title": "Probing Plasmonic Oscillations in 2D Moiré Nanocrystal Superlattices by Low-Loss EELS",
+      "url": "https://arxiv.org/abs/2602.10534v1",
+      "date": "2026-02-11",
+      "summary": "Utilizes low-loss EELS to examine plasmonic excitations in 2D moiré gold nanocrystal superlattices. The study reveals a blue shift in twisted configurations and demonstrates that STEM-EELS can detect out-of-plane polarization modes invisible to optical spectroscopy, providing insights into how nanoscale structural arrangements influence collective electronic properties.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2602.10064v1",
+      "title": "PySlice: Routine Vibrational Electron Energy Loss Spectroscopy Prediction with Universal Interatomic Potentials",
+      "url": "https://arxiv.org/abs/2602.10064v1",
+      "date": "2026-02-10",
+      "summary": "Introduces PySlice, an automated framework for predicting vibrational electron energy-loss spectra from atomic structures using machine learning interatomic potentials. The tool eliminates the need for specialized potential development, enabling routine computational screening of phonon physics and high-throughput generation of simulated data for experimental design.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "physics-comp-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2602.09693v1",
+      "title": "Microstructural origin of the simultaneous enhancements in strength and ductility of a nitrogen-doped high-entropy alloy",
+      "url": "https://arxiv.org/abs/2602.09693v1",
+      "date": "2026-02-10",
+      "summary": "Investigates the microscopic mechanisms behind the simultaneous enhancement of strength and ductility in a nitrogen-doped high-entropy alloy. The study finds that N-doping introduces short-range order and promotes nano-spaced stacking faults and twins, which act as barriers to dislocation movement and provide ample storage for dislocations.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2602.08950v1",
+      "title": "Tailoring Ultrathin Magnetic Multilayers at Terraced Topologically Insulating Interfaces for Perpendicularly Magnetized Domains",
+      "url": "https://arxiv.org/abs/2602.08950v1",
+      "date": "2026-02-09",
+      "summary": "Optimizes the growth of Bi2Se3/magnetic multilayer heterostructures for spintronics applications. The study finds that a buffer layer exceeding a critical thickness is necessary to achieve uniform perpendicular magnetic anisotropy, enabling the formation of well-defined out-of-plane magnetic domains suitable for spin-orbit torque manipulation.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2602.15048v1",
+      "title": "Full-Field Damage Monitoring in Architected Lattices Using In situ Electrical Impedance Tomography",
+      "url": "https://arxiv.org/abs/2602.15048v1",
+      "date": "2026-02-07",
+      "summary": "Implements in situ electrical impedance tomography (EIT) to monitor damage evolution in 3D-printed architected lattice composites. The study demonstrates that EIT can resolve sequential ligament fractures in real-time with high temporal resolution, establishing a scalable full-field sensing modality for autonomous and intelligent multifunctional materials.",
+      "tags": [
+        "cs-et",
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2602.07591v1",
+      "title": "Thermal Stability and Phase Transformation of Conductive $α$-$(\\mathrm{Al}_{x}\\mathrm{Ga}_{1-x})_{2}\\mathrm{O}_{3}/\\mathrm{Ga}_{2}\\mathrm{O}_{3}$ Heterostructures on Sapphire Substrates",
+      "url": "https://arxiv.org/abs/2602.07591v1",
+      "date": "2026-02-07",
+      "summary": "Investigates the thermal stability and phase transformation of conductive alpha-(AlGa)2O3/Ga2O3 heterostructures on sapphire. The study finds that the heterostructures are thermally stable up to 550°C, after which they undergo a phase transformation from the alpha to the beta phase, accompanied by significant changes in surface morphology.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2602.06344v1",
+      "title": "Epitaxial growth and magneto-transport properties of kagome metal FeGe thin films",
+      "url": "https://arxiv.org/abs/2602.06344v1",
+      "date": "2026-02-06",
+      "summary": "Achieves the epitaxial growth of kagome metal FeGe thin films on sapphire using molecular beam epitaxy. The study reveals high-quality single-phase films with a Neel temperature of 397 K and transport signatures of a charge density wave, providing a platform for studying antiferromagnetic spintronics.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2602.06316v1",
+      "title": "Direct laser writing of high aspect ratio nanochannels for nanofluidics",
+      "url": "https://arxiv.org/abs/2602.06316v1",
+      "date": "2026-02-06",
+      "summary": "Introduces a method for fabricating high-aspect-ratio nanochannels using direct laser writing on diamond films. The study demonstrates that laser-induced delamination creates stable, optically accessible rectangular channels with width-to-height ratios exceeding fifty, which fill via capillary action and are resistant to clogging for nanofluidic applications.",
+      "tags": [
+        "physics-optics",
+        "cond-mat-mes-hall",
+        "cond-mat-mtrl-sci",
+        "physics-app-ph"
+      ]
+    },
+    {
+      "id": "arxiv-2602.05741v2",
+      "title": "Questioning van der Waals Epitaxy of Non-Layered Materials on Mica: The Case of ScN",
+      "url": "https://arxiv.org/abs/2602.05741v2",
+      "date": "2026-02-05",
+      "summary": "Evaluates the growth of ScN thin films on mica to test claims of van der Waals epitaxy. The study finds that growth occurs via conventional epitaxy with significant strain buildup and relaxation through dislocations, suggesting that conventional epitaxy should be the default assumption for non-layered materials on layered substrates.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2602.05398v1",
+      "title": "Ferroelectricity in Atomically Thin Metallic TaNiTe$_5$ with Ultrahigh Carrier Density",
+      "url": "https://arxiv.org/abs/2602.05398v1",
+      "date": "2026-02-05",
+      "summary": "Reports the discovery of out-of-plane ferroelectricity in atomically thin metallic TaNiTe5. Despite an ultrahigh carrier density comparable to copper, the study observes robust ferroelectric behavior at room temperature, likely originating from vertical Te atom displacements that break inversion symmetry in the surface monolayer.",
+      "tags": [
+        "cond-mat-mtrl-sci",
+        "cond-mat-mes-hall"
+      ]
+    },
+    {
+      "id": "arxiv-2602.04606v1",
+      "title": "Structures of iron and cobalt bimetallic clusters for optimized chemical vapor deposition growth of single-walled carbon nanotubes",
+      "url": "https://arxiv.org/abs/2602.04606v1",
+      "date": "2026-02-04",
+      "summary": "Investigates Fe-Co alloy catalysts for optimized SWCNT growth using CVD and MD simulations. The study finds that the Fe0.75Co0.25 alloy maximizes growth efficiency at 850°C by stabilizing small, uniform nanoparticles with Co-enriched surfaces, providing mechanistic insights into the synergistic roles of composition and temperature.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    },
+    {
+      "id": "arxiv-2602.04530v1",
+      "title": "Triple Junctions as Dislocation-Like Defects: The Role of Grain Boundary Crystallography Revealed by Experiment and Atomistic Simulation",
+      "url": "https://arxiv.org/abs/2602.04530v1",
+      "date": "2026-02-04",
+      "summary": "Investigates the defect nature of triple junctions in Al thin films using STEM and atomistic simulations. The study presents a technique to calculate the Burgers vector of these line defects, linking their dislocation character to grain boundary crystallography and showing that junction line energy follows the same laws as bulk dislocations.",
+      "tags": [
+        "cond-mat-mtrl-sci"
+      ]
+    }
+  ]
+}
