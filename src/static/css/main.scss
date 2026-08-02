@@ -77,10 +77,12 @@
 
 // MapMyVisitors widget sizing to match the sidebar logo width.
 .mapmyvisitors-widget {
-  width: 152px;
-  height: 152px;
+  width: 132px;
+  height: 132px;
   max-width: 100%;
   margin: (_size(element-margin) * 0.5) auto (_size(element-margin) * -1.5) auto;
+  transform: scale(1.15);
+  transform-origin: center;
 }
 
 .mapmyvisitors-widget iframe,
