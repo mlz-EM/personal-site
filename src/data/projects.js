@@ -5,12 +5,12 @@ const data = [
   {
     title: 'Dynamic Antiferroelectric Transformations',
     image: '/images/projects/PMW_Dynamics.png',
-    link: 'TBD',
+    link: 'https://academic.oup.com/mam/article/32/Supplement_1/ozag053.519/8742853',
     date: '2026-02-25',
     pinned: false,
     expandable: true,
     desc:
-      'Combing in situ TEM diffraction and MEP, we reveals a fluctuation-dominated transformation pathway in PMW. While ¼ 110 superlattice reflections confirm antiparallel dipole ordering at low temperature, room-temperature diffraction shows unexpected ½ 110 diffuse scattering and emergent ½ 100 reflections. Temperature-dependent analysis and Monte Carlo modeling indicate competing interactions and rapid polar domain switching near the critical point, producing dynamic disorder before a sharp transition into the AFE phase.',
+      'Combing in situ TEM diffraction and MEP, we reveals a fluctuation-dominated transformation pathway in PMW. While ¼ 110 superlattice reflections confirm antiparallel dipole ordering at low temperature, room-temperature diffraction shows unexpected ½ 110 diffuse scattering and emergent ½ 100 reflections. Temperature-dependent analysis and first-principle modeling indicate competing interactions and rapid polar domain switching near the critical point, producing dynamic disorder before a sharp transition into the AFE phase.',
   },
   {
     title: 'Field-Driven Multistep AFE–FE Transition in PZO',

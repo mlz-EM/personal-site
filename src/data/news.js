@@ -4,7 +4,7 @@
 const data = [
   {
     label: 'Talk: Dynamic Antiferroelectric Transformations @ 11:00 AM 08/05 Room S102D',
-    link: 'https://mmconference.microscopy.org/full-symposium-descriptions#physical:~:text=of%20Molecular%20Materials-,P02,-%2D%20Probing%20Phase%20Transitions',
+    link: 'https://academic.oup.com/mam/article/32/Supplement_1/ozag053.519/8742853',
     image: '/images/misc/MM2026.png',
     date: '2026-06-26',
     category: 'Misc',
