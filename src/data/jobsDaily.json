@@ -1,7 +1,7 @@
 {
   "header": {
     "title": "Basic Info",
-    "model": "gemini-3-flash-preview",
+    "model": "gemini-3.5-flash",
     "generatedAt": "2026-07-31T04:31:16Z",
     "source": "TTAP Daily Feed",
     "notes": [
