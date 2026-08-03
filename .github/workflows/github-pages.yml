@@ -66,6 +66,7 @@ jobs:
           retry npm run predeploy
         env:
           NODE_ENV: production
+          REACT_APP_VISITOR_MAP_API_URL: ${{ vars.VISITOR_MAP_API_URL }}
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact

@@ -75,22 +75,17 @@
 @import "pages/landing";
 @import "pages/academic";
 
-// MapMyVisitors widget sizing to match the sidebar logo width.
-.mapmyvisitors-widget {
-  width: 132px;
-  height: 132px;
+// Locally rendered visitor map styled to match the former MapMyVisitors widget.
+.visitor-map-widget {
+  width: 152px;
   max-width: 100%;
-  margin: (_size(element-margin) * 0.5) auto (_size(element-margin) * -1.5) auto;
-  transform: scale(1.15);
-  transform-origin: center;
+  margin: (_size(element-margin) * 0.5) auto 0.25rem auto;
+  background: #f4f4f4;
 }
 
-.mapmyvisitors-widget iframe,
-.mapmyvisitors-widget canvas,
-.mapmyvisitors-widget img,
-.mapmyvisitors-widget svg {
+.visitor-map-widget__map {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: block;
 }
 

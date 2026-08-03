@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import dayjs from 'dayjs';
 
 import ContactIcons from '../ContactIcons';
-import MapMyVisitors from '../MapMyVisitors';
+import VisitorMap from '../VisitorMap';
 import { getFeaturedPinnedItems } from '../../content/api';
 
 const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
@@ -32,7 +32,7 @@ const SideBar = () => {
 
       <section id="footer">
         <ContactIcons />
-        <MapMyVisitors />
+        <VisitorMap />
         <p className="copyright">
           &copy; Menglin Zhu@mlz-em.
         </p>
