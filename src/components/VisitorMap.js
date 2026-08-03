@@ -5,12 +5,28 @@ import {
   Geography,
   Marker,
 } from 'react-simple-maps';
+import { geoProjection } from 'd3-geo';
+import { alpha2ToNumeric } from 'i18n-iso-countries';
 import worldGeography from 'world-atlas/countries-110m.json';
 
 const API_URL = (process.env.REACT_APP_VISITOR_MAP_API_URL || '').replace(/\/$/, '');
-const RECENT_WINDOW_MS = 3 * 24 * 60 * 60 * 1000;
+const TODAY_WINDOW_MS = 24 * 60 * 60 * 1000;
 const TRACKING_INTERVAL_MS = 6 * 60 * 60 * 1000;
 const LAST_TRACKED_KEY = 'mlz-em-visitor-map-last-tracked';
+const MAP_WIDTH = 160;
+const MAP_HEIGHT = 88;
+const LIGHTEST_LAND_SHADE = 213;
+const DARKEST_LAND_SHADE = 170;
+
+const millerRaw = (longitude, latitude) => [
+  longitude,
+  1.25 * Math.log(Math.tan(Math.PI / 4 + 0.4 * latitude)),
+];
+
+const millerProjection = geoProjection(millerRaw)
+  .center([0, 16])
+  .scale(23)
+  .translate([MAP_WIDTH / 2, MAP_HEIGHT / 2]);
 
 const normalizeLocations = (locations) => (
   Array.isArray(locations)
@@ -18,7 +34,9 @@ const normalizeLocations = (locations) => (
       .map((location) => ({
         latitude: Number(location.latitude),
         longitude: Number(location.longitude),
+        country: alpha2ToNumeric(String(location.country || '').toUpperCase()) || '',
         lastSeen: String(location.lastSeen || ''),
+        visits: Math.max(0, Number(location.visits) || 0),
       }))
       .filter((location) => (
         Number.isFinite(location.latitude)
@@ -26,6 +44,15 @@ const normalizeLocations = (locations) => (
       ))
     : []
 );
+
+const shadeForVisitCount = (visits, maximumVisits) => {
+  const intensity = maximumVisits > 0 ? visits / maximumVisits : 0;
+  const shade = Math.round(
+    LIGHTEST_LAND_SHADE
+    + (DARKEST_LAND_SHADE - LIGHTEST_LAND_SHADE) * intensity,
+  );
+  return `rgb(${shade}, ${shade}, ${shade})`;
+};
 
 const shouldRecordVisit = () => {
   try {
@@ -47,6 +74,15 @@ const rememberVisit = () => {
 const VisitorMap = () => {
   const [locations, setLocations] = useState([]);
   const loadedAt = useMemo(() => Date.now(), []);
+  const visitsByCountry = useMemo(() => locations.reduce((counts, location) => {
+    if (!location.country) return counts;
+    counts.set(location.country, (counts.get(location.country) || 0) + location.visits);
+    return counts;
+  }, new Map()), [locations]);
+  const maximumCountryVisits = useMemo(
+    () => Math.max(0, ...visitsByCountry.values()),
+    [visitsByCountry],
+  );
 
   useEffect(() => {
     if (!API_URL || navigator.userAgent === 'ReactSnap') return undefined;
@@ -75,40 +111,48 @@ const VisitorMap = () => {
     <div className="visitor-map-widget" aria-hidden="true">
       <ComposableMap
         className="visitor-map-widget__map"
-        width={160}
-        height={96}
-        projection="geoMercator"
-        projectionConfig={{ center: [0, 42], scale: 23 }}
+        width={MAP_WIDTH}
+        height={MAP_HEIGHT}
+        projection={millerProjection}
       >
         <Geographies geography={worldGeography}>
           {({ geographies }) => geographies
             .filter((geography) => String(geography.id) !== '010')
-            .map((geography) => (
-              <Geography
-                key={geography.rsmKey}
-                geography={geography}
-                fill="#c6c6c6"
-                stroke="#f4f4f4"
-                strokeWidth={0.35}
-                tabIndex={-1}
-                style={{
-                  default: { outline: 'none' },
-                  hover: { fill: '#c6c6c6', outline: 'none' },
-                  pressed: { fill: '#c6c6c6', outline: 'none' },
-                }}
-              />
-            ))}
+            .map((geography) => {
+              const countryId = String(geography.id).padStart(3, '0');
+              const fill = shadeForVisitCount(
+                visitsByCountry.get(countryId) || 0,
+                maximumCountryVisits,
+              );
+
+              return (
+                <Geography
+                  key={geography.rsmKey}
+                  geography={geography}
+                  fill={fill}
+                  stroke="#f4f4f4"
+                  strokeWidth={0.35}
+                  tabIndex={-1}
+                  style={{
+                    default: { outline: 'none' },
+                    hover: { fill, outline: 'none' },
+                    pressed: { fill, outline: 'none' },
+                  }}
+                />
+              );
+            })}
         </Geographies>
-        {locations.map((location) => {
+        {locations.filter((location) => {
           const seenAt = Date.parse(location.lastSeen);
-          const isRecent = Number.isFinite(seenAt) && loadedAt - seenAt <= RECENT_WINDOW_MS;
+          return Number.isFinite(seenAt) && loadedAt - seenAt <= TODAY_WINDOW_MS;
+        }).map((location) => {
           const key = `${location.latitude}-${location.longitude}-${location.lastSeen}`;
 
           return (
             <Marker key={key} coordinates={[location.longitude, location.latitude]}>
               <circle
-                r={isRecent ? 2.3 : 1.35}
-                fill={isRecent ? '#000000' : '#b2b2b2'}
+                r={2.3}
+                fill="#000000"
                 stroke="#f4f4f4"
                 strokeWidth={0.25}
               />

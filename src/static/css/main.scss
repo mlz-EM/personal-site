@@ -77,9 +77,9 @@
 
 // Locally rendered visitor map styled to match the former MapMyVisitors widget.
 .visitor-map-widget {
-  width: 152px;
+  width: 175px;
   max-width: 100%;
-  margin: (_size(element-margin) * 0.5) auto 0.25rem auto;
+  margin: (_size(element-margin) * 0.5) auto -0.25rem auto;
   background: #f4f4f4;
 }
 
