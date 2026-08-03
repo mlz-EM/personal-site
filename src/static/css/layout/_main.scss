@@ -1,0 +1,22 @@
+///
+/// Future Imperfect by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Main */
+
+#main {
+  @include vendor("flex", "0 1 var(--content-max-width)");
+  -ms-flex: 0 1 var(--content-max-width);
+  max-width: var(--content-max-width);
+  width: 100%;
+  margin-left: _size(section-spacing)*0.5;
+  margin-right: _size(section-spacing)*0.5;
+
+  @include breakpoint(large) {
+    @include vendor("flex", "1 1 auto");
+    -ms-flex: 1 1 auto;
+    max-width: var(--content-max-width);
+  }
+}

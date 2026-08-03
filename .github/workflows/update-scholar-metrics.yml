@@ -1,0 +1,65 @@
+name: Update Scholar Metrics
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+    inputs:
+      scholar_user_id:
+        description: "Google Scholar user id (e.g., tkEx8OQAAAAJ)"
+        required: false
+        default: "tkEx8OQAAAAJ"
+      updated_at:
+        description: "Optional ISO timestamp override for updatedAt (e.g., 2026-03-14T00:00:00Z)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Fetch latest Google Scholar metrics
+        run: |
+          set +e
+          success=0
+          for attempt in 1 2 3; do
+            echo "Scholar fetch attempt ${attempt}/3"
+            python3 scripts/update-scholar-metrics.py
+            if [ $? -eq 0 ]; then
+              success=1
+              break
+            fi
+            sleep $((attempt * 20))
+          done
+          if [ ${success} -ne 1 ]; then
+            echo "Scholar metrics fetch failed after 3 attempts; keeping last good values."
+          fi
+          exit 0
+        env:
+          SCHOLAR_USER_ID: ${{ github.event.inputs.scholar_user_id || 'tkEx8OQAAAAJ' }}
+          METRICS_UPDATED_AT: ${{ github.event.inputs.updated_at || '' }}
+
+      - name: Commit changes if any
+        run: |
+          if git diff --quiet -- src/data/scholarMetrics.json; then
+            echo "No scholar metric updates."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/scholarMetrics.json
+          git commit -m "chore: update scholar metrics"
+          git push

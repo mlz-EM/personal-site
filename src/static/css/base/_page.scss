@@ -1,0 +1,99 @@
+///
+/// Future Imperfect by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Basic */
+
+:root {
+  --space-1: 0.5rem;
+  --space-2: 0.75rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --radius-sm: 0.35rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --content-max-width: 60em;
+  --font-size-body: 1rem;
+  --font-size-meta: 0.9rem;
+  --font-size-nav: 0.756em;
+  --focus-ring-color: #2e59ba;
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+  --meta-text-color: #5f5f5f;
+  --muted-text-color: #757575;
+  --top-nav-height: 3.5em;
+  --top-nav-height-small: 3.17625em;
+  --top-nav-gap: 1.5rem;
+  --nav-underline-color: rgba(125, 125, 125, 0.7);
+}
+
+// MSIE: Required for IEMobile.
+@-ms-viewport {
+  width: device-width;
+}
+
+// MSIE: Prevents scrollbar from overlapping content.
+body {
+  -ms-overflow-style: scrollbar;
+}
+
+// Ensures page width is always >=320px.
+@include breakpoint(xsmall) {
+  html,
+  body {
+    min-width: 320px;
+  }
+}
+
+body {
+  background: _palette(bg-alt);
+
+  // Prevents animation/transition "flicker" on page load.
+  // Automatically added/removed by js/main.js.
+  &.is-loading {
+    *,
+    *:before,
+    *:after {
+      @include vendor("animation", "none !important");
+      @include vendor("transition", "none !important");
+    }
+  }
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+// Always reserve vertical scrollbar space to avoid layout shift between pages.
+html {
+  overflow-y: scroll;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: var(--focus-ring-width) solid var(--focus-ring-color);
+  outline-offset: var(--focus-ring-offset);
+}
+
+#root {
+  height: 100%;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

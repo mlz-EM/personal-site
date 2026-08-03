@@ -1,0 +1,11 @@
+name = "mlz-em-visitor-map"
+main = "src/index.mjs"
+compatibility_date = "2026-08-02"
+
+[vars]
+ALLOWED_ORIGINS = "https://mlz-em.github.io,http://localhost:3000,http://127.0.0.1:3000"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "mlz-em-visitors"
+database_id = "9fa0ede4-d5a1-4934-b8c1-edd48f03f2ac"
