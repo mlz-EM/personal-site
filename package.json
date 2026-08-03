@@ -28,7 +28,7 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "better-react-mathjax": "^2.3.0",
     "d3-geo": "^2.0.2",
-    "dayjs": "^1.11.13",
+    "dayjs": "^1.11.21",
     "i18n-iso-countries": "^7.14.0",
     "katex": "^0.16.22",
     "markdown-to-jsx": "^7.7.1",
