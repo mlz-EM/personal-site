@@ -9,15 +9,16 @@ import { MemoryRouter } from 'react-router-dom';
 import SideBar from '../components/Template/SideBar';
 
 describe('sidebar visitor map', () => {
-  it('does not link the map to the stats page', () => {
+  it('links the map to the stats page', () => {
     const { container } = render(
       <MemoryRouter>
         <SideBar />
       </MemoryRouter>,
     );
     const visitorMap = container.querySelector('.visitor-map-widget');
+    const visitorMapLink = visitorMap.closest('a');
 
     expect(visitorMap).toBeInTheDocument();
-    expect(visitorMap.closest('a')).toBeNull();
+    expect(visitorMapLink).toHaveAttribute('href', '/stats');
   });
 });

@@ -32,7 +32,14 @@ const SideBar = () => {
 
       <section id="footer">
         <ContactIcons />
-        <VisitorMap />
+        <Link
+          to="/stats"
+          className="visitor-map-link"
+          aria-label="View visitor statistics"
+          title="View visitor statistics"
+        >
+          <VisitorMap />
+        </Link>
         <p className="copyright">
           &copy; Menglin Zhu@mlz-em.
         </p>

@@ -90,6 +90,23 @@
   display: block;
 }
 
+.visitor-map-link {
+  border-bottom: 0;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+
+  .visitor-map-widget {
+    transition: opacity 0.18s ease, transform 0.18s ease;
+  }
+
+  &:hover .visitor-map-widget,
+  &:focus-visible .visitor-map-widget {
+    opacity: 0.82;
+    transform: translateY(-1px);
+  }
+}
+
 // Tighten spacing between TT job entries.
 #jobs .job-item {
   margin: 0 0 (_size(element-margin) * 0.6) 0;
