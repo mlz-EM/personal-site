@@ -3,13 +3,13 @@
 // - set `pinned: true` to pin item to top + home featured section
 const data = [
   {
-    label: 'Talk: Dynamic Antiferroelectric Transformations @ 11:00 AM 08/05 Room S102D',
+    label: 'M&M Talk: Dynamic Antiferroelectric Transformations',
     link: 'https://academic.oup.com/mam/article/32/Supplement_1/ozag053.519/8742853',
     image: '/images/misc/MM2026.png',
     date: '2026-06-26',
     category: 'Misc',
     expandable: false,
-    pinned: true,
+    pinned: false,
     desc:
     '',
   },
