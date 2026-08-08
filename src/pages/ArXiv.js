@@ -3,7 +3,7 @@ import Main from '../layouts/Main';
 import PageHeader from '../components/Template/PageHeader';
 import PageTools from '../components/Template/PageTools';
 import FeedBasicInfo from '../components/Template/FeedBasicInfo';
-import { getArxivFeed } from '../content/api';
+import getArxivFeed from '../content/arxivFeed';
 import { getDateInputValueDaysAgo } from '../utils/dateInput';
 
 const ARXIV_TOOLS = [

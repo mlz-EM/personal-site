@@ -40,6 +40,12 @@ const formatChartDate = (value) => new Intl.DateTimeFormat('en-US', {
   day: 'numeric',
 }).format(new Date(value));
 
+const formatTooltipDate = (value) => new Intl.DateTimeFormat('en-US', {
+  year: 'numeric',
+  month: 'short',
+  day: 'numeric',
+}).format(new Date(value));
+
 const formatVisitTime = (value) => {
   const elapsedMinutes = Math.max(1, Math.round((Date.now() - Date.parse(value)) / 60000));
   if (elapsedMinutes < 60) return `${elapsedMinutes} min ago`;
@@ -72,13 +78,14 @@ const normalizeStats = (payload) => ({
 });
 
 const TrendChart = ({ points }) => {
+  const [activeIndex, setActiveIndex] = useState(null);
   const width = 760;
-  const height = 220;
+  const height = 176;
   const padding = {
-    top: 18,
-    right: 12,
-    bottom: 34,
-    left: 34,
+    top: 14,
+    right: 10,
+    bottom: 27,
+    left: 27,
   };
   const chartWidth = width - padding.left - padding.right;
   const chartHeight = height - padding.top - padding.bottom;
@@ -95,6 +102,28 @@ const TrendChart = ({ points }) => {
       + ` L ${coordinates[0].x} ${padding.top + chartHeight} Z`
     : '';
   const labelIndexes = [0, Math.floor((points.length - 1) / 2), points.length - 1];
+  const activePoint = activeIndex === null ? null : coordinates[activeIndex];
+  const activeDatum = activeIndex === null ? null : points[activeIndex];
+  const tooltipWidth = 116;
+  const tooltipHeight = 42;
+  const tooltipX = activePoint
+    ? Math.min(
+      width - padding.right - tooltipWidth,
+      Math.max(padding.left, activePoint.x + (activePoint.x > width * 0.7 ? -124 : 8)),
+    )
+    : 0;
+  const tooltipY = activePoint
+    ? Math.max(padding.top, activePoint.y - tooltipHeight - 8)
+    : 0;
+
+  const updateActivePoint = (event) => {
+    const bounds = event.currentTarget.getBoundingClientRect();
+    if (!bounds.width || points.length === 0) return;
+
+    const pointerX = ((event.clientX - bounds.left) / bounds.width) * width;
+    const chartRatio = Math.min(1, Math.max(0, (pointerX - padding.left) / chartWidth));
+    setActiveIndex(Math.round(chartRatio * (points.length - 1)));
+  };
 
   return (
     <svg
@@ -102,6 +131,8 @@ const TrendChart = ({ points }) => {
       viewBox={`0 0 ${width} ${height}`}
       role="img"
       aria-label={`Daily visits from ${formatChartDate(points[0].date)} to ${formatChartDate(points[points.length - 1].date)}`}
+      onMouseMove={updateActivePoint}
+      onMouseLeave={() => setActiveIndex(null)}
     >
       {[0, 0.5, 1].map((ratio) => {
         const y = padding.top + chartHeight - ratio * chartHeight;
@@ -122,12 +153,58 @@ const TrendChart = ({ points }) => {
       })}
       <path className="stats-chart-area" d={areaPath} />
       <path className="stats-chart-line" d={linePath} />
+      {activePoint && activeDatum ? (
+        <g className="stats-chart-hover" aria-hidden="true">
+          <line
+            className="stats-chart-crosshair"
+            x1={activePoint.x}
+            x2={activePoint.x}
+            y1={padding.top}
+            y2={padding.top + chartHeight}
+          />
+          <line
+            className="stats-chart-crosshair"
+            x1={padding.left}
+            x2={padding.left + chartWidth}
+            y1={activePoint.y}
+            y2={activePoint.y}
+          />
+          <circle
+            className="stats-chart-active-point"
+            cx={activePoint.x}
+            cy={activePoint.y}
+            r="3.5"
+          />
+          <rect
+            className="stats-chart-tooltip-bg"
+            x={tooltipX}
+            y={tooltipY}
+            width={tooltipWidth}
+            height={tooltipHeight}
+            rx="2"
+          />
+          <text
+            className="stats-chart-tooltip-date"
+            x={tooltipX + 8}
+            y={tooltipY + 16}
+          >
+            {formatTooltipDate(activeDatum.date)}
+          </text>
+          <text
+            className="stats-chart-tooltip-value"
+            x={tooltipX + 8}
+            y={tooltipY + 32}
+          >
+            {formatCount(activeDatum.visits)} {activeDatum.visits === 1 ? 'visit' : 'visits'}
+          </text>
+        </g>
+      ) : null}
       {labelIndexes.map((index) => (
         <text
           key={points[index].date}
           className="stats-chart-date-label"
           x={coordinates[index].x}
-          y={height - 8}
+          y={height - 6}
           textAnchor={chartLabelAnchor(index, points.length - 1)}
         >
           {formatChartDate(points[index].date)}
@@ -146,10 +223,9 @@ TrendChart.propTypes = {
 
 const Stats = () => {
   const [stats, setStats] = useState(EMPTY_STATS);
-  const [trendWindow, setTrendWindow] = useState(30);
   const trend = useMemo(
-    () => stats.trend.slice(-trendWindow),
-    [stats.trend, trendWindow],
+    () => stats.trend.slice(-90),
+    [stats.trend],
   );
   const popularPaths = useMemo(
     () => [...stats.paths]
@@ -183,40 +259,29 @@ const Stats = () => {
   }, []);
 
   return (
-    <Main title="Visitor Statistics" description="Anonymous visitor statistics for Menglin Zhu's website">
+    <Main title="Statistics" description="Anonymous visitor statistics for Menglin Zhu's website">
       <article className="post stats-page" id="stats">
-        <PageHeader title="Visitor Statistics" />
+        <PageHeader title="Statistics" />
 
-        <section className="stats-summary-grid" aria-label="Visit summary">
-          {SUMMARY_ITEMS.map((item) => (
-            <div className="stats-summary-card" key={item.key}>
-              <span className="stats-summary-label">{item.label}</span>
-              <strong className="stats-summary-value">
-                {formatCount(stats.summary[item.key])}
-              </strong>
+        <section className="stats-panel stats-overview" aria-labelledby="visits-trend-title">
+          <div className="stats-trend-column">
+            <div className="stats-panel-heading">
+              <div>
+                <h3 id="visits-trend-title">Visits over time</h3>
+              </div>
             </div>
-          ))}
-        </section>
-
-        <section className="stats-panel" aria-labelledby="visits-trend-title">
-          <div className="stats-panel-heading">
-            <div>
-              <h3 id="visits-trend-title">Visits over time</h3>
-            </div>
-            <div className="stats-window-toggle" aria-label="Trend period">
-              {[30, 90].map((days) => (
-                <button
-                  key={days}
-                  type="button"
-                  aria-pressed={trendWindow === days}
-                  onClick={() => setTrendWindow(days)}
-                >
-                  {days} days
-                </button>
-              ))}
-            </div>
+            <TrendChart points={trend} />
           </div>
-          <TrendChart points={trend} />
+          <div className="stats-summary-grid" aria-label="Visit summary">
+            {SUMMARY_ITEMS.map((item) => (
+              <div className="stats-summary-card" key={item.key}>
+                <span className="stats-summary-label">{item.label}</span>
+                <strong className="stats-summary-value">
+                  {formatCount(stats.summary[item.key])}
+                </strong>
+              </div>
+            ))}
+          </div>
         </section>
 
         <section className="stats-panel" aria-labelledby="popular-paths-title">

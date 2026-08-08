@@ -1,14 +1,11 @@
 import projectsData from '../data/projects';
 import newsData from '../data/news';
 import publicationsData from '../data/publications';
-import jobsDailyData from '../data/jobsDaily.json';
-import arXivDailyData from '../data/arXivDaily.json';
 import {
   compareIsoDateDesc,
   toProjectRecord,
   toPublicationRecord,
   toMiscRecord,
-  toFeedItemRecord,
 } from './schema';
 
 export const getProjects = () => (
@@ -61,52 +58,3 @@ export const getPublicationTags = () => (
   [...new Set(getPublications().flatMap((entry) => entry.tags))]
     .sort((a, b) => a.localeCompare(b))
 );
-
-export const getJobsFeed = () => ({
-  header: jobsDailyData?.header || null,
-  generatedAt: jobsDailyData?.header?.generatedAt || jobsDailyData?.generatedAt || '',
-  source: jobsDailyData?.header?.source || jobsDailyData?.source || 'TTAP Daily Feed',
-  items: (Array.isArray(jobsDailyData?.items) ? jobsDailyData.items : [])
-    .map((item) => toFeedItemRecord({
-      title: item?.title,
-      date: item?.date,
-      source: jobsDailyData?.header?.source || jobsDailyData?.source || 'TTAP Daily Feed',
-      url: item?.url,
-      metadata: {
-        id: item?.id || '',
-        stars: Number.isInteger(item?.fitScore) ? item.fitScore : 0,
-        isNew: item?.isNew === true,
-        location: item?.location || '',
-        description: item?.description || '',
-        keyword: Array.isArray(item?.keywords) ? item.keywords.join(', ') : '',
-      },
-    }))
-    .filter(Boolean),
-});
-
-export const getArxivFeed = () => {
-  const sourceItems = Array.isArray(arXivDailyData?.items) ? arXivDailyData.items : [];
-  const latestDate = sourceItems.reduce((max, item) => (
-    item?.date && (!max || item.date > max) ? item.date : max
-  ), '');
-
-  return {
-    header: arXivDailyData?.header || null,
-    generatedAt: arXivDailyData?.header?.generatedAt || arXivDailyData?.generatedAt || '',
-    source: arXivDailyData?.header?.source || arXivDailyData?.source || 'arXiv Daily Feed',
-    items: sourceItems
-      .map((item) => toFeedItemRecord({
-        title: item?.title,
-        date: item?.date,
-        source: arXivDailyData?.header?.source || arXivDailyData?.source || 'arXiv Daily Feed',
-        url: item?.url,
-        metadata: {
-          id: item?.id || '',
-          summary: item?.summary || '',
-          tags: Array.isArray(item?.tags) ? item.tags : [],
-          isNew: item?.date === latestDate,
-        },
-      }))
-      .filter(Boolean),
-  };
-};

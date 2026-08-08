@@ -10,6 +10,14 @@ const RESOURCES_TOOLS = [
   { label: 'Jobs', to: '/job' },
 ];
 
+export const getResourceAssetUrl = (
+  src,
+  publicUrl = process.env.PUBLIC_URL || '',
+) => {
+  if (/^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(src)) return src;
+  return `${publicUrl.replace(/\/$/, '')}/${src.replace(/^\//, '')}`;
+};
+
 const renderLinkItem = (item) => (
   <li key={item.label}>
     {item.url ? (
@@ -40,7 +48,7 @@ const renderVisualMedia = (item) => {
         {item.media.map((entry) => (
           <img
             key={entry.src}
-            src={entry.src}
+            src={getResourceAssetUrl(entry.src)}
             alt={entry.alt}
             style={{ width: '20%', maxWidth: '170px' }}
           />
@@ -69,7 +77,7 @@ const renderVisualMedia = (item) => {
             loop
             muted
           >
-            <source src={entry.src} type="video/mp4" />
+            <source src={getResourceAssetUrl(entry.src)} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         ))}
@@ -82,7 +90,7 @@ const renderVisualMedia = (item) => {
       {item.media.map((entry) => (
         <img
           key={entry.src}
-          src={entry.src}
+          src={getResourceAssetUrl(entry.src)}
           alt={entry.alt}
           style={{ width: '95%', maxWidth: '780px' }}
         />

@@ -10,7 +10,7 @@ const data = [
     pinned: false,
     expandable: true,
     desc:
-      'Combing in situ TEM diffraction and MEP, we reveals a fluctuation-dominated transformation pathway in PMW. While ¼ 110 superlattice reflections confirm antiparallel dipole ordering at low temperature, room-temperature diffraction shows unexpected ½ 110 diffuse scattering and emergent ½ 100 reflections. Temperature-dependent analysis and first-principle modeling indicate competing interactions and rapid polar domain switching near the critical point, producing dynamic disorder before a sharp transition into the AFE phase.',
+      'Combining in situ TEM diffraction and MEP, we reveal a fluctuation-dominated transformation pathway in PMW. While ¼ 110 superlattice reflections confirm antiparallel dipole ordering at low temperature, room-temperature diffraction shows unexpected ½ 110 diffuse scattering and emergent ½ 100 reflections. Temperature-dependent analysis and first-principles modeling indicate competing interactions and rapid polar domain switching near the critical point, producing dynamic disorder before a sharp transition into the AFE phase.',
   },
   {
     title: 'Field-Driven Multistep AFE–FE Transition in PZO',
@@ -20,7 +20,7 @@ const data = [
     pinned: false,
     expandable: true,
     desc:
-      'Operando STEM under device-relevant conditions leverages strain and clamping-induced heterogeneity to spatially resolve the ultrafast time-evolving AFE–FE transition in PZO. The observed atomic motifs align with NEB predictions, revealing (1) a step-wsie polar alignment transition, and (2) a post switching FE manifold where the two degenerate R3c states interconvert via a monoclinic bridge.',
+      'Operando STEM under device-relevant conditions leverages strain and clamping-induced heterogeneity to spatially resolve the ultrafast, time-evolving AFE–FE transition in PZO. The observed atomic motifs align with NEB predictions, revealing (1) a stepwise polar-alignment transition and (2) a post-switching FE manifold in which the two degenerate R3c states interconvert via a monoclinic bridge.',
   },
   {
     title: 'Operando S/TEM Biasing on Non-Conductive Substrates',
@@ -40,18 +40,18 @@ const data = [
     expandable: true,
     pinned: false,
     desc:
-      'Disruption of long-range order through heterogeneity can drastically alter material behavior, as seen in lead-based relaxor ferroelectrics. Decades of research have linked local chemical and structural inhomogeneities to unique macroscopic properties like high electromechanical coupling and broad dielectric response. While it is generally accepted that these inhomogeneities promote the relaxor response, various interpretations have emerged, ranging from the early model of polar nanoregions to the more recent polar nanodomain slush model. Here, we directly oberve the ploar slush in 3D using mutlislice electron ptychograpy.',
+      'Disruption of long-range order through heterogeneity can drastically alter material behavior, as seen in lead-based relaxor ferroelectrics. Decades of research have linked local chemical and structural inhomogeneities to unique macroscopic properties like high electromechanical coupling and broad dielectric response. While it is generally accepted that these inhomogeneities promote the relaxor response, various interpretations have emerged, ranging from the early model of polar nanoregions to the more recent polar nanodomain slush model. Here, we directly observe the polar slush in 3D using multislice electron ptychography.',
   },
   {
-    title: 'Operando Obervation of AFE-to-FE Transtion',
+    title: 'Operando Observation of the AFE-to-FE Transition',
     image: '/images/projects/PZO_Clamp.gif',
     link: 'https://www.nature.com/articles/s41563-024-01907-y',
     date: '2024-05-23',
     expandable: true,
-    desc: 'Operando electron microscopy reveals the field-induced antiferroelectric-to-ferroelectric phase transition in thin-film PbZrO₃, marked by oxygen octahedra detilting and lattice-volume expansion. This transition, influenced by substrate constraints, results in enhanced electromechanical strain (1.7%) in 100 nm thick films. The atomic-scale pathway, including an intermediate transient phase, is also revealed. First-principles calculations support the mechanism, offering insights into thickness scaling for high-performance micro-/nano-electromechanical systems.',
+    desc: 'Operando electron microscopy reveals the field-induced antiferroelectric-to-ferroelectric phase transition in thin-film PbZrO₃, marked by oxygen-octahedral detilting and lattice-volume expansion. This transition, influenced by substrate constraints, results in enhanced electromechanical strain (1.7%) in 100 nm thick films. The atomic-scale pathway, including an intermediate transient phase, is also revealed. First-principles calculations support the mechanism, offering insights into thickness scaling for high-performance micro-/nano-electromechanical systems.',
   },
   {
-    title: '3D View of APBs and Spatially Corrleated AFE Nanodomains',
+    title: '3D View of APBs and Spatially Correlated AFE Nanodomains',
     image: '/images/projects/PMW.png',
     link: 'https://pubs.acs.org/doi/abs/10.1021/acsnano.4c14833',
     date: '2025-01-27',
@@ -84,7 +84,7 @@ const data = [
     date: '2022-01-01',
     expandable: true,
     desc:
-      'Nanoscale temperature measurements are crucial for understanding the local thermal properties. As atoms vibrate more intensely with increasing temperature due to the larger Debye-Waller factor, the electron scattering cross sections are affected, leading to changes in the contrast of STEM images. This temperature sensitivity, experimentally demonstrated using 4D-STEM as a function of scattering angle, align well with multislice simulations, offering a promising method for  atomic-scale temperature measurements.',
+      'Nanoscale temperature measurements are crucial for understanding local thermal properties. As atoms vibrate more intensely with increasing temperature due to the larger Debye-Waller factor, the electron scattering cross sections are affected, leading to changes in the contrast of STEM images. This temperature sensitivity, experimentally demonstrated using 4D-STEM as a function of scattering angle, aligns well with multislice simulations, offering a promising method for atomic-scale temperature measurements.',
   },
 ];
 export default data;

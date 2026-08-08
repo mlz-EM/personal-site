@@ -3,7 +3,7 @@ import Main from '../layouts/Main';
 import PageHeader from '../components/Template/PageHeader';
 import PageTools from '../components/Template/PageTools';
 import FeedBasicInfo from '../components/Template/FeedBasicInfo';
-import { getJobsFeed } from '../content/api';
+import getJobsFeed from '../content/jobsFeed';
 import { getDateInputValueDaysAgo } from '../utils/dateInput';
 
 const JOB_TOOLS = [
@@ -85,7 +85,7 @@ const Job = () => {
         <hr />
         <div className="jobs-list">
           {filteredJobs.map((job) => (
-            <div key={`${job.metadata.id}-${job.title}`} className="job-item">
+            <div key={job.url} className="job-item">
               <p>
                 <a href={job.url} target="_blank" rel="noopener noreferrer">
                   <strong>{job.metadata.isNew ? '[NEW] ' : ''}{job.title}</strong>

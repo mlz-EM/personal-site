@@ -135,6 +135,7 @@ export const getVisitSessionKey = (now = Date.now()) => {
 };
 
 const VisitorMap = () => {
+  const [mapReady, setMapReady] = useState(false);
   const [locations, setLocations] = useState([]);
   const loadedAt = useMemo(() => Date.now(), []);
   const visitsByCountry = useMemo(() => locations.reduce((counts, location) => {
@@ -148,7 +149,10 @@ const VisitorMap = () => {
   );
 
   useEffect(() => {
-    if (!API_URL || navigator.userAgent === 'ReactSnap') return undefined;
+    if (navigator.userAgent === 'ReactSnap') return undefined;
+
+    setMapReady(true);
+    if (!API_URL) return undefined;
 
     const controller = new AbortController();
     const recordLocation = shouldRecordVisit();
@@ -182,6 +186,19 @@ const VisitorMap = () => {
 
     return () => controller.abort();
   }, []);
+
+  if (!mapReady) {
+    return (
+      <div className="visitor-map-widget" aria-hidden="true">
+        <svg
+          className="visitor-map-widget__map"
+          viewBox={`0 0 ${MAP_WIDTH} ${MAP_HEIGHT}`}
+          focusable="false"
+          role="presentation"
+        />
+      </div>
+    );
+  }
 
   return (
     <div className="visitor-map-widget" aria-hidden="true">

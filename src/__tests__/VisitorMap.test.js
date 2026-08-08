@@ -2,7 +2,10 @@
  * @jest-environment jsdom
  */
 
-import { getVisitSessionKey } from '../components/VisitorMap';
+import '@testing-library/jest-dom';
+import React from 'react';
+import { render } from '@testing-library/react';
+import VisitorMap, { getVisitSessionKey } from '../components/VisitorMap';
 
 describe('anonymous visit session', () => {
   const storageKey = 'mlz-em-visit-session';
@@ -56,5 +59,28 @@ describe('anonymous visit session', () => {
 
     expect(sessionKey).not.toBe('invalid');
     expect(storedSession.key).toBe(sessionKey);
+  });
+});
+
+describe('visitor map prerendering', () => {
+  const originalUserAgent = navigator.userAgent;
+
+  afterEach(() => {
+    Object.defineProperty(navigator, 'userAgent', {
+      configurable: true,
+      value: originalUserAgent,
+    });
+  });
+
+  it('keeps ReactSnap output lightweight', () => {
+    Object.defineProperty(navigator, 'userAgent', {
+      configurable: true,
+      value: 'ReactSnap',
+    });
+
+    const { container } = render(<VisitorMap />);
+
+    expect(container.querySelector('.visitor-map-widget')).toBeInTheDocument();
+    expect(container.querySelectorAll('.rsm-geography')).toHaveLength(0);
   });
 });

@@ -1,11 +1,11 @@
 import {
-  getArxivFeed,
   getFeaturedPinnedItems,
-  getJobsFeed,
   getNewsItems,
   getProjects,
   getPublications,
 } from '../content/api';
+import getArxivFeed from '../content/arxivFeed';
+import getJobsFeed from '../content/jobsFeed';
 
 describe('content API', () => {
   it('returns projects sorted by descending date', () => {
@@ -33,6 +33,7 @@ describe('content API', () => {
     expect(jobs.items.length).toBeGreaterThan(0);
     expect(jobs.items.every((item) => /^https?:\/\//.test(item.url))).toBe(true);
     expect(jobs.items.every((item) => Number.isInteger(item.metadata.stars))).toBe(true);
+    expect(new Set(jobs.items.map((item) => item.url)).size).toBe(jobs.items.length);
   });
 
   it('returns arxiv feed from JSON records', () => {
