@@ -19,7 +19,7 @@
   color: _palette(fg-light);
   display: block;
   font-family: _font(family-heading);
-  font-size: 0.66rem;
+  font-size: 0.58rem;
   font-weight: _font(weight-heading-bold);
   letter-spacing: 0.13em;
   line-height: 1.5;
@@ -27,17 +27,17 @@
 }
 
 .stats-summary-value {
-  color: _palette(fg-bold);
+  color: #000000;
   display: block;
   font-family: _font(family-heading);
-  font-size: 0.9rem;
-  font-weight: _font(weight-heading-extrabold);
+  font-size: 0.58rem;
+  font-weight: _font(weight-heading-bold);
   letter-spacing: 0.02em;
   line-height: 1;
   margin-top: 0;
 }
 
-.stats-overview {
+.stats-panel.stats-overview {
   align-items: stretch;
   display: grid;
   border-top: 0;
@@ -104,12 +104,9 @@
 .stats-chart-tooltip-value {
   fill: _palette(fg-bold);
   font-family: _font(family-heading);
-  font-size: 9px;
-  letter-spacing: 0.02em;
-}
-
-.stats-chart-tooltip-date {
+  font-size: 0.58rem;
   font-weight: _font(weight-heading-bold);
+  letter-spacing: 0.02em;
 }
 
 .stats-chart-tooltip-value {
