@@ -8,8 +8,8 @@
   "hIndexSince2019": 17,
   "i10IndexAll": 30,
   "i10IndexSince2019": 30,
-  "status": "ok",
-  "lastAttemptAt": "2026-08-06T02:57:45Z",
+  "status": "stale",
+  "lastAttemptAt": "2026-08-10T08:08:53Z",
   "lastSuccessAt": "2026-08-06T02:57:45Z",
-  "lastError": null
+  "lastError": "direct: HTTP Error 403: Forbidden; fallback: HTTP Error 403: Forbidden"
 }
