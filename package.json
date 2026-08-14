@@ -70,6 +70,10 @@
   },
   "reactSnap": {
     "port": 45679,
+    "include": [
+      "/",
+      "/facultyjobs"
+    ],
     "puppeteerArgs": [
       "--no-sandbox",
       "--disable-setuid-sandbox"

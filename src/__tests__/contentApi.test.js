@@ -6,6 +6,10 @@ import {
 } from '../content/api';
 import getArxivFeed from '../content/arxivFeed';
 import getJobsFeed from '../content/jobsFeed';
+import getInterfolioJobsFeed from '../content/interfolioJobsFeed';
+import getChronicleJobsFeed from '../content/chronicleJobsFeed';
+import getInsideHigherEdJobsFeed from '../content/insideHigherEdJobsFeed';
+import getFacultyJobsFeed from '../content/facultyJobsFeed';
 
 describe('content API', () => {
   it('returns projects sorted by descending date', () => {
@@ -41,6 +45,38 @@ describe('content API', () => {
     expect(arxiv.items.length).toBeGreaterThan(0);
     expect(arxiv.items.every((item) => /^https?:\/\//.test(item.url))).toBe(true);
     expect(arxiv.items.some((item) => item.metadata.isNew)).toBe(true);
+  });
+
+  it('returns the independent Interfolio feed', () => {
+    const interfolio = getInterfolioJobsFeed();
+    expect(interfolio.header.model).toEqual(expect.any(String));
+    expect(interfolio.source).toBe('Interfolio Faculty Jobs');
+    expect(Array.isArray(interfolio.items)).toBe(true);
+  });
+
+  it('returns the independent Chronicle feed', () => {
+    const chronicle = getChronicleJobsFeed();
+    expect(chronicle.header.model).toEqual(expect.any(String));
+    expect(chronicle.source).toBe('Chronicle Faculty Jobs');
+    expect(Array.isArray(chronicle.items)).toBe(true);
+  });
+
+  it('returns the independent Inside Higher Ed feed', () => {
+    const insideHigherEd = getInsideHigherEdJobsFeed();
+    expect(insideHigherEd.header.model).toEqual(expect.any(String));
+    expect(insideHigherEd.source).toBe('Inside Higher Ed Faculty Jobs');
+    expect(Array.isArray(insideHigherEd.items)).toBe(true);
+  });
+
+  it('combines all three faculty job feeds with source choices', () => {
+    const facultyJobs = getFacultyJobsFeed();
+    expect(facultyJobs.source).toBe('Faculty Jobs');
+    expect(facultyJobs.sources).toEqual([
+      'Interfolio Faculty Jobs',
+      'Chronicle Faculty Jobs',
+      'Inside Higher Ed Faculty Jobs',
+    ]);
+    expect(facultyJobs.items.every((item) => facultyJobs.sources.includes(item.source))).toBe(true);
   });
 
   it('returns featured feed from pinned project and news items', () => {
