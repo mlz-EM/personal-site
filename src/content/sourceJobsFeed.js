@@ -1,14 +1,14 @@
 import { toFeedItemRecord } from './schema';
 
-const buildSourceJobsFeed = (data, fallbackSource) => ({
+const buildSourceJobsFeed = (data, canonicalSource) => ({
   header: data?.header || null,
   generatedAt: data?.header?.generatedAt || data?.generatedAt || '',
-  source: data?.header?.source || data?.source || fallbackSource,
+  source: canonicalSource,
   items: (Array.isArray(data?.items) ? data.items : [])
     .map((item) => toFeedItemRecord({
       title: item?.title,
       date: item?.date,
-      source: data?.header?.source || data?.source || fallbackSource,
+      source: canonicalSource,
       url: item?.url,
       metadata: {
         id: item?.id || '',

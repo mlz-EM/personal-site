@@ -10,6 +10,7 @@ import getInterfolioJobsFeed from '../content/interfolioJobsFeed';
 import getChronicleJobsFeed from '../content/chronicleJobsFeed';
 import getInsideHigherEdJobsFeed from '../content/insideHigherEdJobsFeed';
 import getFacultyJobsFeed from '../content/facultyJobsFeed';
+import buildSourceJobsFeed from '../content/sourceJobsFeed';
 
 describe('content API', () => {
   it('returns projects sorted by descending date', () => {
@@ -52,6 +53,23 @@ describe('content API', () => {
     expect(interfolio.header.model).toEqual(expect.any(String));
     expect(interfolio.source).toBe('Interfolio Faculty Jobs');
     expect(Array.isArray(interfolio.items)).toBe(true);
+  });
+
+  it('uses the route source label when producer metadata is shorter', () => {
+    const feed = buildSourceJobsFeed(
+      {
+        header: { source: 'Interfolio' },
+        items: [{
+          title: 'Example role',
+          date: '2026-08-15',
+          url: 'https://apply.interfolio.com/1',
+        }],
+      },
+      'Interfolio Faculty Jobs',
+    );
+
+    expect(feed.source).toBe('Interfolio Faculty Jobs');
+    expect(feed.items[0].source).toBe('Interfolio Faculty Jobs');
   });
 
   it('returns the independent Chronicle feed', () => {
