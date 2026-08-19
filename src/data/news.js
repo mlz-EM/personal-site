@@ -3,6 +3,17 @@
 // - set `pinned: true` to pin item to top + home featured section
 const data = [
   {
+    label: 'Invited Talk: MRS 2027 Sping',
+    link: 'https://www.mrs.org/meetings-events/annual-meetings/2027-mrs-spring-meeting/call-for-abstracts/view/2027-mrs-spring-meeting-exhibit/Symposium-CH03-Advances-in-High-Resolution--Real-Space-Imaging-of-Quantum-Materials#:~:text=Menglin%20Zhu%20(Massachusetts%20Institute%20of%20Technology%2C%20USA)',
+    image: '/images/misc/MRS.jpg',
+    date: '2026-08-19',
+    category: 'Misc',
+    expandable: false,
+    pinned: true,
+    desc:
+    '',
+  },
+  {
     label: 'M&M Talk: Dynamic Antiferroelectric Transformations',
     link: 'https://academic.oup.com/mam/article/32/Supplement_1/ozag053.519/8742853',
     image: '/images/misc/MM2026.png',

@@ -1,15 +1,15 @@
 {
   "sourceUrl": "https://scholar.google.com/citations?user=tkEx8OQAAAAJ&hl=en",
-  "updatedAt": "2026-08-06T02:57:45Z",
+  "updatedAt": "2026-08-19T18:29:04Z",
   "papersAll": 74,
-  "citationsAll": 1626,
-  "citationsSince2019": 1525,
+  "citationsAll": 1649,
+  "citationsSince2019": 1547,
   "hIndexAll": 18,
   "hIndexSince2019": 17,
   "i10IndexAll": 30,
   "i10IndexSince2019": 30,
-  "status": "stale",
-  "lastAttemptAt": "2026-08-17T07:26:31Z",
-  "lastSuccessAt": "2026-08-06T02:57:45Z",
-  "lastError": "direct: HTTP Error 403: Forbidden; fallback: HTTP Error 403: Forbidden"
+  "status": "ok",
+  "lastAttemptAt": "2026-08-19T18:29:04Z",
+  "lastSuccessAt": "2026-08-19T18:29:04Z",
+  "lastError": null
 }
