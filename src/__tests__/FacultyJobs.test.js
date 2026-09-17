@@ -48,6 +48,15 @@ jest.mock('../content/facultyJobsFeed', () => () => ({
 }));
 
 describe('combined faculty jobs page', () => {
+  beforeAll(() => {
+    jest.useFakeTimers();
+    jest.setSystemTime(new Date('2026-08-15T12:00:00Z'));
+  });
+
+  afterAll(() => {
+    jest.useRealTimers();
+  });
+
   it('defaults to all sources and filters to a selected source', () => {
     window.scrollTo = jest.fn();
     render(
