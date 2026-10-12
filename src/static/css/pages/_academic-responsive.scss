@@ -1,0 +1,146 @@
+@include breakpoint(large) {
+  .post > .page-header .title .page-heading {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .page-title-actions {
+    margin-right: 0;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@include breakpoint(medium) {
+  .post > .page-header .title {
+    padding: calc(var(--space-5) * 0.2) var(--space-5) calc(var(--space-5) * 0.25) var(--space-5);
+  }
+
+  .page-heading-row {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .post > .page-header .title .page-heading {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: clamp(1.6rem, 3.24vw, 2.19rem) !important;
+    letter-spacing: 0.1em;
+  }
+
+  .page-title-actions {
+    width: 100%;
+    margin-top: 0.4rem;
+    justify-content: center;
+  }
+}
+
+@include breakpoint(small) {
+  .post > .page-header .title {
+    padding: calc(var(--space-5) * 0.2) var(--space-5) calc(var(--space-5) * 0.25) var(--space-5);
+  }
+
+  .page-tools {
+    top: calc(var(--top-nav-height-small) + var(--top-nav-gap) + 0.3rem);
+    margin-left: var(--space-2);
+    margin-right: var(--space-2);
+    border-radius: var(--radius-lg);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .page-tools-list {
+    flex-wrap: nowrap;
+    min-width: max-content;
+  }
+
+  .back-to-top {
+    right: 0.75rem;
+    bottom: 0.75rem;
+    width: 2.35rem;
+    height: 2.35rem;
+  }
+
+  .page-title-actions {
+    margin-right: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  button.page-title-action-btn {
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+
+  .page-heading-row {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .page-heading {
+    display: block;
+    margin: 0 auto !important;
+    width: 100% !important;
+    text-align: center !important;
+    font-size: clamp(0.79rem, 3.05vw, 1.1rem) !important;
+    letter-spacing: 0.09em;
+    line-height: 1.12;
+  }
+
+  #intro .logo .sidebar-logo-image {
+    width: 137px;
+    height: 137px;
+  }
+
+  #blurb .logo .home-logo-image {
+    width: 160px;
+    height: 160px;
+  }
+
+  #blurb .logo .home-logo-image {
+    top: 8px;
+    left: 0;
+  }
+
+  .adaptive-card-corner-toggle {
+    right: var(--space-1);
+    top: var(--space-1);
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .adaptive-card-staple {
+    top: -0.95rem;
+    left: -1.08rem;
+    width: 1.42rem;
+    height: 2.9rem;
+  }
+
+  .adaptive-card-content .mini-post > header,
+  .adaptive-card-content .minicell > header {
+    padding-right: 3.2rem;
+  }
+}
+
+@include breakpoint(xsmall) {
+  .page-heading {
+    display: block;
+    margin: 0 auto !important;
+    width: 100% !important;
+    text-align: center !important;
+    font-size: clamp(0.84rem, 3.24vw, 1.16rem) !important;
+    letter-spacing: 0.07em;
+    line-height: 1.14;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .page-heading {
+    font-size: clamp(0.76rem, 3vw, 1.04rem) !important;
+    letter-spacing: 0.06em;
+  }
+}

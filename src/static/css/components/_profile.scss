@@ -1,0 +1,67 @@
+.inline-link {
+  text-decoration: none;
+  border-bottom: 1px dashed currentcolor;
+}
+
+.sidebar-logo-image,
+.blurb-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.profile-image-large {
+  width: 180px;
+  height: 180px;
+  position: relative;
+  top: 15px;
+}
+
+#intro .logo .sidebar-logo-image,
+#blurb .logo .home-logo-image {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 50%;
+}
+
+#blurb .logo .home-logo-image {
+  width: 200px;
+  height: 200px;
+  margin: 0.5em auto;
+  position: relative;
+  top: 10px;
+  left: 0;
+}
+
+.blurb-row {
+  max-width: 40em;
+  align-items: stretch;
+  gap: 0.75rem;
+}
+
+.blurb-icon-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  align-self: stretch;
+}
+
+.blurb-copy-col {
+  padding: 1em;
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+.blurb-copy {
+  margin: 1em 0;
+}
+
+.blurb-copy-secondary {
+  margin-bottom: 1em;
+}

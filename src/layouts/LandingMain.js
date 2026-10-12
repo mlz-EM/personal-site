@@ -1,11 +1,8 @@
-/* eslint-disable react/jsx-closing-tag-location */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import PageFrame from './PageFrame';
 
-// import Analytics from '../components/Template/Analytics';
 import Navigation from '../components/Template/Navigation';
-import ScrollToTop from '../components/Template/ScrollToTop';
 
 const LandingMain = ({
   children = null,
@@ -13,19 +10,9 @@ const LandingMain = ({
   description = "Menglin Zhu's personal website.",
   typingDone = false,
 }) => (
-  <HelmetProvider>
-    {/* <Analytics /> */}
-    <ScrollToTop />
-    <Helmet
-      titleTemplate="%s | Menglin Zhu"
-      defaultTitle="Menglin Zhu"
-      defer={false}
-    >
-      {title && <title>{title}</title>}
-      <meta name="description" content={description} />
-    </Helmet>
+  <PageFrame title={title} description={description}>
     {typingDone && <Navigation />}{children}
-  </HelmetProvider>
+  </PageFrame>
 );
 
 LandingMain.propTypes = {

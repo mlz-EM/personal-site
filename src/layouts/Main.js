@@ -1,12 +1,9 @@
-/* eslint-disable react/jsx-closing-tag-location */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import PageFrame from './PageFrame';
 
-// import Analytics from '../components/Template/Analytics';
 import Navigation from '../components/Template/Navigation';
 import SideBar from '../components/Template/SideBar';
-import ScrollToTop from '../components/Template/ScrollToTop';
 import BackToTopButton from '../components/Template/BackToTopButton';
 
 const Main = ({
@@ -14,25 +11,16 @@ const Main = ({
   fullPage = false,
   title = null,
   description = "Menglin Zhu's personal website.",
+  wrapperClassName = null,
 }) => (
-  <HelmetProvider>
-    {/* <Analytics /> */}
-    <ScrollToTop />
-    <Helmet
-      titleTemplate="%s | Menglin Zhu"
-      defaultTitle="Menglin Zhu"
-      defer={false}
-    >
-      {title && <title>{title}</title>}
-      <meta name="description" content={description} />
-    </Helmet>
-    <div id="wrapper">
+  <PageFrame title={title} description={description}>
+    <div id="wrapper" className={wrapperClassName}>
       <Navigation />
       <main id="main">{children}</main>
       {fullPage ? null : <SideBar />}
     </div>
     <BackToTopButton />
-  </HelmetProvider>
+  </PageFrame>
 );
 
 Main.propTypes = {
@@ -43,6 +31,7 @@ Main.propTypes = {
   fullPage: PropTypes.bool,
   title: PropTypes.string,
   description: PropTypes.string,
+  wrapperClassName: PropTypes.string,
 };
 
 Main.defaultProps = {
@@ -50,6 +39,7 @@ Main.defaultProps = {
   fullPage: false,
   title: null,
   description: "Menglin Zhu's personal website.",
+  wrapperClassName: null,
 };
 
 export default Main;

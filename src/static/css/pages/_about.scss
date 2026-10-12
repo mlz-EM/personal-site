@@ -1,0 +1,45 @@
+.contact-item {
+  display: block;
+}
+
+.contact-label {
+  margin-left: 15px;
+}
+
+.about-figure-grid {
+  display: flex;
+  justify-content: space-between;
+  margin: -1rem 0 2rem;
+  gap: 1rem;
+}
+
+.about-figure {
+  height: auto;
+  object-fit: contain;
+  margin: -1.5rem 0 0rem; /* reduce space above figure; increase space below */
+}
+
+.about-figure img,
+.about-figure-image {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.post.markdown > *:last-child {
+  margin-bottom: -0.25rem;
+}
+
+.about-figure--left {
+  width: 37%;
+  margin-left: 3rem;
+  margin-top: 0.4rem;
+}
+
+.about-figure--right {
+  width: 48%;
+  margin-right: 3rem;
+}

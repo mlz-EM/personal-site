@@ -8,8 +8,8 @@ import {
 import { geoProjection } from 'd3-geo';
 import { alpha2ToNumeric } from 'i18n-iso-countries';
 import worldGeography from 'world-atlas/countries-110m.json';
+import VISITOR_API_URL from '../config/visitorApi';
 
-const API_URL = (process.env.REACT_APP_VISITOR_MAP_API_URL || '').replace(/\/$/, '');
 const TODAY_WINDOW_MS = 24 * 60 * 60 * 1000;
 const TRACKING_INTERVAL_MS = 6 * 60 * 60 * 1000;
 const LAST_TRACKED_KEY = 'mlz-em-visitor-map-last-tracked';
@@ -152,7 +152,7 @@ const VisitorMap = () => {
     if (navigator.userAgent === 'ReactSnap') return undefined;
 
     setMapReady(true);
-    if (!API_URL) return undefined;
+    if (!VISITOR_API_URL) return undefined;
 
     const controller = new AbortController();
     const recordLocation = shouldRecordVisit();
@@ -168,7 +168,7 @@ const VisitorMap = () => {
         });
         if (visitSessionKey) query.set('visitor', visitSessionKey);
 
-        const response = await fetch(`${API_URL}/visits?${query.toString()}`, {
+        const response = await fetch(`${VISITOR_API_URL}/visits?${query.toString()}`, {
           method: isStatsPage ? 'GET' : 'POST',
           signal: controller.signal,
         });

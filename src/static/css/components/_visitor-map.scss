@@ -1,0 +1,30 @@
+// Locally rendered visitor map styled to match the former MapMyVisitors widget.
+.visitor-map-widget {
+  width: 175px;
+  max-width: 100%;
+  margin: (_size(element-margin) * 0.5) auto -0.25rem auto;
+  background: #f4f4f4;
+}
+
+.visitor-map-widget__map {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.visitor-map-link {
+  border-bottom: 0;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+
+  .visitor-map-widget {
+    transition: opacity 0.18s ease, transform 0.18s ease;
+  }
+
+  &:hover .visitor-map-widget,
+  &:focus-visible .visitor-map-widget {
+    opacity: 0.82;
+    transform: translateY(-1px);
+  }
+}

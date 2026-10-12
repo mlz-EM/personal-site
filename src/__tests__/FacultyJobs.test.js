@@ -76,4 +76,21 @@ describe('combined faculty jobs page', () => {
     expect(screen.getByRole('link', { name: /Chronicle role/ })).toBeInTheDocument();
     expect(screen.queryByRole('link', { name: /Inside Higher Ed role/ })).not.toBeInTheDocument();
   });
+
+  it('clears source, date, and fit filters together', () => {
+    window.scrollTo = jest.fn();
+    render(<MemoryRouter><FacultyJobs /></MemoryRouter>);
+    fireEvent.change(screen.getByLabelText('Source'), { target: { value: 'Chronicle Faculty Jobs' } });
+    fireEvent.change(screen.getByLabelText('Fit'), { target: { value: '3' } });
+    fireEvent.change(screen.getByLabelText('After'), { target: { value: '2026-08-15' } });
+    expect(screen.getByText(/No Faculty jobs match/)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Clear' }));
+    expect(screen.getByLabelText('Source')).toHaveValue('all');
+    expect(screen.getByLabelText('Fit')).toHaveValue('1');
+    expect(screen.getByLabelText('After')).toHaveValue('2026-07-16');
+    expect(screen.getByLabelText('NEW')).not.toBeChecked();
+    expect(screen.getByRole('link', { name: /Interfolio role/ })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /Chronicle role/ })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /Inside Higher Ed role/ })).toBeInTheDocument();
+  });
 });

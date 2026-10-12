@@ -1,0 +1,230 @@
+// Shared job feed spacing.
+.jobs-page .job-item {
+  margin: 0 0 (_size(element-margin) * 0.6) 0;
+}
+
+.jobs-page .job-item p {
+  margin: 0;
+}
+
+.jobs-page .job-item hr {
+  margin: (_size(element-margin) * 0.35) 0;
+}
+
+// Keep the divider below arXiv filters aligned with jobs page default spacing.
+#arxiv.markdown > hr {
+  margin: _size(element-margin) 0 (_size(element-margin) * 0.35) 0;
+}
+
+// Reduce gap between filter divider and first entry on jobs page.
+.jobs-page.markdown > hr {
+  margin: _size(element-margin) 0 (_size(element-margin) * 0.35) 0;
+}
+
+// Match per-item separator spacing with TT job entries.
+#arxiv .job-item hr {
+  margin: (_size(element-margin) * 0.35) 0;
+}
+
+// NEW filter checkbox: show native checkbox to the right of text.
+.jobs-filter-new label {
+  display: flex;
+  align-items: center;
+  font-weight: _font(weight-bold);
+  line-height: 1;
+}
+
+.jobs-filter-new input[type="checkbox"] {
+  @include vendor("appearance", "auto");
+  opacity: 1;
+  position: static;
+  float: none;
+  margin: 0 0 0 8px;
+  width: auto;
+  z-index: auto;
+}
+
+// Shared jobs layout: clear hierarchy and filters that stay inside the page.
+.jobs-page.markdown {
+  .job-filter-row {
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    margin: 1.25rem 0 0;
+  }
+
+  .job-filter-label {
+    gap: 0.4rem;
+    margin: 0;
+    min-width: 0;
+  }
+
+  .job-filter-input,
+  .job-filter-select {
+    margin-left: 0;
+  }
+
+  .job-filter-clear {
+    margin: 0;
+    align-self: center;
+  }
+
+  .job-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.35rem 1rem;
+    margin-bottom: 1.1rem;
+    overflow-wrap: anywhere;
+  }
+
+  .job-item-title,
+  .job-item-description,
+  .job-item hr {
+    grid-column: 1 / -1;
+  }
+
+  .job-item-title {
+    font-size: 1.06rem;
+    line-height: 1.45;
+  }
+
+  .job-item-title a {
+    border-bottom: 0;
+  }
+
+  .job-item-title a:hover,
+  .job-item-title a:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+  }
+
+  .job-item-location,
+  .job-item-source,
+  .job-item-date {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--muted-text-color);
+  }
+
+  .job-item-location strong,
+  .job-item-source strong,
+  .job-item-date strong {
+    color: inherit;
+    font-weight: 400;
+  }
+
+  .job-item-date {
+    grid-column: 2;
+    grid-row: 2;
+    white-space: nowrap;
+  }
+
+  .job-item-source {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+
+  .job-filter-source .job-filter-select {
+    width: 17rem;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .job-item-description {
+    font-size: 0.94rem;
+    line-height: 1.6;
+  }
+
+  .job-item hr {
+    width: 100%;
+    margin: 0.75rem 0 0;
+  }
+}
+
+@include breakpoint(medium) {
+  #wrapper.jobs-layout #main {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+  }
+
+  .jobs-page.post {
+    left: 0;
+    width: 100%;
+    padding: 1.5rem;
+
+    > header {
+      left: -1.5rem;
+      margin: -1.5rem 0 1.5rem;
+      width: calc(100% + 3rem);
+    }
+  }
+}
+
+@include breakpoint(small) {
+  #wrapper.jobs-layout {
+    padding: 1rem;
+  }
+
+  .jobs-page.post {
+    padding: 1rem;
+
+    > header {
+      left: -1rem;
+      margin: -1rem 0 1.5rem;
+      width: calc(100% + 2rem);
+    }
+  }
+
+  .jobs-page.markdown {
+    .job-filter-row {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 0.5rem 0.75rem;
+    }
+
+    .job-filter-label {
+      min-height: 44px;
+    }
+
+    .job-filter-input {
+      width: 100%;
+      min-width: 0;
+      max-width: 10rem;
+    }
+
+    .job-filter-select {
+      width: 3.5rem;
+      max-width: none;
+    }
+
+    .job-filter-source {
+      grid-column: 1 / -1;
+      grid-row: 3;
+    }
+
+    .job-filter-source .job-filter-select {
+      flex: 1;
+    }
+
+    .job-filter-clear {
+      grid-column: 2;
+      grid-row: 2;
+      justify-self: end;
+      width: auto;
+      min-width: 5rem;
+      min-height: 44px;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .jobs-page .job-item {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .jobs-page .job-item-date,
+  .jobs-page .job-item-source {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
