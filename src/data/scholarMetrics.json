@@ -1,15 +1,15 @@
 {
   "sourceUrl": "https://scholar.google.com/citations?user=tkEx8OQAAAAJ&hl=en",
-  "updatedAt": "2026-10-19T13:33:32Z",
-  "papersAll": 74,
-  "citationsAll": 1706,
-  "citationsSince2019": 1606,
+  "updatedAt": "2026-11-04T13:48:04Z",
+  "papersAll": null,
+  "citationsAll": 1723,
+  "citationsSince2019": 1623,
   "hIndexAll": 18,
   "hIndexSince2019": 18,
-  "i10IndexAll": 31,
-  "i10IndexSince2019": 31,
-  "status": "stale",
-  "lastAttemptAt": "2026-11-02T16:13:42Z",
-  "lastSuccessAt": "2026-10-19T13:33:32Z",
-  "lastError": "direct: HTTP Error 403: Forbidden; fallback: Could not parse metrics from fallback response."
+  "i10IndexAll": 33,
+  "i10IndexSince2019": 33,
+  "status": "ok",
+  "lastAttemptAt": "2026-11-04T13:48:04Z",
+  "lastSuccessAt": "2026-11-04T13:48:04Z",
+  "lastError": null
 }
