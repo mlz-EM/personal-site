@@ -10,7 +10,7 @@ npm start
 npm run ci:check
 ```
 
-`ci:check` runs ESLint, Jest, content validation, and the production build. `npm run predeploy` also prerenders the landing and faculty jobs pages with React Snap. GitHub Actions handles deployment; a local build does not publish the site.
+`ci:check` runs ESLint, Jest, content validation, and the production build. `npm run predeploy` also prerenders the landing and combined jobs pages with React Snap. GitHub Actions handles deployment; a local build does not publish the site.
 
 ## Code map
 
@@ -37,7 +37,7 @@ npm run ci:check
 - **Page content:** edit the matching file in `src/data/`. Projects, news, publications, and feed items pass through `src/content/` before rendering. People visibility, section order, and sorting are handled in `src/content/people.js`; member presentation lives in `PersonCard.js`.
 - **Routes and navigation:** register the page in `src/App.js`, then update `src/data/routes.js` if it should appear in navigation. Keep large feed imports lazy to avoid loading their JSON on every page.
 - **Daily feed controls:** change `useFeedFilters.js` for filtering rules and `FeedFilters.js` for controls. All feeds default to new items within the last 30 days. Clear restores that date window, shows seen items, resets job fit to one, and restores all sources. Preserve each page's input IDs and anchor IDs.
-- **Job entries:** edit `JobFeedItem.js`. `pages/_feeds.scss` styles both feeds through the shared `jobs-page` class. `SourceJobsPage.js` adds source selection and source labels; the TTAP page uses the same item component without those labels. Feed adapters must retain canonical source names rather than trust producer labels in JSON.
+- **Job entries:** edit `JobFeedItem.js`. `pages/_feeds.scss` styles the combined `/job` page through the shared `jobs-page` class. `jobsFeed.js` merges TTAP with the Interfolio, Chronicle, and Inside Higher Ed feeds, keeps the newest record per URL, and sorts by date. Listings show source labels without a source filter. Feed adapters must retain canonical source names rather than trust producer labels in JSON. Update the page's explanatory notes in `jobsFeed.js`, not the generated JSON.
 - **Statistics:** `useVisitorStats.js` owns fetching and cancellation, `visitorStats.js` owns fallback data and normalization, and `TrendChart.js` owns chart interaction. Formatters live in `statsFormatting.js`.
 - **Styles:** start with the matching component or page partial. `main.scss` is the entry point; `pages/_academic.scss` lists the academic styles in their existing cascade order. `academic-responsive` and `content-filters` contain shared rules spanning several features. Preserve import order when moving rules, since later declarations intentionally override template styles. Visitor map styles and final feed spacing overrides have their own partials.
 

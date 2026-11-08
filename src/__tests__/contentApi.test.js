@@ -11,6 +11,7 @@ import getChronicleJobsFeed from '../content/chronicleJobsFeed';
 import getInsideHigherEdJobsFeed from '../content/insideHigherEdJobsFeed';
 import getFacultyJobsFeed from '../content/facultyJobsFeed';
 import buildSourceJobsFeed from '../content/sourceJobsFeed';
+import jobsDailyData from '../data/jobsDaily.json';
 
 describe('content API', () => {
   it('returns projects sorted by descending date', () => {
@@ -33,12 +34,22 @@ describe('content API', () => {
     expect(publications.every((item) => item.authors.length > 0)).toBe(true);
   });
 
-  it('returns jobs feed from JSON records', () => {
+  it('merges TTAP and faculty feeds by URL in descending date order', () => {
     const jobs = getJobsFeed();
+    const ttap = buildSourceJobsFeed(jobsDailyData, 'TTAP Daily Feed');
+    const faculty = getFacultyJobsFeed();
+    const expectedUrls = new Set([...ttap.items, ...faculty.items].map((item) => item.url));
     expect(jobs.items.length).toBeGreaterThan(0);
     expect(jobs.items.every((item) => /^https?:\/\//.test(item.url))).toBe(true);
     expect(jobs.items.every((item) => Number.isInteger(item.metadata.stars))).toBe(true);
     expect(new Set(jobs.items.map((item) => item.url)).size).toBe(jobs.items.length);
+    expect(new Set(jobs.items.map((item) => item.url))).toEqual(expectedUrls);
+    expect(new Set(jobs.items.map((item) => item.source))).toEqual(new Set([
+      'TTAP Daily Feed', ...faculty.sources,
+    ]));
+    const dates = jobs.items.map((item) => new Date(item.date).getTime());
+    expect(dates).toEqual([...dates].sort((a, b) => b - a));
+    expect(jobs.header.notes.join(' ')).not.toMatch(/source filter/i);
   });
 
   it('returns arxiv feed from JSON records', () => {

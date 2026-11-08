@@ -6,17 +6,21 @@ import '@testing-library/jest-dom';
 import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import FacultyJobs from '../pages/FacultyJobs';
+import Job from '../pages/Job';
 
-jest.mock('../content/facultyJobsFeed', () => () => ({
+jest.mock('../content/jobsFeed', () => () => ({
   header: { model: 'gemini-3.6-flash', generatedAt: '', notes: [] },
   source: 'Faculty Jobs',
-  sources: [
-    'Interfolio Faculty Jobs',
-    'Chronicle Faculty Jobs',
-    'Inside Higher Ed Faculty Jobs',
-  ],
   items: [
+    {
+      title: 'TTAP role',
+      date: '2026-08-14',
+      source: 'TTAP Daily Feed',
+      url: 'https://example.com/job/4',
+      metadata: {
+        stars: 1, isNew: true, location: 'Cambridge', description: 'Four',
+      },
+    },
     {
       title: 'Interfolio role',
       date: '2026-08-14',
@@ -57,38 +61,37 @@ describe('combined faculty jobs page', () => {
     jest.useRealTimers();
   });
 
-  it('defaults to all sources and filters to a selected source', () => {
+  it('shows jobs from every feed without a source filter', () => {
     window.scrollTo = jest.fn();
     render(
       <MemoryRouter>
-        <FacultyJobs />
+        <Job />
       </MemoryRouter>,
     );
 
-    const source = screen.getByLabelText('Source');
-    expect(source).toHaveValue('all');
+    expect(screen.queryByLabelText('Source')).not.toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /TTAP role/ })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /Interfolio role/ })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /Chronicle role/ })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /Inside Higher Ed role/ })).toBeInTheDocument();
 
-    fireEvent.change(source, { target: { value: 'Chronicle Faculty Jobs' } });
-    expect(screen.queryByRole('link', { name: /Interfolio role/ })).not.toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /Chronicle role/ })).toBeInTheDocument();
-    expect(screen.queryByRole('link', { name: /Inside Higher Ed role/ })).not.toBeInTheDocument();
+    expect(screen.getByText('TTAP Daily Feed')).toBeInTheDocument();
+    expect(screen.getByText('Interfolio Faculty Jobs')).toBeInTheDocument();
+    expect(screen.getByText('Chronicle Faculty Jobs')).toBeInTheDocument();
+    expect(screen.getByText('Inside Higher Ed Faculty Jobs')).toBeInTheDocument();
   });
 
-  it('clears source, date, and fit filters together', () => {
+  it('clears date and fit filters across all feeds', () => {
     window.scrollTo = jest.fn();
-    render(<MemoryRouter><FacultyJobs /></MemoryRouter>);
-    fireEvent.change(screen.getByLabelText('Source'), { target: { value: 'Chronicle Faculty Jobs' } });
+    render(<MemoryRouter><Job /></MemoryRouter>);
     fireEvent.change(screen.getByLabelText('Fit'), { target: { value: '3' } });
     fireEvent.change(screen.getByLabelText('After'), { target: { value: '2026-08-15' } });
     expect(screen.getByText(/No Faculty jobs match/)).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: 'Clear' }));
-    expect(screen.getByLabelText('Source')).toHaveValue('all');
     expect(screen.getByLabelText('Fit')).toHaveValue('1');
     expect(screen.getByLabelText('After')).toHaveValue('2026-07-16');
     expect(screen.getByLabelText('NEW')).not.toBeChecked();
+    expect(screen.getByRole('link', { name: /TTAP role/ })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /Interfolio role/ })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /Chronicle role/ })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /Inside Higher Ed role/ })).toBeInTheDocument();

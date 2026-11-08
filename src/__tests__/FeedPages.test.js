@@ -114,6 +114,7 @@ describe('daily feed pages', () => {
     expect(screen.getByLabelText('Fit')).toHaveValue('1');
     expect(screen.getByRole('link', { name: 'Seen role' })).toBeInTheDocument();
     expect(screen.getByText('N/A')).toBeInTheDocument();
-    expect(screen.queryByText('Source:')).not.toBeInTheDocument();
+    expect(screen.getAllByText('Source:')).toHaveLength(2);
+    expect(screen.queryByLabelText('Source')).not.toBeInTheDocument();
   });
 });

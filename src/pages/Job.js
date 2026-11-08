@@ -19,9 +19,9 @@ const Job = () => {
   const filters = useFeedFilters(feed.items, { withFit: true });
 
   return (
-    <Main title="Jobs" description="Jobs Daily Feed" wrapperClassName="jobs-layout">
+    <Main title="Jobs" description="Combined AI-filtered faculty opportunities from TTAP, Interfolio, Chronicle, and Inside Higher Ed" wrapperClassName="jobs-layout">
       <article className="post markdown jobs-page" id="jobs">
-        <PageHeader title={feed.source || 'TTAP Daily Feed'} />
+        <PageHeader title={feed.source || 'Faculty Jobs'} />
         <PageTools items={JOB_TOOLS} ariaLabel="Job page tools" />
         <FeedBasicInfo header={feed.header} />
         <FeedFilters filters={filters} id="job-filters" withFit />
@@ -30,7 +30,7 @@ const Job = () => {
           {filters.filteredItems.length === 0 ? (
             <p>No Faculty jobs match the selected filters.</p>
           ) : filters.filteredItems.map((job) => (
-            <JobFeedItem key={job.url} job={job} />
+            <JobFeedItem key={job.url} job={job} showSource />
           ))}
         </div>
       </article>

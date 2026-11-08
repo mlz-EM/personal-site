@@ -29,7 +29,7 @@ const routes = [
     path: '/arxiv',
   },
   {
-    label: 'TT Jobs',
+    label: 'Jobs',
     path: '/job',
   },
   {

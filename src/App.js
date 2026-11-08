@@ -15,7 +15,6 @@ import Stats from './pages/Stats';
 
 const ArXiv = lazy(() => import('./pages/ArXiv'));
 const Job = lazy(() => import('./pages/Job'));
-const FacultyJobs = lazy(() => import('./pages/FacultyJobs'));
 
 const { PUBLIC_URL } = process.env;
 
@@ -36,7 +35,6 @@ const App = () => (
         <Route path="/news" element={<News />} />
         <Route path="/arxiv" element={<ArXiv />} />
         <Route path="/job" element={<Job />} />
-        <Route path="/facultyjobs" element={<FacultyJobs />} />
         <Route path="/stats" element={<Stats />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

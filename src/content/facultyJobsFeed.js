@@ -17,23 +17,27 @@ const getFacultyJobsFeed = () => {
   ];
   const byUrl = new Map();
   feeds.forEach((feed) => {
-    feed.items.forEach((item) => byUrl.set(item.url, item));
+    feed.items.forEach((item) => {
+      const previous = byUrl.get(item.url);
+      if (!previous || compareIsoDateDesc(item.date, previous.date) < 0) {
+        byUrl.set(item.url, item);
+      }
+    });
   });
   const generatedValues = feeds
     .map((feed) => feed.generatedAt)
     .filter(Boolean)
-    .sort();
+    .sort((a, b) => new Date(a) - new Date(b));
   const latestGeneratedAt = generatedValues[generatedValues.length - 1] || '';
 
   return {
     header: {
       title: 'Basic Info',
-      model: feeds.find((feed) => feed.header?.model)?.header?.model || 'gemini-3.6-flash',
+      model: [...new Set(feeds.map((feed) => feed.header?.model).filter(Boolean))].join(', '),
       generatedAt: latestGeneratedAt,
       source: 'Faculty Jobs',
       notes: [
         'This report combines independent AI-filtered feeds from Interfolio, The Chronicle of Higher Education Jobs, and Inside Higher Ed Careers.',
-        'Use the Source filter to show one job board or leave it set to All.',
       ],
     },
     generatedAt: latestGeneratedAt,
