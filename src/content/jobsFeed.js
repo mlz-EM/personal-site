@@ -31,8 +31,7 @@ const getJobsFeed = () => {
       generatedAt,
       source: 'Faculty Jobs',
       notes: [
-        'This report combines AI-filtered faculty job feeds from TTAP (Google, LinkedIn, and Indeed), Interfolio, The Chronicle of Higher Education Jobs, and Inside Higher Ed Careers.',
-        'Feeds update independently; the timestamp above is the latest source update. Listings are sorted by date, with duplicate URLs shown once.',
+        'This report combines AI-filtered faculty job feeds from Google, LinkedIn, Indeed, Interfolio, The Chronicle of Higher Education Jobs, and Inside Higher Ed Careers.',
         'This page is powered by [ArxivSummaryDaily](https://github.com/dong-zehao/ArxivSummaryDaily) and [JobSpy](https://github.com/speedyapply/JobSpy).',
       ],
     },
