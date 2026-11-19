@@ -13,6 +13,17 @@ article {
   }
 }
 
+.disclosure-title {
+  display: inline;
+  margin: 0;
+  padding-inline-start: 20px;
+  font: inherit;
+  font-size: 1.1em;
+  font-weight: _font(weight-bold);
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
 header {
   p {
     font-family: _font(family-heading);

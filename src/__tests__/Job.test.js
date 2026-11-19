@@ -75,10 +75,7 @@ describe('combined faculty jobs page', () => {
     expect(screen.getByRole('link', { name: /Chronicle role/ })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /Inside Higher Ed role/ })).toBeInTheDocument();
 
-    expect(screen.getByText('TTAP Daily Feed')).toBeInTheDocument();
-    expect(screen.getByText('Interfolio Faculty Jobs')).toBeInTheDocument();
-    expect(screen.getByText('Chronicle Faculty Jobs')).toBeInTheDocument();
-    expect(screen.getByText('Inside Higher Ed Faculty Jobs')).toBeInTheDocument();
+    expect(screen.queryByText('Source:')).not.toBeInTheDocument();
   });
 
   it('clears date and fit filters across all feeds', () => {

@@ -30,7 +30,7 @@ const Job = () => {
           {filters.filteredItems.length === 0 ? (
             <p>No Faculty jobs match the selected filters.</p>
           ) : filters.filteredItems.map((job) => (
-            <JobFeedItem key={job.url} job={job} showSource />
+            <JobFeedItem key={job.url} job={job} />
           ))}
         </div>
       </article>

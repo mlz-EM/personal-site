@@ -1,10 +1,8 @@
 .page-heading {
   margin-bottom: 0;
-  margin-left: 1.0rem;
-  font-size: clamp(1.9rem, 2.8vw, 2.45rem);
+  margin-left: var(--heading-indent);
   line-height: 1.1;
   letter-spacing: 0.18em;
-  font-weight: _font(weight-heading-extrabold);
   max-width: 100%;
   overflow-wrap: anywhere;
 }
@@ -22,9 +20,7 @@
   align-items: center;
   gap: 0.5rem;
   margin-right: var(--space-3);
-  margin-top: 0px;
-  margin-bottom: -10px;
-
+  margin-bottom: calc(-1 * var(--title-action-overhang));
 }
 
 button.page-title-action-btn {
@@ -56,11 +52,13 @@ button.page-title-action-btn:focus-visible {
 }
 
 .post > .page-header {
+  --title-action-overhang: 10px;
+  --title-bottom-space: calc(var(--space-5) * 1.25);
   margin: calc(var(--space-5) * -1) 0 var(--space-5) 0;
 }
 
 .post > .page-header .title {
-  padding: var(--space-5) var(--space-5) calc(var(--space-5) * 1.25) var(--space-5);
+  padding: var(--space-5) var(--space-5) var(--title-bottom-space);
 }
 
 .page-subtitle {

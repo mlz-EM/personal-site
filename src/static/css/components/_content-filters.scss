@@ -1,88 +1,17 @@
-.publications-post {
-  display: flex;
-  flex-direction: column;
-}
-
-.publications-title {
-  margin-bottom: 15px;
-}
-
-.publications-toolbar {
-  display: grid;
-  grid-template-columns: minmax(220px, 1fr) minmax(120px, 170px) minmax(120px, 170px);
-  gap: var(--space-2);
-  margin-bottom: var(--space-3);
-}
-
-.publications-search,
-.publications-filter,
 .job-filter-input,
 .job-filter-select,
 .job-filter-clear {
   border-radius: var(--radius-sm);
-  height: 2.75rem;
-  min-height: 2.75rem;
+  height: 2.2rem;
+  min-height: 2.2rem;
   font-size: 0.95rem;
 }
 
-.publications-search:focus-visible,
-.publications-filter:focus-visible,
 .job-filter-input:focus-visible,
 .job-filter-select:focus-visible,
 .job-filter-clear:focus-visible {
   outline: var(--focus-ring-width) solid var(--focus-ring-color);
   outline-offset: var(--focus-ring-offset);
-}
-
-.publications-search,
-.publications-filter {
-  padding: 0.25rem 0.5rem;
-}
-
-.publication-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 var(--space-1) 0;
-}
-
-.publication-item {
-  border: 1px solid _palette(border);
-  padding: var(--space-3);
-  margin-bottom: var(--space-2);
-  transition: border-color 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
-}
-
-.publication-item:hover {
-  border-color: transparentize(_palette(accent), 0.45);
-  background-color: transparentize(_palette(accent), 0.97);
-  box-shadow: 0 8px 18px -20px rgba(46, 89, 186, 0.9);
-}
-
-.publication-item h3 {
-  margin: 0 0 0.3rem 0;
-  font-size: 1rem;
-}
-
-.publication-meta {
-  margin: 0;
-  font-size: 0.86rem;
-  color: var(--meta-text-color);
-}
-
-.publication-tags {
-  margin: 0.35rem 0 0 0;
-  font-size: 0.8rem;
-  color: var(--muted-text-color);
-}
-
-.publication-empty {
-  margin: 0.5rem 0 1rem 0;
-}
-
-.publications-link-row {
-  display: flex;
-  gap: 1.25rem;
-  flex-wrap: wrap;
 }
 
 .job-filter-row {
@@ -101,13 +30,6 @@
 .job-filter-input,
 .job-filter-select {
   margin-left: 5px;
-}
-
-.job-filter-input,
-.job-filter-select,
-.job-filter-clear {
-  height: 2.2rem;
-  min-height: 2.2rem;
 }
 
 .job-filter-input {
@@ -156,9 +78,7 @@
   margin: 0;
 }
 
-#jobs h3 + .feed-basic-info,
-#arxiv h3 + .feed-basic-info,
-#interfolio-jobs h3 + .feed-basic-info {
+h3 + .feed-basic-info {
   margin-top: -0.8rem;
   margin-bottom: 1.5rem;
 }
@@ -177,10 +97,6 @@
     margin: 0;
   }
 
-  .publications-toolbar {
-    grid-template-columns: 1fr;
-  }
-
   .job-filter-row {
     flex-wrap: wrap;
     gap: var(--space-2);
@@ -191,8 +107,6 @@
     min-height: 44px;
   }
 
-  .publications-search,
-  .publications-filter,
   .job-filter-input,
   .job-filter-select,
   .job-filter-clear {

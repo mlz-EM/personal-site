@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const FeedFilters = ({
-  filters, id, idPrefix, withFit, sources,
+  filters, id, idPrefix, withFit,
 }) => (
   <div className="filter-section job-filter-row" id={id}>
     <div className="jobs-filter-new">
@@ -44,22 +44,6 @@ const FeedFilters = ({
         </select>
       </label>
     ) : null}
-    {sources ? (
-      <label htmlFor={`${idPrefix}source`} className="job-filter-label job-filter-source">
-        Source
-        <select
-          id={`${idPrefix}source`}
-          value={filters.selectedSource}
-          onChange={(event) => filters.setSelectedSource(event.target.value)}
-          className="job-filter-select"
-        >
-          <option value="all">All</option>
-          {sources.map((source) => (
-            <option key={source} value={source}>{source}</option>
-          ))}
-        </select>
-      </label>
-    ) : null}
     <button type="button" onClick={filters.clearFilters} className="job-filter-clear">
       Clear
     </button>
@@ -74,16 +58,13 @@ FeedFilters.propTypes = {
     setOnlyNew: PropTypes.func.isRequired,
     minStars: PropTypes.number.isRequired,
     setMinStars: PropTypes.func.isRequired,
-    selectedSource: PropTypes.string.isRequired,
-    setSelectedSource: PropTypes.func.isRequired,
     clearFilters: PropTypes.func.isRequired,
   }).isRequired,
   id: PropTypes.string.isRequired,
   idPrefix: PropTypes.string,
   withFit: PropTypes.bool,
-  sources: PropTypes.arrayOf(PropTypes.string),
 };
 
-FeedFilters.defaultProps = { idPrefix: '', withFit: false, sources: null };
+FeedFilters.defaultProps = { idPrefix: '', withFit: false };
 
 export default FeedFilters;

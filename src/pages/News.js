@@ -1,11 +1,11 @@
-import React, { useCallback, useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import Main from '../layouts/Main';
 import AdaptiveCard from '../components/Template/AdaptiveCard';
-import PageHeader from '../components/Template/PageHeader';
+import PageHeader, { ExpandAllButton } from '../components/Template/PageHeader';
 import PageTools from '../components/Template/PageTools';
 import { getNewsItems } from '../content/api';
+import useCardExpansion from '../hooks/useCardExpansion';
 
-const ENABLE_PER_CARD_EXPAND = true;
 const NEWS_TOOLS = [
   { label: 'Top', href: '#news' },
   { label: 'Filters', href: '#news-filters' },
@@ -15,8 +15,7 @@ const NEWS_TOOLS = [
 
 const News = () => {
   const items = useMemo(() => getNewsItems(), []);
-  const [bulkCommand, setBulkCommand] = useState({ expanded: false, nonce: 0 });
-  const [expandedStates, setExpandedStates] = useState({});
+  const { anyOpen, toggleAll, cardProps } = useCardExpansion();
   const [selectedYear, setSelectedYear] = useState('all');
   const [selectedCategory, setSelectedCategory] = useState('all');
 
@@ -29,23 +28,6 @@ const News = () => {
       .sort((a, b) => a.localeCompare(b))
   ), [items]);
 
-  const runBulkCommand = (expanded) => {
-    setBulkCommand((prev) => ({
-      expanded,
-      nonce: prev.nonce + 1,
-    }));
-  };
-  const handleExpandedChange = useCallback((cardId, isExpanded) => {
-    setExpandedStates((prev) => (
-      prev[cardId] === isExpanded
-        ? prev
-        : {
-          ...prev,
-          [cardId]: isExpanded,
-        }
-    ));
-  }, []);
-  const anyOpen = Object.values(expandedStates).some(Boolean);
   const filteredItems = useMemo(() => items.filter((item) => {
     const itemYear = item.date.slice(0, 4);
     const itemCategory = item.category || 'misc';
@@ -54,20 +36,13 @@ const News = () => {
     return yearMatch && categoryMatch;
   }), [items, selectedCategory, selectedYear]);
 
-  const titleActions = (
-    <button
-      type="button"
-      className="page-title-action-btn"
-      onClick={() => runBulkCommand(!anyOpen)}
-    >
-      {anyOpen ? 'Collapse all' : 'Expand all'}
-    </button>
-  );
-
   return (
     <Main title="News" description="Learn about Menglin Zhu's news and updates.">
       <article className="post" id="news">
-        <PageHeader title="News" titleActions={titleActions} />
+        <PageHeader
+          title="News"
+          titleActions={<ExpandAllButton anyOpen={anyOpen} onClick={toggleAll} />}
+        />
         <PageTools items={NEWS_TOOLS} ariaLabel="News page tools" />
         <div className="filter-section job-filter-row" id="news-filters">
           <label htmlFor="news-year" className="job-filter-label">
@@ -116,10 +91,7 @@ const News = () => {
             <AdaptiveCard
               data={badge}
               key={badge.label}
-              cardId={badge.label}
-              enableExpand={ENABLE_PER_CARD_EXPAND}
-              bulkCommand={bulkCommand}
-              onExpandedChange={handleExpandedChange}
+              {...cardProps}
               className="news-card"
             />
           ))}

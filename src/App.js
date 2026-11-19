@@ -7,7 +7,6 @@ import Index from './pages/Index';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Projects from './pages/Projects';
-import Publications from './pages/Publications';
 import Resources from './pages/Resources';
 import News from './pages/News';
 import People from './pages/People';
@@ -15,6 +14,7 @@ import Stats from './pages/Stats';
 
 const ArXiv = lazy(() => import('./pages/ArXiv'));
 const Job = lazy(() => import('./pages/Job'));
+const Publications = lazy(() => import('./pages/Publications'));
 
 const { PUBLIC_URL } = process.env;
 

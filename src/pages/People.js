@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import Main from '../layouts/Main';
-import PageHeader from '../components/Template/PageHeader';
+import PageHeader, { ExpandAllButton } from '../components/Template/PageHeader';
 import PageTools from '../components/Template/PageTools';
 import peopleData from '../data/people.json';
 import { getVisiblePeople, groupPeople } from '../content/people';
@@ -38,13 +38,7 @@ const People = () => {
   };
 
   const titleActions = (
-    <button
-      type="button"
-      className="page-title-action-btn"
-      onClick={() => toggleAll(!anyExpanded)}
-    >
-      {anyExpanded ? 'Collapse all' : 'Expand all'}
-    </button>
+    <ExpandAllButton anyOpen={anyExpanded} onClick={() => toggleAll(!anyExpanded)} />
   );
 
   const togglePerson = (id) => {

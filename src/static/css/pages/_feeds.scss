@@ -1,27 +1,9 @@
-// Shared job feed spacing.
-.jobs-page .job-item {
-  margin: 0 0 (_size(element-margin) * 0.6) 0;
-}
-
-.jobs-page .job-item p {
-  margin: 0;
-}
-
-.jobs-page .job-item hr {
-  margin: (_size(element-margin) * 0.35) 0;
-}
-
-// Keep the divider below arXiv filters aligned with jobs page default spacing.
-#arxiv.markdown > hr {
-  margin: _size(element-margin) 0 (_size(element-margin) * 0.35) 0;
-}
-
-// Reduce gap between filter divider and first entry on jobs page.
+// Both feeds use the same divider below their filters.
+#arxiv.markdown > hr,
 .jobs-page.markdown > hr {
   margin: _size(element-margin) 0 (_size(element-margin) * 0.35) 0;
 }
 
-// Match per-item separator spacing with TT job entries.
 #arxiv .job-item hr {
   margin: (_size(element-margin) * 0.35) 0;
 }
@@ -72,8 +54,12 @@
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
     gap: 0.35rem 1rem;
-    margin-bottom: 1.1rem;
+    margin: 0 0 1.1rem;
     overflow-wrap: anywhere;
+  }
+
+  .job-item p {
+    margin: 0;
   }
 
   .job-item-title,
@@ -98,7 +84,6 @@
   }
 
   .job-item-location,
-  .job-item-source,
   .job-item-date {
     font-size: 0.85rem;
     line-height: 1.5;
@@ -106,7 +91,6 @@
   }
 
   .job-item-location strong,
-  .job-item-source strong,
   .job-item-date strong {
     color: inherit;
     font-weight: 400;
@@ -116,17 +100,6 @@
     grid-column: 2;
     grid-row: 2;
     white-space: nowrap;
-  }
-
-  .job-item-source {
-    grid-column: 1 / -1;
-    grid-row: 3;
-  }
-
-  .job-filter-source .job-filter-select {
-    width: 17rem;
-    max-width: 100%;
-    min-width: 0;
   }
 
   .job-item-description {
@@ -148,14 +121,15 @@
   }
 
   .jobs-page.post {
+    --job-padding: 1.5rem;
     left: 0;
     width: 100%;
-    padding: 1.5rem;
+    padding: var(--job-padding);
 
     > header {
-      left: -1.5rem;
-      margin: -1.5rem 0 1.5rem;
-      width: calc(100% + 3rem);
+      left: calc(-1 * var(--job-padding));
+      margin: calc(-1 * var(--job-padding)) 0 1.5rem;
+      width: calc(100% + 2 * var(--job-padding));
     }
   }
 }
@@ -166,13 +140,7 @@
   }
 
   .jobs-page.post {
-    padding: 1rem;
-
-    > header {
-      left: -1rem;
-      margin: -1rem 0 1.5rem;
-      width: calc(100% + 2rem);
-    }
+    --job-padding: 1rem;
   }
 
   .jobs-page.markdown {
@@ -197,15 +165,6 @@
       max-width: none;
     }
 
-    .job-filter-source {
-      grid-column: 1 / -1;
-      grid-row: 3;
-    }
-
-    .job-filter-source .job-filter-select {
-      flex: 1;
-    }
-
     .job-filter-clear {
       grid-column: 2;
       grid-row: 2;
@@ -222,8 +181,7 @@
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .jobs-page .job-item-date,
-  .jobs-page .job-item-source {
+  .jobs-page .job-item-date {
     grid-column: 1;
     grid-row: auto;
   }

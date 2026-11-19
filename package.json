@@ -14,8 +14,9 @@
     "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js",
     "build": "rimraf ./build && react-scripts build",
     "lint": "eslint \"**/*.js\"",
-    "predeploy": "npm run build && react-snap",
+    "predeploy": "npm run sync:publications -- --use-saved-on-error && npm run build && react-snap",
     "start": "react-scripts start",
+    "sync:publications": "node scripts/sync-publications.js",
     "test": "npx jest",
     "validate:content": "node scripts/validate-content.js",
     "ci:check": "npm run lint && npm run test -- --runInBand && npm run validate:content && npm run build"
@@ -54,6 +55,8 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/preset-env": "^7.25.3",
     "@babel/preset-react": "^7.25.9",
+    "@citation-js/core": "0.7.21",
+    "@citation-js/plugin-bibtex": "0.7.21",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^16.0.1",
     "@testing-library/user-event": "^14.5.2",
@@ -72,7 +75,8 @@
     "port": 45679,
     "include": [
       "/",
-      "/job"
+      "/job",
+      "/resources"
     ],
     "puppeteerArgs": [
       "--no-sandbox",

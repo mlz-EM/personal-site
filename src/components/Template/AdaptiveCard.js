@@ -5,9 +5,7 @@ import MiniCell from './MiniCell';
 
 const AdaptiveCard = ({
   data,
-  enableExpand,
   bulkCommand,
-  cardId,
   onExpandedChange,
   className,
 }) => {
@@ -26,7 +24,7 @@ const AdaptiveCard = ({
   const title = projectTitle || label;
   const link = rawLink || '';
   const summary = rawSummary || '';
-  const canExpand = enableExpand && expandable === true;
+  const canExpand = expandable === true;
   const buttonLabel = expanded ? 'Close details' : 'Open details';
   const buttonAria = expanded ? `Collapse ${title}` : `Expand ${title}`;
   const normalizedData = {
@@ -45,14 +43,13 @@ const AdaptiveCard = ({
   ].join(' ');
 
   useEffect(() => {
-    if (!canExpand || !bulkCommand) return;
+    if (!canExpand) return;
     setExpanded(bulkCommand.expanded);
   }, [canExpand, bulkCommand]);
 
   useEffect(() => {
-    if (!canExpand || !onExpandedChange) return;
-    onExpandedChange(cardId, expanded);
-  }, [canExpand, cardId, expanded, onExpandedChange]);
+    if (canExpand) onExpandedChange(title, expanded);
+  }, [canExpand, title, expanded, onExpandedChange]);
 
   const toggleExpanded = () => setExpanded((prev) => !prev);
   const handleCardClick = (event) => {
@@ -122,21 +119,14 @@ AdaptiveCard.propTypes = {
     expandable: PropTypes.bool,
     pinned: PropTypes.bool,
   }).isRequired,
-  enableExpand: PropTypes.bool,
   bulkCommand: PropTypes.shape({
     expanded: PropTypes.bool.isRequired,
-    nonce: PropTypes.number.isRequired,
-  }),
-  cardId: PropTypes.string,
-  onExpandedChange: PropTypes.func,
+  }).isRequired,
+  onExpandedChange: PropTypes.func.isRequired,
   className: PropTypes.string,
 };
 
 AdaptiveCard.defaultProps = {
-  enableExpand: true,
-  bulkCommand: null,
-  cardId: '',
-  onExpandedChange: null,
   className: '',
 };
 

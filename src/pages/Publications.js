@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Main from '../layouts/Main';
 import scholarMetrics from '../data/scholarMetrics.json';
-import PageHeader from '../components/Template/PageHeader';
-import PageTools from '../components/Template/PageTools';
+import PublicationArchive from '../components/Publications/PublicationArchive';
 
 const formatMonthYear = (value) => {
   if (!value) return 'pending';
@@ -13,9 +12,6 @@ const formatMonthYear = (value) => {
 };
 
 const Publications = () => {
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
-
   const hasCoreMetrics = Number.isInteger(scholarMetrics.citationsAll)
     && Number.isInteger(scholarMetrics.hIndexAll);
   const updatedLabel = formatMonthYear(scholarMetrics.updatedAt);
@@ -34,17 +30,10 @@ const Publications = () => {
     </>
   );
 
-  const bibbaseUrl = 'https://bibbase.org/show?bib=https%3A%2F%2Fpaperpile.com%2Feb%2FsFzULUUbmz&commas=true&noBootstrap=1&nocache=1&hidemenu=0&noTitleLinks=true&showSearch=true&folding=1';
-  const PUBLICATION_TOOLS = [
-    { label: 'Top', href: '#publications' },
-    { label: 'Google Scholar', href: 'https://scholar.google.com/citations?user=tkEx8OQAAAAJ', external: true },
-    { label: 'BibBase', href: bibbaseUrl, external: true },
-  ];
-
   return (
-    <Main title="Publications" description="Menglin Zhu's publications.">
+    <Main title="Publications" description="Menglin Zhu's publications." wrapperClassName="publications-layout">
       <article className="post publications-page" id="publications">
-        <PageHeader
+        <PublicationArchive
           title={(
             <>
               Publications (
@@ -53,37 +42,7 @@ const Publications = () => {
             </>
           )}
           subtitle={gsText}
-          subtitleClassName="publications-metrics"
         />
-        <PageTools items={PUBLICATION_TOOLS} ariaLabel="Publications page tools" />
-
-        <div className="publications-frame-wrapper">
-          {loading && !error && (
-            <div className="loading-state">
-              <p>Loading publications...</p>
-            </div>
-          )}
-
-          {error && (
-            <div className="error-state">
-              <p>Failed to load publications.</p>
-              <a href={bibbaseUrl} target="_blank" rel="noreferrer">
-                View publications directly
-              </a>
-            </div>
-          )}
-
-          <iframe
-            title="bibbase-publications"
-            src={bibbaseUrl}
-            className={`publications-iframe ${loading ? 'is-hidden' : ''}`}
-            onLoad={() => setLoading(false)}
-            onError={() => {
-              setLoading(false);
-              setError(true);
-            }}
-          />
-        </div>
       </article>
     </Main>
   );

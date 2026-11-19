@@ -3,8 +3,8 @@
 }
 
 .people-section-title {
+  @extend %section-heading;
   margin-bottom: 0.75rem;
-  letter-spacing: 0.03em;
 }
 
 .people-grid {

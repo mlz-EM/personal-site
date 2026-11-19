@@ -1,7 +1,8 @@
-import React, { useCallback, useRef, useState } from 'react';
+import React from 'react';
 import Main from '../layouts/Main';
-import PageHeader from '../components/Template/PageHeader';
+import PageHeader, { ExpandAllButton } from '../components/Template/PageHeader';
 import PageTools from '../components/Template/PageTools';
+import useDetailsGroup from '../hooks/useDetailsGroup';
 import resources from '../data/resources.json';
 
 const RESOURCES_TOOLS = [
@@ -42,21 +43,6 @@ const renderLinkItem = (item) => (
 );
 
 const renderVisualMedia = (item) => {
-  if (item.type === 'imageRow') {
-    return (
-      <div style={{ paddingLeft: '0px', marginTop: '-5px', marginBottom: '10px' }}>
-        {item.media.map((entry) => (
-          <img
-            key={entry.src}
-            src={getResourceAssetUrl(entry.src)}
-            alt={entry.alt}
-            style={{ width: '20%', maxWidth: '170px' }}
-          />
-        ))}
-      </div>
-    );
-  }
-
   if (item.type === 'videoRow') {
     return (
       <div
@@ -85,14 +71,16 @@ const renderVisualMedia = (item) => {
     );
   }
 
+  const imageSize = item.type === 'imageRow'
+    ? { width: '20%', maxWidth: 170 } : { width: '95%', maxWidth: 780 };
   return (
-    <div style={{ paddingLeft: '0px', marginTop: '-5px', marginBottom: '10px' }}>
+    <div style={{ marginTop: -5, marginBottom: 10 }}>
       {item.media.map((entry) => (
         <img
           key={entry.src}
           src={getResourceAssetUrl(entry.src)}
           alt={entry.alt}
-          style={{ width: '95%', maxWidth: '780px' }}
+          style={imageSize}
         />
       ))}
     </div>
@@ -100,52 +88,20 @@ const renderVisualMedia = (item) => {
 };
 
 const Resources = () => {
-  const detailsContainerRef = useRef(null);
-  const [anyOpen, setAnyOpen] = useState(false);
-
-  const refreshOpenState = useCallback(() => {
-    const root = detailsContainerRef.current;
-    if (!root) {
-      setAnyOpen(false);
-      return;
-    }
-
-    const hasOpenDetail = Array.from(root.querySelectorAll('details')).some((detail) => detail.open);
-    setAnyOpen(hasOpenDetail);
-  }, []);
-
-  const toggleAllDetails = useCallback((expanded) => {
-    const root = detailsContainerRef.current;
-    if (!root) {
-      return;
-    }
-
-    const details = root.querySelectorAll('details');
-    for (let i = 0; i < details.length; i += 1) {
-      details[i].open = expanded;
-    }
-    setAnyOpen(expanded);
-  }, []);
-
-  const titleActions = (
-    <button
-      type="button"
-      className="page-title-action-btn"
-      onClick={() => toggleAllDetails(!anyOpen)}
-    >
-      {anyOpen ? 'Collapse all' : 'Expand all'}
-    </button>
-  );
+  const { groupProps, anyOpen, toggleAll } = useDetailsGroup();
 
   return (
     <Main title="Resources" description="Useful Resources">
-      <article className="post markdown" id="resources" ref={detailsContainerRef}>
-        <PageHeader title="Resources" titleActions={titleActions} />
+      <article className="post markdown" id="resources" {...groupProps}>
+        <PageHeader
+          title="Resources"
+          titleActions={<ExpandAllButton anyOpen={anyOpen} onClick={toggleAll} />}
+        />
         <PageTools items={RESOURCES_TOOLS} ariaLabel="Resources page tools" />
         {resources.sections.map((section) => (
-          <details key={section.title} onToggle={refreshOpenState}>
+          <details key={section.title}>
             <summary>
-              <strong style={{ fontSize: '1.1em', paddingLeft: '20px' }}>{section.title}</strong>
+              <strong className="disclosure-title">{section.title}</strong>
             </summary>
             <ul style={{ fontSize: '1em', paddingLeft: '40px' }}>
               {section.items.map(renderLinkItem)}
@@ -153,13 +109,13 @@ const Resources = () => {
           </details>
         ))}
 
-        <details onToggle={refreshOpenState}>
+        <details>
           <summary>
-            <strong style={{ fontSize: '1.1em', paddingLeft: '20px' }}>{resources.visuals.title}</strong>
+            <strong className="disclosure-title">{resources.visuals.title}</strong>
           </summary>
           <ul style={{ fontSize: '1em', paddingLeft: '20px' }}>
             {resources.visuals.items.map((item) => (
-              <details key={item.title} onToggle={refreshOpenState}>
+              <details key={item.title}>
                 <summary style={{ paddingLeft: '5px' }}>{item.title}</summary>
                 {renderVisualMedia(item)}
               </details>
