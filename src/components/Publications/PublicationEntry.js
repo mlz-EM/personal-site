@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// Render the inline formatting produced by the BibTeX parser as React elements.
+// Render the inline formatting in Paperpile titles as React elements.
 const formatTitle = (title) => {
   const parts = [];
   let offset = 0;
@@ -13,47 +13,61 @@ const formatTitle = (title) => {
   return [...parts, title.slice(offset)];
 };
 
-const ownerName = /^(?:(?:Menglin|M\.?)\s+Zhu|Zhu,\s*(?:Menglin|M\.?))$/i;
+const renderAuthor = (author, index) => (
+  <React.Fragment key={author.position}>
+    {index > 0 && ', '}
+    {author.isOwner ? <em className="publication-owner">{author.name}</em> : author.name}
+    {author.equalContributor && (
+      <sup className="publication-author-marker" title="Equal contribution">*</sup>
+    )}
+    {author.corresponding && (
+      <sup className="publication-author-marker" title="Corresponding author">#</sup>
+    )}
+  </React.Fragment>
+);
 
-const highlightAuthor = (name, position) => (ownerName.test(name)
-  ? <strong className="publication-owner" key={position}>{name}</strong>
-  : name);
-
-const PublicationEntry = ({ paper }) => {
+const PublicationEntry = ({ paper, showAllAuthors }) => {
   const {
-    title, authors, venue, volume, issue, pages, year, url, arxiv,
+    title, authors, journal, url, arxiv,
   } = paper;
-  const names = authors.flatMap((name, index) => [index ? ', ' : '', highlightAuthor(name, index)]);
-  const locator = [volume && `${volume}${issue ? `(${issue})` : ''}`, pages].filter(Boolean).join(', ');
+  const shownAuthors = showAllAuthors
+    ? authors
+    : authors.filter((author) => author.position === 0 || author.equalContributor);
+  const paperTitle = (
+    <>
+      {journal && <cite className="publication-journal">[{journal}] </cite>}
+      {formatTitle(title)}
+    </>
+  );
 
   return (
-    <li className="publication-entry">
-      <h4>
-        {url ? <a href={url} target="_blank" rel="noreferrer">{formatTitle(title)}</a>
-          : formatTitle(title)}
+    <li className="listing-entry">
+      <h4 className="listing-title">
+        {url ? <a href={url} target="_blank" rel="noreferrer">{paperTitle}</a> : paperTitle}
       </h4>
-      {authors.length > 0 && <p className="publication-authors">{names}</p>}
-      <p className="publication-citation">
-        {venue && <cite>{venue}</cite>}
-        {locator && ` ${locator}`}
-        {year && ` (${year})`}
-        {arxiv && arxiv !== url && (
-          <> · <a href={arxiv} target="_blank" rel="noreferrer">arXiv</a></>
-        )}
-      </p>
+      {authors.length > 0 && (
+        <p className="publication-authors">
+          {shownAuthors.map(renderAuthor)}
+          {shownAuthors.length < authors.length && <>, <i>et al.</i></>}
+        </p>
+      )}
+      {arxiv && arxiv !== url && <p><a href={arxiv} target="_blank" rel="noreferrer">arXiv</a></p>}
     </li>
   );
 };
 
 PublicationEntry.propTypes = {
+  showAllAuthors: PropTypes.bool.isRequired,
   paper: PropTypes.shape({
     title: PropTypes.string.isRequired,
-    authors: PropTypes.arrayOf(PropTypes.string).isRequired,
-    venue: PropTypes.string,
-    volume: PropTypes.string,
-    issue: PropTypes.string,
-    pages: PropTypes.string,
-    year: PropTypes.number,
+    authors: PropTypes.arrayOf(PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      position: PropTypes.number.isRequired,
+      isOwner: PropTypes.bool.isRequired,
+      equalContributor: PropTypes.bool.isRequired,
+      corresponding: PropTypes.bool.isRequired,
+    })).isRequired,
+    journal: PropTypes.string,
     url: PropTypes.string,
     arxiv: PropTypes.string,
   }).isRequired,

@@ -117,4 +117,16 @@ describe('daily feed pages', () => {
     expect(screen.queryByText('Source:')).not.toBeInTheDocument();
     expect(screen.queryByLabelText('Source')).not.toBeInTheDocument();
   });
+
+  it.each([
+    [Job, 'No Faculty jobs match the selected filters.'],
+    [ArXiv, 'No arXiv papers match the selected filters.'],
+  ])('shows a title-styled message for an empty feed', (Page, message) => {
+    render(<Page />);
+    fireEvent.change(screen.getByLabelText('After'), { target: { value: '2030-01-01' } });
+    expect(screen.getByRole('status')).toHaveTextContent(message);
+    expect(screen.getByText(message)).toHaveClass('listing-title');
+    fireEvent.click(screen.getByRole('button', { name: 'Clear' }));
+    expect(screen.queryByText(message)).not.toBeInTheDocument();
+  });
 });

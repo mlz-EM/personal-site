@@ -32,7 +32,7 @@ const Publications = () => {
 
   return (
     <Main title="Publications" description="Menglin Zhu's publications." wrapperClassName="publications-layout">
-      <article className="post publications-page" id="publications">
+      <article className="post listing-page publications-page" id="publications">
         <PublicationArchive
           title={(
             <>

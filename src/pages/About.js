@@ -16,7 +16,7 @@ const About = () => {
   const { markdown, loading, error } = useMarkdown(importAboutMarkdown);
 
   return (
-    <Main title="About" description="Learn about Menglin Zhu">
+    <Main title="About" description="Learn about Menglin Zhu" wrapperClassName="about-layout">
       <article className="post markdown" id="about">
         <PageHeader
           title={(

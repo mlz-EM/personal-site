@@ -1,29 +1,6 @@
 {
-  "source": "https://paperpile.com/eb/sFzULUUbmz",
+  "source": "https://paperpile.com/eb/zPzVarTdyN/paperpile.bib",
   "publications": [
-    {
-      "id": "Zhu2026-zo",
-      "title": "Bridging experiment and theory of relaxor ferroelectrics with multislice electron ptychography",
-      "authors": [
-        "Menglin Zhu",
-        "Michael Xu",
-        "Yubo Qi",
-        "Colin Gilgenbach",
-        "Jieun Kim",
-        "Jiahao Zhang",
-        "Bridget R Denzer",
-        "Lane W Martin",
-        "Andrew M Rappe",
-        "James M LeBeau"
-      ],
-      "year": 2026,
-      "venue": "Science",
-      "volume": "392",
-      "issue": "",
-      "pages": "519–523",
-      "url": "https://doi.org/10.1126/science.ads6023",
-      "arxiv": ""
-    },
     {
       "id": "Kim2025-xo",
       "title": "Size-driven phase evolution in ultrathin relaxor films",
@@ -47,6 +24,29 @@
       "issue": "",
       "pages": "1–9",
       "url": "https://doi.org/10.1038/s41565-025-01863-x",
+      "arxiv": ""
+    },
+    {
+      "id": "Zhu*2026-gq",
+      "title": "Bridging experiment and theory of relaxor ferroelectrics with multislice electron ptychography",
+      "authors": [
+        "Menglin Zhu*",
+        "Michael Xu*",
+        "Yubo Qi",
+        "Colin Gilgenbach",
+        "Jieun Kim",
+        "Jiahao Zhang",
+        "Bridget R Denzer",
+        "Lane W Martin",
+        "Andrew M Rappe",
+        "James M LeBeau"
+      ],
+      "year": 2026,
+      "venue": "Science",
+      "volume": "392",
+      "issue": "",
+      "pages": "519–523",
+      "url": "https://doi.org/10.1126/science.ads6023",
       "arxiv": ""
     },
     {
@@ -928,34 +928,11 @@
       "arxiv": ""
     },
     {
-      "id": "Zhu2025-yv",
-      "title": "Insights into chemical and structural order at planar defects in Pb2MgWO6 using multislice electron ptychography",
-      "authors": [
-        "Menglin Zhu",
-        "Michael Xu",
-        "Yu Yun",
-        "Liyan Wu",
-        "Or Shafir",
-        "Colin Gilgenbach",
-        "Lane W Martin",
-        "Ilya Grinberg",
-        "Jonathan E Spanier",
-        "James M LeBeau"
-      ],
-      "year": 2025,
-      "venue": "ACS Nano",
-      "volume": "",
-      "issue": "",
-      "pages": "",
-      "url": "https://doi.org/10.1021/acsnano.4c14833",
-      "arxiv": ""
-    },
-    {
-      "id": "Pan2024-ix",
+      "id": "Pan*2024-xy",
       "title": "Clamping enables enhanced electromechanical responses in antiferroelectric thin films",
       "authors": [
-        "Hao Pan",
-        "Menglin Zhu",
+        "Hao Pan*",
+        "Menglin Zhu*",
         "Ella Banyas",
         "Louis Alaerts",
         "Megha Acharya",
@@ -980,6 +957,29 @@
       "issue": "",
       "pages": "",
       "url": "https://doi.org/10.1038/s41563-024-01907-y",
+      "arxiv": ""
+    },
+    {
+      "id": "Zhu*2025-ub",
+      "title": "Insights into chemical and structural order at planar defects in Pb2MgWO6 using multislice electron ptychography",
+      "authors": [
+        "Menglin Zhu*",
+        "Michael Xu*",
+        "Yu Yun",
+        "Liyan Wu",
+        "Or Shafir",
+        "Colin Gilgenbach",
+        "Lane W Martin",
+        "Ilya Grinberg",
+        "Jonathan E Spanier",
+        "James M LeBeau"
+      ],
+      "year": 2025,
+      "venue": "ACS Nano",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "url": "https://doi.org/10.1021/acsnano.4c14833",
       "arxiv": ""
     },
     {
@@ -1043,6 +1043,29 @@
       "arxiv": ""
     },
     {
+      "id": "Zhu*2025-yy",
+      "title": "Emergent ferromagnetism at LaFeO₃/SrTiO₃ interface arising from a strain-induced spin-state transition",
+      "authors": [
+        "Menglin Zhu*",
+        "Joseph Lanier*",
+        "Sevim Polat Genlik*",
+        "Jose G Flores",
+        "Victor da Cruz Pinha Barbosa",
+        "Mohit Randeria",
+        "Patrick M Woodward",
+        "Maryam Ghazisaeidi",
+        "Fengyuan Yang",
+        "Jinwoo Hwang"
+      ],
+      "year": 2025,
+      "venue": "Adv. Mater. Interfaces",
+      "volume": "12",
+      "issue": "",
+      "pages": "2500169",
+      "url": "https://doi.org/10.1002/admi.202500169",
+      "arxiv": ""
+    },
+    {
       "id": "Kang2025-xg",
       "title": "Bulk-Rashba effect with suppressed spin relaxation in a polar phase of Bi1- xIn1+ xO3",
       "authors": [
@@ -1078,11 +1101,11 @@
       "arxiv": ""
     },
     {
-      "id": "Zhu2025-uo",
+      "id": "Zhu*2025-xo",
       "title": "Direct determination of antiferroelectric-to-ferroelectric phase transition pathways in PbZrO₃ with Operando Electron Microscopy",
       "authors": [
-        "Menglin Zhu",
-        "Michael Xu",
+        "Menglin Zhu*",
+        "Michael Xu*",
         "Louis Alaerts",
         "Hao Pan",
         "Colin Gilgenbach",
@@ -1160,12 +1183,12 @@
       "arxiv": ""
     },
     {
-      "id": "Zhu2026-oh",
+      "id": "Zhu*2026-iz",
       "title": "Operando Electron Microscopy of Nanoscale Electronic Devices on Nonconductive Substrates",
       "authors": [
-        "Menglin Zhu",
-        "Michael Xu",
-        "Zishen Tian",
+        "Menglin Zhu*",
+        "Michael Xu*",
+        "Zishen Tian*",
         "Colin Gilgenbach",
         "Daniel Drury",
         "Bridget R Denzer",
@@ -1180,29 +1203,6 @@
       "issue": "",
       "pages": "ozag007",
       "url": "https://doi.org/10.1093/mam/ozag007",
-      "arxiv": ""
-    },
-    {
-      "id": "Zhu2025-dl",
-      "title": "Emergent ferromagnetism at LaFeO₃/SrTiO₃ interface arising from a strain-induced spin-state transition",
-      "authors": [
-        "Menglin Zhu",
-        "Joseph Lanier",
-        "Sevim Polat Genlik",
-        "Jose G Flores",
-        "Victor da Cruz Pinha Barbosa",
-        "Mohit Randeria",
-        "Patrick M Woodward",
-        "Maryam Ghazisaeidi",
-        "Fengyuan Yang",
-        "Jinwoo Hwang"
-      ],
-      "year": 2025,
-      "venue": "Adv. Mater. Interfaces",
-      "volume": "12",
-      "issue": "",
-      "pages": "2500169",
-      "url": "https://doi.org/10.1002/admi.202500169",
       "arxiv": ""
     },
     {

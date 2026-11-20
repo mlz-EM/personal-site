@@ -3,6 +3,7 @@ import Main from '../layouts/Main';
 import PageHeader from '../components/Template/PageHeader';
 import PageTools from '../components/Template/PageTools';
 import FeedBasicInfo from '../components/Template/FeedBasicInfo';
+import EmptyFeedMessage from '../components/Template/EmptyFeedMessage';
 import getJobsFeed from '../content/jobsFeed';
 import useFeedFilters from '../hooks/useFeedFilters';
 import FeedFilters from '../components/Template/FeedFilters';
@@ -19,20 +20,20 @@ const Job = () => {
   const filters = useFeedFilters(feed.items, { withFit: true });
 
   return (
-    <Main title="Jobs" description="Combined AI-filtered faculty opportunities from TTAP, Interfolio, Chronicle, and Inside Higher Ed" wrapperClassName="jobs-layout">
-      <article className="post markdown jobs-page" id="jobs">
+    <Main title="Jobs" description="Combined AI-filtered faculty opportunities from TTAP, Interfolio, Chronicle, and Inside Higher Ed" wrapperClassName="feed-layout">
+      <article className="post listing-page feed-page" id="jobs">
         <PageHeader title={feed.source || 'Faculty Jobs'} />
         <PageTools items={JOB_TOOLS} ariaLabel="Job page tools" />
         <FeedBasicInfo header={feed.header} />
         <FeedFilters filters={filters} id="job-filters" withFit />
         <hr />
-        <div className="jobs-list">
-          {filters.filteredItems.length === 0 ? (
-            <p>No Faculty jobs match the selected filters.</p>
-          ) : filters.filteredItems.map((job) => (
-            <JobFeedItem key={job.url} job={job} />
-          ))}
-        </div>
+        {filters.filteredItems.length === 0 ? (
+          <EmptyFeedMessage>No Faculty jobs match the selected filters.</EmptyFeedMessage>
+        ) : (
+          <ul className="listing-list">
+            {filters.filteredItems.map((job) => <JobFeedItem key={job.url} job={job} />)}
+          </ul>
+        )}
       </article>
     </Main>
   );

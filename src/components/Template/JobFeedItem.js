@@ -2,21 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const JobFeedItem = ({ job }) => (
-  <div className="job-item">
-    <p className="job-item-title">
+  <li className="listing-entry job-item">
+    <h3 className="listing-title">
       <a href={job.url} target="_blank" rel="noopener noreferrer">
-        <strong>{job.metadata.isNew ? '[NEW] ' : ''}{job.title}</strong>
+        {job.metadata.isNew ? '[NEW] ' : ''}{job.title}
       </a>
       {' 🌟'.repeat(job.metadata.stars || 0)}
-    </p>
+    </h3>
     <p className="job-item-location"><strong>Location:</strong> {job.metadata.location}</p>
     <p className="job-item-date"><strong>Date:</strong> {job.date}</p>
     <p className="job-item-description">
       <strong>Description:</strong>{' '}
       {job.metadata.description || 'N/A'}
     </p>
-    <hr />
-  </div>
+  </li>
 );
 
 JobFeedItem.propTypes = {

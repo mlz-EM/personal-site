@@ -5,7 +5,7 @@ const { execFileSync } = require('child_process');
 const { plugins } = require('@citation-js/core');
 require('@citation-js/plugin-bibtex');
 
-const source = 'https://paperpile.com/eb/sFzULUUbmz';
+const source = 'https://paperpile.com/eb/zPzVarTdyN/paperpile.bib';
 const destination = path.join(__dirname, '../src/data/paperpile.json');
 
 const authorName = (name) => name.literal || [
@@ -25,6 +25,12 @@ const parsePublications = (bibtex) => {
   if (!entries.length) throw new Error('The Paperpile export contains no BibTeX records.');
   const byKey = new Map(entries.map((entry) => [entry.label, entry]));
   if (byKey.size !== entries.length) throw new Error('Duplicate Paperpile citation key.');
+
+  // Decode author hashes before CSL splits names so an escaped hash cannot absorb the next author.
+  entries.forEach((entry) => {
+    const { properties } = entry;
+    if (properties.author) properties.author = properties.author.replace(/\\#/g, '#');
+  });
 
   // CSL supplies decoded titles and names. The BibTeX fields also carry arXiv identifiers.
   const citations = plugins.input.data(entries, '@biblatex/entries+list');

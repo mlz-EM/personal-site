@@ -31,8 +31,8 @@ const getJobsFeed = () => {
       generatedAt,
       source: 'Faculty Jobs',
       notes: [
-        'This report combines AI-filtered faculty job feeds from Google, LinkedIn, Indeed, Interfolio, The Chronicle of Higher Education Jobs, and Inside Higher Ed Careers.',
-        'This page is powered by [ArxivSummaryDaily](https://github.com/dong-zehao/ArxivSummaryDaily) and [JobSpy](https://github.com/speedyapply/JobSpy).',
+        'This report combines AI-filtered faculty job feeds',
+        'This page is powered by [ArxivSummaryDaily](https://github.com/dong-zehao/ArxivSummaryDaily) and [JobSpy](https://github.com/speedyapply/JobSpy)',
       ],
     },
     generatedAt,

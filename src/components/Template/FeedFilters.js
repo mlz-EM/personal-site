@@ -5,7 +5,7 @@ const FeedFilters = ({
   filters, id, idPrefix, withFit,
 }) => (
   <div className="filter-section job-filter-row" id={id}>
-    <div className="jobs-filter-new">
+    <div className="listing-filter-checkbox">
       <label htmlFor={`${idPrefix}only-new`} className="job-filter-label">
         NEW
         <input
@@ -16,7 +16,7 @@ const FeedFilters = ({
         />
       </label>
     </div>
-    <label htmlFor={`${idPrefix}filter-date`} className="job-filter-label">
+    <label htmlFor={`${idPrefix}filter-date`} className="job-filter-label filter-field">
       After
       <input
         id={`${idPrefix}filter-date`}

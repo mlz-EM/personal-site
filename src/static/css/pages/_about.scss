@@ -43,3 +43,10 @@
   width: 48%;
   margin-right: 3rem;
 }
+
+@include breakpoint(xsmall) {
+  .about-layout .page-header,
+  .about-layout .page-header .title {
+    padding-inline: 0;
+  }
+}

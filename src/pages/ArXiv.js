@@ -3,6 +3,7 @@ import Main from '../layouts/Main';
 import PageHeader from '../components/Template/PageHeader';
 import PageTools from '../components/Template/PageTools';
 import FeedBasicInfo from '../components/Template/FeedBasicInfo';
+import EmptyFeedMessage from '../components/Template/EmptyFeedMessage';
 import getArxivFeed from '../content/arxivFeed';
 import useFeedFilters from '../hooks/useFeedFilters';
 import FeedFilters from '../components/Template/FeedFilters';
@@ -32,30 +33,33 @@ const ArXiv = () => {
   const filters = useFeedFilters(feed.items);
 
   return (
-    <Main title="arXiv" description="arXiv Daily Feed">
-      <article className="post markdown" id="arxiv">
+    <Main title="arXiv" description="arXiv Daily Feed" wrapperClassName="feed-layout">
+      <article className="post listing-page feed-page" id="arxiv">
         <PageHeader title="arXiv Daily Feed" />
         <PageTools items={ARXIV_TOOLS} ariaLabel="arXiv page tools" />
         <FeedBasicInfo header={basicInfoHeader} />
         <FeedFilters filters={filters} id="arxiv-filters" idPrefix="arxiv-" />
         <hr />
-        <div className="jobs-list">
-          {filters.filteredItems.map((item) => (
-            <div key={item.metadata.id || item.url} className="job-item">
-              <p>
-                <a href={item.url} target="_blank" rel="noopener noreferrer">
-                  <strong>{item.metadata.isNew ? '[NEW] ' : ''}{item.title}</strong>
-                </a>
-              </p>
-              <p><strong>Date:</strong> {item.date}</p>
-              <p>
-                <strong>Finding:</strong>{' '}
-                {item.metadata.summary}
-              </p>
-              <hr />
-            </div>
-          ))}
-        </div>
+        {filters.filteredItems.length === 0 ? (
+          <EmptyFeedMessage>No arXiv papers match the selected filters.</EmptyFeedMessage>
+        ) : (
+          <ul className="listing-list">
+            {filters.filteredItems.map((item) => (
+              <li key={item.metadata.id || item.url} className="listing-entry">
+                <h3 className="listing-title">
+                  <a href={item.url} target="_blank" rel="noopener noreferrer">
+                    {item.metadata.isNew ? '[NEW] ' : ''}{item.title}
+                  </a>
+                </h3>
+                <p><strong>Date:</strong> <time dateTime={item.date}>{item.date}</time></p>
+                <p>
+                  <strong>Finding:</strong>{' '}
+                  {item.metadata.summary}
+                </p>
+              </li>
+            ))}
+          </ul>
+        )}
       </article>
     </Main>
   );
