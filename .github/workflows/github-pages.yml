@@ -9,12 +9,6 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
@@ -22,13 +16,13 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    outputs:
+      artifact_id: ${{ steps.upload.outputs.artifact_id }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -67,12 +61,47 @@ jobs:
         env:
           NODE_ENV: production
           REACT_APP_VISITOR_MAP_API_URL: ${{ vars.VISITOR_MAP_API_URL }}
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3.0.1
+        id: upload
+        uses: actions/upload-pages-artifact@v5.0.0
         with:
           path: "build"
+
+  deploy:
+    needs: build
+    permissions:
+      actions: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Wait for uploaded Pages artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PAGES_ARTIFACT_ID: ${{ needs.build.outputs.artifact_id }}
+        shell: bash
+        run: |
+          if [[ ! "$PAGES_ARTIFACT_ID" =~ ^[0-9]+$ ]]; then
+            echo "::error::The build did not return a valid Pages artifact ID."
+            exit 1
+          fi
+          for attempt in {1..6}; do
+            if artifact=$(timeout 8s gh api --method GET --jq 'select(.name == "github-pages" and .expired == false) | .id' \
+              "repos/$GITHUB_REPOSITORY/actions/artifacts/$PAGES_ARTIFACT_ID") &&
+              [[ "$artifact" == "$PAGES_ARTIFACT_ID" ]]; then
+              echo "Pages artifact $artifact is available."
+              exit 0
+            fi
+            if [[ "$attempt" -lt 6 ]]; then
+              sleep 10
+            fi
+          done
+          echo "::error::Pages artifact $PAGES_ARTIFACT_ID was not visible after six checks."
+          exit 1
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5.0.1
