@@ -75,9 +75,9 @@ jobs:
       id-token: write
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment_retry.outputs.page_url || steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 14
     steps:
       - name: Wait for uploaded Pages artifact
         env:
@@ -104,4 +104,23 @@ jobs:
           exit 1
       - name: Deploy to GitHub Pages
         id: deployment
+        uses: actions/deploy-pages@v5.0.1
+        continue-on-error: true
+      - name: Wait before retrying Pages deployment
+        id: retry_wait
+        if: steps.deployment.outcome == 'failure'
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        shell: bash
+        run: |
+          # deploy-pages sets page_url after deployment creation, before polling.
+          if [[ -n "$PAGE_URL" ]]; then
+            echo "::error::Pages created the deployment, but it did not report success."
+            exit 1
+          fi
+          echo "::warning::Pages deployment failed before returning a URL. Retrying in 60 seconds."
+          sleep 60
+      - name: Retry GitHub Pages deployment
+        id: deployment_retry
+        if: steps.retry_wait.outcome == 'success'
         uses: actions/deploy-pages@v5.0.1
